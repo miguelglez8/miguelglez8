@@ -2,8 +2,8 @@
 
 ### I am Software Developer in UniOvi 💥
 
-![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=E01517)
-![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=DED123)
+![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=red)
+![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=green)
 
 ## 🧐 About me
 
