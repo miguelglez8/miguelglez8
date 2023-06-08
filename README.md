@@ -68,7 +68,7 @@
 ![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge&logo=xampp&logoColor=white)
 
 ## ⚡ Others
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
 
 ![GitHub Statistics](https://github-readme-stats-eight-theta.vercel.app/api?username=miguelglez8&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
 
@@ -76,4 +76,4 @@
 ![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000)
 
 
-<iframe src="https://gifer.com/embed/D5FK" width=480 height=234.627 frameBorder="0" allowFullScreen></iframe>
+[<iframe src="https://gifer.com/embed/D5FK" width=480 height=234.627 frameBorder="0" allowFullScreen></iframe>
