@@ -61,12 +61,12 @@
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Anaconda](https://img.shields.io/badge/Anaconda-00679H?style=for-the-badge&logo=anaconda&logoColor=white)
-![Mathlab](https://img.shields.io/badge/Mathlab-00639D?style=for-the-badge&logo=mathlab&logoColor=white)
-![MobaXTerm](https://img.shields.io/badge/MobaXTerm-FDC624?style=for-the-badge&logo=mobaXTerm&logoColor=black)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-FHC624?style=for-the-badge&logo=virtualBox&logoColor=black)
-![WordPress](https://img.shields.io/badge/WordPress-FIC624?style=for-the-badge&logo=wordPress&logoColor=black)
-![Azure](https://img.shields.io/badge/Azure-FPC624?style=for-the-badge&logo=azure&logoColor=black)
-![XAMPP](https://img.shields.io/badge/XAMPP-FQC624?style=for-the-badge&logo=xampp&logoColor=black)
+![Mathlab](https://img.shields.io/badge/Mathlab-00639D?style=for-the-badge&logo=mathlab&logoColor=red)
+![MobaXTerm](https://img.shields.io/badge/MobaXTerm-LDC624?style=for-the-badge&logo=mobaXTerm&logoColor=black)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-KHC624?style=for-the-badge&logo=virtualBox&logoColor=black)
+![WordPress](https://img.shields.io/badge/WordPress-JIC624?style=for-the-badge&logo=wordPress&logoColor=black)
+![Azure](https://img.shields.io/badge/Azure-SPC624?style=for-the-badge&logo=azure&logoColor=black)
+![XAMPP](https://img.shields.io/badge/XAMPP-AQC624?style=for-the-badge&logo=xampp&logoColor=black)
 
 ## ⚡ Others
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
