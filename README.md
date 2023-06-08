@@ -75,5 +75,4 @@
 ![Profile View Counter](https://komarev.com/ghpvc/?username=miguelglez8)
 ![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000)
 
-
-[![Top Langs]<iframe src="https://gifer.com/embed/D5FK" width=480 height=234.627 frameBorder="0" allowFullScreen></iframe>]
+<img src="multimedia/scoffield.gif" alt="gif" width="300">
