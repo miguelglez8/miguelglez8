@@ -46,6 +46,10 @@
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/Intellij_IDEA-00679D?style=for-the-badge&logo=intellij%20idea&logoColor=white)
+![BlueJ](https://img.shields.io/badge/BlueJ-00679D?style=for-the-badge&logo=bluej&logoColor=white)
+![Pyscripter](https://img.shields.io/badge/Pyscripter-00679D?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
+![Anaconda](https://img.shields.io/badge/Anaconda-00679D?style=for-the-badge&logo=anaconda&logoColor=white)
+![Mathlab](https://img.shields.io/badge/Mathlab-00679D?style=for-the-badge&logo=mathlab&logoColor=white)
 
 ## ⚡ Others
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
