@@ -1,5 +1,7 @@
 ### Hi there 👋, I am Miguel González Navarro 🚀
 
+### Software Developer UniOvi 💥
+
 ## 🧐 About me
 
 - 🔭 I’m currently studying Software Engineering in Oviedo
