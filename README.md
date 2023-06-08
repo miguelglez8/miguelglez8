@@ -1,4 +1,4 @@
-### Hi there 👋, I am Miguel González Navarro 🚀
+### Hi there 👋, I am Miguel Gonzalez Navarro 🚀
 
 ### I am Software Developer in UniOvi 💥
 
@@ -75,4 +75,4 @@
 ![Profile View Counter](https://komarev.com/ghpvc/?username=miguelglez8)
 ![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000)
 
-![Me](https://i.gifer.com/D5FK.gif)
+<img src="(https://i.gifer.com/D5FK.gif" alt="gif" width="40" height="40"/>
