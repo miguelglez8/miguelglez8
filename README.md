@@ -38,7 +38,7 @@
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![SOLID](https://img.shields.io/badge/Solid-%5c1b6c.svg?style=for-the-badge&logo=solid&logoColor=white)
+![SOLID](https://img.shields.io/badge/Solid-%e530ff.svg?style=for-the-badge&logo=solid&logoColor=white)
 
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r&logoColor=white) 
 ![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
@@ -56,7 +56,7 @@
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/Intellij_IDEA-00679D?style=for-the-badge&logo=intellij%20idea&logoColor=white)
 ![BlueJ](https://img.shields.io/badge/BlueJ-12379F?style=for-the-badge&logo=bluej&logoColor=white)
-![Pyscripter](https://img.shields.io/badge/Pyscripter-6495ed?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
+![Pyscripter](https://img.shields.io/badge/Pyscripter-00bb2d?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white)
