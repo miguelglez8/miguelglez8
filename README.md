@@ -43,7 +43,7 @@
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r) 
 ![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
-![ANTLR4](https://img.shields.io/badge/ANTLR4-Fjk612?style=for-the-badge&logo=antlr4&logoColor=black)
+![ANTLR4](https://img.shields.io/badge/ANTLR4-6495ed?style=for-the-badge&logo=antlr4&logoColor=black)
 ![WindowBuilder](https://img.shields.io/badge/WindowBuilder-FC8924?style=for-the-badge&logo=windowbuilder&logoColor=black)
 ![Express](https://img.shields.io/badge/Express-F66624?style=for-the-badge&logo=express&logoColor=black)
 ![Oracle](https://img.shields.io/badge/Oracle-FCC656?style=for-the-badge&logo=oracle&logoColor=black)
@@ -56,7 +56,7 @@
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/Intellij_IDEA-00679D?style=for-the-badge&logo=intellij%20idea&logoColor=white)
 ![BlueJ](https://img.shields.io/badge/BlueJ-12379F?style=for-the-badge&logo=bluej&logoColor=white)
-![Pyscripter](https://img.shields.io/badge/Pyscripter-00679G?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
+![Pyscripter](https://img.shields.io/badge/Pyscripter-6495ed?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
