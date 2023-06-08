@@ -16,7 +16,7 @@
 
 ## 💻 Technologies
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) 
+![Java](https://img.shields.io/badge/java-%90E4E4.svg?style=for-the-badge&logo=java&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/typescript-FCC624?style=for-the-badge&logo=typescript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
@@ -24,9 +24,9 @@
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
+![HTML](https://img.shields.io/badge/HTML-%ff8000.svg?style=for-the-badge&logo=html&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-%236ea94b.svg?style=for-the-badge&logo=css&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-%234ja93b.svg?style=for-the-badge&logo=html&logoColor=white)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Windows Terminal](https://img.shields.io/badge/windows%20terminal-4D4D4D?style=for-the-badge&logo=windows%20terminal&logoColor=white)
@@ -41,12 +41,12 @@
 ![SOLID](https://img.shields.io/badge/Solid-%5c1b6c.svg?style=for-the-badge&logo=solid&logoColor=white)
 
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r) 
-![Ensamblador](https://img.shields.io/badge/assembly-6DA55F?style=for-the-badge&logo=assembly&logoColor=white) 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-%234ea54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
-![ANTLR4](https://img.shields.io/badge/ANTLR4-FCC624?style=for-the-badge&logo=antlr4&logoColor=black)
-![WindowBuilder](https://img.shields.io/badge/WindowBuilder-FCC624?style=for-the-badge&logo=windowbuilder&logoColor=black)
-![Express](https://img.shields.io/badge/Express-FCC624?style=for-the-badge&logo=express&logoColor=black)
-![Oracle](https://img.shields.io/badge/Oracle-FCC624?style=for-the-badge&logo=oracle&logoColor=black)
+![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
+![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
+![ANTLR4](https://img.shields.io/badge/ANTLR4-FFH624?style=for-the-badge&logo=antlr4&logoColor=black)
+![WindowBuilder](https://img.shields.io/badge/WindowBuilder-FC8924?style=for-the-badge&logo=windowbuilder&logoColor=black)
+![Express](https://img.shields.io/badge/Express-F66624?style=for-the-badge&logo=express&logoColor=black)
+![Oracle](https://img.shields.io/badge/Oracle-FCC656?style=for-the-badge&logo=oracle&logoColor=black)
 
 ## 💎 Software and Editors
 
