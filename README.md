@@ -13,3 +13,5 @@
 - 👀 Also in gmail: miguemoreda@gmail.com
 
 ## 💻 Technologies
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
