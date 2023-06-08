@@ -1,6 +1,6 @@
 ### Hi there 👋, I am Miguel González Navarro 🚀
 
-### Software Developer UniOvi 💥
+### I am a Software Developer in UniOvi 💥
 
 ## 🧐 About me
 
