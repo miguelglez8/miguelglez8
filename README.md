@@ -38,7 +38,7 @@
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![SOLID](https://img.shields.io/badge/Solid-%e530ff.svg?style=for-the-badge&logo=solid&logoColor=white)
+![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
 
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r&logoColor=white) 
 ![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
