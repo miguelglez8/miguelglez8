@@ -2,15 +2,15 @@
 
 ### I am Software Developer in UniOvi 💥
 
+![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=E01517)
+![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=DED123)
+
 ## 🧐 About me
 
 - 🔭 I’m currently studying Software Engineering in Oviedo
 - 🌱 I’m currently learning in EII
 - 👯 I’m interested in Data
 - 🤔 I’m looking for help with Back-end development
-
-![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=E01517)
-![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=DED123)
 
 ## 🤝 Contacts
 
