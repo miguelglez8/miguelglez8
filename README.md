@@ -16,7 +16,7 @@
 
 ## 💻 Technologies
 
-![Java](https://img.shields.io/badge/java-%90E4E4.svg?style=for-the-badge&logo=java&logoColor=white) 
+![Java](https://img.shields.io/badge/java-%0000ff.svg?style=for-the-badge&logo=java&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/typescript-FCC624?style=for-the-badge&logo=typescript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
@@ -43,7 +43,7 @@
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r) 
 ![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
-![ANTLR4](https://img.shields.io/badge/ANTLR4-FFH624?style=for-the-badge&logo=antlr4&logoColor=black)
+![ANTLR4](https://img.shields.io/badge/ANTLR4-Fjk612?style=for-the-badge&logo=antlr4&logoColor=black)
 ![WindowBuilder](https://img.shields.io/badge/WindowBuilder-FC8924?style=for-the-badge&logo=windowbuilder&logoColor=black)
 ![Express](https://img.shields.io/badge/Express-F66624?style=for-the-badge&logo=express&logoColor=black)
 ![Oracle](https://img.shields.io/badge/Oracle-FCC656?style=for-the-badge&logo=oracle&logoColor=black)
@@ -55,18 +55,18 @@
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/Intellij_IDEA-00679D?style=for-the-badge&logo=intellij%20idea&logoColor=white)
-![BlueJ](https://img.shields.io/badge/BlueJ-00679F?style=for-the-badge&logo=bluej&logoColor=white)
+![BlueJ](https://img.shields.io/badge/BlueJ-12379F?style=for-the-badge&logo=bluej&logoColor=white)
 ![Pyscripter](https://img.shields.io/badge/Pyscripter-00679G?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Anaconda](https://img.shields.io/badge/Anaconda-00679H?style=for-the-badge&logo=anaconda&logoColor=white)
+![Anaconda](https://img.shields.io/badge/Anaconda-12349H?style=for-the-badge&logo=anaconda&logoColor=white)
 ![Mathlab](https://img.shields.io/badge/Mathlab-00639D?style=for-the-badge&logo=mathlab&logoColor=red)
-![MobaXTerm](https://img.shields.io/badge/MobaXTerm-LDC624?style=for-the-badge&logo=mobaxterm&logoColor=black)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-KHC624?style=for-the-badge&logo=virtualbox&logoColor=black)
-![WordPress](https://img.shields.io/badge/WordPress-JIC624?style=for-the-badge&logo=wordpress&logoColor=black)
-![Azure](https://img.shields.io/badge/Azure-SPC624?style=for-the-badge&logo=azure&logoColor=black)
-![XAMPP](https://img.shields.io/badge/XAMPP-AQC624?style=for-the-badge&logo=xampp&logoColor=black)
+![MobaXTerm](https://img.shields.io/badge/MobaXTerm-WER624?style=for-the-badge&logo=mobaxterm&logoColor=black)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-FGH624?style=for-the-badge&logo=virtualbox&logoColor=black)
+![WordPress](https://img.shields.io/badge/WordPress-SDF624?style=for-the-badge&logo=wordpress&logoColor=black)
+![Azure](https://img.shields.io/badge/Azure-SPFG24?style=for-the-badge&logo=azure&logoColor=black)
+![XAMPP](https://img.shields.io/badge/XAMPP-AQCFV4?style=for-the-badge&logo=xampp&logoColor=black)
 
 ## ⚡ Others
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miguelglez8&layout=compact&theme=prussian)](https://github.com/anuraghazra/github-readme-stats)
