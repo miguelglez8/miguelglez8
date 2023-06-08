@@ -61,7 +61,7 @@
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white)
 ![Anaconda](https://img.shields.io/badge/Anaconda-12349H?style=for-the-badge&logo=anaconda&logoColor=white)
-![Mathlab](https://img.shields.io/badge/Mathlab-ff8c00?style=for-the-badge&logo=mathlab&logoColor=white)
+![Mathlab](https://img.shields.io/badge/Mathlab-ff0000?style=for-the-badge&logo=mathlab&logoColor=white)
 ![MobaXTerm](https://img.shields.io/badge/MobaXTerm-b79b7d?style=for-the-badge&logo=mobaxterm&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-b582e7?style=for-the-badge&logo=virtualbox&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-248dbc?style=for-the-badge&logo=wordpress&logoColor=white)
