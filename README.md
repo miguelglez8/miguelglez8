@@ -26,8 +26,8 @@
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-%ff8000.svg?style=for-the-badge&logo=html&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-%236ea94b.svg?style=for-the-badge&logo=css&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-%ff8000.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-%236ea94b.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
@@ -45,9 +45,9 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-ABC157?style=for-the-badge&logo=linux&logoColor=white)
 ![ANTLR4](https://img.shields.io/badge/ANTLR4-6495ed?style=for-the-badge&logo=antlr4&logoColor=white)
-![WindowBuilder](https://img.shields.io/badge/WindowBuilder-FC8924?style=for-the-badge&logo=windowbuilder&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-F66624?style=for-the-badge&logo=express&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-FCC656?style=for-the-badge&logo=oracle&logoColor=white)
+![JQuery](https://img.shields.io/badge/jquery-6DA55F?style=for-the-badge&logo=jquery&logoColor=white) 
 
 ## 💎 Software and Editors
 
