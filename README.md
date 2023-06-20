@@ -9,8 +9,8 @@
 
 - 🔭 I’m currently studying Software Engineering in Oviedo
 - 🌱 I’m currently learning in EII
-- 👯 I’m interested in Data
 - 🤔 I’m looking for help with Back-end development
+- 👯 I’m interested in Data
 
 ## 🤝 Contacts
 
