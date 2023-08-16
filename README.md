@@ -1,6 +1,6 @@
-### Hi there 👋, I am Miguel Gonzalez Navarro 🚀
+### Hi 👋, I am Miguel Gonzalez Navarro 🚀
 
-### I am Software Developer in UniOvi 💥
+### I am Software Developer at UniOvi 💥
 
 ![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=red)
 ![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=green)
@@ -10,7 +10,7 @@
 - 🔭 I’m currently studying Software Engineering in Oviedo
 - 🌱 I’m currently learning in EII
 - 🤔 I’m looking for help with Back-end development
-- 👯 I’m interested in Data
+- 👯 I’m also interested in Data
 
 ## 🤝 Contacts
 
