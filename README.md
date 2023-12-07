@@ -71,7 +71,7 @@
 ![Azure](https://img.shields.io/badge/Azure-00ffff?style=for-the-badge&logo=azure&logoColor=white)
 ![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge&logo=xampp&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Unity-a4c639?style=for-the-badge&logo=unity&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Unity-a4c639?style=for-the-badge&logo=androidstudio&logoColor=white)
 
 ## ⚡ Others
 
