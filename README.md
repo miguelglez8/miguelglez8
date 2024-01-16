@@ -58,6 +58,7 @@
 ## 💎 Software and Editors
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Visual Paradigm](https://img.shields.io/badge/Visual_Paradigm-FF0000?style=for-the-badge&logo=visual%20paradigm&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
@@ -72,9 +73,10 @@
 ![WordPress](https://img.shields.io/badge/WordPress-248dbc?style=for-the-badge&logo=wordpress&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-008ad7?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge&logo=xampp&logoColor=white)
+![R Commander](https://img.shields.io/badge/R_Commander-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-a4c639?style=for-the-badge&logo=androidstudio&logoColor=white)
-![Unreal](https://img.shields.io/badge/Unreal-000000?style=for-the-badge&logo=unrealengine&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-a4c639?style=for-the-badge&logo=rcommander&logoColor=white)
+![Unreal](https://img.shields.io/badge/Unreal-4169E1?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-ff8000?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Openmarkov](https://img.shields.io/badge/Openmarkov-00979D?style=for-the-badge&logo=openmarkov&logoColor=white)
 
