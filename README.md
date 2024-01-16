@@ -75,6 +75,7 @@
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-a4c639?style=for-the-badge&logo=androidstudio&logoColor=white)
 ![Unreal](https://img.shields.io/badge/Unreal-000000?style=for-the-badge&logo=unrealengine&logoColor=white)
+![Openmarkov](https://img.shields.io/badge/Openmarkov-00979D?style=for-the-badge&logo=openmarkov&logoColor=white)
 
 ## ⚡ Others
 
