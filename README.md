@@ -84,7 +84,7 @@
 
 ![GitHub Statistics](https://github-readme-stats-eight-theta.vercel.app/api?username=miguelglez8&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
 
-<img src="multimedia/scoffield.gif" alt="gif" width="305" height=auto>
+<img src="multimedia/scoffield.gif" alt="gif" width="300" height=auto>
 
 ![Profile View Counter](https://komarev.com/ghpvc/?username=miguelglez8)
 ![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000)
