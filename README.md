@@ -65,7 +65,7 @@
 ![Pyscripter](https://img.shields.io/badge/Pyscripter-00bb2d?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 ![Anaconda](https://img.shields.io/badge/Anaconda-12349H?style=for-the-badge&logo=anaconda&logoColor=white)
-![Mathlab](https://img.shields.io/badge/Mathlab-ff0000?style=for-the-badge&logo=mathlab&logoColor=white)
+![Matlab](https://img.shields.io/badge/Matlab-ff0000?style=for-the-badge&logo=matlab&logoColor=white)
 ![MobaXTerm](https://img.shields.io/badge/MobaXTerm-b79b7d?style=for-the-badge&logo=mobaxterm&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-b582e7?style=for-the-badge&logo=virtualbox&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-248dbc?style=for-the-badge&logo=wordpress&logoColor=white)
