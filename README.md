@@ -58,7 +58,6 @@
 ## 💎 Software and Editors
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Visual Paradigm](https://img.shields.io/badge/Visual_Paradigm-FF0000?style=for-the-badge&logo=visual%20paradigm&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
@@ -67,6 +66,7 @@
 ![Pyscripter](https://img.shields.io/badge/Pyscripter-00bb2d?style=for-the-badge&logo=pyscripter%20idea&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 ![Anaconda](https://img.shields.io/badge/Anaconda-12349H?style=for-the-badge&logo=anaconda&logoColor=white)
+![Visual Paradigm](https://img.shields.io/badge/Visual_Paradigm-FF0000?style=for-the-badge&logo=visual%20paradigm&logoColor=white)
 ![Matlab](https://img.shields.io/badge/Matlab-ff0000?style=for-the-badge&logo=matlab&logoColor=white)
 ![MobaXTerm](https://img.shields.io/badge/MobaXTerm-b79b7d?style=for-the-badge&logo=mobaxterm&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-b582e7?style=for-the-badge&logo=virtualbox&logoColor=white)
