@@ -48,7 +48,7 @@
 ![Linux](https://img.shields.io/badge/Linux-ABC157?style=for-the-badge&logo=linux&logoColor=white)
 ![ANTLR4](https://img.shields.io/badge/ANTLR4-6495ed?style=for-the-badge&logo=antlr4&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-F66624?style=for-the-badge&logo=express&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-4D4D4D?style=for-the-badge&logo=vite&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-9F00FF?style=for-the-badge&logo=vite&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80102?style=for-the-badge&logo=oracle&logoColor=white)
 ![JQuery](https://img.shields.io/badge/jquery-6DA55F?style=for-the-badge&logo=jquery&logoColor=white) 
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
