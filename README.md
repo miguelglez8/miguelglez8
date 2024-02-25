@@ -54,7 +54,7 @@
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-000000?style=for-the-badge&logo=socket.io&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-0000ff ?style=for-the-badge&logo=webrtc&logoColor=white)
+![WebRTC](https://img.shields.io/badge/WebRTC-0000ff?style=for-the-badge&logo=webrtc&logoColor=white)
 ![Kotin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
 ![PDDL](https://img.shields.io/badge/pddl-4D4D4D?style=for-the-badge&logo=pddl&logoColor=white)
 
@@ -80,7 +80,7 @@
 ![R Commander](https://img.shields.io/badge/R_Commander-0000FF?style=for-the-badge&logo=rcommander&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-a4c639?style=for-the-badge&logo=androidstudio&logoColor=white)
-![Unreal](https://img.shields.io/badge/Unreal-4169E1?style=for-the-badge&logo=unrealengine&logoColor=white)
+![Unreal](https://img.shields.io/badge/Unreal-000000?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-ff8000?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Openmarkov](https://img.shields.io/badge/Openmarkov-00979D?style=for-the-badge&logo=openmarkov&logoColor=white)
 
