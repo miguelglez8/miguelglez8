@@ -31,7 +31,7 @@
 ![MUI](https://img.shields.io/badge/mui-00446a.svg?style=for-the-badge&logo=mui&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-ff8c00.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-%23039BE5.svg?style=for-the-badge&logo=css3&logoColor=white)
-![XML](https://img.shields.io/badge/XML-%FF8000.svg?style=for-the-badge&logo=xml3&logoColor=white)
+![XML](https://img.shields.io/badge/XML-%ED760E.svg?style=for-the-badge&logo=xml3&logoColor=white)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
