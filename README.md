@@ -52,12 +52,9 @@
 ![Oracle](https://img.shields.io/badge/Oracle-F80102?style=for-the-badge&logo=oracle&logoColor=white)
 ![JQuery](https://img.shields.io/badge/jquery-6DA55F?style=for-the-badge&logo=jquery&logoColor=white) 
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-
-![Socket.IO](https://img.shields.io/badge/Socket.IO-3DDC84?style=for-the-badge&logo=socket.io&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-3DDC84?style=for-the-badge&logo=npm&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-3DDC84?style=for-the-badge&logo=webrtc&logoColor=white)
-![Websockets](https://img.shields.io/badge/Websockets-3DDC84?style=for-the-badge&logo=websockets&logoColor=white)
-
+![Socket.IO](https://img.shields.io/badge/Socket.IO-000000?style=for-the-badge&logo=socket.io&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
+![WebRTC](https://img.shields.io/badge/WebRTC-0000ff ?style=for-the-badge&logo=webrtc&logoColor=white)
 ![Kotin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
 ![PDDL](https://img.shields.io/badge/pddl-4D4D4D?style=for-the-badge&logo=pddl&logoColor=white)
 
