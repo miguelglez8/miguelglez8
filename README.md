@@ -26,7 +26,6 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-007acc?style=for-the-badge&logo=typescript&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-572364?style=for-the-badge&logo=c-sharp&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![React](https://img.shields.io/badge/React-007acc.svg?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-9F00FF?style=for-the-badge&logo=vite&logoColor=white)
 ![MUI](https://img.shields.io/badge/mui-00446a.svg?style=for-the-badge&logo=mui&logoColor=white)
