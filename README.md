@@ -73,7 +73,6 @@
 ![Azure](https://img.shields.io/badge/Azure-008ad7?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-00446a?style=for-the-badge&logo=virtualbox&logoColor=white)
 ![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge&logo=xampp&logoColor=white)
-![R Commander](https://img.shields.io/badge/R_Commander-191970?style=for-the-badge&logo=rcommander&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
 ![Unreal](https://img.shields.io/badge/Unreal-000000?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-ff8000?style=for-the-badge&logo=jupyter&logoColor=white)
