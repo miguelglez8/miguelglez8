@@ -43,7 +43,6 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r&logoColor=white) 
-![Ensamblador](https://img.shields.io/badge/assembly-6C355F?style=for-the-badge&logo=assembly&logoColor=white) 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-ABC157?style=for-the-badge&logo=linux&logoColor=white)
 ![ANTLR4](https://img.shields.io/badge/ANTLR4-6495ed?style=for-the-badge&logo=antlr4&logoColor=white)
@@ -54,7 +53,6 @@
 ![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
 ![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
 ![WebRTC](https://img.shields.io/badge/WebRTC-0000ff?style=for-the-badge&logo=webrtc&logoColor=white)
-![PDDL](https://img.shields.io/badge/pddl-4D4D4D?style=for-the-badge&logo=pddl&logoColor=white)
 
 ## 💎 Software and Editors
 
@@ -74,7 +72,6 @@
 ![MobaXTerm](https://img.shields.io/badge/MobaXTerm-b79b7d?style=for-the-badge&logo=mobaxterm&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-008ad7?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-00446a?style=for-the-badge&logo=virtualbox&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-248dbc?style=for-the-badge&logo=wordpress&logoColor=white)
 ![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge&logo=xampp&logoColor=white)
 ![R Commander](https://img.shields.io/badge/R_Commander-191970?style=for-the-badge&logo=rcommander&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
