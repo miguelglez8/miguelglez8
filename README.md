@@ -35,6 +35,7 @@
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+![WebRTC](https://img.shields.io/badge/WebRTC-0000ff?style=for-the-badge&logo=webrtc&logoColor=white)
 ![JDBC](https://img.shields.io/badge/JDBC-12379F?style=for-the-badge&logo=jdbc&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-ff8c00?style=for-the-badge&logo=jpa&logoColor=white)
 ![Elastic Search](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
@@ -52,7 +53,6 @@
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
 ![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-0000ff?style=for-the-badge&logo=webrtc&logoColor=white)
 
 ## 💎 Software and Editors
 
@@ -77,7 +77,6 @@
 ![Unity](https://img.shields.io/badge/Unity-808080?style=for-the-badge&logo=unity&logoColor=white)
 ![Unreal](https://img.shields.io/badge/Unreal-000000?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-ff8000?style=for-the-badge&logo=jupyter&logoColor=white)
-![Openmarkov](https://img.shields.io/badge/Openmarkov-00979D?style=for-the-badge&logo=openmarkov&logoColor=white)
 
 ## ⚡ Others
 
