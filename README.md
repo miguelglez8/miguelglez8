@@ -38,6 +38,8 @@
 ![WebRTC](https://img.shields.io/badge/WebRTC-0000ff?style=for-the-badge&logo=webrtc&logoColor=white)
 ![JDBC](https://img.shields.io/badge/JDBC-12379F?style=for-the-badge&logo=jdbc&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-ff8c00?style=for-the-badge&logo=jpa&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00758f?style=for-the-badge&logo=mysql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFA500?style=for-the-badge&logo=firebase&logoColor=white)
 ![Elastic Search](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/Neo4j-018bff?style=for-the-badge&logo=neo4j&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
@@ -52,7 +54,6 @@
 ![JQuery](https://img.shields.io/badge/jquery-6DA55F?style=for-the-badge&logo=jquery&logoColor=white) 
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
-![Firebase](https://img.shields.io/badge/Firebase-FFA500?style=for-the-badge&logo=firebase&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
 
 ## 💎 Software and Editors
