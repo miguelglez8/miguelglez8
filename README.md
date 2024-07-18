@@ -46,6 +46,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
 ![R](https://img.shields.io/badge/r-%23039BE5.svg?style=for-the-badge&logo=r&logoColor=white) 
+![Docker](https://img.shields.io/badge/Docker-0000ff?style=for-the-badge&logo=docker&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-%23D2a54b.svg?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-ABC157?style=for-the-badge&logo=linux&logoColor=white)
 ![ANTLR4](https://img.shields.io/badge/ANTLR4-6495ed?style=for-the-badge&logo=antlr4&logoColor=white)
