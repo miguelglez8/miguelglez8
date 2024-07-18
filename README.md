@@ -52,6 +52,7 @@
 ![JQuery](https://img.shields.io/badge/jquery-6DA55F?style=for-the-badge&logo=jquery&logoColor=white) 
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
+![Firebase](https://img.shields.io/badge/Firebase-FFFF00?style=for-the-badge&logo=firebase&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CC3534?style=for-the-badge&logo=npm&logoColor=white)
 
 ## 💎 Software and Editors
