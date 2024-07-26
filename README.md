@@ -8,7 +8,7 @@
 ## 🧐 About me
 
 - 🔭 I just finished my studies about Software Engineering in Oviedo
-- 🌱 I’m currently working in NTTDATA
+- 🌱 I also worked in NTTDATA about Digital Arquitecture
 - 🤔 I’m looking for help with Back-end development
 - 👯 I’m also interested in Data
 
