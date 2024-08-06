@@ -1,6 +1,6 @@
 ### Hi 👋, I am Miguel Gonzalez Navarro 🚀
 
-### I am Software Developer 💥
+### I am Software Engineer 👨‍💻
 
 ![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=red)
 ![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=green)
