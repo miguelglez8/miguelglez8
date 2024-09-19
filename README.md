@@ -7,10 +7,9 @@
 
 ## 🧐 About me
 
-- 🔭 I just finished my studies about Software Engineering in Oviedo
-- 🌱 I also worked in NTTDATA about Digital Arquitecture
-- 🤔 I’m looking for help with Back-end development
-- 👯 I’m also interested in Data
+My name is Miguel González Navarro, I am 21 years old, and I am a Software Engineer. Throughout my academic training, I have acquired a solid foundation in mathematics, programming, and a strong interest in back-end development, as well as in data engineering and management. I consider myself a talented software developer with experience in building microservices using technologies like Java and Spring Boot, and managing both relational and non-relational databases.
+
+I am excited about the opportunity to apply my skills in a real work environment, where I can contribute significantly to innovative projects. I am passionate about designing and developing efficient and scalable systems, which has sparked my growing interest in the field of digital architecture. I believe this area is essential for creating sustainable technological solutions, and I would like to continue learning and specialize in this discipline.
 
 ## 🤝 Contacts
 
