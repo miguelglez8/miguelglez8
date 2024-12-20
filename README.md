@@ -39,7 +39,7 @@ I am excited about the opportunity to apply my skills in a real work environment
 ![JDBC](https://img.shields.io/badge/JDBC-12379F?style=for-the-badge&logo=jdbc&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-ff8c00?style=for-the-badge&logo=jpa&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-00758f?style=for-the-badge&logo=sql&logoColor=white)
-![Liferay](https://img.shields.io/badge/Liferay-0000ff.svg?style=for-the-badge&logo=liferay&logoColor=white)
+![Liferay](https://img.shields.io/badge/Liferay-0000ff.svg?style=for-the-badge&logo=liferaydxp&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFA500?style=for-the-badge&logo=firebase&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/Neo4j-018bff?style=for-the-badge&logo=neo4j&logoColor=white)
 ![Elastic Search](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
