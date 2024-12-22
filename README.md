@@ -7,9 +7,13 @@
 
 ## 🧐 About me
 
-My name is Miguel González Navarro, I am 22 years old, and I am a Software Engineer. Throughout my academic training, I have acquired a solid foundation in mathematics, programming, and a strong interest in back-end development, as well as in data engineering and management. I consider myself a talented software developer with experience in building microservices using technologies like Java and Spring Boot, and managing both relational and non-relational databases.
+Software Engineer with extensive experience in application development using technologies such as JavaScript, React, Docker, Spring, Java, Python, JSP, and HTML. I have a solid background in mathematics, programming, and system design. I have participated in a wide range of projects, from web solutions to distributed applications and microservices. Additionally, I have worked with relational and non-relational databases, and I have experience with cloud platforms like AWS and Firebase, where I have designed and deployed scalable and efficient solutions tailored to project needs.
 
-I am excited about the opportunity to apply my skills in a real work environment, where I can contribute significantly to innovative projects. I am passionate about designing and developing efficient and scalable systems, which has sparked my growing interest in the field of digital architecture. I believe this area is essential for creating sustainable technological solutions, and I would like to continue learning and specialize in this discipline.
+Currently, my focus is on web development, with a particular emphasis on backend. I participate in creating custom portals, integrating services, and optimizing user experience in Liferay 7.4.
+
+I am especially interested in designing and developing efficient and scalable systems, which has led me to explore the field of digital architecture and its role in creating sustainable technological solutions.
+
+Passionate about technological innovation and driven by solving complex problems, I actively participate in personal and collaborative projects that aim to drive technological progress.
 
 ## 🤝 Contacts
 
