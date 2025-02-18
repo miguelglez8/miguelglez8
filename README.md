@@ -17,6 +17,8 @@ Passionate about technological innovation and driven by solving complex problems
 
 ## 🤝 Contacts
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/miguelgonzaleznavarro)
+
 - 📫 How to reach me: UO282337@uniovi.es
 - 👀 Also in gmail: miguemoreda@gmail.com
 
