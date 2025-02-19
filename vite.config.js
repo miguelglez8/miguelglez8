@@ -7,6 +7,6 @@ export default defineConfig({
       crypto: 'crypto-browserify'
     }
   },
+  base: "/miguelglez8",
   plugins: [react()],
-  base: "./"
 });
