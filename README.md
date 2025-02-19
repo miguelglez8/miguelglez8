@@ -96,4 +96,4 @@ Passionate about technological innovation and driven by solving complex problems
 <img src="public/multimedia/scoffield.gif" alt="gif" width="300" height=auto>
 
 ![Profile View Counter](https://komarev.com/ghpvc/?username=miguelglez8)
-![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000)
+![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000) 
