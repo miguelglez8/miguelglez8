@@ -1,5 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "miguelglez8",
+  "description": "My personal portfolio",
+  "author": "Miguel González Navarro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +13,10 @@
   },
   "dependencies": {
     "crypto-browserify": "^3.12.1",
+    "lucide-react": "^0.475.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

@@ -1,40 +1,29 @@
 import "react";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./styles.css";
+import NavBar from "./views/NavBar.jsx";
+import About from "./views/About.jsx";
+import Init from "./views/Init.jsx";
+import Portfolio from "./views/Portfolio.jsx";
+import Contact from "./views/Contact.jsx";
+import Footer from "./views/Footer.jsx";
+import { ABOUT_PATH, BASE_PATH, CONTACT_PATH, PORTFOLIO_PATH } from "./routes/routes.js";
 
-function App() {
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Mi Portfolio</h1>
-                <section>
-                    <h2>Sobre mí</h2>
-                    <p>
-                        Soy un desarrollador web con experiencia en React y tecnologías modernas. Este es mi portfolio basado en mi CV.
-                    </p>
-                </section>
-                <section>
-                    <h2>Experiencia</h2>
-                    <ul>
-                        <li>Desarrollador Frontend en Empresa X (2020-2023)</li>
-                        <li>Desarrollador Backend en Empresa Y (2018-2020)</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Habilidades</h2>
-                    <ul>
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>CSS, HTML</li>
-                        <li>Node.js</li>
-                        <li>Git</li>
-                    </ul>
-                </section>
-                <footer>
-                    <p>Contacto: tuemail@dominio.com</p>
-                </footer>
-            </header>
-        </div>
+        <Router>
+            <div className="app-container">
+                <NavBar />
+                <Routes>
+                    <Route path={BASE_PATH} element={<Init />} />
+                    <Route path={ABOUT_PATH} element={<About />} />
+                    <Route path={PORTFOLIO_PATH} element={<Portfolio />} />
+                    <Route path={CONTACT_PATH} element={<Contact />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
     );
-}
+};
 
 export default App;
