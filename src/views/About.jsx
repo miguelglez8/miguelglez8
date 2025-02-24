@@ -1,6 +1,6 @@
 const About = () => (
     <section className="about">
-        <h2>Sobre Mí</h2>
+        <h2>Información</h2>
         <p>Soy Ingeniero Técnico Informático de Software con amplia experiencia en el
             desarrollo de aplicaciones utilizando tecnologías como JavaScript, React, Docker,
             Spring, Java, JSP y HTML. Cuento con una sólida formación en matemáticas,
@@ -43,12 +43,38 @@ const About = () => (
 
         <h3>Cursos y Certificaciones</h3>
         <ul>
-            <li>Liferay DXP 7.4 Frontend & Backend Advanced Developer</li>
-            <li>Aprovechamiento de un curso de Grado de Seguridad de Sistemas Informáticos</li>
-            <li>Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot</li>
-            <li>Fundamentos en DevOps, APIs y Arquitectura de Microservicios</li>
-            <li>Permiso de conducir B</li>
-            <li>Prevención de Riesgos Laborales de Personal de Oficinas</li>
+            <li>
+                <strong>Liferay DXP 7.4 Frontend & Backend Advanced Developer</strong> (Liferay)<br/>
+                📅 <strong>Expedición:</strong> Noviembre 2024<br/>
+                🔗 <a href="https://learn.liferay.com/w/reference/liferay-university" target="_blank">Ver curso</a>
+            </li>
+            <li>
+                <strong>Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot</strong> (Udemy)<br/>
+                📅 <strong>Expedición:</strong> Mayo 2024<br/>
+                🔗 <a href="https://nttdatalearn.udemy.com/certificate/UC-8d4bae7c-940d-4cde-af62-9bbf33875be5/"
+                     target="_blank">Ver certificado</a>
+            </li>
+            <li>
+                <strong>Fundamentos en DevOps, APIs y Arquitectura de Microservicios</strong> (Udemy)<br/>
+                📅 <strong>Expedición:</strong> Abril 2024<br/>
+                🔗 <a href="https://nttdatalearn.udemy.com/certificate/UC-65cf7da0-97d6-4671-a4ef-7d3040236c6b/"
+                     target="_blank">Ver certificado</a>
+            </li>
+            <li>
+                <strong>Curso de Grado en Seguridad de Sistemas Informáticos</strong> (Universidad de Oviedo)<br/>
+                📅 <strong>Expedición:</strong> Junio 2023<br/>
+                🔗 <a
+                href="https://www.campusvirtual.uniovi.es/badges/badge.php?hash=1449850ff7707c0d5b1a095a0020646ff52f649b"
+                target="_blank">Ver certificado</a>
+            </li>
+            <li>
+                <strong>Prevención de Riesgos Laborales de Personal de Oficinas</strong><br/>
+                📅 <strong>Expedición:</strong> Noviembre 2024
+            </li>
+            <li>
+                <strong>Permiso de Conducir B</strong> (Dirección General de Tráfico)<br/>
+                📅 <strong>Expedición:</strong> Agosto 2021<br/>
+            </li>
         </ul>
 
         <h3>Tecnologías</h3>
