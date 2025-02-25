@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* === GENERAL === */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -20,15 +21,15 @@ section {
   margin: 20px;
 }
 
-/* === FOOTER MODERNO, SIMILAR A NAVBAR === */
+/* === FOOTER === */
 footer {
-  background-color: white; /* Igual que la navbar */
-  color: #333; /* Texto oscuro */
+  background-color: white;
+  color: #333;
   padding: 20px 0;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior */
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
@@ -58,7 +59,6 @@ footer {
   transition: color 0.3s ease-in-out;
 }
 
-/* Efecto de subrayado al pasar el mouse (como en navbar) */
 .footer-links a::after {
   content: "";
   display: block;
