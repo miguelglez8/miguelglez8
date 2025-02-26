@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import {BASE_PATH} from "./src/routes/routes.js";
 
 export default defineConfig({
   resolve: {
@@ -7,6 +8,6 @@ export default defineConfig({
       crypto: 'crypto-browserify'
     }
   },
-  base: "/miguelglez8",
+  base: BASE_PATH,
   plugins: [react()],
 });

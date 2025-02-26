@@ -1,5 +1,12 @@
-import LinkedInIcon from "../icons/LinkedInIcon.jsx";
-import GitHubIcon from "../icons/GitHubIcon.jsx";
+import ProfileImage from "../components/init/ProfileImage.jsx";
+import InfoSection from "../components/init/InfoSection.jsx";
+import SocialLinks from "../components/init/SocialLinks.jsx";
+import cvData from '../data/cvData.js';
+
+const socialLinks = [
+    { url: cvData.personal.linkedin, icon: "linkedin" },
+    { url: cvData.personal.github, icon: "github" }
+];
 
 const Init = () => (
     <section
@@ -12,20 +19,7 @@ const Init = () => (
             padding: "20px",
         }}
     >
-        <div style={{ flexShrink: 0, marginRight: "30px" }}>
-            <img
-                src="/images/foto.jpg"
-                alt="Foto de Miguel González Navarro"
-                style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                    objectFit: "cover",
-                    border: "5px solid #ddd",
-                }}
-            />
-        </div>
-
+        <ProfileImage src={cvData.personal.profileImage} alt={"Foto de " + cvData.personal.name} />
         <div
             style={{
                 backgroundColor: "#fff",
@@ -39,49 +33,28 @@ const Init = () => (
                 justifyContent: "center",
             }}
         >
-            <h1 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "10px" }}>
-                Miguel González Navarro
-            </h1>
-            <h2 style={{ fontSize: "20px", color: "#555", marginBottom: "15px" }}>
-                Ingeniero de Software
-            </h2>
-            <p style={{ fontSize: "18px", color: "#777", marginBottom: "25px" }}>
-                📍 Moreda de Aller, Asturias (España)
-            </p>
-
-            <div style={{ display: "flex", gap: "20px", marginBottom: "15px" }}>
-                <a
-                    href="https://www.linkedin.com/in/miguelgonzaleznavarro"
-                    style={{ marginLeft: "5px" }}
-                >
-                    <LinkedInIcon size={50} color="#0077B5" />
-                </a>
-                <a href="https://github.com/miguelglez8" style={{ marginLeft: "5px" }}>
-                    <GitHubIcon size={50} color="#000000" />
-                </a>
-            </div>
-
-            <div style={{ marginBottom: "20px" }}>
-                <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "8px" }}>
-                    Idiomas
-                </h3>
+            <h1 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "10px" }}>{cvData.personal.name}</h1>
+            <h2 style={{ fontSize: "20px", color: "#555", marginBottom: "15px" }}>{cvData.personal.job}</h2>
+            <p style={{ fontSize: "18px", color: "#777", marginBottom: "25px" }}>📍 {cvData.personal.location} ({cvData.personal.country})</p>
+            <SocialLinks links={socialLinks} />
+            <InfoSection title="Idiomas">
                 <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                    <li style={{ marginBottom: "8px", fontSize: "18px" }}>🇪🇸 Español (Nativo)</li>
-                    <li style={{ fontSize: "18px" }}>🇬🇧 Inglés (Nivel intermedio)</li>
+                    {cvData.personal.languages.map((lang, index) => (
+                        <li key={index} style={{ marginBottom: "8px", fontSize: "18px" }}>
+                            {lang.emoji} {lang.language} ({lang.level})
+                        </li>
+                    ))}
                 </ul>
-            </div>
-
-            <div>
-                <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "8px" }}>
-                    Principales Aptitudes
-                </h3>
+            </InfoSection>
+            <InfoSection title="Principales Aptitudes">
                 <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                    <li style={{ marginBottom: "8px", fontSize: "18px" }}>💻 Desarrollo de software</li>
-                    <li style={{ marginBottom: "8px", fontSize: "18px" }}>🤝 Trabajo en equipo</li>
-                    <li style={{ marginBottom: "8px", fontSize: "18px" }}>☕ Java</li>
-                    <li style={{ fontSize: "18px" }}>🔧 Git</li>
+                    {cvData.personal.skills.map((skill, index) => (
+                        <li key={index} style={{ marginBottom: "8px", fontSize: "18px" }}>
+                            {skill.emoji} {skill.skill}
+                        </li>
+                    ))}
                 </ul>
-            </div>
+            </InfoSection>
         </div>
     </section>
 );
