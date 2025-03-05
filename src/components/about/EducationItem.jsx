@@ -1,4 +1,4 @@
-const EducationItem = ({ logo, alt, title, institution, location, period, details, link }) => (
+const EducationItem = ({ logo, alt, title, institution, location, period, details, link, text }) => (
     <li style={{ display: "flex", alignItems: "flex-start", marginBottom: "20px" }}>
         <img
             src={logo}
@@ -22,7 +22,7 @@ const EducationItem = ({ logo, alt, title, institution, location, period, detail
                                     target="_blank"
                                     style={{ color: "#2563eb", fontWeight: "bold" }}
                                 >
-                                    Más información
+                                    {text}
                                 </a>
                                 )
                             </span>

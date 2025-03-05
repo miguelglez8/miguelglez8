@@ -1,8 +1,7 @@
 import ProjectLinks from "./ProjectLinks.jsx";
 import Badge from "./Badge.jsx";
-import { CheckCircle, Calendar, Wrench } from "lucide-react";
 
-const ProjectCard = ({ image, title, role, date, status, statusColor, technologies, links }) => {
+const ProjectCard = ({ image, title, role, date, status, statusColor, technologies, links, statusIcon }) => {
     return (
         <div
             style={{
@@ -39,9 +38,7 @@ const ProjectCard = ({ image, title, role, date, status, statusColor, technologi
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "15px" }}>
                     <p style={{ fontSize: "18px", color: "#777" }}>{date}</p>
                     <Badge text={status} color={statusColor} />
-                    {status === "En Progreso" && <Calendar size={18} color="#2563eb"/>}
-                    {status === "Terminado" && <CheckCircle size={18} color="#16A34A"/>}
-                    {status === "En Mantenimiento" && <Wrench size={18} color="#F59E0B"/>}
+                    {statusIcon}
                 </div>
 
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "20px" }}>
