@@ -1,0 +1,123 @@
+{
+  "availableLanguageIds": [
+    "es_ES"
+  ],
+  "defaultLanguageId": "es_ES",
+  "fields": [
+    {
+      "label": {
+        "es_ES": "Título video"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "TituloVideo",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "es_ES": "Descripción del video"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "DescripcionDelVideo",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "es_ES": "Iframe Video"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": "Inserta el codigo de iframe para mostrar el video. Ayuda: https://vimeo.zendesk.com/hc/es/articles/360000710167-Acceso-y-edici%C3%B3n-de-c%C3%B3digos-de-inserci%C3%B3n"
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "IframeVideo",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "es_ES": "Mostrar al administrador"
+      },
+      "predefinedValue": {
+        "es_ES": false
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": "Activar para que este video lo puedan ver los administradores de la empresa."
+      },
+      "dataType": "boolean",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "MostrarAlAdministrador",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "checkbox"
+    },
+    {
+      "label": {
+        "es_ES": "Mostrar al usuario"
+      },
+      "predefinedValue": {
+        "es_ES": false
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": "Activar para que este video lo puedan ver los usuarios de la empresa."
+      },
+      "dataType": "boolean",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "MostrarAlUsuario",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "checkbox"
+    }
+  ]
+}

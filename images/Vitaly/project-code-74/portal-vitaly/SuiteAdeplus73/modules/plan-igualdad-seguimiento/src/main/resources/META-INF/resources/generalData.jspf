@@ -1,0 +1,85 @@
+
+	<div class="row mb-4">
+		<div class="form-group col-md-2 col-lg-2 col-12 required">
+	        <aui:select name="<%=PlanIgualdadSeguimientoPortletKeys.MATTER%>" label="planigualdadseguimiento.form.matter" required="true"> 
+				<aui:option value="">
+	       			<liferay-ui:message key="planigualdadseguimiento.select"/>
+	       		</aui:option>
+				<c:forEach items="${categoriasList}" var="categoria">
+                	<aui:option value="${categoria.codigo }">
+                  		<liferay-ui:message key="${categoria.descripcion }"/>
+              		</aui:option>
+              	</c:forEach>
+			</aui:select>
+	    </div>
+	    <div class="form-group col-md-8 col-lg-8 col-12 required">
+	    	<aui:input type="text" label="planigualdadseguimiento.form.measure-name" name="<%=PlanIgualdadSeguimientoPortletKeys.MEASURE_NAME %>">
+	 			<aui:validator name="required" />
+	 		</aui:input>
+	    </div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 required">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.measure-description" name="<%=PlanIgualdadSeguimientoPortletKeys.MEASURE_DESCRIPTION %>" >
+	          	<aui:validator name="required" />
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	   		</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 required">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.objetives-pursued" name="<%=PlanIgualdadSeguimientoPortletKeys.OBJECTIVES_PURSUED %>" >
+	          	<aui:validator name="required" />
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	   		</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-2 col-lg-2 col-12 required">
+		   	<aui:select name="<%=PlanIgualdadSeguimientoPortletKeys.PRIORITY%>" label="planigualdadseguimiento.priority" required="true"> 
+				<aui:option value="">
+		        	<liferay-ui:message key="planigualdadseguimiento.select"/>
+		    	</aui:option>
+				<c:forEach items="${prioridadesList}" var="prioridad">
+	            	<aui:option value="${prioridad.codigo }">
+	             		<liferay-ui:message key="${prioridad.descripcion }"/>
+	           		</aui:option>
+	        	</c:forEach>
+			</aui:select>
+		</div>
+		<div class="form-group col-md-2 col-lg-2 col-12 required">
+			<div>
+				<label><liferay-ui:message key="planigualdadseguimiento.apply"/></label>
+			</div>
+			<fieldset>
+				<div class="checksBorder input-group-inline">
+					<div class="custom-control custom-radio mr-4">
+					  	<aui:input label="planigualdadseguimiento.apply.yes" checked="true" class="form-check-input" name="<%=PlanIgualdadSeguimientoPortletKeys.APPLY %>" value="Si" type="radio">
+					  		<aui:validator name="required" />
+					  	</aui:input>
+					</div>
+					<div class="custom-control custom-radio mr-4">
+					 	<aui:input label="planigualdadseguimiento.apply.no" class="form-check-input" name="<%=PlanIgualdadSeguimientoPortletKeys.APPLY %>" value="No" type="radio">
+					 		<aui:validator name="required" />
+					 	</aui:input>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 required">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.associated-resources" name="<%=PlanIgualdadSeguimientoPortletKeys.ASSOCIATED_RESOURCES %>" >
+	           	<aui:validator name="required" />
+	         	<aui:validator name="maxLength">3000</aui:validator>
+	     	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 required">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.monitoring-indicators" name="<%=PlanIgualdadSeguimientoPortletKeys.MONITORING_INDICATORS %>" >
+	          	<aui:validator name="required" />
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	      	</aui:input>
+		</div>
+	</div>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "erp-gke-318611",
+  "private_key_id": "72cf34ab0875833107b14ba0a85c430edd11140a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCzwL4ep3rdK7Dq\nB3347o1SaYwhE5IRD/uV5jiR0YGpFtIFIwtvNoxDqR0UCnHPw7fJkevJy55NVpf/\nUHs/P6zJ6ObVepKMrJ/RtA79clBBntLAxt+2tYmvXza/NoNn0TdshDk44aMOeMPO\nEUA7BRCTrUzzrHR3qGUbA7cowfe4II5Nb2QgC3gusU4o6+AqpayLXpA2vUUYrCYn\n8lC32omkQeqc86g2fFie/G1NX6FMF/VlYiQNHsC7R5YrUwhR+23TAlMdiARUgZnl\n0bL27OvwnJPkAeD7N2DimC1b2cUB/brFgMljkVZtXxuHBtLM/zpmdCW5LySvUtEE\nSBp+4wDRAgMBAAECggEAGvmizmDd3FERNJ25NuE9zg9O2yvfsLXQUJeDB8cECUcG\nb4Tp01/BPuojFf3XRJGfhB1k4ByxffOvzb3bMQuyN36/HWxOj9PcDBFUao58Iszd\n3dY6fmXR6sKEKb/ZinvoMF3LZJDf8m0HHWaTWAgTi8XnFW5c8BQSUDKHixNIxJXF\nwrIcpr3qpYP2i/EpTlLiT0sajy9RRIzbC3Wl4jcYG6vdbmQ5HqwggmNE5KgldV8K\nw6Dxe/5huu8RBQi/BPg4dTRCc1PPqcd9IbjzydRcLIiZF2gciSroEZ8qrS/eaoI6\nGOdJ2gJNBAE7CiTzaSBo9p/GeWNxyzNLm3X5XmeTzQKBgQDW8TLME3O6hfZ8DjcQ\nb38Lb8n5N0Xi/9cs6SXP2Yr3lgx3m5KifFaTZZRIQERrfV1a+Kz/SmSN2CCAKOlO\ndpEK955su9+jGugxyLZcoW4ApJunElow5a9uvs1HpDpCIkOxqPcdOfCuy0HWqY95\np0J6VuQMXSD52H83CCWNtkqzpwKBgQDWFsRuy9e2EsIOKCUl9EEwXpHO+tYXu/Sc\nJ9lNDBjmcv7jhjDAGdn+bHTW/Z4isDxAqFKeeeZ7bFwBUDiiDCmdGZUAIqjZO0mG\nRsB0e1a6wTG9eKD/73A6ElIWM3UKm53ocOpTjO0Tpc3aFRdqRdYZwex5o24oysXI\n7CNB1bcWxwKBgHh/7i90tEuccKvpuDsRltLNkBiUQSzaq0I1TwpwdjUJPOINKK7J\nMCwgJXo/9Vuhg6XNhgb1KNxQjx/qT6m6VOQmH/3rcZvaKNRIJtxVb/sSTWTjqAaD\nrc9TTnhcfIC4/uRpymfrJKCJuNZkZtgXyfAWKHE6AJOxKNisS4lf6g8/AoGAEelH\nt+lP+8in+Z08NmewCIbw9fsgbE3qUiI3WO3ZK3aVgp2YeInxJgsW32HKmCZcdCBh\nASc7tDnFnMqEYnJYDO+1+pPrwnjmVtiWg2hKQkeljK+J8L+siP89ZOQbN677UBYa\nVLEmqI0nosY+9kIvfmouCaM1tS35zCyNapWhwsMCgYA42Rk8m4doeIumbXqv/DWr\nU2sXR7qkIe/z/maHfRpzjf4xT87TUUaTjpsjyyVeZMA36HOoI///xaf9qiFwnZUn\nrNi8MDMFNgeEgDocY0jDI1pkUuDnO/vXC454TSs8CoRZDiCX5IqcLVcQNL7QG8Eq\nDMDw586O+qeV/VlDlVtXnQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "suite-adeplus@erp-gke-318611.iam.gserviceaccount.com",
+  "client_id": "118328677498025523163",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/suite-adeplus%40erp-gke-318611.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

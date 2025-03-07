@@ -1,0 +1,1 @@
+texto="La contrase&ntilde;a debe tener al menos 8 caracteres con may&#250;sculas, min&#250;sculas y n&#250;meros.";

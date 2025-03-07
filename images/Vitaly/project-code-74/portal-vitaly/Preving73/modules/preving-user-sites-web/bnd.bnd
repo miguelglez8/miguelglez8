@@ -1,0 +1,4 @@
+Bundle-Name: preving-user-sites-web
+Bundle-SymbolicName: com.preving.liferay.portlet.user.sites.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.user.sites.web.constants

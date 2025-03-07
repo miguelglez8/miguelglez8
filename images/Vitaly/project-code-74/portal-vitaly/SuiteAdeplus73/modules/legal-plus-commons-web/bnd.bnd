@@ -1,0 +1,6 @@
+Bundle-Name: legal-plus-commons-web
+Bundle-SymbolicName: com.legalplus.liferay.portlet.commons.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.commons.web.role, \
+                com.legalplus.liferay.portlet.commons.web.version, \
+                com.legalplus.liferay.portlet.commons.web.constants

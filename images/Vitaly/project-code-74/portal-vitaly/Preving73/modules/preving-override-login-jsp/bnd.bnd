@@ -1,0 +1,4 @@
+Bundle-Name: preving-login-override-jsp
+Bundle-SymbolicName: com.preving.liferay.login.override.jsp
+Bundle-Version: 1.0.0
+-sources: true

@@ -1,0 +1,39 @@
+<%@ include file="js/main-js.jsp" %>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group required">
+            <aui:input id="asunto" name="<%=DenunciaPortletKeys.ASUNTO%>" type="text" label="denuncia.view.detalle.asunto" >
+                <aui:validator name="maxLength">300</aui:validator>
+                <aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                   
+                </aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group required">
+            <aui:input id="descripcion" name="<%=DenunciaPortletKeys.DESCRIPTION%>" type="textarea" label="denuncia.view.detalle.description" >
+                <aui:validator name="maxLength">3000</aui:validator>
+                <aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                    
+                </aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-11 pr-0" onclick="addFileDenuncia()">
+			<fieldset class="input-group">
+				<div class="form-group input-text-wrapper">
+					<aui:input name="<%=DenunciaPortletKeys.ADJUNTO%>" label="denuncia.view.detalle.select.file" type="file">
+                		<aui:validator name="acceptFiles">'jpg,png,pdf,txt,xlsx,docx'</aui:validator>
+            		</aui:input>
+					<aui:input name="selectedFileDenuncia" id="selectedFileDenuncia" type="hidden" value="false">
+					</aui:input>
+				</div>
+			</fieldset>
+		</div>
+		
+		<div id="deleteAddFileDenuncia" class="form-group p-0 d-flex align-items-start">
+			<span class="btn-ico delete-ico margin-top-delete" onclick="deleteFileDenuncia()"></span>
+		</div>
+ </div>
+    

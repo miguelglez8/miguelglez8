@@ -1,0 +1,4 @@
+Bundle-Name: legal-plus-admin-legislaciones
+Bundle-SymbolicName: com.legalplus.liferay.portlet.admin.legislaciones.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.admin.legislaciones.web.constants

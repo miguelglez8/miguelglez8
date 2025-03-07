@@ -1,0 +1,33 @@
+<liferay-portlet:actionURL name="/consultant/save" var="addURL" />
+<div class="modal hide" id="addConsultant">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content">
+            <aui:form  name="add_form" action="<%=addURL.toString()%>" method="post">
+                <aui:input name="<%=AdminEmpresasPortletKeys.COMPANY_ID%>" value="" type="hidden" />
+                <div class="modal-header">
+                    <h5 class="modal-title"><liferay-ui:message key="company.view.new.consultant"/></h5>
+                    <button type="button" class="close hide-modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12" id="consultantsList">
+                            <aui:select name="<%=AdminEmpresasPortletKeys.USER_ID%>" label="company.view.consultant">
+                                <c:forEach items="<%=userList%>" var="user">
+                                    <aui:option value="${user.userId}">${user.fullName}</aui:option>
+                                </c:forEach>
+                                <aui:validator name="required"/>
+                            </aui:select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <aui:button value="cancel" cssClass="btn btn-outline-primary mr-4 hide-modal" primary="true"></aui:button>
+                    <aui:button type="submit" value="company.view.accept" cssClass="btn btn-primary"/>
+                </div>
+            </aui:form>
+        </div>
+    </div>
+</div>

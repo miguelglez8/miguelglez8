@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.Activity">
+		<field name="activityId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="type" type="int" />
+		<field localized="true" name="name" type="String" />
+		<field name="workTime" type="boolean" />
+		<field name="color" type="String" />
+		<field name="active" type="boolean" />
+		<field name="observations" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="usersToInform" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="infoRespo" type="boolean" />
+		<field name="infoUser" type="boolean" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.Audit">
+		<field name="auditId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="date" type="Date" />
+		<field name="action" type="String" />
+		<field name="description" type="String" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.CompanyConf">
+		<field name="companyConfId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="contracId" type="long" />
+		<field name="cif" type="String" />
+		<field name="source" type="String" />
+		<field name="notificationNotWorkable" type="boolean" />
+		<field name="notificationFinishDateSign" type="boolean" />
+		<field name="notificationAdminPeriodicity" type="String" />
+		<field name="maxHoursDay" type="boolean" />
+		<field name="maxHoursWeek" type="boolean" />
+		<field name="savePastDays" type="boolean" />
+		<field name="editSigns" type="boolean" />
+		<field name="editDeleteSigns" type="boolean" />
+		<field name="addExtraActivity" type="boolean" />
+		<field name="isWorkCenters" type="boolean" />
+		<field name="isOwnCalendars" type="boolean" />
+		<field name="maxHoursDayValue" type="float" />
+		<field name="maxHoursWeekValue" type="float" />
+		<field name="savePastDaysValue" type="int" />
+		<field name="editSignsValue" type="int" />
+		<field name="editDeleteSignsValue" type="int" />
+		<field name="startDate" type="Date" />
+		<field localized="true" name="description" type="String" />
+		<field localized="true" name="agreement" type="String" />
+		<field localized="true" name="observations" type="String" />
+		<field name="soporteEmail" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="implantationDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.Holiday">
+		<field name="holidayId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="day" type="int" />
+		<field name="month" type="int" />
+		<field name="year" type="int" />
+		<field localized="true" name="name" type="String" />
+		<field name="typeHoliday" type="String" />
+		<field name="active" type="boolean" />
+		<field name="allowSign" type="boolean" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.Sign">
+		<field name="signId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="activityId" type="long" />
+		<field name="startDate" type="Date" />
+		<field name="finishDate" type="Date" />
+		<field localized="true" name="observations" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+		<field localized="true" name="observationsAdmin" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+		<field name="obsAdminUserId" type="long" />
+		<field name="obsAdminDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.UserData">
+		<field name="userDataId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="workCenterId" type="long" />
+		<field name="nif" type="String" />
+		<field name="name" type="String" />
+		<field name="lastName" type="String" />
+		<field name="email" type="String" />
+		<field localized="true" name="jobTitle" type="String" />
+		<field localized="true" name="workCenter" type="String" />
+		<field name="salary" type="String" />
+		<field name="genre" type="String" />
+		<field name="notificationEndDate" type="Date" />
+		<field name="active" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.UserDataCalendars">
+		<field name="userDataCalendarId" type="long" />
+		<field name="userNameCalendarId" type="long" />
+		<field name="activityId" type="long" />
+		<field name="startDate" type="String" />
+		<field name="finishDate" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.UserNameCalendars">
+		<field name="userNameCalendarId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="name" type="String" />
+		<field name="active" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+	</model>
+	<model name="com.preving.liferay.portlet.calendar.manager.model.WorkCenters">
+		<field name="workCenterId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="name" type="String" />
+		<field name="createdBy" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="endDate" type="Date" />
+	</model>
+</model-hints>

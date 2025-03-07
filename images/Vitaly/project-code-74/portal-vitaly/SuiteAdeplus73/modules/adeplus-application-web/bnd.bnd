@@ -1,0 +1,6 @@
+Bundle-Name: adeplus-application-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.application.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.application.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

@@ -1,0 +1,31 @@
+<%
+
+String tab = (String) request.getAttribute(AdminEmpresasPortletKeys.TAB_ACTIVE);
+
+%>
+
+<liferay-portlet:renderURL var="legislacionesURL">
+    <portlet:param name="<%=AdminEmpresasPortletKeys.COMPANY_ID%>" value="${compId}" />
+     <portlet:param name="mvcRenderCommandName" value="goLegislaciones" />
+</liferay-portlet:renderURL>
+
+<liferay-portlet:renderURL var="contractURL">
+    <portlet:param name="<%=AdminEmpresasPortletKeys.COMPANY_ID%>" value="${compId}" />
+     <portlet:param name="mvcRenderCommandName" value="goContract" />
+</liferay-portlet:renderURL>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link <%= AdminEmpresasPortletKeys.TAB_LEGISLACIONES.equals(tab) ? "active" : "" %>" href="<%= legislacionesURL %>">
+        <liferay-ui:message key="company.legislacion.title.tab"/>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><liferay-ui:message key="company.calendario.title.tab"/></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link <%= AdminEmpresasPortletKeys.TAB_CONTRACT.equals(tab) ? "active" : "" %>" href="<%= contractURL %>">
+        <liferay-ui:message key="company.contrato.title.tab"/>
+    </a>
+  </li>
+</ul>

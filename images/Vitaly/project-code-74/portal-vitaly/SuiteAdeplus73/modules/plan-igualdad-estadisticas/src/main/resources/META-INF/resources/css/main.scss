@@ -1,0 +1,69 @@
+.plan-igualdad-estadisticas {
+}
+
+//TABLES
+.scrollable tbody {
+  display: block;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.scrollable thead, .scrollable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+//INFINITY TABLE
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.prv-form {
+    box-shadow: none !important;
+}
+
+.border-separate{
+	border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+//BADGES
+.badge-masculinizado {
+    background-color: #004d71;
+    color: #FFF;
+}
+
+.badge-feminizado {
+    background-color: #2876DD;
+    color: #FFF;
+}
+
+.badge-equilibrado {
+    background-color: #3e95cd;
+    color: #FFF;
+}
+
+.chart-container{
+    position: relative;
+    margin: auto;
+    height: 110vh;
+    width: 80vw;
+}
+
+//LOADER
+#prv-loading-async{
+    min-width: 0px !important;
+    border-color: white !important;
+    position: fixed;
+    bottom: 3.5em;
+    right: 3.5em;
+    opacity: 1;
+}

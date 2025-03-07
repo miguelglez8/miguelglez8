@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[ 
+<table class="body-wrap">
+    <tr>
+        <td></td>
+        <td class="container" width="600">
+            <div class="content">
+                <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="content-wrap">
+                            <table  cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img class="img-responsive" src="[$FILE=email_header.jpg$]"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        <h3>Welcom in basic email template</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        We may need to send you critical information about our service and it is important that we have an accurate email address.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block aligncenter">
+                                        <a href="#" class="btn-primary">Confirm email address</a>
+                                    </td>
+                                </tr>
+                              </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="footer">
+                    <table width="100%">
+                        <tr>
+                            <td class="aligncenter content-block">Follow <a href="#">@Company</a> on Twitter.</td>
+                        </tr>
+                    </table>
+                </div></div>
+        </td>
+        <td></td>
+    </tr>
+</table>
+
+ ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

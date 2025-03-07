@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="user--avatar" transform="translate(-2 -2)">
+    <path id="Trazado_1465" data-name="Trazado 1465" d="M16,8a5,5,0,1,0,5,5,5,5,0,0,0-5-5Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,16,16Z" fill="#004d71"/>
+    <path id="Trazado_1466" data-name="Trazado 1466" d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2ZM10,26.376V25a3,3,0,0,1,3-3h6a3,3,0,0,1,3,3v1.376a11.9,11.9,0,0,1-12,0Zm13.993-1.451A5,5,0,0,0,19,20H13a5,5,0,0,0-4.993,4.926,12,12,0,1,1,15.985,0Z" fill="#004d71"/>
+  </g>
+</svg>

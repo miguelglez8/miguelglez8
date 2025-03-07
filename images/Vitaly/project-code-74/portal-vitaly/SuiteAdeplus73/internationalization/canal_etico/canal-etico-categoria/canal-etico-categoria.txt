@@ -1,0 +1,56 @@
+Categorías
+
+Canal Ético
+
+# View
+Categorias
+Nombre
+Activo
+Afecta a
+Código
+Acción
+Empresa
+Global
+Nuevo
+Si
+No
+Todas
+
+
+# Edit
+Nombre
+Activo
+Afecta a
+Categoría
+Cancelar
+Ámbito
+Código
+Categoría global
+Activando la categoría global se aplicará a todas las empresas. Esta operación sólo la puede realizar el usuario administrador del Canal Ético.
+Denuncia
+Consulta
+Denuncia y Consulta
+
+Campo obligatorio
+
+# Datatable
+Procesando...
+Mostrar _MENU_ categorias
+No se encontraron categorias
+No se han creado categorias
+Mostrando categories del _START_ al _END_ de un total de _TOTAL_ categorias
+Mostrando categoriaes del 0 al 0 de un total de 0 categorias
+(filtrado de un total de _MAX_ categorias)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

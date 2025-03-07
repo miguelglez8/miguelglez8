@@ -1,0 +1,10 @@
+Bundle-Name: preving-calendar-manager-api
+Bundle-SymbolicName: com.preving.liferay.portlet.calendar.manager.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.preving.liferay.portlet.calendar.manager.exception,\
+	com.preving.liferay.portlet.calendar.manager.model,\
+	com.preving.liferay.portlet.calendar.manager.service,\
+	com.preving.liferay.portlet.calendar.manager.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../preving-calendar-manager-service/service.xml

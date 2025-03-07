@@ -1,0 +1,19 @@
+dependencies {
+	compile project(":modules:plan-igualdad-manager:plan-igualdad-manager-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../plan-igualdad-manager-api/src/main/java"
+}
+
+group = "com.plan.igualdad.liferay.portlet.manager"
+
+tasks.withType(JavaCompile) {
+
+	// Generated classes using Jodd library are unable to be read when compiled against JDK 11
+
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}

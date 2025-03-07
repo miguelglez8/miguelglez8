@@ -1,0 +1,75 @@
+
+No existen vacaciones en el sitio web
+Calendario
+
+Calendario
+Nuevo festivo
+
+Día festivo
+Día
+Mes
+Activo
+Acciones
+
+Editar festivo
+Crear nuevo festivo
+Datos del festivo
+Nombre
+Día
+Mes
+
+Activo
+Si
+No
+
+Tipo
+
+Permitir registro horario 
+
+Cancelar
+Guardar
+
+Cancelar
+Guardar
+Borrar
+
+¿Estas seguro que desea borrar el festivo?\nLuego no podrás deshacerse los cambios
+
+Enero
+Febrero
+Marzo
+Abril
+Mayo
+Junio
+Julio
+Agosto
+Septiembre
+Octubre
+Noviembre
+Diciembre
+
+Nacional
+Auton&#243;mico
+Local
+Empresa
+
+Procesando...
+Mostrar _MENU_ vacaciones
+No se encontraron vacaciones
+Ningun día de vacaciones disponible en esta tabla
+Mostrando vacaciones del _START_ al _END_ de un total de _TOTAL_ vacaciones
+Mostrando vacaciones del 0 al 0 de un total de 0 vacaciones
+(filtrado de un total de _MAX_ vacaciones)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

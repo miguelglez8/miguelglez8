@@ -1,0 +1,191 @@
+Condicions d'ús de Miregistrodehoras.com
+AVÍS IMPORTANT - LLEGEIXI ATENTAMENT AQUEST DOCUMENT:
+
+Aquestes CONDICIONS D'ÚS de l'aplicació MIREGISTRODEHORAS https://www.miregistrodehoras.com (d'ara endavant, el "Portal") són un acord que regeix l'ús de l'aplicació i les eines incorporades. El fet d'utilitzar l'aplicació implica que l'usuari accepta plenament i sense reserves totes i cadascuna de les Condicions establertes al document. Si no accepta les Condicions, no utilitzi l'aplicació. L'usuari del Portal, empresa o empresari individual, o el seu representant (d'ara endavant, el "Client" o "Entitat usuària") manifesta, en aquest sentit, haver llegit, entès i acceptat aquestes Condicions d'ús, posades a la seva disposició, en tot moment, amb caràcter previ a l'alta en el servei, a la pàgina Web: https://www.miregistrodehoras.com
+
+
+Així mateix, en fer ús de MIREGISTRODEHORAS entenem que accepta sense reserves les condicions del present acord.
+
+En compliment del que disposa la Llei de Serveis de la Societat de la Informació i el Comerç Electrònic, Preving Investments, SL amb domicili social al C / Castillo Puebla de Alcocer, 10 8-B CP 06006 de Badajoz, CIF B-06677413 i inscripció en el Registre Mercantil de Badajoz al Volum 609, Foli 221, Inscripció 1 amb Full BA-2639, com a titular del lloc web www.miregistrodehoras.com, posa a la seva disposició aquest Avís Legal relatiu a la informació, integrada en aquest lloc web, sobre serveis prestats a través d'aquest portal per les següents entitats (d'ara endavant, el “Prestador”):
+
+Totaldat, SLU, amb CIF B-06537609 com a consultora especialitzada en Compliment Normatiu Inscrita en el Registre Mercantil de Badajoz, volum 445, foli 61, full BA-20469, inscripció 1ª, té el seu domicili social al C/ Castillo Puebla de Alcocer, 8 CP 06006 de Badajoz.
+
+Preving Consultores, SLU, amb CIF B-06290241 és un Servei de Prevenció Aliè acreditat per l'Autoritat Laboral amb data 9 de desembre de 1998, inscrita en el Registre Mercantil de Badajoz foli 189 vers, del volum 441, full BA-9640, Inscripció 30ª, té el seu domicili social a Avenida Joaquín Sánchez Valverde, 1-3-5 CP 06006 de Badajoz.
+
+Excelencia y Garantía para la Salud en el Trabajo, SLU (Egarsat) amb CIF B-64734528 és un Servei de Prevenció Aliè acreditat pel Departament de Treball de la Generalitat de Catalunya amb data 1 d'abril de 2009, inscrita en el Registre Mercantil de Barcelona, Volum 40283, Foli 170, S8, H B 362256 té el seu domicili social al C/ Víctor Hugo, 2-4 de San Cugat del Vallés CP 08173 de Barcelona.
+
+ICESE Prevención, SLU (ICESE) amb CIF B-61271672 és un Servei de Prevenció Aliè acreditat per l'Autoritat Laboral competent, inscrita en el Registre Mercantil de Barcelona, Volum 29632, foli 52, full B-157810, té el seu domicili social a C/ Víctor Hugo, 2-4 CP 08174 de San Cugat del Vallés (Barcelona).
+
+Previcaman SLU, amb CIF B45475746 és un Servei de Prevenció Aliè acreditat per l'Autoritat Laboral competent, inscrita en el Registre Mercantil de Toledo, Escritura número 2.407 del 27/09/2000, Notari Nicolás Moreno Baldía; Registre Mercantil de Toledo; Volum 1033, Llibre 0, Foli 162, Secció 8, Full TO 15834.
+
+Per dirigir-se als prestadors, posem a la seva disposició els següents mitjans de contacte:
+
+Dades de Contacte:
+
+Telèfon: 900 649 149
+
+Correu electrònic: soporte@miregistrodehoras.com
+
+Contacte postal: Avda. Joaquín Sánchez Valverde. 3 CP 06006 de Badajoz
+
+1.- Objecte
+Aquestes Condicions d'Ús i Privacitat (d'ara endavant, les "Condicions") tenen per objecte regular les condicions d'ús del portal, per part de Clients vinculats amb Prestador per una relació contractual en vigor, a la vigència de la qual supedita aquesta Llicència d'ús, i l'accés al Portal.
+
+Des de la seva activació, el Client tindrà accés al Portal durant el següent període:
+
+El determinat en la quota establerta; o
+Mentre es mantingui en vigor una relació contractual vinculada
+Aquest portal ofereix als usuaris la possibilitat de gestionar les obligacions que conté l'article 34.9 de l'Estatut dels Treballadors relatives al registre de jornada, en concret el registre telemàtic de jornada. L'aplicació permet introduir dades de la jornada realitzada, i descansos de manera online per a la seva posterior comptabilització i consulta digital de manera fiable, immodificable i no manipulable a posteriori, ja sigui per l'empresari o pel propi treballador (d'ara endavant, el "Servei ").
+
+El Prestador li concedeix a l'Entitat usuària un dret no exclusiu, i intransferible, per utilitzar el Portal i documentació adjunta (d'ara endavant, el "Programari") en la manera i en la forma que preveu la present Llicència i en les condicions de contractació si escau.
+
+La no exigència per part del Prestador del compliment de qualsevol disposició de la present LLICÈNCIA no constituirà una renúncia a aquesta disposició o a qualsevol altra que contingui la LLICÈNCIA.
+
+2.- Durada de la llicència d'ús de Miregistrodehoras.com
+El Client tindrà accés al Portal durant el període determinat al Contracte de prestació de serveis vinculat a aquesta llicència.
+
+El preu de la llicència establert al Contracte de prestació de serveis pot incloure un descompte comercial, si s'escau l'aplicació d'aquest descompte, es trobarà condicionat al compliment per part del Client de les condicions comercials per a la seva concessió: manteniment de relacions contractuals, prescripció de clients, o altres pactades.
+ L'incompliment dels requisits per a la concessió determinarà la pèrdua de vigència del descompte.
+
+En cas de reducció o supressió del descompte, el Client podrà renunciar al servei sense penalització en un termini de 15 dies des de la comunicació de la pèrdua de les referides condicions.
+
+En cas de pèrdua de vigència de la relació contractual per qualsevol motiu, es concedeix al Client un termini de 30 dies naturals per recuperar els registres introduïts al Portal. Aquesta circumstància serà comunicada al Client mitjançant correu electrònic. Transcorregut aquest termini, els registres resultaran inaccessibles. Es recorda que el Client té l'obligació de conservar els registres durant un termini de quatre anys.
+
+Així mateix, l'Incompliment de les Condicions d'ús és causa de rescissió de la llicència.
+
+3.- Funcionament i idoneïtat de Miregistrodehoras.com
+
+MIREGISTRODEHORAS és una aplicació per al registre diari de jornada. La valoració de les funcionalitats del Portal pel que fa a la seva adequació a les característiques de l'Entitat usuària, i la seva idoneïtat, així com la negociació o consulta amb la representació legal dels treballadors, si s'escau, la definició del seu àmbit d'aplicació o la seva implantació efectiva, corren per compte i són exclusiva responsabilitat de cada Entitat usuària.
+
+MIREGISTRODEHORAS permet interactuar amb l'aplicació segons el rol atribuït a l'usuari de l'Entitat. Cap del usuaris pot modificar a posteriori cap registre; a continuació s'associen els diferents rols:
+
+Usuari Administrador de l'Entitat, amb permisos de configuració, consulta de registres, i alta/baixa d'usuaris.
+
+Usuari Empleat de l'Entitat, amb els permisos necessaris per al registre i consulta de la seva jornada i modificació de les seves dades d'accés.
+
+Usuari Prestador, amb els mateixos permisos de l'Usuari Administrador amb abast a totes les entitats usuàries.
+
+El Portal podrà generar correus electrònics dirigits als comptes dels usuaris Administrador i Empleat.
+
+D'altra banda, la informació registrada per l'Usuari Empleat podrà ser comentada per l'usuari Administrador de l'Entitat.
+
+MIREGISTRODEHORAS respecta en tot cas els drets a la intimitat dels treballadors que preveu l'article 20 bis de l'Estatut dels Treballadors, que remet a la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals.
+
+El Servei no detecta adreces IP, ni localitza geogràficament l'usuari, els registres tenen presumpció de veracitat, vinculada a l'ús diligent de les claus d'accés per part de l'usuari i a la veracitat de la informació aportada.
+
+S'ha de tenir en compte que el Servei conserva els registres durant 4 anys. Això vol dir que, encara que s'hagi donat de baixa l'usuari empleat, l'Entitat podrà acreditar el registre horari de l'usuari treballat.
+
+El servei està dissenyat en mode responsive. La utilització de Servei requereix dispositius i Programari compatibles, així com accés a Internet (subjecte a les tarifes que li apliqui el seu proveïdor corresponent).
+
+El Servei és configurable per l'usuari administrador de l'Entitat en certs aspectes.
+
+La informació del servei es transmet de forma segura xifrada mitjançant l'ús del protocol SSL. Si necessita més informació sobre protecció de dades, consulti l'apartat 7 de les Condicions.
+
+La informació detallada sobre el funcionament del Servei està disponible a la secció corresponent del Portal MIREGISTRODEHORAS.COM
+
+4. Cost i titularitat del Programari i/o Servei
+El Servei té el cost per a l'Entitat expressat a les seves condicions particulars de contractació.
+
+El Prestador fa reserva expressa de qualssevol drets que poguessin correspondre-li sobre el Programari i/o Servei i els elements que formen part d'aquest.
+
+Els usuaris no poden utilitzar els materials de tercers que formen part del Programari de cap manera que constitueixi una infracció dels drets del Prestador.
+
+5.- Confidencialitat i Protecció de Dades
+Prestador i Usuari (d'ara endavant, les "Parts") s'obliguen a mantenir confidencialitat absoluta respecte a tota la informació i documentació que mútuament s'haguessin facilitat sobre dades personals, processos de producció o tècniques de treball que s'hagin conegut recíprocament, i s'abstindran de comunicar-ho, comentar-ho o facilitar-ho, totalment o parcial, a tercers. La confidencialitat assumida abasta a tots els coneixements recíprocs que es tinguin en el moment de la firma d'aquest contracte o en un futur, i s'estén a tots els grups d'interès. A més, s'estableix expressament que totes les persones autoritzades per tractar aquest tipus d'informació s'hagin compromès a respectar la confidencialitat o estiguin subjectes a una obligació de confidencialitat de naturalesa estatutària.
+
+Queden exceptuats de confidencialitat aquelles dades requerides per alguna autoritat pública, judicial o administrativa i totes aquelles que hi hagi autorització específica de l'altra part per fer ús de la informació.
+
+Així mateix, les parts reconeixen que el Prestador ofereix garanties suficients per aplicar mesures tècniques i organitzatives apropiades, de manera que el tractament de dades inherent a aquestes Condicions sigui conforme als requisits del Reglament (UE) 2016/679 de Protecció de dades i la Llei Orgànica 3/2018 de Protecció de Dades Personals i Garanties Digitals, i garanteixi la protecció dels drets dels interessats. Per tot allò exposat, mitjançant les presents clàusules s'habilita el Prestador com a  encarregat del tractament, per tractar, per compte de l'Entitat, responsable del tractament, les dades de caràcter personal necessàries per prestar el servei objecte d'aquest contracte, que consistirà en les activitats de posada a disposició i manteniment del Portal, que impliquin tractaments de dades de:
+
+x Registre x Estructuració x Modificació x Conservació x Consulta x Comunicació per transmissió x Limitació x Supressió x Destrucció x Conservació x Comunicació
+
+Per a l'execució de les prestacions derivades de l'acompliment de l'objecte d'aquest encàrrec, el Responsable del tractament posa a disposició del Prestador encarregat del tractament, la informació que es descriu a continuació a títol d'exemple:
+
+• Dades identificatives i contacte                    
+
+Que pot concernir a empleats del Responsable, així com als seus representants legals.
+
+Un cop conclosa la prestació del Servei, l'encarregat del tractament conservarà les dades mentre puguin derivar-se responsabilitats de l'execució de la prestació concertada, en compliment de la normativa vigent. El que s'exposa en aquest apartat sense perjudici del tràmit de devolució de les dades o lliurament a un altre encarregat prèvia sol·licitud per escrit del responsable del tractament.
+
+L'encarregat del tractament i tot el seu personal s'obliga a:
+
+a. Utilitzar les dades personals objecte de tractament, o les que reculli per a la seva inclusió, només per a la finalitat objecte d'aquest encàrrec.
+
+b. Tractar les dades d'acord amb les instruccions del responsable del tractament. Si l'encarregat del tractament considera que alguna de les instruccions infringeix el RGPD o qualsevol altra disposició en matèria de protecció de dades de la Unió o dels Estats membres, l'encarregat n'informarà immediatament el responsable.
+
+c. Portar, per escrit, un registre de totes les categories d'activitats de tractament efectuades per compte del responsable.
+
+d. No comunicar les dades a terceres persones, excepte les empreses del Grup al qual pertany o pugui pertànyer l'Encarregat, quan sigui imprescindible per al desenvolupament, compliment i control del servei contractat. Així mateix, s'autoritza la cessió de dades de caràcter general, amb la finalitat d'enviament de comunicacions publicitàries per qualsevol mitjà (correu ordinari, fax, correu electrònic ...) a les adreces de contacte de l'usuari Administrador que es facilitin, i podrà revocar el seu consentiment quan consideri oportú. Així mateix, el Responsable queda informat que les seves dades podran ser comunicades a sistemes d'informació creditícia com ara Asnef Equifax, només en el cas que es donin els requisits per a això.
+
+L'encarregat pot comunicar les dades a altres encarregats del tractament del mateix responsable, d'acord amb les instruccions del responsable. En aquest cas, el responsable identificarà, de forma prèvia i per escrit, l'entitat a la qual s'han de comunicar les dades, les dades a comunicar i les mesures de seguretat a aplicar per procedir a la comunicació.
+
+Si l'encarregat ha de transferir dades personals a un tercer país o una organització internacional, en virtut del Dret de la Unió o dels Estats membres que li sigui aplicable, informarà el responsable d'aquesta exigència legal de manera prèvia, llevat que tal Dret ho prohibeixi per raons importants d'interès públic.
+
+e. Amb caràcter general, s'autoritza l'encarregat a subcontractar les prestacions que resultin necessàries per a l'execució dels serveis concertats. L'encarregat informarà el responsable de qualsevol canvi previst a la incorporació o substitució d'altres encarregats, d'aquesta manera, donarà al responsable l'oportunitat d'oposar-se a aquests canvis, fet que haurà de comunicar per escrit en un termini de 10 dies.  El subcontractista, que també té la condició d'encarregat del tractament, està obligat igualment a complir les obligacions establertes en aquest document per a l'encarregat del tractament i les instruccions que dicti el responsable. Correspon a l'encarregat inicial regular la nova relació, de manera que el nou encarregat quedi subjecte a les mateixes condicions (instruccions, obligacions, mesures de seguretat ...) i amb els mateixos requisits formals que ell, pel que fa a l'adequat tractament de les dades personals i a la garantia dels drets de les persones afectades. En cas d'incompliment per part del sots-encarregat, l'encarregat inicial seguirà sent plenament responsable davant el responsable pel que fa al compliment de les obligacions.
+
+f. Mantenir el deure de secret respecte a les dades de caràcter personal a les quals hagi tingut accés en virtut del present encàrrec, fins i tot després que finalitzi el seu objecte. 
+
+g. Garantir que les persones autoritzades per tractar dades personals es comprometin, de forma expressa i per escrit, a respectar la confidencialitat i a complir les mesures de seguretat corresponents, de les que cal informar convenientment.
+
+h. Assistir al responsable del tractament en la resposta a l'exercici dels drets dels interessats notificant-ho a l'adreça facilitada pel responsable a efectes de comunicacions. La comunicació s'ha de fer sense dilacions indegudes, juntament, si escau, amb altres informacions que puguin ser rellevants per resoldre la sol·licitud.  
+
+i. L'encarregat del tractament notificarà al responsable del tractament, sense dilació indeguda, i en qualsevol cas abans del termini màxim de 36 hores, i a través de l'adreça notificada a efectes de comunicacions, les violacions de la seguretat de les dades personals al seu càrrec de les que tingui coneixement, juntament amb tota la informació rellevant per a la documentació i comunicació de la incidència. No serà necessària la notificació quan sigui improbable que aquesta violació de la seguretat constitueixi un risc per als drets i les llibertats de les persones físiques.
+
+j. Donar suport al responsable del tractament en la realització de les avaluacions d'impacte relatives a la protecció de dades, quan procedeixi.
+
+k. Donar suport al responsable del tractament en la realització de les consultes prèvies a l'autoritat de control, quan procedeixi.
+
+l. Posar a disposició del responsable tota la informació necessària per demostrar el compliment de les seves obligacions, així com per a la realització de les auditories o les inspeccions que realitzin el responsable o un altre auditor autoritzat per ell.
+
+m. Implantar les mesures de seguretat apropiades, tenint en compte l'estat de la tècnica, els costos d'aplicació, i la naturalesa, l'abast, el context i les finalitats del tractament, així com riscos de probabilitat i gravetat variables per als drets i llibertats de les persones físiques, per garantir un nivell de seguretat adequat a el risc, que inclogui el següent:
+
+- Garantir la confidencialitat, integritat, disponibilitat i resiliència permanents dels sistemes i serveis de tractament.
+
+- Restaurar la disponibilitat i l'accés a les dades personals de forma ràpida, en cas d'incident físic o tècnic.
+
+- Verificar, avaluar i valorar, de manera regular, l'eficàcia de les mesures tècniques i organitzatives implantades per garantir la seguretat del tractament.
+
+- Seudonimizar i xifrar les dades personals, si escau.
+
+n. Comunicar la designació de Total.dat, S.L.U., entitat inscrita en el Registre de l'AEPD a aquests efectes, com a Delegat de Protecció de dades del Prestador, i l'adreça de correu electrònic de contacte preferent: privacidad@grupopreving.com com a mitjà de contacte per a les comunicacions relacionades amb aquesta clàusula.
+
+El Responsable pot exercir els drets d'accés, rectificació, cancel·lació i oposició al domicili de Total.dat S.L.U. indicat al present contracte, així com accedir a informació addicional sobre els tractaments de dades http://www.totaldat.es/lopd/index.php/total-dat/aviso-legal o https://www.preving.com / avís-legal /
+
+El Responsable es compromet a custodiar diligentment les claus d'accés al Portal i serà responsable de l'ús correcte d'aquestes, així com de qualsevol altra eina en línia que es posi a la seva disposició en execució del present contracte, restringint, si escau, els usuaris autoritzats i renovant-les, en cas que sigui necessari.
+
+6.- Obligacions de l'usuari
+6.1 L'usuari manifesta conèixer que el Programari i/o Servei és d'exclusiva propietat del Prestador, i s'obliga a respectar els drets de propietat intel·lectual o industrial de l'autor, i no pot alterar, modificar de cap manera o transformar el seu format original, ni explotar-lo amb finalitats comercials. Amb caràcter general, l'usuari es compromet a la correcta utilització del Servei, d'acord amb el que estableixi la legislació vigent que li sigui aplicable i a les disposicions d'aquestes condicions, i s'abstindrà d'utilitzar el Programari i/o Servei per realitzar activitats il·lícites o constitutives de delicte i/o que infringeixin qualsevol tipus de disposició legal o interessos de tercers.
+
+El Prestador no l'autoritza a:
+
+vulnerar, modificar, evadir, descompilar, desacoblar, manipular o dur a terme tasques d'enginyeria inversa al Programari o respecte a cap dels seus components, i a no intentar ni prestar assistència a cap tercer per dur a terme aquestes accions.  Queda prohibida la separació dels components.
+accedir al Servei a través de mitjans diferents dels proporcionats per Prestador per accedir al Programari.
+utilitzar versions modificades del Programari no proporcionades pel Prestador.
+cedir l'ús, arrendar, vendre, distribuir, donar i qualsevol altre tipus de transmissió del Programari o dels seus components a una altra persona o entitat.
+enviar, transferir o exportar el Programari a cap país, ni utilitzar el Programari de cap manera, que estigui prohibida per les lleis, restriccions o reglaments en matèria d'exportació.
+
+6.2 No es pot utilitzar el Programari de cap manera que danyi, desactivi, inutilitzi, sobrecarregui o deteriori el Servei.
+
+6.3 L'usuari exonera el Prestador de qualsevol responsabilitat derivada de la inexactitud de les dades aportades o del funcionament del Servei.
+
+6.4. L'usuari és responsable de l'ús que en facin les altres persones que utilitzin el programa sota la seva direcció.
+
+7.-Responsabilitat
+7.1. L'accés al Portal MIREGISTRODEHORAS i l'ús que pugui fer-se de la informació que conté aquest és de l'exclusiva responsabilitat de qui ho realitza, tot i que el Prestador té el dret de reclamar a l'Entitat pels danys i perjudicis causats per personal sota la seva direcció.
+
+7.2. El Prestador no es responsabilitzarà dels possibles errors de seguretat que es puguin produir ni dels possibles danys que puguin causar-se al sistema informàtic de l'Usuari (maquinari i programari), els fitxers o documents emmagatzemats en aquest, com a conseqüència de la presència de virus a l'ordinador de l'Usuari utilitzat per a la connexió als serveis i continguts del Web, d'un mal funcionament del navegador o de l'ús de versions no actualitzades d'aquest.
+
+7.3. El Prestador no garanteix la inexistència d'errors en l'accés al Portal, al seu contingut, ni que aquest estigui actualitzat, encara que el Prestador s'esforçarà al màxim per evitar-los, reparar-los o actualitzar-los en cas que n'hi hagi.
+
+7.4. El prestador pot deixar de prestar el Servei o alterar-lo sense previ avís. Aquesta acció no generarà cap responsabilitat per al Prestador amb l'usuari o amb terceres parts per aquest motiu, sempre que existeixi preavís dirigit a l'adreça facilitada per l'Entitat usuària, amb una antelació mínima de 3 mesos, en els quals l'Entitat podrà descarregar tota la informació del Portal concernent a la seva Organització.
+
+La modificació del Programari i/o Servei respectarà la finalitat i objecte del Servei que és complir amb les obligacions establertes per a Entitats i els seus empleats en relació al registre de jornada.
+
+7.5. El Prestador declina qualsevol responsabilitat respecte al Servei, i no es farà responsable dels danys i perjudicis de tota naturalesa derivats de la falta de disponibilitat, mal funcionament o de continuïtat del funcionament del Servei per incidències tècniques als sistemes o qualsevol altra causa pròpia o de tercers.
+
+7.6 El Prestador no es responsabilitza de les conseqüències derivades de l'incompliment per part de l'usuari de les Condicions d'ús del Servei i, en conseqüència, l'usuari es considerarà l'únic i exclusiu responsable dels danys o perjudicis causats a altres usuaris del Servei i/o tercers com a conseqüència del comportament i ús de la informació obtinguda pels usuaris del Servei.
+
+7.7 El prestador s'eximeix de qualsevol tipus de responsabilitat per modificacions que es produeixin al Programari i/o Servei sense consentiment explícit del Prestador, així com de l'ús incorrecte que es faci d'aquests, ja sigui de l'original distribuït pel Prestador com de modificacions o productes derivats del Programari (incloent-hi els derivats del codi font) autoritzades i no autoritzades pel Prestador.
+
+8.- Legislació aplicable i jurisdicció competent
+Aquestes condicions del Servei en allò que no estigui previst, es regeixen pel que disposa l'avís legal i la llei espanyola. El Prestador i l'usuari, amb renúncia expressa a qualsevol altre fur, se sotmeten al dels Jutjats i Tribunals de la ciutat de Badajoz per a qualsevol controvèrsia que pogués derivar-se de la interpretació, aplicació i utilització del Servei.

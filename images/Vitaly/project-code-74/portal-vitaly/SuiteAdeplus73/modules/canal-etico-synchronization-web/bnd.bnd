@@ -1,0 +1,6 @@
+Bundle-Name: canal-etico-synchronization-web
+Bundle-SymbolicName: com.canal.etico.liferay.portlet.synchronization.web
+Bundle-Version: 1.0.0
+Export-Package: com.canal.etico.liferay.portlet.synchronization.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

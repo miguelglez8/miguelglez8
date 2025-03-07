@@ -1,0 +1,32 @@
+<%@ page import="com.liferay.journal.service.JournalArticleLocalServiceUtil" %>
+<%@ page import="com.liferay.journal.model.JournalArticle" %>
+
+<%
+
+Long groupId = themeDisplay.getLayout().getGroupId();
+JournalArticle article = JournalArticleLocalServiceUtil.getArticleByUrlTitle(groupId, "tipo-contrato");
+
+%>
+
+<div class="modal hide" id="infoContrato">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog modal-dialog-scrollable center">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title"><liferay-ui:message key="contract.view.tipos"/></h5>
+                <button type="button" class="close hide-modal">
+                <span aria-hidden="true">x</span>
+                </button>
+            </div>
+
+            <div class="modal-body pb-3">
+                <liferay-journal:journal-article
+                    articleId="<%= article.getArticleId() %>"
+                    groupId="<%= groupId  %>"
+                />
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+
+
+
+Motivo de la consulta
+Asunto
+Descripci&#243;n
+Archivo adjunto
+Enviar
+En caso de duda consulte con la persona de contacto de su empresa en el registro horario: 
+
+
+Consulta enviada correctamente
+<p>Su consulta se ha env&#237;ado correctamente.</p><p> Muy pronto recibir&#225; contestaci&#243;n a trav&#233;s del email que ha indicado.</p><p> Gracias por confiar en nosotros.</p>
+
+
+Configuraci&#243;n de correos destino
+Direcciones de correo
+Categor&#237;as
+Puede introducir varias direcciones de correo separadas por ";". Cada direcci&#243;n de mail con corresponde con la categor&#237;a que ocupa la misma posici&#243;n.
+Puede introducir varias categor&#237;as separadas por ";". Si desea a&ntilde;adir varios emails por categor&#237;a, repita el nombre de la categor&#237;a para la misma posici&#243;n del email.
+Comprobaci&#243;n de emails v&#225;lidos: 
+* Los correos que son incorrectos no se usar&#225;n.
+
+
+Consulta "Registro horario"
+Consulta "Registro horario"
+

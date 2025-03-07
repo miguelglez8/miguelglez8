@@ -1,0 +1,6 @@
+Bundle-Name: plan-igualdad-estadisticas
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.estadisticas
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.estadisticas.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

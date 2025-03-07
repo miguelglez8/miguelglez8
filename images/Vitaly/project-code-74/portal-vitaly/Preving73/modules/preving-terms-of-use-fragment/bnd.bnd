@@ -1,0 +1,5 @@
+Bundle-Name: preving-terms-of-use-fragment
+Bundle-SymbolicName: preving.terms.of.use.fragment
+Bundle-Version: 4.0.1
+Fragment-Host: com.liferay.journal.terms.of.use;bundle-version="4.0.1"
+-sources: true

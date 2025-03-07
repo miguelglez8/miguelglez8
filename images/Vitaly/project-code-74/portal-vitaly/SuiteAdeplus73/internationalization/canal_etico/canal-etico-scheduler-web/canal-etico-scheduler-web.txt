@@ -1,0 +1,14 @@
+TareasProgramadas
+
+Canal ético
+
+Ha vencido el plazo de tratamiento de la consulta/denuncia.
+Las consultas y denuncias tratadas tienen un plazo de tratamiento de 90 días.
+
+Se acerca el vencimiento de la consulta/denuncia
+
+
+Registrado
+En proceso
+Finalizado
+Sin finalizar

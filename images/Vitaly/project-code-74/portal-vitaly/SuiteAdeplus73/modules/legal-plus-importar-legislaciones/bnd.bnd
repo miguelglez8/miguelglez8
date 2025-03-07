@@ -1,0 +1,9 @@
+Bundle-Name: legal-plus-importar-legislaciones
+Bundle-SymbolicName: com.legalplus.liferay.portlet.importar.legislaciones.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.importar.legislaciones.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.opencsv.*,\
+    org.apache.commons.lang3.*

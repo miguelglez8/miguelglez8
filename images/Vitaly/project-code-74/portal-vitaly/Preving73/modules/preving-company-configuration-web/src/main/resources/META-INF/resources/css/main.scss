@@ -1,0 +1,123 @@
+.preving-company-configuration-web {
+}
+
+.logo-company{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.notifications span.control-label{
+  float: left;
+  width: 550px;
+}
+
+.configuration span.control-label{
+  float: left;
+  width: 350px;
+}
+
+.notifications label,
+.configuration label{
+  margin-left: 15px;
+}
+
+.configuration label.control-label {
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.configuration .form-control{
+  width: 70px;
+  float: left;
+  margin-top: -6px;
+}
+
+input#inpSearchActive {
+  margin-left: 10px;
+}
+
+
+
+.divModal{
+    display:none;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index:10000;
+    top: 0;
+    left:0;
+    opacity: 0.5;
+}
+
+.contentModal{
+    display:none;
+    position: fixed;
+    z-index:10001;
+    opacity: 1;
+    top: 40%;
+    left: 35%;
+    min-width:500px;
+    background-color: white;
+    margin: -25px 0 0 -25px;
+
+}
+
+.headerModal {
+  font-family: "Inter", "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5555555556;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1ab394;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1rem 1rem 0.875rem;
+}
+.headerModal p,
+.headerModal span {
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.footerModal {
+  border-top: solid 0.0625rem #DEE2E6;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.125rem 1.375rem 1.1875rem;
+  gap: 10px;
+}
+.footerModal .buttonModal {
+  float: none;
+  margin: 0;
+  min-width: 0 !important;
+}
+
+.buttonModal {
+  padding: 0.4375rem 1rem;
+  border-radius: 0.25rem;
+  font-family: "Inter", "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  font-weight: 500;
+  float: none;
+}
+
+.alert-modal.warning .container:before {
+    width: 6.625rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='106' height='106'%3E%3Cpath fill='%23ffdc81' d='M53 14.5c21.23 0 38.5 17.27 38.5 38.5S74.23 91.5 53 91.5 14.5 74.23 14.5 53 31.77 14.5 53 14.5m0-7.9a46.4 46.4 0 1 0 0 92.8 46.4 46.4 0 0 0 0-92.8Z'/%3E%3Cpath fill='%23ffdc81' d='M50.5 59.6h5c.5 0 .8-.4.8-.8V30.6c0-.5-.4-.8-.8-.8h-5c-.5 0-.8.4-.8.8v28.2c0 .5.4.8.8.8Z'/%3E%3Ccircle cx='53' cy='71.2' r='5' fill='%23ffdc81'/%3E%3C/svg%3E");
+}
+.alert-modal .container:before {
+    margin-block-end: 1rem;
+    content: "";
+    aspect-ratio: 1/1;
+    display: block;
+    margin-inline: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

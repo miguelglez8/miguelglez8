@@ -1,0 +1,10 @@
+Bundle-Name: canal-etico-v2-mailing-web
+Bundle-SymbolicName: com.canal.etico.v2.liferay.portlet.mailing.web
+Bundle-Version: 1.0.0
+Export-Package: com.canal.etico.liferay.portlet.mailing.web.v2.constants, com.canal.etico.liferay.portlet.mailing.web.v2.mail, templates, content
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.liferay.util.*,\
+    templates.*,\
+    content.*

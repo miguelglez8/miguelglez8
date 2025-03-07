@@ -1,0 +1,9 @@
+Bundle-Name: contact-form-web
+Bundle-SymbolicName: com.preving.liferay.portlet.contact.form.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.contact.form.web.constants
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.preving.liferay.portlet.mailing.web.*,\
+    templates.*,\
+    content.*

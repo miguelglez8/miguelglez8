@@ -1,0 +1,10 @@
+Bundle-Name: adeplus-mailing-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.mailing.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.mailing.web.mail, templates, content
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.liferay.util.*,\
+    templates.*,\
+    content.*

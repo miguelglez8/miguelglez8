@@ -1,0 +1,9 @@
+{
+  "LiferayPlugin": {
+    "appServerPath": "C:/areatrabajo/SuiteAdeplus/bundles/liferay-ce-portal-7.3.5-ga6/tomcat-9.0.37",
+    "deployPath": "C:/areatrabajo/SuiteAdeplus/bundles/liferay-ce-portal-7.3.5-ga6/deploy",
+    "deployed": true,
+    "deploymentStrategy": "LocalAppServer",
+    "url": "http://localhost:8080"
+  }
+}

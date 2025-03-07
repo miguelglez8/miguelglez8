@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Area" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Cuestionario" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Estadistica" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Estado" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Evaluacion" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.FechaHito" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Hito" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.ImagenCanvasEst" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Informes" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Medida" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Organizacion" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.ParametricasFDD" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Pregunta" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.PuestoTrabajo" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Respuesta" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Valoracion" />
+	<import class="com.plan.igualdad.liferay.portlet.manager.model.Version" />
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.AreaImpl" table="planigualdad_Area">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.AreaPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="areaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="baja" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.CuestionarioImpl" table="planigualdad_Cuestionario">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cuestionarioId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="respuestasCuestionario" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="observaciones" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionCuestionario" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.EstadisticaImpl" table="planigualdad_Estadistica">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.EstadisticaPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="seccionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="estadistica" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.EstadoImpl" table="planigualdad_Estado">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="estadoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="activa" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="gestionParametrizaciones" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.EvaluacionImpl" table="planigualdad_Evaluacion">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="evaluacionId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="datosGenerales" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="informacionResultados" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="informacionImplantacion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="informacionImpacto" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="conclusion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="observaciones" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionEvaluacion" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.FechaHitoImpl" table="planigualdad_FechaHito">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.FechaHitoPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="hitoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="fecha" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.HitoImpl" table="planigualdad_Hito">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="hitoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="peso" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.ImagenCanvasEstImpl" table="planigualdad_ImagenCanvasEst">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.ImagenCanvasEstPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="seccionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="imgCanvasId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="parteImg" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="canvasImage" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.InformesImpl" table="planigualdad_Informes">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="informeId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="tipoInforme" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionInforme" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="parametrosInforme" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="beansInforme" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="formato" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.MedidaImpl" table="planigualdad_Medida">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="medidaId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="datosGenerales" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cumplimentacion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="isMedidaPredefinida" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="medidaPredefinidaId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionMedida" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionOriginalMedidaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.OrganizacionImpl" table="planigualdad_Organizacion">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.OrganizacionPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="organizacionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="annoConstitucion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="paginaWeb" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="domicilioSocial" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="facturacionAnual" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="formaJuridica" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombreResponsableEntidad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="telefonoResponsableEntidad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cargoResponsableEntidad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="emailResponsableEntidad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombreResponsableIgualdad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="telefonoResponsableIgualdad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cargoResponsableIgualdad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="emailResponsableIgualdad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cnaes" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nCentros" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="descripcionActividad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="convenio" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ambito" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="comentarioAmbito" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nHombresPlantilla" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nMujeresPlantilla" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="representacionLegal" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nRepresentacionLegalHombres" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nRepresentacionLegalMujeres" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="representaTotalidad" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nNoRepresentados" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="comentarioRepresentacion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="departamentoPersonal" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="sindicatos" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="reprComisionOrganizacion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="reprComisionSocial" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="reprPlanOrganizacion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="reprPlanSociales" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.ParametricasFDDImpl" table="planigualdad_ParametricasFDD">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.ParametricasFDDPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="idParametrica" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="tipo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="materia" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="contenido" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="seccionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.PreguntaImpl" table="planigualdad_Pregunta">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.PreguntaPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="preguntaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="seccionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="tipo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="pregunta" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.PuestoTrabajoImpl" table="planigualdad_PuestoTrabajo">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.PuestoTrabajoPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="puestoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="areaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="responsabilidad" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nHombres" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" name="nMujeres" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="baja" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.RespuestaImpl" table="planigualdad_Respuesta">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.RespuestaPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="seccionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="respuestas" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="estado" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.ValoracionImpl" table="planigualdad_Valoracion">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="valoracionId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="respuestasValoracion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="observaciones" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionValoracion" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.plan.igualdad.liferay.portlet.manager.model.impl.VersionImpl" table="planigualdad_Version">
+		<composite-id class="com.plan.igualdad.liferay.portlet.manager.service.persistence.VersionPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="versionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="inicioPeriodoDatos" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="finPeriodoDatos" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="inicioPeriodoPlan" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="finPeriodoPlan" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="baja" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

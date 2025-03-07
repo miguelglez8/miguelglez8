@@ -1,0 +1,60 @@
+.plan-igualdad-area-web {
+}
+
+.input-group-item {
+    width: 100%;
+}
+
+.label-margin {
+	margin-top: 25px !important;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+  border: 1px solid #004d71;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.35rem;
+}
+
+.cursor_pointer:hover {
+  background-color: #c7edfe;
+}
+
+.clsSelector2Width{
+	width: 99%;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /*display: inline-block;*/
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+    padding-left: 0px;
+  padding-left: 20px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  /*white-space: pre-line;*/
+}
+
+.display-none, .clsaytosSelected .select2-container--default .select2-results__option[aria-disabled=true] {
+    display: none;
+}

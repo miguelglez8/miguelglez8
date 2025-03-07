@@ -1,0 +1,45 @@
+
+
+Configuració d'empreses
+
+Avisos i comunicacions
+Configuració
+Característiques
+
+Notificacions
+Enviar correu electrònic quan no es tanqui un registre horari obert el mateix dia.
+Enviar correu electrònic quan no es realitzi un registre horari un dia laborable.
+Enviar correu electrònic quan no es tanqui un registre horari.
+Enviar correu electrònic resum a l'usuari administrador
+Diària
+Setmanal
+Mensual
+No enviar
+
+Configuració del registre horari
+Nombre màxim d'hores al dia
+Nombre màxim d'hores a la setmana
+Possible realitzar registres en dies passats
+Dades de l’empresa
+Logotip
+Logotip de l’empresa
+L'altura màxima amb la qual es mostrarà el logotip és de 80px.
+Data inici del registre horari
+Data d'implantació del registre horari
+Nombre d'hores
+Nombre d'hores
+Nombre de dies
+Permetre editar i esborrar registres
+Minuts
+Descripció de l'activitat de l'empresa
+Conveni d'aplicació
+Observacions
+
+Sí
+No
+
+Usuari
+Data
+Entrada
+Sortida
+Activitat

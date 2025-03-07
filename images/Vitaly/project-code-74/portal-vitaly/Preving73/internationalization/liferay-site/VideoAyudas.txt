@@ -1,0 +1,24 @@
+
+VIDEO - USUARIO EMPLEADO
+Vídeo de autoayuda que permite al cliente poder acceder a toda la información detallada sobre la definición y utilización de las funcionalidades de la aplicación, como pueden ser: Registro horario, Histórico, Mi perfil, Ayuda, Soporte y Salir.
+
+VIDEO - USUARIO EMPLEADO Y ADMINISTRADOR
+Vídeo de autoayuda que permite al cliente poder acceder tanto a nivel Usuario como a nivel Administrador, a toda la información detallada sobre la definición y utilización de las funcionalidades de la aplicación.
+
+VIDEO USUARIO ADMINISTRADOR - INFORMES
+Vídeo de autoayuda que permite al cliente a través del menú Informes poder visualizar y analizar los informes de registros horarios.
+
+VIDEO USUARIO ADMINISTRADOR- CARACTERÍSTICAS
+Vídeo de autoayuda que permite al cliente a través del menú Características poder configurar avisos y comunicación interna, configuración del registro horario y características de la empresa.
+
+VIDEO USUARIO ADMINISTRADOR - USUARIOS.
+Vídeo de autoayuda que permite al cliente a través del menú Usuarios poder administrar, crear y configurar los usuarios de la aplicación.
+
+VIDEO USUARIO ADMINISTRADOR - TIPOS DE REGISTRO
+Vídeo de autoayuda que permite al cliente a través del menú Tipos de registro horario administrar, crear y configurar las actividades del registro horario.
+
+VIDEO USUARIO ADMINISTRADOR - CALENDARIO
+Vídeo de autoayuda que permite al cliente a través del menú Calendario poder administrar, crear y configurar el calendario laboral.
+
+VIDEO - USUARIO ADMINISTRADOR
+Vídeo de autoayuda que permite al cliente poder acceder a toda la información detallada sobre la definición y utilización de las funcionalidades de la aplicación, como pueden ser: Registro horario, Histórico, Mi perfil, Ayuda, Usuarios, Calendario, Tipos de registro horario, Características, Informes, Soporte y Salir.

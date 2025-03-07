@@ -1,0 +1,6 @@
+Bundle-Name: adeplus-suite-manager-service
+Bundle-SymbolicName: com.adeplus.liferay.portlet.suite.manager.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

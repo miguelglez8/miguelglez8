@@ -1,0 +1,6 @@
+Bundle-Name: preving-activity-configuration-web
+Bundle-SymbolicName: com.preving.liferay.portlet.activity.configuration.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.activity.configuration.web.constants
+-includeresource
+Import-Package:*;resolution:=optional

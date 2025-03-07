@@ -1,0 +1,55 @@
+.canal-etico-admin-denuncia-web-v2 {
+}
+.headerModal {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    background-color: #004d71;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#adeplus .sidebar-expanded {
+    z-index:0 !important;
+}
+
+#adeplus .sidebar-collapsed {
+    z-index:0  !important;
+}
+
+.prv-input-date{
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center
+}
+
+.rowComplete{
+    margin-block-start: 24px;
+}
+
+.contentModal{
+    top: 25%!important;
+}
+
+#exportarPDF{
+    cursor: pointer;
+}
+
+.usersData{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.prv-descarga .prv-name, .prv-descarga .prv-enlace {
+    margin-bottom:0;
+}
+
+.prv-descarga{
+display: inline-flex !important;
+}
+
+#informacion_adicional{
+    margin-top: 20px;
+}
+.arrow:before {
+    left: 0
+}

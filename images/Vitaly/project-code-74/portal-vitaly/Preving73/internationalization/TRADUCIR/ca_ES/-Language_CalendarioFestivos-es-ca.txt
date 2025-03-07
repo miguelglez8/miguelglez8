@@ -1,0 +1,75 @@
+
+No hi ha vacances al lloc web
+Calendari
+
+Calendari
+Nou festiu
+
+Dia festiu
+Dia
+Mes
+Actiu
+Accions
+
+Editar festiu
+Crear nou festiu
+Dades del festiu
+Nom
+Dia
+Mes
+
+Actiu
+Sí
+No
+
+Tipus
+
+Permetre registre horari 
+
+Cancel·lar
+Desar
+
+Cancel·lar
+Desar
+Esborrar
+
+¿Està segur que desitja esborrar el festiu?\nDesprés no podrà desfer els canvis.
+
+Gener
+Febrer
+Març
+Abril
+Maig
+Juny
+Juliol
+Agost
+Setembre
+Octubre
+Novembre
+Desembre
+
+Nacional
+Autonòmic
+Local
+Empresa
+
+Processant...
+Mostrar _MENU_ vacances
+No s'han trobat vacances
+Cap dia de vacances disponible en aquesta taula
+Mostrant vacances del _START_ al _END_ d'un total de _TOTAL_ vacances
+Mostrant vacances del 0 al 0 d'un total de 0 vacances
+(filtrat d'un total de _MAX_ vacances)
+
+Cercar:
+
+
+Carregant...
+Primer
+Últim
+Següent
+Anterior
+: Activar per ordenar la columna de manera ascendent
+: Activar per ordenar la columna de manera descendent
+Copiar
+Visibilitat

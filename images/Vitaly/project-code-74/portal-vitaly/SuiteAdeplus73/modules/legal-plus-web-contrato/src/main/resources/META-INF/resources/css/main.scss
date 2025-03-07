@@ -1,0 +1,37 @@
+.legal-plus-web-contrato {
+}
+
+/* CONTRACT */
+.clsSelector2Width{
+	width: 99%;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /*display: inline-block;*/
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+    padding-left: 0px;
+  padding-left: 20px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  /*white-space: pre-line;*/
+}
+
+.clsaytosSelected .select2-container--default .select2-results__option[aria-disabled=true] {
+    display: none;
+}
+
+.input-checkbox-wrapper .form-group {
+    margin-bottom: 0px;
+}
+
+.modal-backdrop {
+    z-index: -1;
+}

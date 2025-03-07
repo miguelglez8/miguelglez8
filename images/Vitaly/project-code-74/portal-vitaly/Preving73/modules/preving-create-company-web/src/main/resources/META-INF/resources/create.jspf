@@ -1,0 +1,94 @@
+<%@ include file="/init.jsp" %>
+
+<%
+    Calendar cal = Calendar.getInstance();
+    cal.setTime(new Date());
+%>
+
+<h2><liferay-ui:message key="createcompany.view.create.title"/></h2>
+
+<liferay-portlet:actionURL name="/company/create" var="createURL"  />
+<aui:form action="<%= createURL.toString() %>" method="post">
+
+    <aui:fieldset label="createcompany.view.company">
+        <div class="row">
+            <div class="col">
+                <aui:input name="companyName" type="text" label="createcompany.view.companyName">
+                    <aui:validator name="required" />
+                </aui:input>
+            </div>
+            <div class="col">
+                <aui:input name="cif" type="text" label="createcompany.view.cif">
+                    <aui:validator name="required" />
+                    <aui:validator name="minLength">8</aui:validator>
+                </aui:input>
+            </div>
+            <div class="col">
+                <aui:select name="source" label="createcompany.view.source">
+                    <aui:option value=""> </aui:option>
+                    <c:forEach var="src" items="${sourceList}">
+                        <aui:option value="${src}">
+                            ${src}
+                        </aui:option>
+                    </c:forEach>
+                </aui:select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <%--<aui:input name="startDatexxx" type="date" label="createcompany.edit.startDate"  />--%>
+                <aui:fieldset label="createcompany.edit.startDate">
+                    <liferay-ui:input-date name="startDate" nullable="true"
+                                           yearValue="<%=cal.get(Calendar.YEAR)%>"
+                                           monthValue="<%=cal.get(Calendar.MONTH)%>"
+                                           dayValue="<%=cal.get(Calendar.DAY_OF_MONTH)%>" />
+                </aui:fieldset>
+            </div>
+            <div class="col">
+                <%--<aui:input name="implantationDate" type="date" label="createcompany.edit.implantation" />--%>
+                <aui:fieldset label="createcompany.edit.implantation">
+                    <liferay-ui:input-date name="implantationDate" nullable="true"
+                                           yearValue="<%=cal.get(Calendar.YEAR)%>"
+                                           monthValue="<%=cal.get(Calendar.MONTH)%>"
+                                           dayValue="<%=cal.get(Calendar.DAY_OF_MONTH)%>" />
+                </aui:fieldset>
+            </div>
+            <div class="col">
+                    <%--<aui:input name="deleteDate" type="date" label="createcompany.edit.endDate" />--%>
+                <aui:fieldset label="createcompany.edit.endDate">
+                    <liferay-ui:input-date name="deleteDate" nullable="true" disabled="true" />
+                </aui:fieldset>
+            </div>
+        </div>
+    </aui:fieldset>
+
+    <aui:fieldset label="createcompany.view.admin">
+        <div class="row">
+            <div class="col">
+                <aui:input name="adminName" type="text" label="createcompany.view.adminName" >
+                    <aui:validator name="required" />
+                </aui:input>
+            </div>
+            <div class="col">
+                <aui:input name="adminSurname" type="text" label="createcompany.view.adminSurname" >
+                    <aui:validator name="required" />
+                </aui:input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <aui:input name="email" type="text" label="createcompany.view.email">
+                    <aui:validator name="required" />
+                    <aui:validator name="email" />
+                </aui:input>
+            </div>
+            <div class="col">
+                <aui:input name="nif" type="text" label="createcompany.view.nif"/>
+            </div>
+        </div>
+    </aui:fieldset>
+
+    <aui:button-row>
+        <aui:button type="submit" />
+    </aui:button-row>
+</aui:form>

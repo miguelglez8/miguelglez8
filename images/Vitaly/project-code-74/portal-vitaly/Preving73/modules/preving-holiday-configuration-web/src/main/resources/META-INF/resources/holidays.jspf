@@ -1,0 +1,119 @@
+<%@ page import="com.preving.liferay.portlet.holiday.configuration.web.util.PrevingHolidayUtil" %>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script>
+	Liferay.Loader.define._amd = Liferay.Loader.define.amd;
+	Liferay.Loader.define.amd = false;
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="https://nightly.datatables.net/responsive/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"></script>
+
+<script>
+	Liferay.Loader.define.amd = Liferay.Loader.define._amd;
+</script>
+
+<%
+	List<Holiday> holidayList = HolidayLocalServiceUtil.getHolidaysFromGroup(themeDisplay.getCompanyId(),themeDisplay.getScopeGroupId());
+
+	ResourceBundle bundle = ResourceBundle.getBundle("content/Language", themeDisplay.getUser().getLocale());
+	
+	String months[]={LanguageUtil.get(bundle, "holiday.configuration.january"),
+					 LanguageUtil.get(bundle, "holiday.configuration.february"),
+					 LanguageUtil.get(bundle, "holiday.configuration.march"),
+					 LanguageUtil.get(bundle, "holiday.configuration.april"),
+					 LanguageUtil.get(bundle, "holiday.configuration.may"),
+					 LanguageUtil.get(bundle, "holiday.configuration.june"),
+					 LanguageUtil.get(bundle, "holiday.configuration.july"),
+					 LanguageUtil.get(bundle, "holiday.configuration.august"),
+					 LanguageUtil.get(bundle, "holiday.configuration.september"),
+					 LanguageUtil.get(bundle, "holiday.configuration.october"),
+					 LanguageUtil.get(bundle, "holiday.configuration.november"),
+					 LanguageUtil.get(bundle, "holiday.configuration.december")};
+
+	String yes = LanguageUtil.get(bundle, "holiday.configuration.view.active.yes");
+	String no  = LanguageUtil.get(bundle, "holiday.configuration.view.active.no");
+
+%>
+
+<table id="holidayTable" class="display" style="width:100%">
+	<thead>
+		<tr>
+			<th><liferay-ui:message key="holiday.configuration.view.search.name"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.search.type"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.search.month"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.search.day"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.search.active"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.allow.sign"/></th>
+			<th><liferay-ui:message key="holiday.configuration.view.search.actions"/></th>
+		</tr>
+	</thead>
+	<tbody>
+		<c:forEach items="<%=holidayList%>" var="holidayReport">
+			<%
+				Holiday holiday = (Holiday) pageContext.getAttribute("holidayReport");
+			%>
+			<liferay-portlet:renderURL varImpl="editURL">
+				<portlet:param name="holidayId" value="<%=String.valueOf(holiday.getHolidayId())%>" />
+				<portlet:param name="mvcPath" value="/edit.jsp" />
+			</liferay-portlet:renderURL>
+			<tr>
+				<!-- <td><%=holiday.getName(themeDisplay.getUser().getLocale())%></td> -->
+				<td><%=PrevingHolidayUtil.getAlexGoodNombre(holiday.getName(themeDisplay.getUser().getLocale()))%></td>
+				<td><%=PrevingHolidayUtil.getTitleOfType(holiday.getTypeHoliday(), themeDisplay.getUser().getLocale())%></td>
+				<td data-sort="<%=holiday.getMonth()%>"><%=months[holiday.getMonth()-1]%></td>
+				<td>${holidayReport.day}</td>
+				<td><%=holiday.isActive()?yes:no%></td>
+				<td><%=holiday.isAllowSign()?yes:no%></td>
+				<td><a href="<%=editURL.toString()%>"><liferay-ui:message key="holiday.configuration.view.edit.title"/></a></td>
+			</tr>
+		</c:forEach>
+	</tbody>
+</table>
+
+<script>
+	$(document).ready(function() {
+		$('#holidayTable').DataTable( {
+			dom: 'Bfrtip',
+			order: [[ 2, 'asc' ], [ 3, 'asc' ]],
+			responsive: true,
+			buttons: [
+				'csv', 'excel', 'print', 'pdf'
+			],
+			"language": {
+				"sProcessing":     "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sProcessing")%>",
+				"sLengthMenu":     "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sLengthMenu")%>",
+				"sZeroRecords":    "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sZeroRecords")%>",
+				"sEmptyTable":     "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sEmptyTable")%>",
+				"sInfo":           "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sInfo")%>",
+				"sInfoEmpty":      "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sInfoEmpty")%>",
+				"sInfoFiltered":   "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sInfoFiltered")%>",
+				"sInfoPostFix":    "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sInfoPostFix")%>",
+				"sSearch":         "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sSearch")%>",
+				"sUrl":            "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sUrl")%>",
+				"sInfoThousands":  "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sInfoThousands")%>,",
+				"sLoadingRecords": "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sLoadingRecords")%>",
+				"oPaginate": {
+					"sFirst":    "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sFirst")%>",
+					"sLast":     "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sLast")%>",
+					"sNext":     "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sNext")%>",
+					"sPrevious": "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sPrevious")%>"
+				},
+				"oAria": {
+					"sSortAscending":  "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sSortAscending")%>",
+					"sSortDescending": "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.sSortDescending")%>"
+				},
+				"buttons": {
+					"copy": "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.copy")%>",
+					"colvis": "<%=LanguageUtil.get(bundle, "holiday.configuration.view.datatable.colvis")%>"
+				}
+			},
+		} );
+	} );
+</script>

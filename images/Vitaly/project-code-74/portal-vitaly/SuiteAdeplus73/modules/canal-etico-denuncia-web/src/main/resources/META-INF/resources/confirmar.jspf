@@ -1,0 +1,86 @@
+<div class="row confirm">
+    <div class="col-md-12 p-3">
+    <h5><liferay-ui:message key="denuncia.view.step.empresa"/></h5>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empresa_cif" name="empresa_cif" type="text" label="denuncia.view.empresa.cif" autoSize="true" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empresa_nombre" name="empresa_nombre" type="text" label="denuncia.view.empresa.nombre" autoSize="true" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empresa_vinculacion" name="empresa_vinculacion" type="text" label="denuncia.view.empresa.vinculacion" autoSize="true" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+</div>
+<div class="row confirm">
+    <div class="col-md-12 p-3">
+    <h5><liferay-ui:message key="denuncia.view.step.empleado"/></h5>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empleado_email" name="empleado_email" type="text" label="denuncia.view.empleado.email" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empleado_nombre" name="empleado_nombre" type="text" label="denuncia.view.empleado.name" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empleado_apellidos" name="empleado_apellidos" type="text" label="denuncia.view.empleado.lastname" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empleado_nif" name="empleado_nif" type="text" label="denuncia.view.empleado.nif" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="empleado_telefono" name="empleado_telefono" type="text" label="denuncia.view.empleado.phone" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+</div>
+<div class="row confirm">
+    <div class="col-md-12 p-3">
+        <h5><liferay-ui:message key="denuncia.view.step.denuncia"/></h5>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="denuncia_tipo" name="denuncia_tipo" type="text" label="denuncia.view.denuncia.tipo" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="denuncia_categoria" name="denuncia_categoria" type="text" label="denuncia.view.denuncia.categoria" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+</div>
+<div class="row confirm">
+    <div class="col-md-12 p-3">
+        <h5><liferay-ui:message key="denuncia.view.step.detalle"/></h5>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="detalle_asunto" name="detalle_asunto" type="text" label="denuncia.view.detalle.asunto" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="detalle_descripcion" name="detalle_descripcion" type="textarea" label="denuncia.view.detalle.description" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="detalle_adjunto" name="detalle_adjunto" type="text" label="denuncia.view.detalle.adjunto" disabled="true" inlineLabel="left" inlineField="true"/>
+        </div>
+    </div>
+    
+</div>

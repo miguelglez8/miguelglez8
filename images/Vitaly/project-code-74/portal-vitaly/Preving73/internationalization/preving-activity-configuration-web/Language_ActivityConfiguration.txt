@@ -1,0 +1,69 @@
+
+
+No existen actividades en el sitio web
+Administración de tipos de registro horario
+Nombre
+Tiempo de trabajo
+Tipo
+Color
+Activo
+Acciones
+
+Tipos de registros horarios
+Nuevo registro horario
+
+Editar actividad
+Nueva actividad
+Datos de la actividad
+Actividad
+Tiempo de trabajo
+Si
+No
+Tipos de registro horario
+Trabajo
+Ausencia
+Color
+Activo
+Si
+No
+
+Actividad
+Computa como tiempo de trabajo
+Si
+No
+Tipos de registro horario
+Trabajo
+Ausencia
+Color
+Activo
+Si
+No
+
+Cancelar
+Guardar
+
+Cancelar
+Guardar
+
+¿Estas seguro que desea borrar la siguiente actividad?\nLuego no podrás deshacerse los cambios
+
+Procesando...
+Mostrar _MENU_ actividades
+No se encontraron actividades
+Ninguna actividad disponible en esta tabla
+Mostrando actividades del _START_ al _END_ de un total de _TOTAL_ actividades
+Mostrando actividades del 0 al 0 de un total de 0 actividades
+(filtrado de un total de _MAX_ actividades)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

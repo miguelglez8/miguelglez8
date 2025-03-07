@@ -1,0 +1,118 @@
+
+
+Crear nueva empresa
+Editar empresa
+Importar empresas desde CSV
+Listado de empresas
+Crear empresa
+Importar empresas
+Empresas
+
+Empresa
+Datos administrador
+Configuración
+
+Nombre de la empresa
+CIF
+Nombre
+Apellidos
+NIF
+Correo electrónico
+Fecha de inicio
+Fecha de implantación
+Fecha de baja
+Procedencia
+
+Empresa
+Datos administrador
+Nombre de la empresa
+CIF
+Nombre
+Apellidos
+NIF
+Correo electrónico
+Fecha de inicio
+Fecha de baja
+La empresa tiene {0} usuarios.
+Actualizar permisos de {0} usuarios.
+Se actualizan los permisos del usuario en el caso que no pueda visualizar las herramientas de registro horario.
+Actualizar permisos de todos los usuarios de todas las empresas.
+
+Configuración
+Plantilla para crear sitios web de compañias
+Plantilla
+Seleccione la plantilla que se usará para crear las empresas. La plantilla debe tener toda la configuración del sitio.
+Texto de ayuda para la importación
+Texto
+Plantilla correo electrónico para fechas de baja pasadas.
+Asunto
+El período de uso de la aplicación ya ha finalizado
+Contenido del correo
+<p>Estimada {0}:</p><p>El período de uso de la aplicación ha finalizado el {1}. Desde ese momento ha dejado de tener disponible la herramienta de control horario.</p><p>Gracias por su colaboración.</p>
+
+Empresa creada con éxito
+Proceso de importado de empresas
+Edición de empresas
+<p>Se ha creado la empresa <strong>{0}</strong> correctamente.</p><p>Se ha envíado un correo a <strong>{1}</strong> notificando su contraseña de administrador.</p>
+Se ha lanzado el proceso de creación de empresas. Cuando finalice podrá ver todas las empresas que se han añadido. En el caso de que se produzca algún error, recibirá una notificación indicandolo. Pasados unos minutos, podrá ver las empresas creadas recargando esta página.
+La empresa se ha actualizado correctamente.
+
+
+
+
+Fichero CSV
+
+No se ha creado ninguna empresa.
+Nombre de la empresa
+CIF
+Nombre del administrador
+Correo electrónico
+URL del sitio web
+Activo
+Fecha de creación
+Fecha de modificación
+Fecha de baja
+Acciones
+
+Buscar
+
+El proceso de importación se ha ejecutado correctamente. Cuando el proceso finalice podrá ver todas las empresas creadas refrescando esta página. También será notificado de todas las operaciones realizadas y de los posibles errores ocurridos.
+El proceso de importación no se ha ejecutado. Revise sus notificaciones para saber más acerca de los errores.
+
+No se ha realizado la importación.
+El fichero CSV contiene errores y no se ha lanzado la importación. Revise que el CSV es correcto sin duplicados para lanzar una nueva importación.
+
+
+
+Bienvenido a su Registro Horario. https://www.miregistrodehoras.com
+Nueva empresa creada en Registro Horario. https://www.miregistrodehoras.com
+Baja en Registro horario. https://www.miregistrodehoras.com
+Borrado de empresa en Registro horario. https://www.miregistrodehoras.com
+Nuevas empresas desde fichero CSV en Registro horario. https://www.miregistrodehoras.com
+Error de formato al importar empresa desde fichero CSV en Registro horario. https://www.miregistrodehoras.com
+Error al importar empresa desde fichero CSV en Registro horario. https://www.miregistrodehoras.com
+Error en Registro Horario. https://www.miregistrodehoras.com
+Error en el borrado de empresa en Registro horario. https://www.miregistrodehoras.com
+Su cuenta de usuario ha sido modificada en Registro horario. https://www.miregistrodehoras.com
+
+
+
+Hay errores en los datos en el fichero CSV en la fila :
+<p>A continuaci&#243;n se describen los errores encontrados en la fila del csv : </p>
+<p>El nombre de la empresa est&#225; vac&#237;o. Debe indicarse el nombre en el primer campo del csv.</p>
+<p>El nombre de la empresa ya existe. No se pueden crear dos empresas con el mismo nombre.</p>
+<p>El CIF de la empresa est&#225; vac&#237;o. Debe indicarse el CIF en el campo 2 del csv.</p>
+<p>El CIF de la empresa ya existe. No se pueden crear dos empresas con el mismo CIF.</p>
+<p>No se ha indicado nombre del administrador. Debe indicarse el nombre en el campo 3 del csv.</p>
+<p>No se ha indicado apellidos del administrador. Debe indicarse los apellidos en el campo 4 del csv.</p>
+<p>No se ha indicado NIF del administrador. Debe indicarse el nif en el campo 5 del csv.</p>
+<p>No se ha indicado mail del administrador. Debe indicarse el mail en el campo 6 del csv.</p>
+<p>El mail del administrador no es correcto. Debe indicarse un mail correcto con el formato nombre@dominio.com.</p>
+<p>El mail del administrador ya existe en el sistema. Es posible que ese mail ya se use como usuario o administrador en otra empresa.</p>
+
+Hay valores repetidos en el fichero CSV. No se han podido crear las empresas.
+<p>Para evitar errores en la creaci&#243;n de empresas y usuarios administradores, no se permiten CIF, nombre de empresa, NIF o emails duplicados. Debe corregir el CSV para realizar la importaci&#243;n.</p>
+<p>El CSV contiene CIF de empresa repetidos.</p>
+<p>El CSV contiene nombres de empresa repetidos.</p>
+<p>El CSV contiene NIF de administrador repetidos.</p>
+<p>El CSV contiene emails de administrador repetidos.</p>

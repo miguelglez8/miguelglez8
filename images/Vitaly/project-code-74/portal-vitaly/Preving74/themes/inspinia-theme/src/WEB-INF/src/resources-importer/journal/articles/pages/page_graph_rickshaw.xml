@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[ <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Simple area example <small>With custom colors.</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="chart" class="rickshaw_graph"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Multiple Area</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_multi" class="rickshaw_graph"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>One line Example</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_line" class="rickshaw_graph"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Multiple Line Example</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_multi_line" class="rickshaw_graph"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Bars</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_bars" class="rickshaw_graph"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Stacked Bars</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_bars_stacked" class="rickshaw_graph"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Scatterplot</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_scatterplot" class="rickshaw_graph"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+ 	<!-- Rickshaw -->
+	<script>
+         window.__define = window.define;
+         window.__require = window.require;
+         window.define = undefined;
+         window.require = undefined;
+     </script>
+	
+	
+     <script src="/o/inspinia-theme/js/plugins/rickshaw/vendor/d3.v3.js"></script>
+     <script src="/o/inspinia-theme/js/plugins/rickshaw/rickshaw.min.js"></script>
+
+	 <script>
+         window.define = window.__define;
+         window.require = window.__require;
+         window.__define = undefined;
+         window.__require = undefined;
+     </script>
+	 
+    <!-- Rickshaw demo data -->
+     <script>
+     $(function() {
+		try{
+		    var graph = new Rickshaw.Graph( {
+		        element: document.querySelector("#chart"),
+		        series: [{
+		            color: '#1ab394',
+		            data: [
+		                { x: 0, y: 40 },
+		                { x: 1, y: 49 },
+		                { x: 2, y: 38 },
+		                { x: 3, y: 30 },
+		                { x: 4, y: 32 } ]
+		        }]
+		    });
+		    graph.render();
+		}catch(ex){
+			console.log("ex graph1: "+ ex);
+		}
+		
+		try{
+		    var graph2 = new Rickshaw.Graph( {
+		        element: document.querySelector("#rickshaw_multi"),
+		        renderer: 'area',
+		        stroke: true,
+		        series: [ {
+		            data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 20 }, { x: 4, y: 16 } ],
+		            color: '#1ab394',
+		            stroke: '#17997f'
+		        }, {
+		            data: [ { x: 0, y: 22 }, { x: 1, y: 25 }, { x: 2, y: 38 }, { x: 3, y: 44 }, { x: 4, y: 46 } ],
+		            color: '#eeeeee',
+		            stroke: '#d7d7d7'
+		        } ]
+		    } );
+		    graph2.renderer.unstack = true;
+		    graph2.render();
+		}catch(ex){
+			console.log("ex  graph2: "+ ex);
+		}
+		
+		try{
+		    var graph3 = new Rickshaw.Graph({
+		        element: document.querySelector("#rickshaw_line"),
+		        renderer: 'line',
+		        series: [ {
+		            data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+		            color: '#1ab394'
+		        } ]
+		    } );
+		    graph3.render();
+		}catch(ex){
+			console.log("ex  graph3: "+ ex);
+		}
+		
+		try{
+		    var graph4 = new Rickshaw.Graph({
+		        element: document.querySelector("#rickshaw_multi_line"),
+		        renderer: 'line',
+		        series: [{
+		            data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+		            color: '#1ab394'
+		        }, {
+		            data: [ { x: 0, y: 20 }, { x: 1, y: 24 }, { x: 2, y: 19 }, { x: 3, y: 15 }, { x: 4, y: 16 } ],
+		            color: '#d7d7d7'
+		        }]
+		    });
+		    graph4.render();
+		}catch(ex){
+			console.log("ex  graph4: "+ ex);
+		}
+		
+		try{
+		    var graph5 = new Rickshaw.Graph( {
+		        element: document.querySelector("#rickshaw_bars"),
+		        renderer: 'bar',
+		        series: [ {
+		            data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+		            color: '#1ab394'
+		        } ]
+		    } );
+		    graph5.render();
+		}catch(ex){
+			console.log("ex  graph5: "+ ex);
+		}
+		
+		try{
+		    var graph6 = new Rickshaw.Graph( {
+		        element: document.querySelector("#rickshaw_bars_stacked"),
+		        renderer: 'bar',
+		        series: [
+		            {
+		                data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+		                color: '#1ab394'
+		            }, {
+		                data: [ { x: 0, y: 20 }, { x: 1, y: 24 }, { x: 2, y: 19 }, { x: 3, y: 15 }, { x: 4, y: 16 } ],
+		                color: '#d7d7d7'
+		            } ]
+		    } );
+		    graph6.render();
+		}catch(ex){
+			console.log("ex  graph6: "+ ex);
+		}
+		
+		try{
+		    var graph7 = new Rickshaw.Graph( {
+		        element: document.querySelector("#rickshaw_scatterplot"),
+		        renderer: 'scatterplot',
+		        stroke: true,
+		        padding: { top: 0.05, left: 0.05, right: 0.05 },
+		        series: [ {
+		            data: [ { x: 0, y: 15 },
+		                { x: 1, y: 18 },
+		                { x: 2, y: 10 },
+		                { x: 3, y: 12 },
+		                { x: 4, y: 15 },
+		                { x: 5, y: 24 },
+		                { x: 6, y: 28 },
+		                { x: 7, y: 31 },
+		                { x: 8, y: 22 },
+		                { x: 9, y: 18 },
+		                { x: 10, y: 16 }
+		            ],
+		            color: '#1ab394'
+		        } ]
+		    } );
+		    graph7.render();
+		}catch(ex){
+			console.log("ex  graph7: "+ ex);
+		}
+		
+   	});
+	</script>
+      ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

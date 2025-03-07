@@ -1,0 +1,11 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
+	compileOnly project(":modules:canal-etico-v2-manager:canal-etico-v2-manager-api")
+	compileOnly project(":modules:adeplus-suite-manager:adeplus-suite-manager-api")
+	compileOnly project(":modules:canal-etico-commons-web")
+
+	compileOnly project(":modules:canal-etico-v2-mailing-web")
+
+}

@@ -1,0 +1,5 @@
+Bundle-Name: preving-timesheet-web
+Bundle-SymbolicName: com.preving.liferay.portlet.timesheet.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.timesheet.web.constants
+Import-Package:*;resolution:=optional

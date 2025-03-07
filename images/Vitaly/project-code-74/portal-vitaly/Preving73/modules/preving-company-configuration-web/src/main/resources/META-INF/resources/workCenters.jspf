@@ -1,0 +1,445 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+<script>
+    Liferay.Loader.define._amd = Liferay.Loader.define.amd;
+    Liferay.Loader.define.amd = false;
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"></script>
+
+<div class="row" id="rowDataTable">
+    <div class="col sm-3">
+        <input type="text" class="w-100 field form-control success-field mt-0" id="spnInputSearch" />
+    </div>
+    <div class="col sm-3">
+        <label class="mr-2 mt-2"><liferay-ui:message key="radio.activos.label"/></label>
+         <input type="radio" name="rdoActivo" value="SI" onChange="filtrarCentros(this.value)" checked>
+            <liferay-ui:message key="radio.activos.si"/>
+         </input>
+        <input type="radio" name="rdoActivo" value="NO" onChange="filtrarCentros(this.value)">
+            <liferay-ui:message key="radio.activos.no"/>
+        </input>
+        <input type="radio" name="rdoActivo" value="TODOS" onChange="filtrarCentros(this.value)">
+            <liferay-ui:message key="radio.activos.todos"/>
+        </input>
+    </div>
+    <div class="col sm-3">
+        <button type="button" id="btnNewWorkCenter"  class="mt-1 right">
+            <liferay-ui:message key="btn.nuevo.centro"/>
+        </button>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <table id="tableWorkCenters" class="display d-none" style="width:100% !important;">
+            <thead>
+            <tr>
+                <th><liferay-ui:message key="company.configuration.configuration.workCenter.name"/></th>
+                <th><liferay-ui:message key="company.configuration.configuration.workCenter.creationDate"/></th>
+                <th><liferay-ui:message key="company.configuration.configuration.workCenter.creadoPor"/></th>
+                <th><liferay-ui:message key="company.configuration.configuration.workCenter.inactiveDate"/></th>
+                <th>&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- modal -->
+<div class="contentModal  " id="modalContainer" style="border-radius: 10px; width: 550px;">
+    <div class="col-md-12 headerModal">
+        <p id="addEntidad">&nbsp;&nbsp;
+        <span id="lblTituloEditar" class="d-none">
+            <liferay-ui:message key="createcompany.configuration.view.dialog.centro.titulo.editar"/>
+        </span>
+        <span id="lblTituloNuevo" class="d-none">
+            <liferay-ui:message key="createcompany.configuration.view.dialog.centro.titulo.nuevo"/>
+        </span>
+
+        </p>
+    </div>
+    <div id="containerModal" style="margin-top: 30px;">
+        <div class="container">
+            <div class="row myrow m-4" >
+                <div class="col-4 mt-1">
+                    <liferay-ui:message key="createcompany.configuration.view.dialog.centro.nombre"/>*
+                </div>
+                <div class="col-8">
+                    <input type="text" id="<portlet:namespace/>inpNombre" class="w-100 field form-control"/>
+                </div>
+            </div>
+
+            <div class="row myrow m-4" >
+                <div class="col-4 mt-1">
+                    <liferay-ui:message key="createcompany.configuration.view.dialog.centro.fechaBaja"/>
+                </div>
+                <div class="col-8">
+                    <input   type="date"  id="<portlet:namespace/>inpFechaBaja" class="w-50 field form-control"/>
+                </div>
+            </div>
+        </div>
+        <div class="footerModal">
+             <button type="button" class="btn-primary buttonModal" id="btnSaveCad" onclick="sendWorkCenter()" data-dismiss="modal" aria-label="Close">
+                <span id="btnAnadir" class="d-none">
+                    <liferay-ui:message key="btn.anadir"/>
+                </span>
+                <span id="btnEditar" class="d-none">
+                    <liferay-ui:message key="btn.editar"/>
+                </span>
+             </button>
+
+            <button type="button" class="buttonModal closeMyModal " id="btnCancel"  style="background-color: buttonface;color: black;" data-dismiss="modal" aria-label="Close">
+               <liferay-ui:message key="btn.cancelar" />
+            </button>
+        </div>
+    </div>
+</div>
+<div class="divModal" id="modalPortlet">
+</div>
+<!-- end modal -->
+
+<portlet:resourceURL id="getAllWorkCentersByCompany" var="getAllWorkCentersByCompanyURL"/>
+<portlet:resourceURL id="addEditWorkCenter" var="addEditWorkCenterURL"/>
+<script>
+    var idCentro = null;
+    $("#btnNewWorkCenter").on('click', function(){
+        $("#lblTituloEditar").addClass("d-none");
+        $("#btnEditar").addClass("d-none");
+
+        $("#lblTituloNuevo").removeClass("d-none");
+        $("#btnAnadir").removeClass("d-none");
+
+        idCentro = "";
+        mostrarModal();
+    });
+
+    $('.closeMyModal').click(function(){
+                $('.divModal').hide();
+                $('.contentModal').hide();
+                $("#wrapper").css("z-index","0");
+                $("#<portlet:namespace/>inpNombre").val('');
+                $("#<portlet:namespace/>inpFechaBaja").val('');
+            });
+
+
+    var urlAjaxBase = "<%=getAllWorkCentersByCompanyURL.toString()%>" + "&companyId=<%=companyConf.getCompanyConfId()%>";
+    var urlAddEditWorkCenter = "<%=addEditWorkCenterURL%>";
+    //console.log (urlAjaxBase)
+    var tablaWorkCenters = null;
+    var dateCreated = null, dateEnd = null;
+    var jsonData = null;
+    function removeAccents (str) {
+              return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+    $(document).ready( function () {
+
+        $(document).on('keypress',function(e) {
+            if(e.which == 13) {
+                AUI().use('aui-form-validator', function(A) {
+                    A.one('#<portlet:namespace/>configuration_form').on('submit', function(event) {
+                        if($('#containerModal').is(':visible')){
+                            event.preventDefault();
+                            event.stopPropagation();
+                            sendWorkCenter();
+                            return false;
+                        }else{
+                            this.getDOM().submit();
+                        }
+                    });
+                });
+            }
+        });
+
+
+        tablaWorkCenters = $('#tableWorkCenters').DataTable( {
+            ajax: {
+                "url": urlAjaxBase,
+                "dataSrc": function ( json ) {
+                                jsonData = json.data;
+                                return json.data;
+                           }
+            },
+            dom: 'frtip',
+            pageLength: 20,
+            responsive: true,
+            initComplete : function (){
+                $("#tableWorkCenters_filter").addClass("d-none");
+                $("#spnInputSearch").on("keyup", function(e){
+                    $("#tableWorkCenters_filter  input").val($("#spnInputSearch").val());
+                    $("#tableWorkCenters_filter  input").trigger("keyup")
+                })
+            },
+            buttons: [
+                'csv'
+            ],
+            "columns": [
+                {"data" : "name"},
+                {"data" : "createdDate"},
+                {"data" : "createdBy"},
+                {"data" : "endDate"},
+                {"data" : "workCentersId"} //editar
+            ],
+            "columnDefs": [
+                    {
+                    "targets"  : [1],
+                    "orderable": true,
+                    "render": function (data, type, row) {
+                                dateCreated = new Date(parseInt(data));
+                                return "<span class='hide'>" + dateCreated.getTime()+"/</span><span>" + dateCreated.toLocaleDateString("es-ES", { year: 'numeric', month: '2-digit', day: '2-digit' }) + "</span>"
+                              }
+                    },
+                    {
+                        "targets"  : [3],
+                        "orderable": true,
+                        "render": function (data, type, row) {
+                            if(data != ""){
+                                dateEnd = new Date(parseInt(data));
+                                return "<span class='hide'>" + dateEnd.getTime()+"/</span><span>" + dateEnd.toLocaleDateString("es-ES", { year: 'numeric', month: '2-digit', day: '2-digit' }) + "</span>";
+                            }else{
+                                return "";
+                            }
+                        }
+                    },
+                    {
+                        "targets"  : [4],
+                        "orderable": false,
+                        "searchable": false,
+                        "className": "text-right",
+                        "render": function (data, type, row) {
+                            return '<a href="javascript:void(0)" onclick="editWorkCenter(' + data + ')">' + '<%=LanguageUtil.get(bundle, "createcompany.configuration.view.editarCentro")%></a>';
+                        }
+                    }
+                ],
+            "language": {
+                "sProcessing":     "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sProcessing")%>",
+                "sLengthMenu":     "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sLengthMenu")%>",
+                "sZeroRecords":    "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sZeroRecords")%>",
+                "sEmptyTable":     '<liferay-ui:message key="createcompany.configuration.view.datatable.sEmptyTableWorkCenters"/>',
+                "sInfo":           "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sInfo")%>",
+                "sInfoEmpty":      '<liferay-ui:message key="createcompany.configuration.view.datatable.sEmptyTableWorkCenters"/>',
+                "sInfoFiltered":   "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sInfoFiltered")%>",
+                "sInfoPostFix":    "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sInfoPostFix")%>",
+                "sSearch":         "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sSearch")%>",
+                "sUrl":            "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sUrl")%>",
+                "sInfoThousands":  "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sInfoThousands")%>,",
+                "sLoadingRecords": "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sLoadingRecords")%>",
+                "oPaginate": {
+                    "sFirst":    "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sFirst")%>",
+                    "sLast":     "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sLast")%>",
+                    "sNext":     "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sNext")%>",
+                    "sPrevious": "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sPrevious")%>"
+                },
+                "oAria": {
+                    "sSortAscending":  "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sSortAscending")%>",
+                    "sSortDescending": "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.sSortDescending")%>"
+                },
+                "buttons": {
+                    "copy": "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.copy")%>",
+                    "colvis": "<%=LanguageUtil.get(bundle, "createcompany.configuration.view.datatable.colvis")%>"
+                }
+            }
+            } );
+
+
+
+        });
+
+        function mostrarModal(){
+                $('#modalPortlet').css('display','block');
+                $('#modalContainer').css('display','block');
+            }
+        function sendWorkCenter(){
+
+            addWorkCenter();
+            $("#<portlet:namespace/>inpNombre").val('');
+            $("#<portlet:namespace/>inpFechaBaja").val('');
+            tablaWorkCenters.ajax.reload()
+            if($("#<portlet:namespace/>inpNombre").val() != "") $('.closeMyModal').click()
+        }
+
+        function editWorkCenter(_id){
+            $("#lblTituloEditar").removeClass("d-none");
+            $("#btnEditar").removeClass("d-none");
+
+            $("#lblTituloNuevo").addClass("d-none");
+            $("#btnAnadir").addClass("d-none");
+
+            let item = null;
+            for(let i = 0; i < jsonData.length; i++){
+                if(jsonData[i].workCentersId == _id){
+                    item = jsonData[i];
+                    break;
+                }
+            }
+
+
+            $("#<portlet:namespace/>inpNombre").val(item.name);
+            if(item.endDate && item.endDate != ""){
+                var dateEnd = new Date();
+                dateEnd.setTime(item.endDate);
+                console.log("dateEnd.toLocaleDateString: " + dateEnd.toISOString().slice(0,10) );
+                //$("#<portlet:namespace/>inpFechaBaja").val(dateEnd.toLocaleDateString("es-ES", { year: 'numeric', month: '2-digit', day: '2-digit' }).replaceAll("/","-"));
+                $("#<portlet:namespace/>inpFechaBaja").val(dateEnd.toISOString().slice(0,10).replace(/-/g,"-"));
+            }else{
+                $("#<portlet:namespace/>inpFechaBaja").val("");
+            }
+
+            idCentro = _id;
+            mostrarModal();
+
+            console.log("1) " + item.workCentersId + " / " + item.name + " / " + item.createdBy);
+
+
+        }
+
+        function addWorkCenter(){
+
+            if($("#<portlet:namespace/>inpNombre").val() == "") return false;
+
+            var formData = new FormData();
+            formData.append('<portlet:namespace/>companyId',"<%=companyConf.getCompanyConfId()%>");
+            if(idCentro && idCentro != null){
+                formData.append('<portlet:namespace/>idCentro',idCentro);
+            }else{
+                formData.append('<portlet:namespace/>idCentro',"");
+            }
+
+            formData.append('<portlet:namespace/>nombre',$("#<portlet:namespace/>inpNombre").val());
+            formData.append('<portlet:namespace/>fecha',$("#<portlet:namespace/>inpFechaBaja").val());
+            formData.append('<portlet:namespace/>createdBy',"<%=nameUser%>");
+
+            console.log("FORMDATA");
+            console.log(formData);
+
+                    $.ajax({
+                        type: "POST",
+                        url: urlAddEditWorkCenter,
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (result) {
+                          console.log("Okay: "+result);
+                          idCentro = null;
+                          tablaWorkCenters.ajax.reload();
+                          $('.closeMyModal').click();
+                          tablaWorkCenters.draw();
+                      }
+                    });
+
+
+        }
+
+
+        function filtrarCentros(_value){
+            tablaWorkCenters.draw();
+        }
+         var hoy = new Date(), fechaBaja = null;
+         var contenidoInput=""
+         var numeroCondiciones=2;
+         var condiciones=0;
+                     var arrFecha = null;
+                     hoy.setHours(23,59,0);
+                     $.fn.dataTable.ext.search.push(
+                        function( settings, data, dataIndex ) {
+                            console.log("data[3]:" + data[3])
+                            condiciones=0;
+                            if($("#spnInputSearch").val()=="" || $("#spnInputSearch").val()==undefined){
+                                if($("input[name='rdoActivo']:checked").val() == "NO" && data[3] == "") return false;
+                                if($("input[name='rdoActivo']:checked").val() == "TODOS" || data[3] == "") return true;
+
+
+                                arrFecha = data[3].split("/");
+                                fechaBaja = new Date(arrFecha[3] + "-" + arrFecha[2] + "-" + arrFecha[1]);
+                                if($("input[name='rdoActivo']:checked").val() == "SI"){
+                                    if(hoy.getTime() >= fechaBaja.getTime()){
+                                        return false;
+                                    }
+                                }else if($("input[name='rdoActivo']:checked").val() == "NO"){
+                                    if(hoy.getTime() <= fechaBaja.getTime()){
+                                        return false;
+                                    }
+                                }
+                                return true;
+                            }else{
+                                contenidoInput=removeAccents($("#spnInputSearch").val().toUpperCase());
+                                if(removeAccents(data[0].toUpperCase()).indexOf(contenidoInput)>=0 || removeAccents(data[4].toUpperCase()).indexOf(contenidoInput)>=0 ){
+                                    condiciones++;
+                                }else{
+                                    condiciones--;
+                                }
+                                if($("input[name='rdoActivo']:checked").val() == "NO" && data[3] == "") {
+                                    condiciones--;
+                                }else if($("input[name='rdoActivo']:checked").val() == "TODOS" || data[3] == ""){
+                                    condiciones++;
+                                }else{
+
+                                    arrFecha = data[3].split("/");
+                                    fechaBaja = new Date(arrFecha[3] + "-" + arrFecha[2] + "-" + arrFecha[1]);
+                                    if($("input[name='rdoActivo']:checked").val() == "SI"){
+                                        if(hoy.getTime() >= fechaBaja.getTime()){
+                                            condiciones--;
+                                        }
+                                    }else if($("input[name='rdoActivo']:checked").val() == "NO"){
+                                        if(hoy.getTime() <= fechaBaja.getTime()){
+                                            return false;
+                                        }
+                                    }else{
+                                        condiciones++;;
+                                    }
+                                }
+                                if(condiciones==numeroCondiciones){
+                                    return true;
+                                }else{
+                                    return false
+                                }
+                            }
+                        }
+                    );
+
+
+
+                     $(document).ready(function(){
+                            if($("input[name='<portlet:namespace/>isWorkCenters']:checked").val() == 'yes'){
+                                $("#tableWorkCenters").removeClass("d-none");
+                                $("#rowDataTable").removeClass("d-none");
+                                $("#tableWorkCenters_wrapper").removeClass("d-none");
+                            }else if($("input[name='<portlet:namespace/>isWorkCenters']:checked").val() == 'no'){
+                                $("#tableWorkCenters").addClass("d-none");
+                                $("#rowDataTable").addClass("d-none");
+                                $("#tableWorkCenters_wrapper").addClass("d-none");
+                            }
+                        });
+                        function showWorkCenters(_val){
+                            if(_val){
+                                $("#tableWorkCenters").removeClass("d-none");
+                                $("#rowDataTable").removeClass("d-none");
+                                $("#tableWorkCenters_wrapper").removeClass("d-none");
+                            }else{
+                                $("#tableWorkCenters").addClass("d-none");
+                                $("#rowDataTable").addClass("d-none");
+                                $("#tableWorkCenters_wrapper").addClass("d-none");
+                            }
+                        }
+
+</script>
+
+<style>
+#spnInputSearch {
+  margin: 26px 0 0;
+  height: 34px;
+  border-radius: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23000' d='m12.53 11.886-1.743-1.747c-.47-.47-.49-1.21-.26-1.835.148-.4.222-.826.222-1.263a3.619 3.619 0 0 0-.506-1.87 3.826 3.826 0 0 0-1.332-1.332 3.646 3.646 0 0 0-.885-.374 3.743 3.743 0 0 0-1.97 0 3.687 3.687 0 0 0-1.634.956 3.827 3.827 0 0 0-.582.75 3.754 3.754 0 0 0-.375.884 3.699 3.699 0 0 0-.132.986c0 .34.045.67.132.986.087.314.213.613.375.885a3.774 3.774 0 0 0 2.216 1.705c.72.2 1.537.172 2.247-.089.624-.229 1.365-.21 1.835.26l1.747 1.743c.089.09.2.135.323.135a.448.448 0 0 0 .324-.135.449.449 0 0 0-.002-.645ZM9.833 7.041c0 .382-.075.748-.22 1.085-.148.34-.349.638-.6.889a2.792 2.792 0 0 1-4.544-3.06c.147-.337.35-.637.6-.888.25-.25.549-.453.888-.598.337-.146.701-.22 1.085-.22.382 0 .748.074 1.084.22.339.145.637.348.888.598.25.25.453.551.598.889.146.337.22.703.22 1.085Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+}
+</style>

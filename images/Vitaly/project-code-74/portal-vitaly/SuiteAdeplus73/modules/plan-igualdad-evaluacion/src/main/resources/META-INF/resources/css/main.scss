@@ -1,0 +1,46 @@
+.plan-igualdad-evaluacion {
+}
+
+.input-group-item {
+    width: 100%;
+}
+
+.label-margin {
+	margin-top: 25px !important;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.display-none, .dataTables_length, #table_evaluations_filter{
+	display: none;
+}
+
+textarea{
+	width: 70%!important;
+	height: 5em!important;
+}
+
+.ico-acciones-tabla{
+	cursor:pointer;
+}
+
+.help-block{
+	width: 20em!important;
+	position: absolute!important;
+}
+
+.fieldset-subtitle-section{
+	font-size: 1.175rem;
+    line-height: 1.65rem;
+    font-weight: 600;
+    margin-bottom: 1.65rem;
+}

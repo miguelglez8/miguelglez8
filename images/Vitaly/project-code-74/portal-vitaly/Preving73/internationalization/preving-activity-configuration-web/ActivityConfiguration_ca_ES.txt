@@ -1,0 +1,11 @@
+Administración de tipos de registro horario
+
+Jornada laboral - otros	Si	Trabajo
+Jornada laboral en exterior	Si	Trabajo
+Jornada laboral en oficina	Si	Trabajo
+Jornada laboral en reunión en cliente	Si	Trabajo
+Jornada laboral en teletrabajo	Si	Trabajo
+Pausa - comida	No	Ausencia
+Pausa - descanso	No	Ausencia
+Pausa - otros	No	Ausencia
+Pausa - visita médica

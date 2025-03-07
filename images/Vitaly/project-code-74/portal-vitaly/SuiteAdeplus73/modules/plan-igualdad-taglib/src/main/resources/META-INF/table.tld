@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<taglib
+        version="2.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+>
+    <tlib-version>1.0</tlib-version>
+    <short-name>adeplus-datatable</short-name>
+    <uri>https://adeplusconsultores.com/tld/adeplus</uri>
+    <tag>
+        <description>Crea las tablas</description>
+        <name>datatable</name>
+        <tag-class>com.plan.igualdad.liferay.taglib.DatatableTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Id tabla</description>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Valores tabla</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Id formulario</description>
+            <name>form</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Title</description>
+            <name>title</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Tooltip</description>
+            <name>tooltip</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Edit title</description>
+            <name>editTitle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Delete title</description>
+            <name>deleteTitle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

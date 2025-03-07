@@ -1,0 +1,4 @@
+Bundle-Name: plan-igualdad-informacion-web
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.informacion.web
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.informacion.web.constants

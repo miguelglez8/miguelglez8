@@ -1,0 +1,9 @@
+Bundle-Name: plan-igualdad-commons-web
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.commons.web
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.commons.web.role, \
+                com.plan.igualdad.liferay.portlet.commons.web.constants, \
+                com.plan.igualdad.liferay.portlet.commons.web.indicadores, \
+                com.plan.igualdad.liferay.portlet.commons.web.parametrizaciones, \
+                com.plan.igualdad.liferay.portlet.commons.web.estado, \
+                com.plan.igualdad.liferay.portlet.commons.web.dto

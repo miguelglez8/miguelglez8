@@ -1,0 +1,89 @@
+Usuarios de Adeplus
+
+Adeplus
+
+# List
+Usuarios 
+Nombre
+Apellidos
+NIF
+Email
+Empresa
+Aplicaciones
+Administrador
+Fecha de alta
+Fecha de baja
+Activo
+Editar
+Actualizar
+No hay ninguna empresa asignada al usuario.
+No eres administrador de esta empresa.
+
+Se ha guardado el usuario correctamente.
+Error: Ya existe un usuario registrado con el NIF.
+Error: Ya existe un usuario registrado con el email.
+
+#Actions
+Nuevo usuario
+Cancelar
+Recordar contraseña
+
+Si
+No
+Todos
+
+# Edit
+Usuario
+Nombre
+Idioma
+Español
+Catalán
+Apellidos
+NIF
+Email
+Teléfono
+Administrador
+Fecha de baja
+Acceso a aplicaciones
+Se debe seleccionar al menos una aplicación.
+
+# Success
+Usuario guardado correctamente
+Se ha guardado el usuario y se le ha enviado un mail a su cuenta con los datos de acceso.
+Aceptar
+
+# Validations
+Requerido
+El email es incorrecto.
+Ya existe un usuario con ese email.
+Ya existe un usuario con ese email.
+Ya existe un usuario en la empresa con ese nif y email.
+
+# Mail subjects
+Bienvenido a la suite de aplicaciones
+Baja de la suite de aplicaciones
+Consulta en la suite de aplicaciones
+Nuevas aplicaciones en la Suite de Aplicaciones
+
+
+# Datatable
+Procesando...
+Mostrar _MENU_ usuarios
+No se encontraron usuarios
+Ningún usuario disponible en esta tabla
+Mostrando usuarios del _START_ al _END_ de un total de _TOTAL_ usuarios
+Mostrando usuarios del 0 al 0 de un total de 0 usuarios
+(filtrado de un total de _MAX_ usuarios)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+u: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

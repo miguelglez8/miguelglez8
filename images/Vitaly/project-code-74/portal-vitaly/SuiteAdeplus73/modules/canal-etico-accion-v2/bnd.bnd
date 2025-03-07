@@ -1,0 +1,4 @@
+Bundle-Name: canal-etico-accion-v2
+Bundle-SymbolicName: com.canal.etico.liferay.portlet.accion.v2.web
+Bundle-Version: 1.0.0
+Export-Package: com.canal.etico.liferay.portlet.accion.v2.web.constants

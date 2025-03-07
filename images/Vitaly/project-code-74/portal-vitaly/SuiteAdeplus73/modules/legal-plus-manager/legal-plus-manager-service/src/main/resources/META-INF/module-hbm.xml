@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.Ayuntamiento" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.CCAA" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.CNAES" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.ConsultorCompany" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.ContratoCompany" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.EvalLegislacion" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.EvalRequisito" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.HiddenLegis" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.Legislacion" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.LegislacionCNAES" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.Provincia" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.Requisito" />
+	<import class="com.legalplus.liferay.portlet.legalplus.manager.model.RequisitoCNAES" />
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.AyuntamientoImpl" table="legalplus_Ayuntamiento">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.AyuntamientoPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ccaaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="provinciaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ayuntamientoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.CCAAImpl" table="legalplus_CCAA">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ccaaId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.CNAESImpl" table="legalplus_CNAES">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cnae" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.ConsultorCompanyImpl" table="legalplus_ConsultorCompany">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.ConsultorCompanyPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="appId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="lastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.ContratoCompanyImpl" table="legalplus_ContratoCompany">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.ContratoCompanyPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="contractId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="familia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ccaa" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ayuntamiento" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cnaes" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.EvalLegislacionImpl" table="legalplus_EvalLegislacion">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.EvalLegislacionPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="version" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="fecha" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="proxima" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cumplimiento" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="usuario" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="adjunto" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="observaciones" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.EvalRequisitoImpl" table="legalplus_EvalRequisito">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.EvalRequisitoPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="version" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="compId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="requisitoId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="fecha" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="proxima" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cumplimiento" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="usuario" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="adjunto" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="observaciones" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.HiddenLegisImpl" table="legalplus_HiddenLegis">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.HiddenLegisPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="empresaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.LegislacionImpl" table="legalplus_Legislacion">
+		<id access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="familia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="tipo" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ambito" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="publicacion" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="derogacion" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="descripcion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="etiquetas" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="enlace" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ccaa" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ayuntamiento" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="urgente" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="empresas" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.LegislacionCNAESImpl" table="legalplus_LegislacionCNAES">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.LegislacionCNAESPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cnae" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.ProvinciaImpl" table="legalplus_Provincia">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.ProvinciaPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="ccaaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="provinciaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="capitalId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.RequisitoImpl" table="legalplus_Requisito">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.RequisitoPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="requisitoId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="descripcion" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="baja" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.legalplus.liferay.portlet.legalplus.manager.model.impl.RequisitoCNAESImpl" table="legalplus_RequisitoCNAES">
+		<composite-id class="com.legalplus.liferay.portlet.legalplus.manager.service.persistence.RequisitoCNAESPK" name="primaryKey">
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="legislacionId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="requisitoId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="cnae" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="createDate" type="org.hibernate.type.TimestampType" />
+		<property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

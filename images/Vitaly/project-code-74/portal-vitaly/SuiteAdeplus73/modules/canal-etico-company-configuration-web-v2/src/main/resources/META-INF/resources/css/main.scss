@@ -1,0 +1,116 @@
+.canal-etico-company-configuration-web-v2 {
+}
+.titleConfiguration{
+    color:#004d71;
+}
+.customFile{
+    height: auto !important;
+}
+.grupoEmpresa{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.dataTables_filter, .dataTables_info, .dataTables_paginate, .dt-buttons{
+    display:none;
+}
+
+#adeplus .sidebar-expanded {
+    z-index:0 !important;
+}
+
+#adeplus .sidebar-collapsed {
+    z-index:0  !important;
+}
+
+.headerModal {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    background-color: #004d71;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.labelInput{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+}
+.buttonModal{
+    padding: 5px;
+    margin: 7px;
+    border-radius: 5px;
+    float:right;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    min-width: 90px !important;
+}
+#toggle-button:checked ~ .grupoEmpresa {
+  display: block;
+  opacity: 1;
+}
+#botonModificar{
+    display:none;
+}
+
+#adeplus .ico-acciones-tabla {
+    display: inline-grid !important;
+    margin: 0 8px !important;
+}
+
+.iconosConfiguacion{
+    cursor: pointer;
+}
+#toggle-button{
+    height: 16px !important;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.disabledIcono{
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#adeplus .ico-acciones-tabla:hover {
+    background-color: #F5F7F9 !important;
+}
+
+.myrow{
+    margin-bottom: 10px;
+}
+.inputModal{
+    height: 2rem !important
+}
+
+.list-item-text{
+    font-size: 14px !important;
+}
+
+.layout-logo {
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.prv-descarga{
+    background: #EEEEEE;
+    border-radius:5px;
+    padding: 1rem 2rem;
+    width: fit-content;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.prv-enlace{
+    color: black;
+    text-decoration: none;
+}
+
+.prv-enlace:hover{
+    color: black;
+    text-decoration: none;
+}

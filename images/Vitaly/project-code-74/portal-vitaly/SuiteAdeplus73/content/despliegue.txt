@@ -1,0 +1,6 @@
+---------------------------------------------
+--------REPOSITORIO DOCUMENTAL --------------
+---------------------------------------------
+- En Documentos y multimedia crear la carpeta "Jasper Reports" y subir los documentos 
+generados por el Jaspersoft
+

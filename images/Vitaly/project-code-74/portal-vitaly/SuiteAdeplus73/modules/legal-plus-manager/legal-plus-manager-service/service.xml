@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.legalplus.liferay.portlet.legalplus.manager">
+	<namespace>legalplus</namespace>
+
+	<entity local-service="true" name="Legislacion"  remote-service="true">
+
+		<!-- PK fields -->
+		<column name="legislacionId" primary="true" type="String" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="familia" type="String" />
+		<column name="tipo" type="long" />
+		<column name="ambito" type="long" />
+		<column name="publicacion" type="Date" />
+		<column name="derogacion" type="Date" />
+		<column name="descripcion" type="String" />
+		<column name="etiquetas" type="String" />
+		<column name="enlace" type="String" />
+		<column name="ccaa" type="long" />
+		<column name="ayuntamiento" type="long" />
+		<column name="urgente" type="Date" />
+		<column name="empresas" type="String"/>
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="publicacion" />
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Ccaa" return-type="Collection">
+			<finder-column name="ccaa" />
+		</finder>
+		<finder name="Ayuntamiento" return-type="Collection">
+			<finder-column name="ayuntamiento" />
+		</finder>
+		<finder name="Urgente" return-type="Collection">
+			<finder-column name="urgente" />
+		</finder>
+
+		<!-- References -->
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+
+	<entity local-service="true" name="Requisito">
+
+		<!-- PK fields -->
+		<column name="legislacionId" primary="true" type="String" />
+		<column name="requisitoId" primary="true" type="String" />
+
+		<!-- Other fields -->
+		<column name="descripcion" type="String" />
+		<column name="baja" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="legislacionId" />
+			<order-column name="requisitoId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="LegislacionRequisito" return-type="Requisito" unique="true">
+			<finder-column name="legislacionId" />
+			<finder-column name="requisitoId" />
+		</finder>
+		<finder name="Legislacion" return-type="Collection">
+			<finder-column name="legislacionId" />
+		</finder>
+
+		<!-- References -->
+		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />-->
+		<!--<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+	</entity>
+
+	<entity local-service="true" name="LegislacionCNAES">
+
+		<!-- PK fields -->
+		<column name="legislacionId" primary="true" type="String" />
+		<column name="cnae" primary="true" type="String" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="legislacionId" />
+			<order-column name="cnae" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="LegislacionCNAE" return-type="LegislacionCNAE" unique="true">
+			<finder-column name="legislacionId" />
+			<finder-column name="cnae" />
+		</finder>
+		<finder name="Legislacion" return-type="Collection">
+			<finder-column name="legislacionId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="RequisitoCNAES">
+
+		<!-- PK fields -->
+		<column name="legislacionId" primary="true" type="String" />
+		<column name="requisitoId" primary="true" type="String" />
+		<column name="cnae" primary="true" type="String" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="requisitoId" />
+			<order-column name="cnae" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="RequisitoCNAES" return-type="RequisitoCNAES" unique="true">
+			<finder-column name="legislacionId" />
+			<finder-column name="requisitoId" />
+			<finder-column name="cnae" />
+		</finder>
+		<finder name="LegislacionRequisito" return-type="Collection">
+			<finder-column name="legislacionId" />
+			<finder-column name="requisitoId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="CNAES">
+
+		<!-- PK fields -->
+		<column name="cnae" primary="true" type="String" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="cnae" return-type="CNAES" unique="true">
+			<finder-column name="cnae" />
+		</finder>
+
+		<!--
+		<finder name="Nombre" return-type="CNAES" unique="true">
+			<finder-column name="nombre" />
+		</finder>
+		-->
+
+		<!-- References -->
+		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />-->
+		<!--<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+	</entity>
+
+	<entity local-service="true" name="CCAA">
+
+		<!-- PK fields -->
+		<column name="ccaaId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Nombre" return-type="CCAA" unique="true">
+			<finder-column name="nombre" />
+		</finder>
+
+		<!-- References -->
+		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />-->
+		<!--<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+	</entity>
+
+	<entity local-service="true" name="Provincia">
+
+		<!-- PK fields -->
+		<column name="ccaaId" primary="true" type="long" />
+		<column name="provinciaId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="capitalId" type="long" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="provinciaId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Nombre" return-type="CCAA" unique="true">
+			<finder-column name="nombre" />
+		</finder>
+
+		<!-- References -->
+		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />-->
+		<!--<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+	</entity>
+
+	<entity local-service="true" name="Ayuntamiento" remote-service="true">
+
+		<!-- PK fields -->
+		<column name="ccaaId" primary="true" type="long" />
+		<column name="provinciaId" primary="true" type="long" />
+		<column name="ayuntamientoId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="ccaa_ayuntamiento" return-type="Ayuntamiento" unique="true">
+			<finder-column name="ccaaId" />
+			<finder-column name="ayuntamientoId" />
+		</finder>
+		<finder name="ccaaId" return-type="Collection">
+			<finder-column name="ccaaId" />
+		</finder>
+		<finder name="CcaaNombre" return-type="Collection">
+			<finder-column name="ccaaId" />
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="Nombre" return-type="Collection">
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="ayuntamientoId" return-type="Ayuntamiento">
+			<finder-column name="ayuntamientoId"></finder-column>
+		</finder>
+
+		<!-- References -->
+		<!--<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />-->
+		<!--<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />-->
+	</entity>
+
+	<entity local-service="true" name="ConsultorCompany">
+
+		<!-- PK fields -->
+		<column name="appId" primary="true" type="long" />
+		<column name="userId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="name" type="String" />
+		<column name="lastName" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="UserApp" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="appId" />
+		</finder>
+		<finder name="compApp" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="appId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" remote-service="true" name="ContratoCompany">
+
+		<!-- PK fields -->
+		<column name="contractId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="familia" type="String" />
+		<column name="ccaa" type="String" />
+		<column name="ayuntamiento" type="String" />
+		<column name="cnaes" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="contractId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="contractId" return-type="ContratoCompany">
+			<finder-column name="contractId" />
+		</finder>
+		<finder name="compId" return-type="ContratoCompany">
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="EvalLegislacion">
+
+		<!-- PK fields -->
+		<column name="version" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+		<column name="legislacionId" primary="true" type="String" />
+
+		<!-- Other fields -->
+		<column name="fecha" type="Date" />
+		<column name="proxima" type="Date" />
+		<column name="cumplimiento" type="int" />
+		<column name="usuario" type="long" />
+		<column name="adjunto" type="long" />
+		<column name="observaciones" type="String" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="legislacionId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="CompLegislacion" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="legislacionId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="EvalRequisito">
+
+		<!-- PK fields -->
+		<column name="version" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+		<column name="legislacionId" primary="true" type="String" />
+		<column name="requisitoId" primary="true" type="String" />
+
+		<!-- Other fields -->
+		<column name="fecha" type="Date" />
+		<column name="proxima" type="Date" />
+		<column name="cumplimiento" type="int" />
+		<column name="usuario" type="long" />
+		<column name="adjunto" type="long" />
+		<column name="observaciones" type="String" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="legislacionId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="CompLegislacion" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="legislacionId" />
+		</finder>
+		<finder name="CompLegislacionRequisitos" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="legislacionId" />
+			<finder-column name="requisitoId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="CompLegislacionVersion" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="legislacionId" />
+			<finder-column name="version" />
+		</finder>
+		<finder name="CompFechaCumplimiento" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="fecha" />
+			<finder-column name="cumplimiento" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="HiddenLegis">
+		<column name="legislacionId" primary="true" type="String" />
+		<column name="empresaId" primary="true" type="long" />
+
+		<finder name="empresaId" return-type="Collection">
+			<finder-column name="empresaId" />
+		</finder>
+	</entity>
+
+</service-builder>

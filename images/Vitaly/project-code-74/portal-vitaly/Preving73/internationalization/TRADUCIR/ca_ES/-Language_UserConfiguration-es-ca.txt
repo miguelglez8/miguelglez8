@@ -1,0 +1,129 @@
+
+
+ Administració d'usuaris
+
+ No hi ha usuaris al lloc web.
+ Nom
+ Correu electrònic
+ Data d'alta
+ Centre de treball
+ Data de baixa
+ NIF
+ Actiu
+ Editar
+ Administrador
+ Administrador
+ Sí
+ No
+
+ Crear usuari
+ Dades de l'usuari
+ Nom
+ Cognoms
+ Correu electrònic
+ NIF
+ Gènere
+ Home
+ Dona
+ Lloc de treball
+ Centre
+ Salari
+ Data de baixa
+ Per desactivar l'usuari, estableixi una data igual o inferior a avui, o bé, estableixi una data futura perquè un procés desactivi l'usuari quan arribi la data.
+ Actiu: 
+ Sí
+ No
+ Editar usuari
+ Dades de l'usuari
+ Tornar a enviar contrasenya
+ Desactivar usuari
+ Activar usuari
+ Afegir d'administrador
+ Treure d'administrador
+
+ Tots
+
+ Usuaris
+ Crear usuari
+ Importació
+
+ Configuració
+
+ S'ha processat el fitxer CSV
+ Un procés està afegint tots es usuaris a l'empresa. Quan aquest procés finalitzi, li enviarem un missatge amb un resum de la importació i podrà visualitzar els usuaris a la pàgina d'usuaris.
+
+ Importar usuaris
+ CSV amb els usuaris
+
+ És obligatori afegir el correu electrònic de l'usuari.
+ El format del correu electrònic és incorrecte.
+ El salari ha de ser un valor numèric.
+
+ Camp obligatori
+
+ L'usuari s'ha creat correctament.
+ No s'ha pogut crear l'usuari. Revisi les dades introduïdes.
+ Ja hi ha un usuari amb aquest correu al sistema. No s'han modificat les dades.
+ S'ha enviat un correu electrònic a l'usuari perquè pugui canviar la contrasenya.
+ El fitxer d'usuaris s'ha processat correctament.
+ S'han detectat errors al fitxer CSV. És possible que no s'hagin creat tots els usuaris. Revisi les seves notificacions.
+ Hi ha errors al fitxer CSV. Revisi les seves notificacions.
+
+ Processant...
+ Mostrar _MENU_ usuaris
+ No s'han trobat usuaris
+ Cap usuari disponible en aquesta taula
+ Mostrant usuaris del _START_ al _END_ d'un total de _TOTAL_ usuaris
+ Mostrant usuaris del 0 al 0 d'un total de 0 usuaris
+ (filtrat d'un total de _MAX_ usuaris)
+ 
+ Cercar:
+ 
+ 
+ Carregant...
+ Primer
+ Últim
+ Següent
+ Anterior
+ : Activar per ordenar la columna de manera ascendent
+ : Activar per ordenar la columna de manera descendent
+ Copiar
+ Visibilitat
+
+
+ Baixa a Registre horari. https://www.miregistrodehoras.com
+ Alta al seu Registre Horari. https://www.miregistrodehoras.com
+ Canvi de contrasenya a https://www.miregistrodehoras.com
+ Benvingut al seu Registre horari. https://www.miregistrodehoras.com
+
+
+
+ Hi ha errors a les dades al fitxer CSV a la fila:
+ <p>A continuació es descriuen els errors que s'han trobat a la fila del csv: </p>
+
+ <p>No s'ha indicat el NIF de l'usuari. S'ha d'indicar al camp 1 del csv.</p>
+ <p>No s'ha indicat el nom de l'usuari. S'ha d'indicar al camp 2 del csv.</p>
+ <p>No s'han indicat els cognoms de l'usuari. S'ha d'indicar al camp 3 del csv.</p>
+ <p>No s'ha indicat el correu electrònic de l'usuari. S'ha d'indicar al camp 4 del csv.</p>
+ <p>No s'ha indicat el lloc de l'usuari. S'ha d'indicar al camp 5 del csv.</p>
+ <p>No s'ha indicat el centre de treball de l'usuari. S'ha d'indicar al camp 6 del csv.</p>
+ <p>No s'ha indicat el salari de l'usuari. S'ha d'indicar al camp 7 del csv.</p>
+
+ <p>El NIF de l'usuari ja existeix. No es poden crear dos usuaris amb el mateix NIF.</p>
+ <p>El correu electrònic de l'usuari no és correcte. Cal indicar un correu electrònic amb el format nom@domini.com</p>
+ <p>El correu electrònic de l'usuari ja existeix al sistema. És possible que aquest correu electrònic ja s'utilitzi com a usuari o administrador en una altra empresa.</p>
+
+ <p>El CSV conté NIF d'usuari repetits.</p>
+ <p>El CSV conté correus electrònics d'usuari repetits.</p>
+
+ Error de format en importar usuaris des de fitxer CSV a Registre horari. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>El format no és correcte, el nombre de camps del fitxer CSV ha de ser 6 i ha de tenir el següent format: NIF;NOM;COGNOMS;CORREU ELECTRÒNIC;LLOC DE TREBALL;SEU</p><p>Revisi el csv per cercar-hi errors.</p>
+
+ Error en importar empresa des de fitxer CSV a Registre horari. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>Revisi el fitxer CSV i verifiqui que totes les dades són correctes, sense camps en blanc.</p>
+
+ Hi ha valors repetits al fitxer CSV. No s'han pogut crear els usuaris.
+ <p>Per evitar errors en la creació d'usuaris, no es permeten NIF o correus electrònics duplicats. Ha de corregir el CSV per realitzar la importació.</p>
+
+ Nous usuaris des de fitxer CSV a Registre horari. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>Li enviarem avisos amb el resultat de la importació de cada usuari de forma individual. Si les dades d'un usuari són incorrectes, li enviarem una notificació. </p><p>Les dades del csv són les següents: </p>

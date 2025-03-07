@@ -1,0 +1,78 @@
+<aui:fieldset label="company.configuration.notifications" cssClass="notifications">
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="company.configuration.notification.not.workable" inlineField="false">
+                <aui:input name="notWorkable" value="yes" type="radio"
+                           label="company.configuration.notification.yes"
+                           checked="<%=companyConf.isNotificationNotWorkable()%>"/>
+                <aui:input name="notWorkable" value="no" type="radio"
+                           label="company.configuration.notification.no"
+                           checked="<%=!companyConf.isNotificationNotWorkable()%>"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="company.configuration.notification.not.finish.date" inlineField="false">
+                <aui:input name="finishDate" value="yes" type="radio"
+                           label="company.configuration.notification.yes"
+                           checked="<%=companyConf.isNotificationFinishDateSign()%>"/>
+                <aui:input name="finishDate" value="no" type="radio"
+                           label="company.configuration.notification.no"
+                           checked="<%=!companyConf.isNotificationFinishDateSign()%>"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="company.configuration.notification.admin.summary" inlineField="false">
+                <aui:input name="adminSummaryPeriodicity" value="daily" type="radio"
+                           label="company.configuration.notification.admin.summary.daily"
+                           checked="<%=CompanyConfigurationPortletKeys.NOTIFICATION_PERIODICITY_DAILY.equals(companyConf.getNotificationAdminPeriodicity())%>"/>
+                <aui:input name="adminSummaryPeriodicity" value="weekly" type="radio"
+                           label="company.configuration.notification.admin.summary.weekly"
+                           checked="<%=CompanyConfigurationPortletKeys.NOTIFICATION_PERIODICITY_WEEKLY.equals(companyConf.getNotificationAdminPeriodicity())%>"/>
+                <aui:input name="adminSummaryPeriodicity" value="monthly" type="radio"
+                           label="company.configuration.notification.admin.summary.monthly"
+                           checked="<%=CompanyConfigurationPortletKeys.NOTIFICATION_PERIODICITY_MONTHLY.equals(companyConf.getNotificationAdminPeriodicity())%>"/>
+                <aui:input name="adminSummaryPeriodicity" value="notsend" type="radio"
+                           label="company.configuration.notification.admin.summary.notsend"
+                           checked="<%=CompanyConfigurationPortletKeys.NOTIFICATION_PERIODICITY_NONE.equals(companyConf.getNotificationAdminPeriodicity())%>"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-4 ml-3">
+                <aui:field-wrapper label="company.configuration.notification.soporte" helpMessage="company.configuration.notification.soporte.help"/>
+            </div>
+            <div class="col-6 ml-5">
+                <aui:input name="soporteEmails"  label=" " type="text" value="<%=companyConf.getSoporteEmail()%>" >
+
+                    <aui:validator name="custom" errorMessage="company.configuration.notification.soporteError">
+
+                                           function(val, fieldNode, ruleValue) {
+                                               var emails = $("#<portlet:namespace/>soporteEmails").val().split(';');
+                                               var isValid = true;
+
+                                               for (var i = 0; i < emails.length; i++) {
+                                                   var email = emails[i].trim();
+                                                   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                                   console.log("email: " + email);
+                                                   if (!emailRegex.test(email)) {
+                                                       console.log(" --> no valido");
+                                                       isValid = false;
+                                                       break;
+                                                   }
+                                               }
+                                               console.log("isValid: " + isValid);
+                                               return isValid;
+                                           }
+
+
+                    </aui:validator>
+                </aui:input>
+
+            </div>
+        </div>
+
+</aui:fieldset>

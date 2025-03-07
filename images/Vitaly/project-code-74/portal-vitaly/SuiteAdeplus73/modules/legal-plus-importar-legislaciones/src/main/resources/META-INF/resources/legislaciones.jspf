@@ -1,0 +1,90 @@
+<portlet:resourceURL id="importLegislaciones" var="importLegislacionesURL"/>
+
+<div class="content">
+    <div class="formulario">
+        <div class="d-flex flex-nowrap flex-sm-column flex-lg-row">
+            <div class="form-content form-datos mr-sm-0 mr-md-3 mb-md-3 mb-lg-0 ">
+
+                <aui:form name="legislaciones" method="post" enctype="multipart/form-data">
+                    <div class="row">
+
+                        <div class="col-md-12 hide" id="success-legislaciones">
+                            <div class="alert alert-primary" role="alert">
+                                <liferay-ui:message key="import.legislacion.aviso.correcto"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-12 col-md-6 required">
+                            <div class="prv-file-container">
+                                <aui:input name="<%=ImportPortletKeys.LEGISLACIONES_CSV%>" label="import.legislacion.file" type="file">
+                                    <aui:validator name="required" />
+                                    <aui:validator name="acceptFiles">'csv'</aui:validator>
+                                </aui:input>
+
+                                <div class="prv-input-file__span">
+                                    <span class="prv-input-file__btn" id="prv-input-file_legislaciones"><liferay-ui:message key="import.view.examinar"/></span>
+                                    <span class="prv-input-file__txt" id="prv-input-file_txt_legislaciones"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row  align-items-end">
+                        <div class="text-right col-12">
+                            <aui:button-row>
+                                <aui:button id="button-legislaciones" type="button" name="button" value="upload" cssClass="btn btn-outline-primary btn-sm" primary="true"/>
+                            </aui:button-row>
+                        </div>
+                    </div>
+
+                </aui:form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function(){
+
+        $('#<portlet:namespace/>button-legislaciones').click(function(){
+
+            var formValidator = Liferay.Form.get('<portlet:namespace />legislaciones').formValidator;
+            formValidator.validate();
+            if (formValidator.hasErrors()) return;
+
+            var form = $('#<portlet:namespace/>legislaciones')[0];
+            var data = new FormData(form);
+
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: '${importLegislacionesURL}',
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000
+
+            });
+
+            $('#<portlet:namespace/>legislaciones').trigger('reset');
+            $('#success-legislaciones').removeClass('hide');
+
+        });
+        
+        $("#prv-input-file_legislaciones, #prv-input-file_txt_legislaciones").on("click", function(e){
+        	$('#<portlet:namespace/><%=ImportPortletKeys.LEGISLACIONES_CSV%>').click();
+        });
+        
+        $('#<portlet:namespace/><%=ImportPortletKeys.LEGISLACIONES_CSV%>').on("change", function(e){
+        	var fileName = $('#<portlet:namespace/><%=ImportPortletKeys.LEGISLACIONES_CSV%>').val().split('\\').pop();
+            $("#prv-input-file_txt_legislaciones").html("");
+            $("#prv-input-file_txt_legislaciones").html(fileName);
+        });
+
+    });
+
+</script>

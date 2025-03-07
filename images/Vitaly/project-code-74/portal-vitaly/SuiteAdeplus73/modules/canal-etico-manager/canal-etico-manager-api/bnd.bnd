@@ -1,0 +1,10 @@
+Bundle-Name: canal-etico-manager-api
+Bundle-SymbolicName: com.canal.etico.liferay.portlet.canal.manager.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.canal.etico.liferay.portlet.canal.manager.exception,\
+	com.canal.etico.liferay.portlet.canal.manager.model,\
+	com.canal.etico.liferay.portlet.canal.manager.service,\
+	com.canal.etico.liferay.portlet.canal.manager.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../canal-etico-manager-service/service.xml

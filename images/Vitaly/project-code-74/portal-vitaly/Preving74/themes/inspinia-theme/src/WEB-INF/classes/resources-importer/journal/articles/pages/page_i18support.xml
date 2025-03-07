@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[
+<div class="wrapper wrapper-content  animated fadeInRight">
+            <div class="row">
+
+                <div class="col-lg-8">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>i18next</h5>
+                        </div>
+
+                        <div class="ibox-content">
+
+
+                            <p>
+                                <strong>i18next</strong> is a full-featured i18n javascript library for translating your webapplication.
+                            </p>
+
+                            <h4>
+                                Example demo text
+                            </h4>
+                            <div class="i18container">
+                                <span data-i18n="demo.text1"></span>
+                            </div>
+
+                            <h5>
+                                You can change the language of demo text as well as the menu with simple function fire on buttons click. Try it:
+                            </h5>
+
+
+                            <a class="btn btn-white set_en active"><img src="[$FILE=flags/16/United-States.png$]"> EN</a>
+                            <a class="btn btn-white set_es"><img src="[$FILE=flags/16/Spain.png$]"> ES</a>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>i18next configuration</h5>
+                        </div>
+
+                        <div class="ibox-content">
+
+
+                            <h3>Step 1</h3>
+                            <p>
+                                To add i18 support for your app you need to define what text you would like to translate. The best way to define your text is to store it in external json file.
+                                For example:
+                            </p>
+                            <strong>
+                                Each language you should have own json file!
+                            </strong>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h5>en.json</h5>
+                            <pre>
+
+  "app":
+    "name": "INSPINIA 2.4"
+  },
+  "nav":
+    "dashboard": "Dashboards",
+    "graphs": "Graphs",
+    "mailbox": "Mailbox",
+  },
+}</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>es.json</h5>
+                            <pre>
+
+  "app":
+    "name": "INSPINIA 2.4"
+  },
+  "nav":
+    "dashboard": "Salpicadero",
+    "graphs": "Gráficos",
+    "mailbox": "El correo",
+  },
+}</pre>
+                                </div>
+
+                            </div>
+
+                            <h3>Step 2</h3>
+                            <p>
+                                Next you need to add html indicators in all place you want to use i18.
+                            </p>
+<pre>
+&lt;div id="i18_links"&gt;
+    &lt;span data-i18n="nav.dashboard"&gt; &lt;/span&gt;
+    &lt;span data-i18n="nav.graphs"&gt; &lt;/span&gt;
+    &lt;span data-i18n="nav.mailbox"&gt; &lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+                            <h3>Step 3</h3>
+                            <p>
+                                Next you need to initialise the i18next plugin:
+                                <br>
+                                <span class="small">
+                                json files are located in /locales folder.
+                            </span>
+                            </p>
+
+                            <pre>
+$.i18n.init(
+    resGetPath: 'locales/__lng__.json',
+    load: 'unspecific',
+    fallbackLng: false,
+    lng: 'en'
+}, function (t)
+    $('.i18_links').i18n();
+});</pre>
+
+                            <h3>Step 4</h3>
+                            <p>
+                                After that if you want to change the language you just need to add buttons and fire the i18n.setLng() function.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>
+                                        HTML markup
+                                    </h4>
+                                    <pre>
+&lt;a class="btn btn-white set_en"&gt; Set EN language&lt;/a&gt;
+
+&lt;a class="btn btn-white set_es"&gt; Set ES language&lt;/a&gt;</pre>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>
+                                        Javascript code
+                                    </h4>
+                                    <pre>
+$('.set_en').on('click', function ()
+    i18n.setLng('en', function()
+        $('.i18_links').i18n();
+    });
+});
+
+$('.set_es').on('click', function ()
+    i18n.setLng('es', function()
+        $('.i18_links').i18n();
+    });
+});</pre>
+
+                                </div>
+                            </div>
+
+                            <p>
+                                More info about specific function and configuration options you can find on <a target="_blank" href="http://i18next.github.io/i18next/"> official i18next documentation.</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5>250 flags</h5>
+                        </div>
+                        <div class="ibox-content text-center">
+                            <p>
+                                Set of the 780 flag icons for all countries. All flags are avalible with 16x16, 32x32 and 64x64 size.
+                            </p>
+                            <div class="flags">
+                                <img src="[$FILE=flag_Abkhazia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Afghanistan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Aland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Albania.png$]" alt="flag">
+                                <img src="[$FILE=flag_Algeria.png$]" alt="flag">
+                                <img src="[$FILE=flag_American-Samoa.png$]" alt="flag">
+                                <img src="[$FILE=flag_Andorra.png$]" alt="flag">
+                                <img src="[$FILE=flag_Angola.png$]" alt="flag">
+                                <img src="[$FILE=flag_Anguilla.png$]" alt="flag">
+                                <img src="[$FILE=flag_Antarctica.png$]" alt="flag">
+                                <img src="[$FILE=flag_Antigua-and-Barbuda.png$]" alt="flag">
+                                <img src="[$FILE=flag_Argentina.png$]" alt="flag">
+                                <img src="[$FILE=flag_Armenia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Aruba.png$]" alt="flag">
+                                <img src="[$FILE=flag_Australia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Austria.png$]" alt="flag">
+                                <img src="[$FILE=flag_Azerbaijan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bahamas.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bahrain.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bangladesh.png$]" alt="flag">
+                                <img src="[$FILE=flag_Barbados.png$]" alt="flag">
+                                <img src="[$FILE=flag_Basque-Country.png$]" alt="flag">
+                                <img src="[$FILE=flag_Belarus.png$]" alt="flag">
+                                <img src="[$FILE=flag_Belgium.png$]" alt="flag">
+                                <img src="[$FILE=flag_Belize.png$]" alt="flag">
+                                <img src="[$FILE=flag_Benin.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bermuda.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bhutan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bolivia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bosnia-and-Herzegovina.png$]" alt="flag">
+                                <img src="[$FILE=flag_Botswana.png$]" alt="flag">
+                                <img src="[$FILE=flag_Brazil.png$]" alt="flag">
+                                <img src="[$FILE=flag_British-Antarctic-Territory.png$]" alt="flag">
+                                <img src="[$FILE=flag_British-Virgin-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Brunei.png$]" alt="flag">
+                                <img src="[$FILE=flag_Bulgaria.png$]" alt="flag">
+                                <img src="[$FILE=flag_Burkina-Faso.png$]" alt="flag">
+                                <img src="[$FILE=flag_Burundi.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cambodia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cameroon.png$]" alt="flag">
+                                <img src="[$FILE=flag_Canada.png$]" alt="flag">
+                                <img src="[$FILE=flag_Canary-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cape-Verde.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cayman-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Central-African-Republic.png$]" alt="flag">
+                                <img src="[$FILE=flag_Chad.png$]" alt="flag">
+                                <img src="[$FILE=flag_Chile.png$]" alt="flag">
+                                <img src="[$FILE=flag_China.png$]" alt="flag">
+                                <img src="[$FILE=flag_Christmas-Island.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cocos-Keeling-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Colombia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Commonwealth.png$]" alt="flag">
+                                <img src="[$FILE=flag_Comoros.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cook-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Costa-Rica.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cote-dIvoire.png$]" alt="flag">
+                                <img src="[$FILE=flag_Croatia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cuba.png$]" alt="flag">
+                                <img src="[$FILE=flag_Curacao.png$]" alt="flag">
+                                <img src="[$FILE=flag_Cyprus.png$]" alt="flag">
+                                <img src="[$FILE=flag_Czech-Republic.png$]" alt="flag">
+                                <img src="[$FILE=flag_Democratic-Republic-of-the-Congo.png$]" alt="flag">
+                                <img src="[$FILE=flag_Denmark.png$]" alt="flag">
+                                <img src="[$FILE=flag_Djibouti.png$]" alt="flag">
+                                <img src="[$FILE=flag_Dominica.png$]" alt="flag">
+                                <img src="[$FILE=flag_Dominican-Republic.png$]" alt="flag">
+                                <img src="[$FILE=flag_East-Timor.png$]" alt="flag">
+                                <img src="[$FILE=flag_Ecuador.png$]" alt="flag">
+                                <img src="[$FILE=flag_Egypt.png$]" alt="flag">
+                                <img src="[$FILE=flag_El-Salvador.png$]" alt="flag">
+                                <img src="[$FILE=flag_England.png$]" alt="flag">
+                                <img src="[$FILE=flag_Equatorial-Guinea.png$]" alt="flag">
+                                <img src="[$FILE=flag_Eritrea.png$]" alt="flag">
+                                <img src="[$FILE=flag_Estonia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Ethiopia.png$]" alt="flag">
+                                <img src="[$FILE=flag_European-Union.png$]" alt="flag">
+                                <img src="[$FILE=flag_Falkland-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Faroes.png$]" alt="flag">
+                                <img src="[$FILE=flag_Fiji.png$]" alt="flag">
+                                <img src="[$FILE=flag_Finland.png$]" alt="flag">
+                                <img src="[$FILE=flag_France.png$]" alt="flag">
+                                <img src="[$FILE=flag_French-Polynesia.png$]" alt="flag">
+                                <img src="[$FILE=flag_French-Southern-Territories.png$]" alt="flag">
+                                <img src="[$FILE=flag_Gabon.png$]" alt="flag">
+                                <img src="[$FILE=flag_Gambia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Georgia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Germany.png$]" alt="flag">
+                                <img src="[$FILE=flag_Ghana.png$]" alt="flag">
+                                <img src="[$FILE=flag_Gibraltar.png$]" alt="flag">
+                                <img src="[$FILE=flag_GoSquared.png$]" alt="flag">
+                                <img src="[$FILE=flag_Greece.png$]" alt="flag">
+                                <img src="[$FILE=flag_Greenland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Grenada.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guam.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guatemala.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guernsey.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guinea-Bissau.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guinea.png$]" alt="flag">
+                                <img src="[$FILE=flag_Guyana.png$]" alt="flag">
+                                <img src="[$FILE=flag_Haiti.png$]" alt="flag">
+                                <img src="[$FILE=flag_Honduras.png$]" alt="flag">
+                                <img src="[$FILE=flag_Hong-Kong.png$]" alt="flag">
+                                <img src="[$FILE=flag_Hungary.png$]" alt="flag">
+                                <img src="[$FILE=flag_Iceland.png$]" alt="flag">
+                                <img src="[$FILE=flag_India.png$]" alt="flag">
+                                <img src="[$FILE=flag_Indonesia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Iran.png$]" alt="flag">
+                                <img src="[$FILE=flag_Iraq.png$]" alt="flag">
+                                <img src="[$FILE=flag_Ireland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Isle-of-Man.png$]" alt="flag">
+                                <img src="[$FILE=flag_Israel.png$]" alt="flag">
+                                <img src="[$FILE=flag_Italy.png$]" alt="flag">
+                                <img src="[$FILE=flag_Jamaica.png$]" alt="flag">
+                                <img src="[$FILE=flag_Japan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Jersey.png$]" alt="flag">
+                                <img src="[$FILE=flag_Jordan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kazakhstan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kenya.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kiribati.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kosovo.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kuwait.png$]" alt="flag">
+                                <img src="[$FILE=flag_Kyrgyzstan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Laos.png$]" alt="flag">
+                                <img src="[$FILE=flag_Latvia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Lebanon.png$]" alt="flag">
+                                <img src="[$FILE=flag_Lesotho.png$]" alt="flag">
+                                <img src="[$FILE=flag_Liberia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Libya.png$]" alt="flag">
+                                <img src="[$FILE=flag_Liechtenstein.png$]" alt="flag">
+                                <img src="[$FILE=flag_Lithuania.png$]" alt="flag">
+                                <img src="[$FILE=flag_Luxembourg.png$]" alt="flag">
+                                <img src="[$FILE=flag_Macau.png$]" alt="flag">
+                                <img src="[$FILE=flag_Macedonia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Madagascar.png$]" alt="flag">
+                                <img src="[$FILE=flag_Malawi.png$]" alt="flag">
+                                <img src="[$FILE=flag_Malaysia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Maldives.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mali.png$]" alt="flag">
+                                <img src="[$FILE=flag_Malta.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mars.png$]" alt="flag">
+                                <img src="[$FILE=flag_Marshall-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Martinique.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mauritania.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mauritius.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mayotte.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mexico.png$]" alt="flag">
+                                <img src="[$FILE=flag_Micronesia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Moldova.png$]" alt="flag">
+                                <img src="[$FILE=flag_Monaco.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mongolia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Montenegro.png$]" alt="flag">
+                                <img src="[$FILE=flag_Montserrat.png$]" alt="flag">
+                                <img src="[$FILE=flag_Morocco.png$]" alt="flag">
+                                <img src="[$FILE=flag_Mozambique.png$]" alt="flag">
+                                <img src="[$FILE=flag_Myanmar.png$]" alt="flag">
+                                <img src="[$FILE=flag_NATO.png$]" alt="flag">
+                                <img src="[$FILE=flag_Nagorno-Karabakh.png$]" alt="flag">
+                                <img src="[$FILE=flag_Namibia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Nauru.png$]" alt="flag">
+                                <img src="[$FILE=flag_Nepal.png$]" alt="flag">
+                                <img src="[$FILE=flag_Netherlands-Antilles.png$]" alt="flag">
+                                <img src="[$FILE=flag_Netherlands.png$]" alt="flag">
+                                <img src="[$FILE=flag_New-Caledonia.png$]" alt="flag">
+                                <img src="[$FILE=flag_New-Zealand.png$]" alt="flag">
+                                <img src="[$FILE=flag_Nicaragua.png$]" alt="flag">
+                                <img src="[$FILE=flag_Niger.png$]" alt="flag">
+                                <img src="[$FILE=flag_Nigeria.png$]" alt="flag">
+                                <img src="[$FILE=flag_Niue.png$]" alt="flag">
+                                <img src="[$FILE=flag_Norfolk-Island.png$]" alt="flag">
+                                <img src="[$FILE=flag_North-Korea.png$]" alt="flag">
+                                <img src="[$FILE=flag_Northern-Cyprus.png$]" alt="flag">
+                                <img src="[$FILE=flag_Northern-Mariana-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Norway.png$]" alt="flag">
+                                <img src="[$FILE=flag_Olympics.png$]" alt="flag">
+                                <img src="[$FILE=flag_Oman.png$]" alt="flag">
+                                <img src="[$FILE=flag_Pakistan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Palau.png$]" alt="flag">
+                                <img src="[$FILE=flag_Palestine.png$]" alt="flag">
+                                <img src="[$FILE=flag_Panama.png$]" alt="flag">
+                                <img src="[$FILE=flag_Papua-New-Guinea.png$]" alt="flag">
+                                <img src="[$FILE=flag_Paraguay.png$]" alt="flag">
+                                <img src="[$FILE=flag_Peru.png$]" alt="flag">
+                                <img src="[$FILE=flag_Philippines.png$]" alt="flag">
+                                <img src="[$FILE=flag_Pitcairn-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Poland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Portugal.png$]" alt="flag">
+                                <img src="[$FILE=flag_Puerto-Rico.png$]" alt="flag">
+                                <img src="[$FILE=flag_Qatar.png$]" alt="flag">
+                                <img src="[$FILE=flag_Red-Cross.png$]" alt="flag">
+                                <img src="[$FILE=flag_Republic-of-the-Congo.png$]" alt="flag">
+                                <img src="[$FILE=flag_Romania.png$]" alt="flag">
+                                <img src="[$FILE=flag_Russia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Rwanda.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Barthelemy.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Helena.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Kitts-and-Nevis.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Lucia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Martin.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saint-Vincent-and-the-Grenadines.png$]" alt="flag">
+                                <img src="[$FILE=flag_Samoa.png$]" alt="flag">
+                                <img src="[$FILE=flag_San-Marino.png$]" alt="flag">
+                                <img src="[$FILE=flag_Sao-Tome-and-Principe.png$]" alt="flag">
+                                <img src="[$FILE=flag_Saudi-Arabia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Scotland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Senegal.png$]" alt="flag">
+                                <img src="[$FILE=flag_Serbia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Seychelles.png$]" alt="flag">
+                                <img src="[$FILE=flag_Sierra-Leone.png$]" alt="flag">
+                                <img src="[$FILE=flag_Singapore.png$]" alt="flag">
+                                <img src="[$FILE=flag_Slovakia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Slovenia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Solomon-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Somalia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Somaliland.png$]" alt="flag">
+                                <img src="[$FILE=flag_South-Africa.png$]" alt="flag">
+                                <img src="[$FILE=flag_South-Georgia-and-the-South-Sandwich-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_South-Korea.png$]" alt="flag">
+                                <img src="[$FILE=flag_South-Ossetia.png$]" alt="flag">
+                                <img src="[$FILE=flag_South-Sudan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Spain.png$]" alt="flag">
+                                <img src="[$FILE=flag_Sri-Lanka.png$]" alt="flag">
+                                <img src="[$FILE=flag_Sudan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Suriname.png$]" alt="flag">
+                                <img src="[$FILE=flag_Swaziland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Sweden.png$]" alt="flag">
+                                <img src="[$FILE=flag_Switzerland.png$]" alt="flag">
+                                <img src="[$FILE=flag_Syria.png$]" alt="flag">
+                                <img src="[$FILE=flag_Taiwan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tajikistan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tanzania.png$]" alt="flag">
+                                <img src="[$FILE=flag_Thailand.png$]" alt="flag">
+                                <img src="[$FILE=flag_Togo.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tokelau.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tonga.png$]" alt="flag">
+                                <img src="[$FILE=flag_Trinidad-and-Tobago.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tunisia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Turkey.png$]" alt="flag">
+                                <img src="[$FILE=flag_Turkmenistan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Turks-and-Caicos-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Tuvalu.png$]" alt="flag">
+                                <img src="[$FILE=flag_US-Virgin-Islands.png$]" alt="flag">
+                                <img src="[$FILE=flag_Uganda.png$]" alt="flag">
+                                <img src="[$FILE=flag_Ukraine.png$]" alt="flag">
+                                <img src="[$FILE=flag_United-Arab-Emirates.png$]" alt="flag">
+                                <img src="[$FILE=flag_United-Kingdom.png$]" alt="flag">
+                                <img src="[$FILE=flag_United-Nations.png$]" alt="flag">
+                                <img src="[$FILE=flag_United-States.png$]" alt="flag">
+                                <img src="[$FILE=flag_Unknown.png$]" alt="flag">
+                                <img src="[$FILE=flag_Uruguay.png$]" alt="flag">
+                                <img src="[$FILE=flag_Uzbekistan.png$]" alt="flag">
+                                <img src="[$FILE=flag_Vanuatu.png$]" alt="flag">
+                                <img src="[$FILE=flag_Vatican-City.png$]" alt="flag">
+                                <img src="[$FILE=flag_Venezuela.png$]" alt="flag">
+                                <img src="[$FILE=flag_Vietnam.png$]" alt="flag">
+                                <img src="[$FILE=flag_Wales.png$]" alt="flag">
+                                <img src="[$FILE=flag_Wallis-And-Futuna.png$]" alt="flag">
+                                <img src="[$FILE=flag_Western-Sahara.png$]" alt="flag">
+                                <img src="[$FILE=flag_Yemen.png$]" alt="flag">
+                                <img src="[$FILE=flag_Zambia.png$]" alt="flag">
+                                <img src="[$FILE=flag_Zimbabwe.png$]" alt="flag">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<script>
+    window.__define = window.define;
+    window.__require = window.require;
+    window.define = undefined;
+    window.require = undefined;
+</script>
+
+<script src="/o/inspinia-theme/js/plugins/i18next/i18next.min.js"></script>
+
+<script>
+    window.define = window.__define;
+    window.require = window.__require;
+    window.__define = undefined;
+    window.__require = undefined;
+</script>
+
+<script>
+
+    $(document).ready(function (){
+
+        $.i18n.init({
+            resGetPath: 'locales/__lng__.json',
+            load: 'unspecific',
+            fallbackLng: false,
+            lng: 'en'
+        }, function (t){
+            $('.i18container').i18n();
+            $('#side-menu').i18n();
+            $('.navbar-top-links').i18n();
+        });
+
+        $('.set_en').on('click', function (){
+            i18n.setLng('en', function(){
+                $('.i18container').i18n();
+                $('#side-menu').i18n();
+                $('.navbar-top-links').i18n();
+
+                $('.set_en').addClass('active');
+                $('.set_es').removeClass('active');
+            });
+        });
+
+        $('.set_es').on('click', function (){
+            i18n.setLng('es', function(){
+                $('.i18container').i18n();
+                $('#side-menu').i18n();
+                $('.navbar-top-links').i18n();
+
+                $('.set_es').addClass('active');
+                $('.set_en').removeClass('active');
+            });
+        })
+
+    });
+
+</script>
+ ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

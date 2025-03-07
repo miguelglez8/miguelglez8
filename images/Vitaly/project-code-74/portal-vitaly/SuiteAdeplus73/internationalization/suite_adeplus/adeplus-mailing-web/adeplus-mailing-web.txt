@@ -1,0 +1,23 @@
+Envío de mails
+
+Adeplus
+
+Test de envío de emails
+El mail se enviará a 
+Test de mails a usuarios
+
+Crear usuario
+Borrar usuario
+Recordar contraseña
+
+Bienvenido a la Suite de Aplicaciones
+Nuevas aplicaciones en la Suite de Aplicaciones
+Baja de la suite de aplicaciones
+Consulta en la suite de aplicaciones
+
+Baja de empresa en la suite de aplicaciones
+Nuevas aplicaciones en la Suite de Aplicaciones
+Baja de servicios en la Suite de Aplicaciones
+
+Nueva consulta
+Nueva consulta

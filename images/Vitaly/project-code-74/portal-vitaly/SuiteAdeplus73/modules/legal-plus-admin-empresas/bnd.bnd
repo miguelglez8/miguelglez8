@@ -1,0 +1,4 @@
+Bundle-Name: legal-plus-admin-empresas
+Bundle-SymbolicName: com.legalplus.liferay.portlet.admin.empresas.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.admin.empresas.web.constants

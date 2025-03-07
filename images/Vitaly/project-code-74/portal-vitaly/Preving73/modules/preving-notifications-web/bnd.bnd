@@ -1,0 +1,7 @@
+Bundle-Name: preving-notifications-web
+Bundle-SymbolicName: com.preving.liferay.portlet.notifications.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.notifications.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+

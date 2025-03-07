@@ -1,0 +1,50 @@
+
+
+Registro de firmas
+Nombre
+Fecha
+Hora inicio
+Hora salida
+Total
+Desde
+Hasta
+Actividad
+Observaciones
+Observaciones empresa
+Usuario
+
+Total período
+Todos
+
+Tiempo de trabajo
+Tiempo de descanso
+
+Buscar
+
+Procesando...
+Mostrar _MENU_ registros
+No se encontraron registros
+Ning&#250;n registro disponible en esta tabla
+Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros
+Mostrando registros del 0 al 0 de un total de 0 registros
+(filtrado de un total de _MAX_ registros)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad
+
+Desde
+hasta
+Registro de presencia
+Firma de la empresa
+Firma del trabajador
+Este documento es CONFIDENCIAL y propiedad de la Organizaci\u00f3n que figura en el encabezado. Su acceso al margen de lo dispuesto legalmente, ser\u00e1 perseguido y sancionado. Si accede al documento y no es usuario autorizado, por favor p\u00f3ngalo inmediatamente en conocimiento de la Organizaci\u00f3n titular

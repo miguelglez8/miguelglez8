@@ -1,0 +1,35 @@
+
+
+Registre horari
+
+Fitxatges
+Nou fitxatge
+
+Començament
+Hora
+Minut
+Finalització
+Hora
+Minut
+
+Registre horari
+Entrada
+Sortida
+Observacions
+Ha de seleccionar el dia que desitja al calendari.
+Desar
+Cancel·lar
+
+
+Activitat
+Observacions
+
+Data
+
+No s'ha afegit cap fitxatge de moment.
+Començament del fitxatge
+Final del fitxatge
+Temps
+Tipus d'activitat
+Temps de treball
+Observacions

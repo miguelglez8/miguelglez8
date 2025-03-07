@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.Accion">
+		<field name="accionId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="nombre" type="String" />
+		<field name="nombre_cat" type="String" />
+		<field name="nombre_eng" type="String" />
+		<field name="estado" type="long" />
+		<field name="activo" type="boolean" />
+		<field name="createBy" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="endDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.Categoria">
+		<field name="categoriaId" type="long" />
+		<field name="compId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="nombre_cat" type="String" />
+		<field name="nombre_eng" type="String" />
+		<field name="tipo" type="String" />
+		<field name="codigo" type="String" />
+		<field name="activo" type="boolean" />
+		<field name="createBy" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="deleteData" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.Comp">
+		<field name="compId" type="long" />
+		<field localized="true" name="observations" type="String" />
+		<field name="active" type="boolean" />
+		<field name="urlId" type="String" />
+		<field name="startDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="politicaFileId" type="String" />
+		<field name="procedimientoFileId" type="String" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.Comunicado">
+		<field name="comunicadoId" type="long" />
+		<field name="codigo" type="String" />
+		<field name="cif" type="String" />
+		<field name="compId" type="long" />
+		<field name="vinculacion" type="String" />
+		<field name="email" type="String" />
+		<field name="nombre" type="String" />
+		<field name="apellidos" type="String" />
+		<field name="nif" type="String" />
+		<field name="telefono" type="String" />
+		<field name="direccionPostal" type="String" />
+		<field name="otros" type="String" />
+		<field name="gestorId" type="String" />
+		<field name="gestorLabel" type="String" />
+		<field name="idGrupoEmpresa" type="long" />
+		<field name="nombreEmpresa" type="String" />
+		<field name="anonimo" type="boolean" />
+		<field name="tipo" type="long" />
+		<field name="categoria" type="long" />
+		<field name="categoriaDesc" type="String" />
+		<field name="asunto" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+		<field name="descripcion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="estado" type="long" />
+		<field name="motivoId" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="prorrogado" type="boolean" />
+		<field name="notificacion" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="endDate" type="Date" />
+		<field name="caducidadDate" type="Date" />
+		<field name="adjuntosId" type="String" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.ComunicadoAccion">
+		<field name="comunicadoAccionId" type="long" />
+		<field name="comunicadoId" type="long" />
+		<field name="accionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="idEstado" type="long" />
+		<field name="notificado" type="boolean" />
+		<field name="aplicateDate" type="Date" />
+		<field name="createBy" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="fileId" type="String" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.ComunicadoAdicional">
+		<field name="comunicadoAdicionalId" type="long" />
+		<field name="codigoComunicado" type="String" />
+		<field name="asunto" type="String" />
+		<field name="descripcion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="fileId" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="idComunicado" type="long" />
+	</model>
+	<model name="com.canal.etico.v2.liferay.portlet.canal.manager.model.GrupoEmpresa">
+		<field name="grupoEmpresasId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="entidad" type="String" />
+		<field localized="true" name="cif" type="String" />
+		<field name="numTrabajadores" type="long" />
+	</model>
+</model-hints>

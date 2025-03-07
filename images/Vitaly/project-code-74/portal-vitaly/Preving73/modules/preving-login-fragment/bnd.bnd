@@ -1,0 +1,6 @@
+Bundle-Name: preving-login-fragment
+Bundle-SymbolicName:  com.preving.liferay.portlet.login.fragment
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.login.web;bundle-version="5.0.14"
+-sources: true
+Import-Package:*;version="0";resolution:=optional

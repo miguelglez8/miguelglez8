@@ -1,0 +1,4 @@
+Bundle-Name: adeplus-login-filter
+Bundle-SymbolicName: adeplus.login.filter
+Bundle-Version: 1.0.0
+Export-Package: adeplus.login.filter.constants

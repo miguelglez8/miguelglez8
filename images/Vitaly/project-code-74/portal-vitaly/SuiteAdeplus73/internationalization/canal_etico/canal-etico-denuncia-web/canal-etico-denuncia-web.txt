@@ -1,0 +1,80 @@
+Denuncia
+
+Canal Ético
+
+
+# View
+Nueva denuncia o consulta
+Selección de la empresa
+Verifique su empresa e indique su vinculación con la misma
+Texto descriptivo de esta fase a realizar por parte de Adeplus que indique al usuario como debe proceder. Indicar que los textos deben ser reales, no poner denuncias falsas, etc. Si tiene alguna duda, puede ponerse en contacto con el administrador.
+Datos personales
+Sus datos no serán revelados bajo ningún concepto al denunciado/consultado, que le solicitan a los solos efectos de establecer una garantía en la indenización del denunciante establecida en la normativa.
+Gracias por su colaboración en la gestión y prevención de irregularidades en nuestra Entidad. Vd. puede realizar denuncias/consultas anónimas, facilitando sólo un e-mail a efectos de contacto, que no será accesible por nuestra Entidad. En cualquier caso, el e-mail que facilite será utilizado para informarle del curso de su denuncia.
+Tipo de consulta o denuncia
+Seleccione qué tipo de consulta o denuncia quiere notificar.
+Por favor, indique ahora si desea denunciar o consultar, y si es sobre una temática en particular utilizando para ello la selección de opciones disponibles en esta pantalla.
+Contenido
+Describa lo más detallado posible lo que quiere notificar.
+Por favor, relate los hechos que desea denunciar/consultar. Recuerde que la garantía de indemnidad está condicionada a que tenga motivos razonables para creer que la información aportada es veraz en el momento de formular la denuncia, de buena fe, en otro caso podría incurrir en responsabilidades legales. Si lo estima oportuno y dispone de documentos que apoyen su denuncia/consulta, apártelos en este formulario.
+Finalizar
+A continuación le mostramos los datos que se incorporan al expediente de denuncia/consulta creado, revíselo y confirme en su caso. Gracias de nuevo por su Colaboración.
+Por favor, confirma términos y condiciones.Si tiene alguna duda, puede ponerse en contacto con el administrador.
+Términos y condiciones.
+Confirmar
+
+Siguiente
+Anterior
+Confirmar
+
+CIF
+Nombre de la empresa
+Vinculación
+
+Email
+Nombre
+Apellidos
+NIF
+Teléfono
+Denuncia anónima
+
+Código
+Tipo de consulta
+Consulta
+Denuncia
+Categoria
+
+Registrado
+En proceso
+Finalizado
+Sin finalizar
+
+Asunto
+Descripción
+Archivo adjunto
+Adjuntar archivo
+
+Campo requerido
+Debe introducir una dirección de mail correcta.
+Administración
+
+He leído y acepto los términos y condiciones de uso.
+Debe leer y aceptar los términos y condiciones de uso.
+
+Si
+No
+
+Uh-Oh! No existe la empresa
+Has llegado al Canal Ético / Canal denuncias a partir de un enlace incorrecto.
+Ya que no podemos determinar la empresa a la que va dirigida la consulta o denuncia, te sugerimos solicitar a los responsables de tu empresa el enlace correcto.
+Esperamos volver a verle pronto.
+
+# Success
+Se ha registrado su denuncia correctamente
+Recibirá un correo eléctronico con el código de seguimiento de su consulta o denuncia.
+El código asociado es {0}. Por favor, recuerde este código para hacer el seguimiento de la consulta o denuncia.
+Finalizar
+
+# Mailing
+Nuevo contacto/denuncia
+Nuevo contacto/denuncia

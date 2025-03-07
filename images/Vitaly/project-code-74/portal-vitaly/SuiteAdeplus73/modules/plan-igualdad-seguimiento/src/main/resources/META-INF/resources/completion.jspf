@@ -1,0 +1,180 @@
+<%@page import="com.plan.igualdad.liferay.seguimiento.constants.PlanIgualdadSeguimientoPortletKeys"%>
+<%@page import="com.plan.igualdad.liferay.seguimiento.enums.MotivoEnum"%>
+<%
+MotivoEnum[] motivosList = MotivoEnum.values();
+%>
+<div id="divCompletion">
+	<div class="row mb-4">
+		<div class="form-group col-md-2 col-lg-2 col-12 columnr">
+		 	<aui:input type="text" label="planigualdadseguimiento.responsible" name="<%=PlanIgualdadSeguimientoPortletKeys.RESPONSIBLE %>">
+			</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-2 col-lg-2 col-12 columnr">
+			<label for="<%=PlanIgualdadSeguimientoPortletKeys.PLANNED_DATE %>"><liferay-ui:message key="planigualdadseguimiento.date-planned"/></label>
+	     	<liferay-ui:input-date cssClass="filter-item datepicker" name="<%=PlanIgualdadSeguimientoPortletKeys.PLANNED_DATE %>" nullable="true" showDisableCheckbox="false" />
+	    </div>
+		<div class="form-group col-md-2 col-lg-2 col-12 columnr">
+			<label for="<%=PlanIgualdadSeguimientoPortletKeys.IMPLANTATION_DATE %>"><liferay-ui:message key="planigualdadseguimiento.date-implantation"/></label>
+			<liferay-ui:input-date cssClass="filter-item datepicker" name="<%=PlanIgualdadSeguimientoPortletKeys.IMPLANTATION_DATE %>" nullable="true" showDisableCheckbox="false" />
+		</div>
+		<div class="form-group col-md-2 col-lg-2 col-12 columnr">
+	       	<label for="<%=PlanIgualdadSeguimientoPortletKeys.TRACING_DATE %>"><liferay-ui:message key="planigualdadseguimiento.date-tracing"/></label>
+	       	<liferay-ui:input-date cssClass="filter-item datepicker" name="<%=PlanIgualdadSeguimientoPortletKeys.TRACING_DATE %>" nullable="true" showDisableCheckbox="false" />
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-6 col-lg-6 col-12 columnr">
+			<div>
+				<label><liferay-ui:message key="planigualdadseguimiento.level-execution"/></label>
+			</div>
+			<fieldset>
+				<div class="checksBorder input-group-inline">
+					<aui:input name="<%=PlanIgualdadSeguimientoPortletKeys.EXECUTION %>" type="hidden" />
+					<c:forEach items="${nivelesEjecucionList}" var="nivelEjecucion">
+						<div class="custom-control custom-radio mr-4">
+						 	<aui:input label="${nivelEjecucion.descripcionForm }" class="form-check-input" name="<%=PlanIgualdadSeguimientoPortletKeys.EXECUTION_RADIO %>" value="${nivelEjecucion.codigo }" disabled="true" type="radio">
+						 	</aui:input>	
+						 </div>
+		        	</c:forEach>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-5 col-lg-5 col-12 columnr">
+			<aui:select name="<%=PlanIgualdadSeguimientoPortletKeys.REASON%>" label="planigualdadseguimiento.form.reason.text"> 
+		    	<aui:option value="">
+		        	<liferay-ui:message key="planigualdadseguimiento.form.reason.select"/>
+		  		</aui:option>
+		   		<c:forEach items="<%=motivosList %>" var="motivo">
+	            	<aui:option value="${motivo.codigo }">
+	             		<liferay-ui:message key="${motivo.descripcion }"/>
+	           		</aui:option>
+	        	</c:forEach>
+			</aui:select>
+	    </div>
+	    <div class="form-group col-md-2 col-lg-2 col-12 columnr display-none" id="otherReasonInput">
+	    	<aui:input type="text" label="planigualdadseguimiento.form.reason.input" name="<%=PlanIgualdadSeguimientoPortletKeys.REASON_OTHER %>">
+	    	</aui:input>
+		</div>
+	</div>
+	<legend class="fieldset-title-section">
+		<liferay-ui:message key="planigualdadseguimiento.form.progress-indicators"/>
+	</legend>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.resources-assigns" name="<%=PlanIgualdadSeguimientoPortletKeys.RESOURCES_ASSIGNS %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.difficulties-implantation" name="<%=PlanIgualdadSeguimientoPortletKeys.DIFFICULTIES_IMPLANTATION %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.solutions-adopted" name="<%=PlanIgualdadSeguimientoPortletKeys.SOLUTIONS_ADOPTED %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<legend class="fieldset-title-section">
+		<liferay-ui:message key="planigualdadseguimiento.form.impact-indicators"/>
+	</legend>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.reduction-inequalities" name="<%=PlanIgualdadSeguimientoPortletKeys.REDUCTION_INEQUALITIES %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.produced-improvements" name="<%=PlanIgualdadSeguimientoPortletKeys.PRODUCED_IMPROVEMENTS %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 col-12 columnr">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.proposal-future" name="<%=PlanIgualdadSeguimientoPortletKeys.PROPOSAL_FUTURE %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="form-group col-md-10 col-lg-10 columnr col-12">
+			<aui:input type="textarea" label="planigualdadseguimiento.form.documentation-text" name="<%=PlanIgualdadSeguimientoPortletKeys.DOCUMENTATION_TEXT %>" >
+	       		<aui:validator name="maxLength">3000</aui:validator>
+	       	</aui:input>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="col-md-9 col-lg-9 pr-0" onclick="addFileSelect()">
+			<fieldset class="input-group ">
+				<div class="display-none" id="filedd">
+					<aui:input  name="<%=PlanIgualdadSeguimientoPortletKeys.FILE %>" label="planigualdadseguimiento.form.select-file" type="text">
+					</aui:input>
+				</div>
+				
+				<div class="form-group input-text-wrapper fileUploadd">
+					<aui:input name="<%=PlanIgualdadSeguimientoPortletKeys.UPLOAD_FILE %>" label="planigualdadseguimiento.form.select-file" type="file">
+						<aui:validator name="acceptFiles">'jpg,png,pdf,txt,xlsx,docx'</aui:validator>
+					</aui:input>
+					<aui:input name="selectedFile" id="selectedFile" type="hidden" value="false">
+					</aui:input>
+				</div>
+			</fieldset>
+		</div>
+		<div id="deleteAddFile" class="form-group p-0 d-flex align-items-start">
+			<span class="btn-ico delete-ico margin-top-delete" style="margin-top:25px;" onclick="deleteFileSelect()"></span>
+		</div>
+	</div>
+</div>
+<script>
+
+	$(document).ready( function () {
+		$('#<portlet:namespace/><%=PlanIgualdadSeguimientoPortletKeys.PLANNED_DATE%>').val('');
+		$('#<portlet:namespace/><%=PlanIgualdadSeguimientoPortletKeys.IMPLANTATION_DATE%>').val('');
+		$('#<portlet:namespace/><%=PlanIgualdadSeguimientoPortletKeys.TRACING_DATE%>').val('');
+
+		YUI().use('aui-datepicker', function(Y) {
+	        new Y.DatePicker({
+	            trigger: '.datepicker',
+	            mask: '%d/%m/%Y',
+	            popover : {
+	                zIndex : 1
+	            }
+	        });
+	    });
+	});
+	
+	function addFileSelect(){
+	    var result = new Array();
+	    var inputs = document.getElementsByTagName("input");
+	    for(var i=0; i < inputs.length; i++) {
+	        if(inputs[i].id.endsWith('selectedFile'))
+	        	document.getElementById(inputs[i].id).value = "true";        
+	    }
+	}
+	
+	function deleteFileSelect(){
+		 var result = new Array();
+		 var inputs = document.getElementsByTagName("input");
+		 $('.fileUploadd').removeClass('display-none');
+		 $('#<portlet:namespace/><%=PlanIgualdadSeguimientoPortletKeys.FILE %>').val('');
+		 $('#filedd').addClass('display-none');
+		 for(var i=0; i < inputs.length; i++) {
+		     if(inputs[i].id.endsWith('selectedFile'))
+		        document.getElementById(inputs[i].id).value = "false";
+		     if(inputs[i].id.endsWith('<%=PlanIgualdadSeguimientoPortletKeys.UPLOAD_FILE %>'))
+		        	document.getElementById(inputs[i].id).value = "";
+		 }
+	}
+</script>

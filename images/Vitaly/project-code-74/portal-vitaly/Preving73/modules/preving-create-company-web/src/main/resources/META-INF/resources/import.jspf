@@ -1,0 +1,23 @@
+<h2><liferay-ui:message key="createcompany.view.import.title"/></h2>
+
+<liferay-portlet:actionURL name="importCompanies" var="importURL"  />
+
+
+
+<aui:fieldset>
+    ${importHelpText}
+</aui:fieldset>
+
+<aui:fieldset>
+    <aui:form name="import_form" action="<%= importURL.toString() %>" enctype="multipart/form-data">
+
+        <aui:input name="csv" label="createcompany.view.import.file" type="file">
+            <aui:validator name="required" />
+            <aui:validator name="acceptFiles">'csv'</aui:validator>
+        </aui:input>
+
+        <aui:button-row>
+            <aui:button type="submit" value="upload" />
+        </aui:button-row>
+    </aui:form>
+</aui:fieldset>

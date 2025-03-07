@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.3.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_3_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.3.0+</version>
+	</compatibility>
+	<theme id="adeplus-theme" name="adeplus-theme">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<setting configurable="true" key="show-footer" type="checkbox" value="true" />
+			<setting configurable="true" key="show-logo" type="checkbox" value="true" />
+			<setting configurable="true" key="show-header" type="checkbox" value="true" />
+			<setting configurable="true" key="show-navigation" type="checkbox" value="true" />
+			<setting configurable="true" key="show-user-menu" type="checkbox" value="true" />
+			<setting configurable="true" key="show-language-selector" type="checkbox" value="true" />
+			<setting configurable="true" key="login-page" type="checkbox" value="false" />
+			<setting configurable="true" key="gtmid" type="text" value=""></setting>
+		</settings>
+		<layout-templates>
+			<custom>
+				<layout-template id="full_height" name="full_height">
+					<template-path>/layouttpl/custom/full_height/full_height.tpl</template-path>
+					<thumbnail-path>/layouttpl/custom/full_height/full_height.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>
+</look-and-feel>

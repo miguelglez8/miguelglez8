@@ -1,0 +1,4 @@
+Bundle-Name: legal-plus-contact-form-web
+Bundle-SymbolicName: com.legalplus.liferay.portlet.contact.form.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.contact.form.web.constants

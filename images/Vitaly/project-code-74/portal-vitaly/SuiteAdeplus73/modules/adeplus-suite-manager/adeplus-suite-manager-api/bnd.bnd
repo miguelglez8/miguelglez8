@@ -1,0 +1,10 @@
+Bundle-Name: adeplus-suite-manager-api
+Bundle-SymbolicName: com.adeplus.liferay.portlet.suite.manager.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.adeplus.liferay.portlet.suite.manager.exception,\
+	com.adeplus.liferay.portlet.suite.manager.model,\
+	com.adeplus.liferay.portlet.suite.manager.service,\
+	com.adeplus.liferay.portlet.suite.manager.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../adeplus-suite-manager-service/service.xml

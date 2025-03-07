@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[ 
+<div class="loginv2">
+    <h2 class="font-bold">Welcome to IN+</h2>
+
+    <p>
+        Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+    </p>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+
+    <p>
+        When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+
+    <p>
+        <small>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+    </p>
+
+</div> 
+<script>
+	$(document).ready(function(){
+		//to be replaced by theme settings
+		$('.row-breadcrumbs').remove();
+	});
+</script>
+]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

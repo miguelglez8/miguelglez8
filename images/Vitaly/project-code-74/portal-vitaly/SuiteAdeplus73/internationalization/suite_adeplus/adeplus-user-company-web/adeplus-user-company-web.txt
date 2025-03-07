@@ -1,0 +1,41 @@
+UserCompany
+
+Adeplus
+
+# Datatable
+Mail en Liferay
+Nombre en Liferay
+NIF en Liferay
+CIF empresa
+Empresa
+Fecha baja empresa
+Email usuario
+Nombre usuario
+NIF usuario
+Teléfono
+Administrador
+Activo
+Fecha baja usuario
+Aplicaciones
+
+# Datatable
+Procesando...
+Mostrar _MENU_ filas
+No se encontraron datos
+Ningún dato disponible en esta tabla
+Mostrando del _START_ al _END_ de un total de _TOTAL_ 
+Mostrando del 0 al 0 de un total de 0
+(filtrado de un total de _MAX_)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

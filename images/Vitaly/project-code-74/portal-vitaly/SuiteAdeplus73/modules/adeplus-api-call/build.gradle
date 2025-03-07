@@ -1,0 +1,14 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compile group: 'com.google.cloud', name: 'google-cloud-pubsub', version: '1.103.1'
+	compileOnly group: 'io.grpc', name: 'grpc-core', version: '1.27.2'
+	compileOnly group: 'io.grpc', name: 'grpc-netty-shaded', version: '1.27.2'
+	compileOnly group: 'io.grpc', name: 'grpc-protobuf', version: '1.27.2'
+	compileOnly group: 'io.grpc', name: 'grpc-protobuf-lite', version: '1.27.2'
+	compileOnly group: 'io.grpc', name: 'grpc-protobuf-nano', version: '1.21.1'
+	compileOnly group: 'com.jcraft.jzlib', name: 'com.springsource.com.jcraft.jzlib', version: '1.0.7'
+
+
+	compileOnly project(":modules:adeplus-commons-web")
+	compileOnly project(":modules:adeplus-suite-manager:adeplus-suite-manager-api")
+}

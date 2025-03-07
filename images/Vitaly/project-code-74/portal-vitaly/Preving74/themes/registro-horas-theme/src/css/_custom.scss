@@ -1,0 +1,18 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import "_style.scss";
+@import "_custom_rtl.scss";
+@import "_common.scss";
+
+@import "modules/_horiz-menu.scss";
+@import "modules/_portlets.scss";
+@import "modules/_tabs.scss";
+
+

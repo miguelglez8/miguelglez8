@@ -1,0 +1,51 @@
+.canal-etico-accion-v2 {
+}
+#adeplus .ico-acciones-tabla:hover {
+    cursor: pointer;
+    background-color: #F5F7F9 !important;
+}
+.labelInput{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+}
+.myrow{
+    margin-bottom: 10px;
+}
+.inputModal{
+    height: 2rem !important
+}
+.buttonModal{
+    padding: 5px;
+    margin: 7px;
+    border-radius: 5px;
+    float:right;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    min-width: 90px !important;
+}
+.headerModal {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    background-color: #004d71;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#adeplus .sidebar-expanded {
+    z-index:0 !important;
+}
+
+#adeplus .sidebar-collapsed {
+    z-index:0  !important;
+}
+.prv-input-date{
+    background-image: url(/documents/66343/72038/calendario.png/986a65ad-fa0d-9dcd-f9d7-372cc3e55883?t=1647441626239);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center
+}
+.poptip{
+    max-width: 500px !important;
+}

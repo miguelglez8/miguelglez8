@@ -1,0 +1,101 @@
+<div class="row mt-3">
+    <div class="col">
+        <h5><liferay-ui:message key="denuncia.edit.comunicaciones"/></h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <table id="table_comunicaciones" class="display dataTable no-footer dtr-inline" style="width:100%" >
+            <thead>
+            <tr>
+                <th><liferay-ui:message key="denuncia.edit.fecha"/></th>
+                <th><liferay-ui:message key="denuncia.edit.autor"/></th>
+                <th><liferay-ui:message key="denuncia.edit.asunto"/></th>
+                <th><liferay-ui:message key="denuncia.edit.adjunto"/></th>
+                <th><liferay-ui:message key="denuncia.edit.observacion"/></th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="comunicacion" items="<%=comunicaciones%>">
+                <%
+                    Comunicacion comunicacionObj = (Comunicacion) pageContext.getAttribute("comunicacion");
+                    String userName = "";
+                    User userObs = UserLocalServiceUtil.fetchUser(comunicacionObj.getUserId());
+                    if(Validator.isNotNull(userObs)){
+                        userName = userObs.getFullName() +" (" + userObs.getEmailAddress()+ ")";
+                    }
+                    String url = "";
+                    DLFileEntry dlFileEntry = null;
+                    if(comunicacionObj.getAdjunto() > 0) {
+                        dlFileEntry = DLFileEntryLocalServiceUtil.fetchDLFileEntry(comunicacionObj.getAdjunto());
+
+                        if(Validator.isNotNull(dlFileEntry)) {
+                            url = themeDisplay.getPortalURL() + themeDisplay.getPathContext() + "/documents/" + themeDisplay.getScopeGroupId() + "/" +
+                                    dlFileEntry.getFolderId() + "/" + dlFileEntry.getTitle();
+                        }
+                    }
+                %>
+                <tr>
+                    <td><%=dateFormat.format(comunicacionObj.getCreateDate())%></td>
+                    <td><%=userName%></td>
+                    <td>
+                        <c:if test="<%=showData%>">
+                            ${comunicacion.descripcion}
+                        </c:if>
+                    </td>
+                    <td>
+                        <c:if test="<%=showData && Validator.isNotNull(dlFileEntry)%>">
+                            <a href="<%=url%>" target="_blank"><%=dlFileEntry.getTitle()%></a>
+                        </c:if>
+                    </td>
+                    <td>
+                            ${comunicacion.observaciones}
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<c:if test="<%=CanalEticoEstadoUtil.esEstadoActivo(denuncia.getEstado())%>">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <h6><liferay-ui:message key="denuncia.edit.comunicaciones.new"/></h6>
+        </div>
+    </div>
+
+    <liferay-portlet:actionURL name="/comunicacion/save" var="saveComunicacionURL" />
+    <aui:form  name="comunicacion_form" action="<%=saveComunicacionURL.toString()%>" method="post">
+        <aui:input type="hidden" name="<%=AdminDenunciaPortletKeys.DENUNCIA_ID%>" value="<%=denuncia.getDenunciaId()%>"></aui:input>
+        <div class="row">
+            <div class="col-sm-12">
+                <aui:input type="textarea" name="<%=AdminDenunciaPortletKeys.DESCRIPTION%>" label="denuncia.edit.comunicacion" ignoreRequestValue="true" >
+                    <aui:validator name="required"/>
+                    <aui:validator name="maxLength">3000</aui:validator>
+                </aui:input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <aui:input name="<%=AdminDenunciaPortletKeys.ADJUNTO%>" label="denuncia.edit.detalle.select.file" type="file">
+                        <aui:validator name="acceptFiles">'jpg,png,svg,zip,rar,pdf'</aui:validator>
+                    </aui:input>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <aui:input type="textarea" name="<%=AdminDenunciaPortletKeys.OBSERVACIONES_COMUNICACION%>" label="denuncia.view.denuncia.observaciones" ignoreRequestValue="true" >
+                    <aui:validator name="maxLength">3000</aui:validator>
+                </aui:input>
+            </div>
+        </div>
+        <div class="button-holder d-flex justify-content-center my-4">
+            <aui:button-row>
+                <aui:button type="submit" cssClass="btn btn-primary mt-3" />
+            </aui:button-row>
+        </div>
+    </aui:form>
+</c:if>

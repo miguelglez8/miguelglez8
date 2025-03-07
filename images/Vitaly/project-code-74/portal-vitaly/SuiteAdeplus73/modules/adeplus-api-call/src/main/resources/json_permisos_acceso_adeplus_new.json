@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pdemo-vitaly-erpgke",
+  "private_key_id": "9dc16cc8931cf89ea6de5172524f9e75a4f04fbe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDVwz5alnH4GIeo\nWRM42UCu5PTPBS3Koy3E14g6+I3mY1LpV1UXYfDes5JAY/dbg8l3taTQlIX0ik8X\nTjaPxhv1hiOcmMaFq2UrACFmclF21ehVUeKwSfpeXAr2ZfHY53NTLA5idSYVrUSh\nJJnR3sHEdY3zDkTsrG8WBEvgUDNJOS24qfbQgSQ5RZPTl9PnXKsd31SBKqUg7hnr\nh2i+KSKmGxhbDnddPJTVlVRihsO1BBKRCF2qeGFuy5TWJ+tohqT1Ao+6AA9nzCTt\ntJvduka/4icOshh5HQDs228OF8tffYcLNCQ04v7uQ1zLSI0giM5w3dgBq8IBlswY\nnWtxYQYJAgMBAAECggEAG4zO2AEEzktnDIDyc8S4S/IxRQ8vUCsIxpJaufL34uYR\nNQau7lUOpL0zD75yjmZlTFrqU4GY5CQBPokzigMn7lRr+Y5NI8QrxUd+hoQcULsP\n9xMXKs5WCNxHA2uvKFvoJqOKdRERKAENU9FyS7Swd4AJG/bOVkyBAq7qEo5zla+e\n/S0nRXq9P3whfkl8JgIzKPX8nboNlT7YmB5PgEkoefLgfWeR2bpuyEeSa82JUMbS\nkPyk3zxaJIgCRg8AVn78sudJy/4VCUm0SNgNhK+YoWLlZ5SbtmUTrbVmN+DvkoYA\n1PzGsWBzMSabjRlXvI4SAYibO2fRjBvAAc3CM8ch6QKBgQD2oxKScFnHx2rJFmIm\nu1townIn3gfihtQZvCU6MGegYZf3kWAzcZixBA0LsAXhDidFlartuA+JIOkvWohq\naTOVHstI4pBkaS652caPjT58toMEfMUym7TUe9lvGVK4r4Vd/nYziEq9yYhQ5D8l\nRy+D4JzXdtwN85ZpTtXledYp3QKBgQDd4K8Iw6+uc9fxkRDt8PA8ZYuGobDlsKc2\nZIwgBJchN4Os7OW08lhM6A5RHJWNVtv41Ct6aC5mGw10lvARGUn2o37EqI2Bdfow\nrA1/TBm7Xix7GgJ/ubXCyvX4OBSDSMwYpzh8mn8NCk7LO7Tdhkd/lbyAN09k5C6a\nS+KmLwboHQKBgQCKUTYPLjcLlUjL8WOmORiwjawbs6dUYSz+Kcfu9EqJZXImgz8i\nWqi5TX5LebIyXw+jNKahnsIHs49S4UDz/H/TN2vmOjmkNmDgFcQHqbzLkEe18otd\nMHmfWL2+UsNTlAwFhLmheOQBv85VH0xSibOaEBOluqD6qgtGj9HhWgzDeQKBgQCT\nIcKQWkuusK0bSKpkTujP9DqA7coDlpBbtnNhbAnYAhs0Wee9hRNe9GdCDGVz04yN\nRg0K3/kcxoW2sbzCafWtMyAGQwuLNPPSwNU2e/14TWvLuiS8FCde4/4WOwIHSQfm\ntUT1A/KKcDJt/MrkN35EMcRNdeAVNGde9EF5GChJVQKBgQDsZX93V47Mjd0k6rxu\n58QbsUYma3SoBVtHmN0uUXBRoysMhBNQfPLUTmuA24DZ0U07VrxXp5xX2+l0WQez\nyapwOWARPwwRwJijtyhK9Aa+ihhqqj9CJ4LCsOChpY7i18/nuto5y9ip7Lac7/YZ\n2Nf/iMJZrGL74Zw9T3Iy43ThKw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "telemedicina@pdemo-vitaly-erpgke.iam.gserviceaccount.com",
+  "client_id": "109265482630635135898",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/telemedicina%40pdemo-vitaly-erpgke.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

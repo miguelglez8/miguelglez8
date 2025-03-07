@@ -1,0 +1,10 @@
+Bundle-Name: plan-igualdad-manager-api
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.manager.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.plan.igualdad.liferay.portlet.manager.exception,\
+	com.plan.igualdad.liferay.portlet.manager.model,\
+	com.plan.igualdad.liferay.portlet.manager.service,\
+	com.plan.igualdad.liferay.portlet.manager.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../plan-igualdad-manager-service/service.xml

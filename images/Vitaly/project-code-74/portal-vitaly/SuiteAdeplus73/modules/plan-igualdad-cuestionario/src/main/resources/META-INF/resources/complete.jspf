@@ -1,0 +1,19 @@
+<div class="modal hide" id="completeModal">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content">
+	        <div class="modal-header">
+	            <h5 class="modal-title"><liferay-ui:message key="cuestionario.modal.title" /></h5>
+	            <button type="button" class="close hide-modal">
+	              <span aria-hidden="true">&times;</span>
+	            </button>
+	        </div>
+	        <div class="modal-body">
+	        	<p><liferay-ui:message key="cuestionario.modal.text" /></p>
+	        </div>
+	        <div class="modal-footer">
+	            <aui:button value="cuestionario.modal.accept" cssClass="btn btn-primary hide-modal"/>
+	        </div>
+        </div>
+    </div>
+</div>

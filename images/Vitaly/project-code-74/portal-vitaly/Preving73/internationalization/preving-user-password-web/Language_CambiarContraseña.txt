@@ -1,0 +1,16 @@
+
+ Cambiar Contrase&#241;a 
+ Contrase&#241;a actual 
+ Nueva contrase&#241;a 
+ Confirmar contrase&#241;a 
+ Nombre 
+ Email 
+
+ Se ha actualizado correctamente la contrase&#241;a. Recibirá un correo avisando del cambio. 
+ La contrase&#241;a del usuario no es correcta. No se ha podido cambiar. 
+ La contrase&#241;a y la confirmación de contrase&#241;a no son iguales. 
+
+ Revise que la contrase&#241;a elegida cumpla las condiciones indicadas: Debe tener al menos 8 caracteres, incluyendo may&#250;sculas, min&#250;sculas y n&#250;meros. 
+ No se ha actualizado la contrase&#241;a. Revise que cumple las condiciones: Debe tener al menos 8 caracteres, incluyendo may&#250;sculas, min&#250;sculas y n&#250;meros. 
+
+ La contrase&#241;a debe tener al menos 8 caracteres, incluyendo may&#250;sculas, min&#250;sculas y n&#250;meros.  

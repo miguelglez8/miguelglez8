@@ -1,0 +1,281 @@
+html {
+  /*#1ab394 --> #0e9aef*/ }
+  html body.skin-1.mini-navbar .nav-header {
+    background-color: #0e9aef; }
+  html body.skin-1 {
+    background: #3e495f; }
+    html body.skin-1 .nav-header {
+      background: #0e9aef;
+      background: url("/o/inspinia-theme/css/patterns/header-profile-skin-1.png");
+      background-size: cover; }
+
+/*************Style************/
+html .skin-1 a {
+  color: #0e9aef; }
+
+html .skin-1 .setings-item a {
+  color: white; }
+
+body.skin-1.mini-navbar .nav-header {
+  background-color: #0e9aef;
+  color: #FFFFFF; }
+
+html .skin-1.top-navigation .navbar-nav .dropdown-menu > .active > a {
+  color: #0e9aef; }
+html .skin-1.top-navigation .nav > li a:hover, html .skin-1.top-navigation .nav > li a:focus {
+  color: #0e9aef; }
+html .skin-1.top-navigation .nav > li.active > a {
+  color: #0e9aef; }
+html .skin-1.top-navigation .navbar-brand {
+  background: #0e9aef;
+  color: #FFFFFF; }
+
+html body.skin-1 #side-menu.nav > li > a {
+  color: white; }
+html body.skin-1 #side-menu.nav > li > a:hover, html body.skin-1 #side-menu.nav > li > a:focus {
+  background: #3a4459;
+  color: #FFFFFF; }
+html body.skin-1 #top-navigation .nav > li.active {
+  border-color: #0e9aef;
+  background: #3a4459;
+  color: #FFFFFF; }
+html body.skin-1 .horiz-menu .navbar-brand {
+  background: #0e9aef;
+  color: #FFFFFF; }
+html body.skin-1 .horiz-menu .nav > li a:hover, html body.skin-1 .horiz-menu .nav > li a:focus, html body.skin-1 .horiz-menu #top-navigation .navbar-top-navigation li.active > a {
+  color: #0e9aef; }
+html body.skin-1 .horiz-menu #top-navigation .navbar-top-navigation li.active {
+  border-color: #0e9aef; }
+html body.skin-1 #page-wrapper {
+  background: #f3f3f4; }
+html body.skin-1 #wrapper, html body.skin-1 .navbar-static-top {
+  background: transparent;
+  background-color: transparent; }
+html body.skin-1 .navbar-default .special_link a {
+  background: #0e9aef;
+  color: #FFFFFF; }
+html body.skin-1 .navbar-default .special_link a span.label {
+  color: #0e9aef; }
+html body.skin-1 .navbar-default .landing_link a:hover {
+  background: #0e9aef !important; }
+html body.skin-1 .navbar-toggle {
+  background-color: #0e9aef; }
+html body.skin-1 .btn-primary.btn-outline {
+  color: #0e9aef; }
+html body.skin-1 .btn-primary {
+  background: #0e9aef;
+  background-color: #0e9aef;
+  border-color: #0e9aef;
+  color: #FFFFFF; }
+html body.skin-1 .btn-link:hover, html body.skin-1 .btn-link:focus, html body.skin-1 .btn-link:active, html body.skin-1 .btn-link.active, html body.skin-1 .open .dropdown-toggle.btn-link {
+  color: #FFFFFF; }
+html body.skin-1 .label-primary, html body.skin-1 .badge-primary {
+  background-color: #0e9aef; }
+html body.skin-1 .onoffswitch-label {
+  border-color: #0e9aef; }
+html body.skin-1 .onoffswitch-inner:before {
+  background-color: #0e9aef; }
+html body.skin-1 .onoffswitch-switch {
+  border-color: #0e9aef; }
+html body.skin-1 .fc-state-active {
+  background-color: #0e9aef;
+  border-color: #0e9aef;
+  color: #ffffff; }
+html body.skin-1 .fc-event, html body.skin-1 .fc-agenda .fc-event-time, html body.skin-1 .fc-event a {
+  background-color: #0e9aef;
+  border-color: #0e9aef; }
+html body.skin-1 a.list-group-item.active, html body.skin-1 a.list-group-item.active:hover, html body.skin-1 a.list-group-item.active:focus {
+  background-color: #0e9aef;
+  border-color: #0e9aef;
+  color: #FFFFFF; }
+html body.skin-1 .pace .pace-progress {
+  background: #0e9aef; }
+html body.skin-1 .form-control:focus, html body.skin-1 .single-line:focus {
+  border-color: #0e9aef !important; }
+html body.skin-1 .has-success .form-control {
+  border-color: #0e9aef; }
+html body.skin-1 .has-success .control-label {
+  color: #0e9aef; }
+html body.skin-1 .noUi-connect {
+  background: none repeat scroll 0 0 #0e9aef; }
+html body.skin-1 .onoffswitch-label {
+  border-color: #0e9aef; }
+html body.skin-1 .onoffswitch-inner:before {
+  background-color: #0e9aef; }
+html body.skin-1 .onoffswitch-switch {
+  border-color: #0e9aef; }
+html body.skin-1 .toast {
+  background-color: #0e9aef; }
+html body.skin-1 .toast-success {
+  background-color: #0e9aef; }
+html body.skin-1 .inspinia-notify.alert-info {
+  border-left-color: #0e9aef; }
+html body.skin-1 .forum-item.active .fa {
+  color: #0e9aef; }
+html body.skin-1 .forum-item.active a.forum-item-title {
+  color: #0e9aef; }
+html body.skin-1 .vertical-date small {
+  color: #0e9aef; }
+html body.skin-1 .branding {
+  background-color: #0e9aef; }
+html body.skin-1 .navy-bg {
+  background-color: #0e9aef;
+  color: #ffffff; }
+html body.skin-1 .panel-primary > .panel-heading {
+  background-color: #0e9aef;
+  border-color: #0e9aef; }
+html body.skin-1 .progress-bar {
+  background-color: #0e9aef; }
+html body.skin-1 .text-navy {
+  color: #0e9aef; }
+html body.skin-1 .category-list li a .text-navy {
+  color: #0e9aef; }
+html body.skin-1 .faq-question {
+  color: #0e9aef; }
+html body.skin-1 .issue-tracker .btn-link {
+  color: #0e9aef; }
+html body.skin-1 .agile-list li.success-element {
+  border-left-color: #0e9aef; }
+html body.skin-1 .open-small-chat {
+  background: #0e9aef; }
+html body.skin-1 .open-small-chat:hover {
+  background: #0e9aef; }
+html body.skin-1 .small-chat-box .content .chat-message.active {
+  background: #0e9aef; }
+html body.skin-1 .sk-spinner-rotating-plane.sk-spinner {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-double-bounce .sk-double-bounce1, html body.skin-1 .sk-spinner-double-bounce .sk-double-bounce2 {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-wave div {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-wandering-cubes .sk-cube1, html body.skin-1 .sk-spinner-wandering-cubes .sk-cube2 {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-chasing-dots .sk-dot1, html body.skin-1 .sk-spinner-chasing-dots .sk-dot2 {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-three-bounce div {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-circle .sk-circle:before {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-cube-grid .sk-cube {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-wordpress.sk-spinner {
+  background-color: #0e9aef; }
+html body.skin-1 .sk-spinner-fading-circle .sk-circle:before {
+  background-color: #0e9aef; }
+html body.skin-1 .spin-icon {
+  background: #0e9aef; }
+html body.skin-1 .navbar-default .landing_link a {
+  background: #0e9aef; }
+html body.skin-1 .nav-tabs > li > a {
+  color: #A7B1C2; }
+
+/*************Custom************/
+html .skin-1 .navbar-form-custom input[type=image] {
+  background-color: #0e9aef; }
+
+html .skin-1.top-navigation .nav > li.active > a {
+  color: #0e9aef; }
+
+html .skin-1 #portlet_33 .entry-title a:hover {
+  color: #0e9aef; }
+
+html .skin-1 .dockbar-user-notifications .dropdown-toggle .user-notifications-count, html .skin-1 .dockbar-user-notifications .user-notifications-count {
+  background-color: #0e9aef; }
+
+html .skin-1 button, html .skin-1 .btn, html .skin-1 html input[type="button"], html .skin-1 input[type="reset"], html .skin-1 input[type="submit"] {
+  background-color: #0e9aef;
+  background: #0e9aef;
+  color: #FFFFFF; }
+
+html .skin-1 .btn:hover, html .skin-1 .btn:focus, html .skin-1 .btn:active, html .skin-1 .btn.active, html .skin-1 .btn.disabled, html .skin-1 .btn[disabled],
+html .skin-1 .navbar .btn-navbar, html .skin-1 .navbar .btn-navbar:hover, html .skin-1 .navbar .btn-navbar:focus, html .skin-1 .navbar .btn-navbar:active {
+  background: #0e9aef; }
+
+html .skin-1 .microblogs-portlet .microblogs-entry-form .microblogs-countdown {
+  background: #0e9aef; }
+
+html .skin-1 #portlet_3 form input[type="image"] {
+  background-color: #0e9aef; }
+
+html .skin-1 .notifications-portlet .nav a:hover, .notifications-portlet .nav a:focus, html .skin-1 .notifications-portlet .nav a.selected {
+  background: #0e9aef; }
+
+html .skin-1 .notifications-portlet .nav a .count {
+  background: #0e9aef; }
+
+html .skin-1 .notifications-portlet .nav a.selected .count {
+  color: #0e9aef; }
+
+html .skin-1 #main-content .navbar .nav[role='menubar'] > li > a:focus, html .skin-1 #main-content .navbar .nav[role='menubar'] > li > a:hover, html .skin-1 #main-content .navbar .nav[role='menubar'] li.active a {
+  background: #0e9aef; }
+
+html .skin-1 #portlet_115 .entry-content:before, html .skin-1 #portlet_33 .entry.approved:before {
+  background: #0e9aef; }
+
+html .skin-1 .nav.nav-tabs li.active {
+  background: #0e9aef; }
+
+html .skin-1 .nav.nav-tabs li.active a {
+  background: #0e9aef; }
+
+html .skin-1 .form-search .input-append .btn {
+  background: #0e9aef url("../../images/common/search.png") center no-repeat; }
+
+html .skin-1 .social-activities {
+  border-left-color: #0e9aef; }
+
+html .skin-1 .contacts-portlet .portlet .portlet-content .portlet-body form {
+  background: #0e9aef; }
+
+html .skin-1 .contacts-portlet .contacts-result-container-content .contacts-list .contacts-search .icon-search {
+  background: #0e9aef; }
+
+html .skin-1 .portlet-topper .portlet-topper-toolbar .portlet-icon-back:hover, html .skin-1 .portlet-topper .portlet-topper-toolbar .portlet-icon-back {
+  color: #0e9aef; }
+
+html .skin-1.yui3-skin-sam .yui3-calendar-header {
+  background: #0e9aef; }
+
+html .skin-1.yui3-skin-sam .calendar-portlet .yui3-calendar-weekday {
+  color: #0e9aef; }
+
+html .skin-1 .toggler-header-expanded.calendar-portlet-list-header, html .skin-1 .calendar-portlet-list-header.toggler-header.toggler-header-collapsed, html .skin-1 .calendar-portlet-list-header.toggler-header.toggler-header-expanded {
+  background: #0e9aef; }
+
+html .skin-1.yui3-skin-sam .calendar-portlet .yui3-calendar-day:hover, html .skin-1.yui3-skin-sam .calendar-portlet .yui3-calendar-day.yui3-calendar-day-selected:hover, html .skin-1.yui3-skin-sam .calendar-portlet .yui3-calendar-day.yui3-calendar-day-selected.lfr-busy-day:hover {
+  background: #0e9aef; }
+
+html .skin-1 .scheduler-base-hd .scheduler-base-controls button.active, html .skin-1 .scheduler-base-hd .scheduler-base-controls button:hover, html .skin-1 .scheduler-base-hd .scheduler-base-controls button:focus, html .skin-1 .scheduler-base-hd .scheduler-base-views button.active, html .skin-1 .scheduler-base-hd .scheduler-base-views button:hover, html .skin-1 .scheduler-base-hd .scheduler-base-views button:focus {
+  background: #0e9aef; }
+
+html .skin-1 .calendar-portlet .calendar-portlet-column-grid .scheduler-event {
+  background: #0e9aef;
+  color: white; }
+
+html .skin-1 .portlet-document-library-display .accordion-heading .accordion-toggle {
+  background: #0e9aef; }
+
+html body.skin-1.collapsed-menu #p_p_id_145_ #_2_WAR_notificationsportlet_userNotifications, html body.skin-1.collapsed-menu #p_p_id_145_ #_145_mySites, html body.skin-1.collapsed-menu #p_p_id_145_ #_145_adminLinks, html body.skin-1.collapsed-menu #p_p_id_145_ #_145_userAvatar, html body.skin-1.collapsed-menu #p_p_id_145_ #_145_navAddControlsNavbarBtn, html body.skin-1.collapsed-menu #p_p_id_145_ #_145_navAddControlsNavbarBtn {
+  background: #0e9aef; }
+
+html .skin-1.top-navigation .search-layout .nav > li, html .skin-1.top-navigation .search-layout .nav > li.active {
+  background: transparent; }
+
+html .skin-1.top-navigation .search-layout .nav > li a {
+  background: transparent;
+  color: inherit; }
+
+html .skin-1 .nav-pills > li.active > a, html .skin-1 .nav-pills > li.active > a:hover, html .skin-1 .nav-pills > li.active > a:focus,
+html .skin-1.top-navigation .search-layout .nav > li.default a, html .skin-1 .nav-pills > li.default a {
+  background: #0e9aef;
+  color: white; }
+
+html .skin-1 .nav-pills > li.active:not(.default) > a, html .skin-1 .nav-pills > li.active:not(.default) > a:hover, html .skin-1 .nav-pills > li.active:not(.default) > a:focus,
+html .skin-1.top-navigation .search-layout .nav > li.active:not(.default) a {
+  background: transparent;
+  color: inherit;
+  border-left: 3px solid #0e9aef; }
+
+@media (max-width: 1300px) {
+  html .skin-1 #p_p_id_145_ #_2_WAR_notificationsportlet_userNotifications, html .skin-1 #p_p_id_145_ #_145_mySites, html .skin-1 #p_p_id_145_ #_145_adminLinks, html .skin-1 #p_p_id_145_ #_145_userAvatar, html .skin-1 #p_p_id_145_ #_145_navAddControlsNavbarBtn, html .skin-1 #p_p_id_145_ #_145_navAddControlsNavbarBtn {
+    background: #0e9aef; } }

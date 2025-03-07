@@ -1,0 +1,36 @@
+Gener Febrer Març Abril Maig Juny Juliol Agost Setembre Octubre Novembre Desembre
+
+No està permès el registre d'aquest dia festiu 
+Ha d'introduir una hora de finalització superior a la d'inici 
+No està permès realitzar registres de dies superiors a avui 
+No es permet el registre amb data inferior a avui 
+No es permet el registre inferior a #DIAS# dies laborals respecte a la data actual 
+No es permet introduir més de #LIMITE# setmanals 
+Ha de seleccionar una activitat 
+Ha de seleccionar el dia que desitja al calendari 
+Ha d'introduir l'hora d'inici del registre 
+L'hora d'inici i de finalització no poden ser la mateixa 
+No es poden introduir registres superiors a avui 
+El registre introduït coincideix amb un altre registre  
+Els registres superen el màxim d'hores per dia 
+Els registres superen el màxim d'hores per setmana 
+Activitat desconeguda 
+Entrada 
+Sortida 
+Temps 
+Tipus 
+observacions: "Observacions 
+Observacions empresa 
+minuts durant el dia. 
+minuts durant la setmana. 
+Eliminar 
+-Sense sortida- 
+-Obert- 
+Editant fitxatge  
+tancat, només pot modificar les observacions 
+obert, pot indicar l'hora de finalització i les observacions 
+Té fitxatges sense tancar, ha de finalitzar-los abans d'introduir-ne un de nou. 
+Només pot introduir registres horaris oberts en el dia en curs. 
+¿Desitja eliminar el fitxatge? 
+Dia 
+Setmana

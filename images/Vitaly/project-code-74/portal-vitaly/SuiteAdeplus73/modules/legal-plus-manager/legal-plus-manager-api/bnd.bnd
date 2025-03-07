@@ -1,0 +1,10 @@
+Bundle-Name: legal-plus-manager-api
+Bundle-SymbolicName: com.legalplus.liferay.portlet.legalplus.manager.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.legalplus.liferay.portlet.legalplus.manager.exception,\
+	com.legalplus.liferay.portlet.legalplus.manager.model,\
+	com.legalplus.liferay.portlet.legalplus.manager.service,\
+	com.legalplus.liferay.portlet.legalplus.manager.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../legal-plus-manager-service/service.xml

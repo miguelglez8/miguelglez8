@@ -1,0 +1,10 @@
+Bundle-Name: adeplus-api-call
+Bundle-SymbolicName: com.adeplus.liferay.portlet.api.call
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.api.call.constants, com.google.*,org.threeten.bp.*, io.grpc.*,io.perfmark.*
+
+Import-Package:\
+    *;version="0";resolution:=optional
+
+Include-Resource:@google-cloud-pubsub-1.103.1.jar,@grpc-core-1.27.2.jar,@grpc-netty-shaded-1.27.2.jar,\
+    @grpc-protobuf-1.27.2.jar,@grpc-protobuf-lite-1.27.2.jar,@grpc-protobuf-nano-1.21.1.jar,@com.springsource.com.jcraft.jzlib-1.0.7.jar

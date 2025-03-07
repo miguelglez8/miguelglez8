@@ -1,0 +1,4 @@
+Bundle-Name: plan-igualdad-area-web
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.area.web
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.area.web.constants

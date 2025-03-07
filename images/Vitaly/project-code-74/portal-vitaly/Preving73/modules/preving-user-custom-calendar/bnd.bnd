@@ -1,0 +1,6 @@
+Bundle-Name: preving-user-custom-calendar
+Bundle-SymbolicName: com.preving.liferay.portlet.user.custom.calendar
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.user.custom.calendar.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

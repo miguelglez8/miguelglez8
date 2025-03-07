@@ -1,0 +1,38 @@
+<%@ page import="com.liferay.journal.service.JournalArticleLocalServiceUtil" %>
+<%@ page import="com.liferay.journal.model.JournalArticle" %>
+<%
+    String articleName = "Aviso Legal";
+    JournalArticle articleTerminos = JournalArticleLocalServiceUtil.fetchArticleByUrlTitle(themeDisplay.getScopeGroupId(), articleName);
+    String content = "";
+    if(Validator.isNotNull(articleTerminos)) {
+        content = articleTerminos.getContentByLocale(themeDisplay.getLanguageId());
+    }
+    System.out.println(content);
+%>
+<div class="row">		
+	<div>
+		<%=content.replaceAll("]]>", "") %>
+        <%--<liferay-ui:journal-article articleId="<%=articleTerminos.getArticleId()%>" groupId="<%=themeDisplay.getScopeGroupId()%>" />--%>
+	</div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="checkConditions" type="checkbox" name="condiciones" label="denuncia.view.confirma.aceptar" >
+                <aui:validator name="required" errorMessage="denuncia.view.confirma.aceptar.error" />
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:input id="checkProteccion" type="checkbox" name="proteccion" label="denuncia.view.confirma.aceptar.proteccion" >
+                <aui:validator name="required" errorMessage="denuncia.view.confirma.aceptar.error.proteccion" />
+            </aui:input>
+        </div>
+        <div class="collapse" id="collapseProteccion">
+            <div class="card card-body">
+                <liferay-ui:message key="denuncia.view.confirma.aceptar.proteccion.message"/>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="detalle_adjunto_pass" name="detalle_adjunto_pass" value=""/>
+</div>
+

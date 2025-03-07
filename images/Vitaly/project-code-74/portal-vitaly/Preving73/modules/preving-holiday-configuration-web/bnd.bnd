@@ -1,0 +1,4 @@
+Bundle-Name: preving-holiday-configuration-web
+Bundle-SymbolicName: com.preving.liferay.portlet.holiday.configuration.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.holiday.configuration.web.constants

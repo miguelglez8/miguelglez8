@@ -1,0 +1,9 @@
+Bundle-Name: adeplus-contact-form-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.contact.form.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.contact.form.web.constants
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    templates.contact.*,\
+    templates.*,\
+    content.*

@@ -1,0 +1,4 @@
+Bundle-Name: adeplus-keycloak-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.keycloak.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.keycloak.web.constants

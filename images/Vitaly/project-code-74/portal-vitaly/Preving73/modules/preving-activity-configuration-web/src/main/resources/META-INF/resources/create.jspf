@@ -1,0 +1,240 @@
+<%
+	CompanyConf companyConf = CompanyConfLocalServiceUtil.getCompanyConfByCompanyIdAndGroupId(themeDisplay.getCompanyId(), themeDisplay.getScopeGroupId());
+%>
+<script type="text/javascript" charset="utf8" src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+
+<h2><liferay-ui:message key="activity.configuration.view.create.title"/></h2>
+
+<liferay-portlet:actionURL name="create" var="createURL"  />
+<aui:form action="<%= createURL.toString() %>" method="post">
+    <div class="row">
+        <div class="col-sm-6 inputCreateAct">
+            <label><liferay-ui:message key="activity.configuration.view.name"/></label>
+            <liferay-ui:input-localized id="inputCreateAct" name="name" CssClass="activity-input col-md-12" xml="" maxLength="50"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="activity.configuration.view.color">
+                <input type="color" id="inputColor" name="<portlet:namespace/>color" list="rainbow" value="#FF0000" style="height:30px;">
+                    <datalist id="rainbow">
+                    <option value="#980000"></option>
+                    <option value="#FF0000"></option>
+                    <option value="#FF9900"></option>
+                    <option value="#FFFF00"></option>
+                    <option value="#00FF00"></option>
+                    <option value="#00FFFF"></option>
+                    <option value="#4A86E8"></option>
+                    <option value="#0000FF"></option>
+                    <option value="#9900FF"></option>
+                    <option value="#FF00FF"></option>
+
+                    <option value="#85200C"></option>
+                    <option value="#E06666"></option>
+                    <option value="#F6B26B"></option>
+                    <option value="#BF9000"></option>
+                    <option value="#93C47D"></option>
+                    <option value="#76A5AF"></option>
+                    <option value="#1155CC"></option>
+                    <option value="#0B5394"></option>
+                    <option value="#8E7CC3"></option>
+                    <option value="#741B47"></option>
+
+                    <option value="#A61C00"></option>
+                    <option value="#CC0000"></option>
+                    <option value="#E69138"></option>
+                    <option value="#F1C232"></option>
+                    <option value="#6AA84F"></option>
+                    <option value="#45818E"></option>
+                    <option value="#3C78D8"></option>
+                    <option value="#3D85C6"></option>
+                    <option value="#674EA7"></option>
+                    <option value="#A64D79"></option>
+
+                    <option value="#85200C"></option>
+                    <option value="#990000"></option>
+                    <option value="#B45F06"></option>
+                    <option value="#BF9000"></option>
+                    <option value="#38761D"></option>
+                    <option value="#134F5C"></option>
+                    <option value="#1155CC"></option>
+                    <option value="#0B5394"></option>
+                    <option value="#351C75"></option>
+                    <option value="#741B47"></option>
+                </datalist>
+                </input>
+            </aui:field-wrapper>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="activity.configuration.view.workTime">&nbsp;&nbsp;&nbsp;
+                <aui:input name="workTime" value="true" type="radio" label="activity.configuration.view.yes" checked="true"/>
+                <aui:input name="workTime" value="false" type="radio" label="activity.configuration.view.no"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="activity.configuration.view.type">&nbsp;&nbsp;&nbsp;
+                <aui:input name="type" value="1" type="radio" label="activity.configuration.view.working" checked="true"/>
+                <aui:input name="type" value="2" type="radio" label="activity.configuration.view.absence"/>
+                <aui:input name="type" value="3" type="radio" label="activity.configuration.view.extra"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+    <div class="row hide lfr-ddm-field-group" id="obsevationsExtra">
+        <div class="control-label"></div>
+        <div class="col">
+            <p class="textMoreBig"><strong><liferay-ui:message key="activity.configuration.observation"/></strong></p>
+            <p class="textMoreBig"><liferay-ui:message key="activity.configuration.observation.text"/></p>
+            <textarea name="<portlet:namespace />observationType" id="<portlet:namespace />observationType" style="width: 80%;height: 100px"></textarea>
+            <p class="text-danger hide" id="invalidText"><liferay-ui:message key="text.invalidate"/></p>
+            <p class="textMoreBig"><strong><liferay-ui:message key="activity.notification"/></strong></p>
+            <p class="textMoreBig"><liferay-ui:message key="activity.notification.input.first"/></p>
+            <p class="textLabel"><liferay-ui:message key="activity.notification.input.first.label"/></p>
+            <input name="<portlet:namespace/>notificate" value="true" type="radio" onclick="enableAdditionalMailing()" label="activity.notification.input.yes"><liferay-ui:message key="activity.notification.input.yes"/></input>
+            <input name="<portlet:namespace/>notificate" class="d-inline addMargin" onclick="disableAdditionalMailing()" value="false" type="radio" label="activity.notification.input.no" checked="true"><liferay-ui:message key="activity.notification.input.no"/></input>
+            <div id="additionalMailing" class="d-none">
+                <p class="textMoreBig" style="margin-top: 10px;"> <liferay-ui:message key="activity.notification.input.second"/></p>
+                <p class="textLabel"><liferay-ui:message key="activity.notification.input.second.label.extra"/></p>
+                <input name="<portlet:namespace/>notificateAdditional" onclick="enableInput()" value="true" type="radio" label="activity.notification.input.yes"><liferay-ui:message key="activity.notification.input.yes"/></input>
+                <input name="<portlet:namespace/>notificateAdditional" onclick="disableInput()" class="d-inline addMargin" value="false" type="radio" label="activity.notification.input.no" checked="true"><liferay-ui:message key="activity.notification.input.no"/></input>
+                <p class="textLabel" style="margin-top: 10px;"><liferay-ui:message key="activity.notification.input.second.label"/></p>
+                <aui:input type="text" name="userAdditional" label="" placeholder="activity.placeholder"/>
+                <p class="text-danger hide" id="invalidMail"><liferay-ui:message key="mail.invalidate"/></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:field-wrapper label="activity.configuration.view.active">&nbsp;&nbsp;&nbsp;
+                <aui:input name="active" value="true" type="radio" label="activity.configuration.view.active.yes" checked="true"/>
+                <aui:input name="active" value="false" type="radio" label="activity.configuration.view.active.no"/>
+            </aui:field-wrapper>
+        </div>
+    </div>
+
+    <aui:button-row>
+        <aui:button value="activity.configuration.view.button.create.cancel" onClick="javascript: window.history.go(-1)"  />
+        <aui:button onClick="validarForm()" value="activity.configuration.view.button.create.accept"/>
+        <aui:button value="activity.configuration.view.button.create.accept" id="sumbitForm" cssClass="hide" type="submit"/>
+    </aui:button-row>
+</aui:form>
+
+<script>
+    var actividadHorasExtra=false;
+
+    function createEditor(value) {
+
+        var editor = CKEDITOR.replace('<portlet:namespace />observationType', {
+            on: {
+                instanceReady: function() {
+
+                }
+            }
+        });
+        editor.setData(value);
+
+    }
+
+    $(document).ready(function() {
+        $('#<portlet:namespace/>fm input').on('change',function(){
+    		 if($('input[name="<portlet:namespace/>type"]:checked','#<portlet:namespace/>fm').val()==3){
+    		    $('#obsevationsExtra').removeClass('hide')
+    		    actividadHorasExtra=true
+
+    		 }else{
+    		    $('#obsevationsExtra').addClass('hide')
+    		    actividadHorasExtra=false
+    		 }
+    	});
+        createEditor('');
+        document.getElementById('<portlet:namespace/>userAdditional').disabled = true
+        document.getElementById('<portlet:namespace/>userAdditional').value = ""
+        setInterval(function(){
+            $('button').each(function(){
+                var target = $(this);
+                // if(target.text() == 'Other...' || target.val() == 'Other...'){
+                if(target.text() == 'Otros...' || target.val() == 'Otros...'){
+                    target.remove();
+                }
+            });
+        }, 300);
+    } );
+
+function validarEmails(mailGestor) {
+
+  const emails = mailGestor.split(';');
+
+  // Expresión regular para validar direcciones de correo electrónico
+  const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+  let emailsValidos = [];
+  let emailsInvalidos = [];
+
+  emails.forEach(email => {
+    if (regex.test(email.trim())) {
+      emailsValidos.push(email.trim());
+    } else {
+      emailsInvalidos.push(email.trim());
+    }
+  });
+
+  if (emailsInvalidos.length === 0) {
+    return true;
+  } else {
+    return false
+  }
+}
+
+function enableInput() {
+    document.getElementById('<portlet:namespace/>userAdditional').disabled = false
+}
+function disableInput() {
+    document.getElementById('<portlet:namespace/>userAdditional').disabled = true
+    document.getElementById('<portlet:namespace/>userAdditional').value = ""
+}
+
+function enableAdditionalMailing() {
+     $('#additionalMailing').removeClass('d-none');
+}
+
+function disableAdditionalMailing() {
+    $('#additionalMailing').addClass('d-none');
+}
+
+function validarForm(){
+    var disabledInput=document.getElementById('<portlet:namespace/>userAdditional').disabled
+    var dataCkeditor= CKEDITOR.instances._com_preving_liferay_portlet_activity_configuration_web_ActivityConfigurationPortlet_observationType.getData()
+    var correosAdicionales=$('#<portlet:namespace/>userAdditional').val()
+    if(actividadHorasExtra && dataCkeditor==""){
+         $('#invalidText').removeClass('hide');
+         return false;
+    }
+    if(!disabledInput && !validarEmails(correosAdicionales)){
+        $('#invalidText').addClass('hide');
+        $('#invalidMail').removeClass('hide');
+       return false;
+    }
+    $('#invalidText').addClass('hide');
+    $('#invalidMail').addClass('hide');
+    $('#<portlet:namespace/>sumbitForm').click();
+}
+
+</script>
+
+<style>
+    @media only screen and (max-width: 576px) {
+        #inputCreateAct{width:100%;}
+        .inputCreateAct{margin-left:4%;}
+    }
+    @media only screen and (min-width: 576px) {
+        #inputCreateAct{width:70%; margin-left:60%;}
+        #inputColor{margin-left:0.7%;}
+        .inputCreateAct{margin-left:1%;}
+    }
+
+</style>

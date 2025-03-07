@@ -1,0 +1,5 @@
+Bundle-Name: legal-plus-admin-consultores
+Bundle-SymbolicName: com.legalplus.liferay.portlet.admin.consultores.web
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.admin.consultores.web.constants
+Import-Package:*;version="0";resolution:=optional

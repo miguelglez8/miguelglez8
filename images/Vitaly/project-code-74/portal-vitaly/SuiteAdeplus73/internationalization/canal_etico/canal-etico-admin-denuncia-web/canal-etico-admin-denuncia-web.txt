@@ -1,0 +1,91 @@
+Admininistración de denuncias
+
+Canal Ético
+
+# View
+Mis denuncias/consultas
+Consulte la relación de denuncias recibidas por su organización, y acceda al módulo de gestión a través del botón GESTIONAR asociado a cada una de ellas.
+Fecha
+Fecha finalización
+Código
+Categoría
+Tipo
+NIF
+Nombre
+Email
+Teléfono
+Asunto
+Descripción
+Archivos
+Estado
+Vinculación
+Acciones realizadas
+Gestionar
+Desde
+Hasta
+Todos
+Todas
+
+Consulta
+Denuncia
+
+Motivo de finalización
+
+Registrado
+En proceso
+Finalizado
+Sin finalizar
+
+
+# Edit
+Mis denuncias/consultas
+Información de la denuncia/consulta
+Datos generales
+Datos denuncia/consulta
+Datos personales
+Contenido
+Gestión de la denuncia/consulta
+Gestión de acciones
+Acción
+Nueva acción
+Comunicaciones
+Observaciones internas
+Nueva observación
+Fecha
+Autor
+Asunto
+Archivo adjunto
+Nombre
+Estado
+Observación
+Comunicación
+Nueva comunicación
+Adjuntar archivo
+Finalizar consulta/denuncia
+Finalice el tratamiento de la consulta/denuncia.
+Cuando se finaliza una consulta/denuncia pasadas 24 horas se eliminarón los datos no esenciales y no se podrá realizar ninguna operación más.
+¿Está seguro que desea finalizar?
+Finalizar
+Cancelar
+
+# Datatable
+Procesando...
+Mostrar _MENU_ denuncias
+No se encontraron denuncias
+No hay denuncias disponible en esta tabla
+Mostrando denuncias del _START_ al _END_ de un total de _TOTAL_ denuncias
+Mostrando denuncias del 0 al 0 de un total de 0 denuncias
+(filtrado de un total de _MAX_ denuncias)
+
+Buscar
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

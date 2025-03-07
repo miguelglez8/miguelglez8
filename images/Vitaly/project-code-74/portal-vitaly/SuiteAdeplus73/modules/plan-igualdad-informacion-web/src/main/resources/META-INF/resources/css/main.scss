@@ -1,0 +1,25 @@
+.plan-igualdad-informacion-web {
+}
+
+.prv-form {
+    box-shadow: none !important;
+}
+
+.clsRequiredSelect{
+    display: none;
+}
+.clsRequiredSelect_visible{
+    display: inline;
+}
+
+//INFINITY TABLE
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+    z-index: -1;
+}

@@ -1,0 +1,21 @@
+<div class="modal hide" id="noDeleteCategory">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content alert-modal warning" style="border-radius: 15px; width: 650px;">
+                <div class="headerModal">
+                    <p id="addEntidad"><span><liferay-ui:message key="categories.delete.title"/></p>
+                </div>
+                 <div class="container">
+                    <div class="col-12 text-center">
+                        <p><liferay-ui:message key="categories.noDelete.description" /></p>
+                    </div>
+                 </div>
+                <div class="footerModal">
+                    <button type="button" class="buttonModal hide-modal" id="btnCancelComFin"  data-dismiss="modal" aria-label="Close">
+                           <liferay-ui:message key="label.button.cerrar"/>
+                    </button>
+
+                </div>
+        </div>
+    </div>
+</div>

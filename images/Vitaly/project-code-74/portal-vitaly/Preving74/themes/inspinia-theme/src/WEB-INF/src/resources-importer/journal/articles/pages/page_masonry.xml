@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[
+<div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h2>
+                                Masonry
+                            </h2>
+                            <p>
+                                Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.
+                                <a href="http://masonry.desandro.com/" target="_blank">http://masonry.desandro.com/</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="grid" >
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                              Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <h4 class="font-bold">
+                                Example masonary box
+                            </h4>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+<script>
+    window.__define = window.define;
+    window.__require = window.require;
+    window.define = undefined;
+    window.require = undefined;
+</script>
+        
+<script src="/o/inspinia-theme/js/plugins/masonary/masonry.pkgd.min.js"></script>
+
+<script>
+    window.define = window.__define;
+    window.require = window.__require;
+    window.__define = undefined;
+    window.__require = undefined;
+</script>
+
+    <style>
+
+        .grid .ibox {
+            margin-bottom: 0;
+        }
+
+        .grid-item {
+            margin-bottom: 25px;
+            width: 300px;
+        }
+    </style>
+
+<script>
+    $(window).load(function() {
+
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 300,
+            gutter: 25
+        });
+
+    });
+</script>        
+ ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

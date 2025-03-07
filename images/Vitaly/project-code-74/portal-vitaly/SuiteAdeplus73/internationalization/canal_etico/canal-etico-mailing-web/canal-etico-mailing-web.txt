@@ -1,0 +1,37 @@
+Mailing
+
+Canal ético
+
+Test de envío de emails. Canal ético/denuncias
+El mail se enviará a 
+Test de mails a usuarios
+
+Formulario de contacto
+Contacto a administrador
+Contacto a usuario
+
+Denuncias
+Denuncia al administrador
+Denuncia al usuario
+Finalizar denuncia al administrador
+Finalizar denuncia al usuario
+Aviso 7 días antes finalizar
+
+
+Crear usuario
+Borrar usuario
+Recordar contraseña
+
+Bienvenido a la Suite de Aplicaciones
+Baja de la suite de aplicaciones
+Consulta en la suite de aplicaciones
+
+Nueva consulta
+Nueva consulta
+
+Nuevo contacto/denuncia
+Nuevo contacto/denuncia
+Nuevo mensaje
+El tratamiento de la consulta/denuncia ha finalizado
+Se acerca el vencimiento de la consulta/denuncia
+Su consulta/denuncia ha pasado a un nuevo estado

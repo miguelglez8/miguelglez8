@@ -1,0 +1,10 @@
+Histórico registro horario
+
+   Jornada laboral en exterior
+   Jornada laboral en oficina
+   Jornada laboral en reunión en cliente
+   Jornada laboral en teletrabajo
+   Pausa - comida
+   Pausa - descanso
+   Pausa - otros
+   Pausa - visita médica

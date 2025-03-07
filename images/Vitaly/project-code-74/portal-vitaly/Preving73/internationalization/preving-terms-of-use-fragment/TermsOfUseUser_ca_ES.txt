@@ -1,0 +1,257 @@
+Condiciones de uso de Miregistrodehoras.com
+AVISO IMPORTANTE -- LEA ATENTAMENTE ESTE DOCUMENTO: Las presentes CONDICIONES DE USO del aplicativo MIREGISTRODEHORAS (en adelante “El Portal”) son un acuerdo que rige el uso del aplicativo y las herramientas incorporadas. El hecho de utilizar el aplicativo, implica que usted acepta plenamente y sin reservas todas y cada una de las Condiciones establecidas en el documento. Si no acepta las Condiciones, no utilice el aplicativo.
+
+
+Asimismo, el uso de MIREGISTRODEHORAS da lugar a la aceptación de los términos del presente acuerdo.
+
+
+En cumplimiento de lo dispuesto en la Ley de Servicios de la Sociedad de la Información y el Comercio Electrónico, Preving Investments, SL con domicilio social en C/ Castillo Puebla de Alcocer, 10 8-B CP 06006 de Badajoz, CIF B-06677413 e inscripción en el Registro Mercantil de Badajoz en el Tomo 609, Folio 221, Inscripción 1 con Hoja BA-2639, como titular del sitio web www.miregistrodehoras.com , pone a su disposición este Aviso Legal relativa a la información, integrada en este sitio web, sobre, servicios prestados a través de esta portal por las siguientes entidades (en adelante el Prestador):
+
+
+Totaldat, SLU,  con CIF B-06537609 como consultora especializada en Cumplimiento Normativo Inscrita en el Registro Mercantil de Badajoz, tomo 445, folio 61, hoja BA-20469, inscripción 1ª, tiene su domicilio social en la C/ Castillo Puebla de Alcocer, 8 CP 06006 de Badajoz.
+
+Preving Consultores, SLU, con CIF B-06290241 es un Servicio de Prevención Ajeno acreditado por la Autoridad Laboral en fecha 9 de diciembre de 1998, inscrita en el Registro Mercantil de Badajoz folio 189 vuelto, del tomo 441, Hoja BA-9640, Inscripción 30ª, tiene su domicilio social es en Avenida Joaquín Sánchez Valverde, 1-3-5 CP 06006 de Badajoz.
+
+Excelencia y Garantía para la Salud en el Trabajo, SLU (Egarsat) con CIF B-64734528 es un Servicio de Prevención Ajeno acreditado por el Department de Treball de la Generalitat de Catalunya en fecha 1 de abril de 2009 , inscrita en el Registro Mercantil de Barcelona, Tomo 40283, Folio 170, S8, H B 362256 tiene su domicilio social es en C/ Víctor Hugo, 2-4 de San Cugat del Vallés CP 08173 de Barcelona.
+
+ICESE Prevención, SLU (ICESE) con CIF B-61271672 es un Servicio de Prevención Ajeno acreditado por la Autoridad Laboral competente, inscrita en el Registro Mercantil de Barcelona, Tomo 29632, folio 52, hoja B-157810, tiene su domicilio social en C/ Víctor Hugo, 2-4 CP 08174 de San Cugat del Vallés (Barcelona).
+
+Previcaman SLU, con CIF B45475746 es un Servicio de Prevención Ajeno acreditado por la Autoridad laboral competente, inscrita en el Registro Mercantil de Toledo, Escritura número 2.407 del 27/09/2000, Notario Nicolás Moreno Baldía; Registro Mercantil de Toledo; Tomo 1033, Libro 0, Folio 162, Sección 8, Hoja TO 15834.
+
+Para dirigirse a los prestadores ponemos a su disposición los siguientes medios de contacto:
+
+Datos de Contacto:
+
+ - Teléfono: 900 649 149
+
+ - E-mail: soporte@miregistrodehoras.com
+
+1.- Objeto
+Las presentes Términos y Condiciones de Uso y Privacidad (en adelante, "Condiciones") tienen por objeto regular las condiciones de uso del portal diseñado para el cumplimiento. Este portal ofrece a los usuarios, la posibilidad de gestionar las obligaciones contenidas en el  artículo 34.9 del Estatuto de los Trabajadores relativas al registro de jornada, en concreto el registro telemático de jornada. El aplicativo permite introducir datos de la jornada realizada, y descansos de manera on-line para su posterior contabilización y consulta digital de manera fiable, inmodificable y no manipulable a posteriori, ya sea por el empresario o por el propio trabajador (en adelante, "el Servicio").
+
+
+El Prestador le concede a la Entidad usuaria un derecho no exclusivo, e intransferible para utilizar el Portal y documentación adjunta (en adelante “el Software”) en el modo y en la forma prevista en la presente Licencia y en las condiciones de contratación en su caso.
+
+La LICENCIA quedará automáticamente anulada si se incumplen los Términos y condiciones de uso.
+
+
+La no exigencia por parte del Prestador del cumplimiento de cualquier disposición de la presente LICENCIA no constituirá una renuncia a dicha disposición o a cualquier otra de las contenidas en la LICENCIA.
+
+2.- Duración de la licencia de uso de Miregistrodehoras.com
+El Cliente tendrá acceso al Portal durante el período determinado en el Contrato de prestación de servicios vinculado a esta licencia.
+
+El precio de la licencia establecido en el Contrato de prestación de servicios puede incluir un descuento comercial, en su caso la aplicación de este descuento se encuentra condicionado al cumplimiento por parte del Cliente de las condiciones comerciales para su concesión: mantenimiento de relaciones contractuales, prescripción de clientes, u otras pactadas. El incumplimiento de los requisitos para su concesión determinará la pérdida de vigencia del descuento.
+
+En caso de reducción o supresión del descuento el Cliente podrá renunciar al servicio sin penalización en un plazo de 15 días desde la comunicación de la pérdida de las referidas condiciones.
+
+En caso de pérdida de vigencia de la relación contractual por cualquier motivo, se concede al Cliente un plazo de 30 días naturales para recuperar los registros introducidos en el Portal, esta circunstancia será comunicada al Cliente mediante correo electrónico. Transcurrido este plazo los registros resultarán inaccesibles. Se recuerda que Cliente tiene la obligación de conservar los registros por un plazo de cuatro años.
+
+Asimismo es causa de rescisión de la licencia el Incumplimiento de los Términos y condiciones de uso.
+
+3.- Funcionamiento e idoneidad de Miregistrodehoras.com
+MIREGISTRODEHORAS es un aplicativo para el registro diario de jornada. La valoración de las funcionalidades del Portal en cuanto a su adecuación a las características de la Entidad usuaria, y su idoneidad, así como la negociación o consulta con la representación legal de los trabajadores, en su caso, la definición de su ámbito de aplicación o su implantación efectiva, corren  por cuenta y son exclusiva responsabilidad de cada Entidad usuaria.
+
+MIREGISTRODEHORAS permite interactuar con la aplicación según el rol atribuido al usuario de la Entidad. Ninguno de lo usuarios puede modificar a posteriori ningún registro; se relacionan a continuación los distintos roles:
+
+  1.- Usuario Administrador de la Entidad, con permisos de configuración, consulta de registros, y alta/baja de usuarios.
+
+  2.- Usuario Empleado de la Entidad, con los permisos necesarios para registro y consulta de su jornada y modificación de sus datos de acceso.
+
+  3.- Usuario Prestador, con los mismos permisos del Usuario Administrador con alcance en todas las Entidades usuarias.
+
+
+El Portal podrá generar correos electrónicos dirigidos a las cuentas de los usuario Administrador y Empleado.
+
+
+Por otra parte, la información registrada por el Usuario Empleado podrá ser comentada por el usuario Administrador de la Entidad.
+
+
+MIREGISTRODEHORAS respeta en todo caso los derechos de los trabajadores a la intimidad previstos en el artículo 20 bis del Estatuto de los Trabajadores, que remite a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales
+
+
+El Servicio no detecta direcciones IP, ni geolocaliza al usuario, los registros tienen presunción de veracidad, vinculada al uso diligente de las claves de acceso por parte del usuario y a la veracidad de la información aportada.
+
+
+Se debe tener en cuenta que el Servicio mantiene los registros durante 4 años. Esto significa que, aunque se haya dado de baja el usuario empleado, la Entidad podrá acreditar el registro horario del usuario trabajado.
+
+
+El servicio está diseñado en modo responsive. La utilización del Servicio requiere dispositivos y Software compatibles así como acceso a Internet (con sujeción a las tarifas que le aplique su proveedor correspondiente).
+
+
+El Servicio es configurable por el usuario administrador de la Entidad en ciertos aspectos.
+
+
+La información del servicio se transmite de forma segura cifrada mediante el uso del protocolo SSL. Para más información sobre protección de datos consulta el apartado 7 de las Condiciones.
+
+
+La información detallada sobre el funcionamiento del Servicio está disponible en la sección correspondiente del Portal MIREGISTRODEHORAS.COM
+
+4. Coste y titularidad del Software y/o Servicio
+El Servicio tiene el coste para la Entidad expresado en sus condiciones particulares de contratación.
+
+
+El Prestador hace reserva expresa de cualesquiera derechos pudieran corresponderle sobre el Software y/o Servicio y los elementos que forman parte del mismo.
+
+
+Los usuarios no pueden utilizar los materiales de terceros que forman parte del Software de ninguna forma que constituya una infracción de los derechos del Prestador.
+
+5.- Confidencialidad y Protección de Datos
+Prestador y Usuario (en adelante “las Partes”) se obligan a mantener confidencialidad absoluta respecto de toda la información y documentación que mutuamente se hubieren facilitado sobre datos personales, procesos de producción o técnicas de trabajo que se hayan conocido recíprocamente, absteniéndose de comunicarlo, comentarlo o facilitarlo total o parcialmente, a terceros. La confidencialidad asumida abarca a todos los conocimientos recíprocos que se tengan en el momento de la firma del presente contrato o en un futuro y se extiende a todos los grupos de interés, estableciéndose expresamente que todas las personas autorizadas para tratar este tipo de información se hayan comprometido a respetar la confidencialidad o estén sujetas a una obligación de confidencialidad de naturaleza estatutaria.
+
+
+Quedan exceptuados de confidencialidad aquellos datos requeridos por alguna autoridad pública, judicial o administrativa y todos aquellos que exista autorización específica de la otra parte para hacer uso de la información.
+
+
+Asimismo las partes reconocen que el Prestador. ofrece garantías suficientes para aplicar medidas técnicas y organizativas apropiadas, de manera que el tratamiento de datos inherente a estas Condiciones sea conforme a los requisitos del Reglamento (UE) 2016/679 de Protección de datos y la Ley Orgánica 3/2018 de Protección de Datos Personales y Garantías Digitales, y garantice la protección de los derechos de los interesados. Por lo expuesto, mediante las presentes cláusulas se habilita al Prestador como: Encargado del tratamiento, para tratar por cuenta de la Entidad, responsable del tratamiento, los datos de carácter personal necesarios para prestar el servicio objeto de este contrato, que consistirá en las actividades de puesta a disposición y mantenimiento del Portal, que implican tratamientos de datos de:
+
+
+ - Registro
+
+ - Estructuración
+
+ - Modificación
+
+ - Conservación
+
+ - Consulta
+
+ - Comunicación por transmisión
+
+ - Limitación
+
+ - Supresión
+
+ - Destrucción
+
+ - Conservación
+
+ - Comunicación
+
+
+Para la ejecución de las prestaciones derivadas del cumplimiento del objeto de este encargo, el Responsable del tratamiento, pone a disposición del Prestador encargado del tratamiento, la información que se describe a continuación a título ejemplificativo:
+
+• Datos identificativos y contacto                    
+
+Que puede concernir a empleados del Responsable, así como a sus representantes legales.
+
+
+Una vez concluida la prestación del Servicio, el encargado del tratamiento conservará los datos mientras puedan derivarse responsabilidades de la ejecución de la prestación concertada, en cumplimiento de la normativa vigente. Lo expuesto en este apartado sin perjuicio del trámite de devolución de los datos o entrega a otro encargado previa solicitud por escrito del responsable del tratamiento.
+
+
+El encargado del tratamiento y todo su personal se obliga a:
+
+
+  a. Utilizar los datos personales objeto de tratamiento, o los que recoja para su inclusión, sólo para la finalidad objeto de este encargo.
+
+
+  b. Tratar los datos de acuerdo con las instrucciones del responsable del tratamiento. Si el encargado del tratamiento considera que alguna de las instrucciones infringe el RGPD o cualquier otra disposición en materia de protección de datos de la Unión o de los Estados miembros, el encargado informará inmediatamente al responsable.
+
+
+  c. Llevar, por escrito, un registro de todas las categorías de actividades de tratamiento efectuadas por cuenta del responsable.
+
+
+  d. No comunicar los datos a terceras personas, salvo  las empresas del Grupo al que pertenece o pueda pertenecer el Encargado, cuando sea imprescindible para el desarrollo, cumplimiento y control del servicio contratado. Así mismo se autoriza la cesión de datos de carácter general, con la finalidad de envío de comunicaciones publicitarias por cualquier medio (correo ordinario, fax, email...) a las direcciones de contacto del usuario Administrador que se faciliten, pudiendo revocar su consentimiento cuando estime oportuno. Asimismo el Responsable  queda informado de que sus datos podrán ser comunicados a sistemas de información crediticia como Asnef Equifax, sólo en el supuesto de que se den los requisitos para ello.
+
+El encargado puede comunicar los datos a otros encargados del tratamiento del mismo responsable, de acuerdo con las instrucciones del responsable. En este caso, el responsable identificará, de forma previa y por escrito, la entidad a la que se deben comunicar los datos, los datos a comunicar y las medidas de seguridad a aplicar para proceder a la comunicación.
+
+Si el encargado debe transferir datos personales a un tercer país o a una organización internacional, en virtud del Derecho de la Unión o de los Estados miembros que le sea aplicable, informará al responsable de esa exigencia legal de manera previa, salvo que tal Derecho lo prohíba por razones importantes de interés público.
+
+
+  e. Con carácter general se autoriza al encargado a subcontratar las prestaciones que resulten necesarias para la ejecución de los servicios concertados. El encargado informará al responsable de cualquier cambio previsto en la incorporación o sustitución de otros encargados, dando así al responsable la oportunidad de oponerse a dichos cambios comunicándolo por escrito en un plazo de 10 días.  El subcontratista, que también tiene la condición de encargado del tratamiento, está obligado igualmente a cumplir las obligaciones establecidas en este documento para el encargado del tratamiento y las instrucciones que dicte el responsable. Corresponde al encargado inicial regular la nueva relación, de forma que el nuevo encargado quede sujeto a las mismas condiciones (instrucciones, obligaciones, medidas de seguridad…) y con los mismos requisitos formales que él, en lo referente al adecuado tratamiento de los datos personales y a la garantía de los derechos de las personas afectadas. En el caso de incumplimiento por parte del subencargado, el encargado inicial seguirá siendo plenamente responsable ante el responsable en lo referente al cumplimiento de las obligaciones.
+
+
+  f. Mantener el deber de secreto respecto a los datos de carácter personal a los que haya tenido acceso en virtud del presente encargo, incluso después de que finalice su objeto. 
+
+
+  g. Garantizar que las personas autorizadas para tratar datos personales se comprometan, de forma expresa y por escrito, a respetar la confidencialidad y a cumplir las medidas de seguridad correspondientes, de las que hay que informar convenientemente.
+
+
+  h. Asistir al responsable del tratamiento en la respuesta al ejercicio de los derechos de los interesados notificándolo a la dirección facilitada por el responsable a efectos de comunicaciones. La comunicación debe hacerse sin dilaciones indebidas, juntamente, en su caso, con otras informaciones que puedan ser relevantes para resolver la solicitud.  
+
+
+  i. El encargado del tratamiento notificará al responsable del tratamiento, sin dilación indebida, y en cualquier caso antes del plazo máximo de 36h, y a través de la dirección notificada a efectos de comunicaciones , las violaciones de la seguridad de los datos personales a su cargo de las que tenga conocimiento, juntamente con toda la información relevante para la documentación y comunicación de la incidencia. No será necesaria la notificación cuando sea improbable que dicha violación de la seguridad  constituya un riesgo para los derechos y las libertades de las personas físicas.
+
+
+  j. Dar apoyo al responsable del tratamiento en la realización de las evaluaciones de impacto relativas  a la protección de datos, cuando proceda.
+
+
+  k. Dar apoyo al responsable del tratamiento en la realización de las consultas previas a la autoridad de control, cuando proceda.
+
+
+  l. Poner a disposición del responsable toda la información necesaria para demostrar el cumplimiento de sus obligaciones, así como para la realización de las auditorías o las inspecciones que realicen el responsable u otro auditor autorizado por él.
+
+
+  m. Implantar las medidas de seguridad apropiadas, teniendo en cuenta el estado de la técnica, los costes de aplicación, y la naturaleza, el alcance, el contexto y los fines del tratamiento, así como riesgos de probabilidad y gravedad variables para los derechos y libertades de las personas físicas,  para garantizar un nivel de seguridad adecuado al riesgo, que incluya:
+
+
+- Garantizar la confidencialidad, integridad, disponibilidad y resiliencia permanentes de los sistemas y servicios de tratamiento.
+
+
+- Restaurar la disponibilidad y el acceso a los datos personales de forma rápida, en caso de incidente físico o técnico.
+
+
+- Verificar, evaluar y valorar, de forma regular, la eficacia de las medidas técnicas y organizativas implantadas para garantizar la seguridad del tratamiento.
+
+
+- Seudonimizar y cifrar los datos personales, en su caso.
+
+
+  n. Comunicar la designación de Total.dat, S.L.U., entidad inscrita en el Registro de la AEPD a estos efectos, como Delegado de Protección de datos del Prestador, y la dirección e-mail de contacto preferente: privacidad@grupopreving.com como medio de contacto para las comunicaciones relacionadas con esta cláusula.
+
+
+El Responsable puede ejercer los derechos de acceso, rectificación, cancelación y oposición en el domicilio de Total.dat S.L.U. indicado en el presente contrato, así como acceder a informacion adicional sobre los tratamientos de datos http://www.totaldat.es/lopd/index.php/total-dat/aviso-legal o https://www.preving.com/aviso-legal/
+
+El Responsable se compromete a custodiar diligentemente las claves de acceso al Portal y será responsable del correcto uso de las mismas, así como de cualquier otra herramienta online que se ponga a su disposición en ejecución del presente contrato, restringiendo en su caso los usuarios autorizados y renovando las mismas, en caso de ser necesario.
+
+6.- Obligaciones del usuario
+6.1 El usuario manifiesta conocer que el Software y/o Servicio es de exclusiva propiedad del Prestador , y se obliga a respetar los derechos de propiedad intelectual o industrial del autor, no pudiendo alterar, modificar en modo alguno o transformar su formato original, ni explotar el mismo con fines comerciales. Con carácter general el usuario se compromete a la correcta utilización del Servicio, a tenor de lo establecido en la legislación vigente que le fuera aplicable y a lo contenido en las presentes condiciones, absteniéndose de utilizar el Software y/o Servicio para realizar actividades ilícitas o constitutivas de delito y/o que infrinjan cualquier tipo de disposición legal o intereses de terceros.
+
+
+El Prestador no le autoriza a:
+
+ - Vulnerar, modificar, evadir, descompilar, desensamblar, manipular o llevar a cabo tareas de ingeniería inversa en el Software o con respecto a ningún componente del mismo, y a no intentar ni prestar asistencia a ningún tercero para llevar a cabo tales acciones. Queda prohibida la separación de los componentes.
+
+
+ - Acceder al Servicio a través de medios distintos de los proporcionados por Prestador para acceder al Software.
+
+
+ - Usar versiones modificadas del Software no proporcionadas por el Prestador.
+
+
+ - Ceder el uso, arrendar, vender, distribuir, donar y cualquier otro tipo de transmisión del Software o de sus componentes a otra persona o entidad.
+
+
+ - Enviar, transferir o exportar el Software a ningún país, ni utilizar el Software de ningún modo, que esté prohibido por las leyes, restricciones o reglamentos en materia de exportación.
+
+
+6.2 No se puede usar el Software de ninguna manera que dañe, desactive, inutilice, sobrecargue o deteriore el Servicio.
+
+6.3 El usuario exonera a el Prestador de cualquier responsabilidad derivada de la inexactitud de los datos aportados o del funcionamiento del Servicio.
+
+6.4. El usuario es responsable del uso que del programa hagan las demás personas que lo utilicen bajo su dirección.
+
+7.-Responsabilidad
+7.1. Tanto el acceso al Portal MIREGISTRODEHORAS como el uso que pueda hacerse de la información contenida en el mismo es de la exclusiva responsabilidad de quien lo realiza, si bien el Prestador tiene el derecho a reclamar a la Entidad por los daños y perjuicios causados por personal bajo su dirección.
+
+
+7.2. El Prestador no se hace responsable de los posibles errores de seguridad que se puedan producir ni de los posibles daños que puedan causarse al sistema informático del Usuario (hardware y software), los ficheros o documentos almacenados en el mismo, como consecuencia de la presencia de virus en el ordenador del Usuario utilizado para la conexión a los servicios y contenidos de la Web, de un mal funcionamiento del navegador o del uso de versiones no actualizadas del mismo
+
+
+7.3. El Prestador no garantiza la inexistencia de errores en el acceso al Portal, en su contenido, ni que éste se encuentre actualizado, aunque el Prestador desarrollará sus mejores esfuerzos para, en su caso, evitarlos, subsanarlos o actualizarlos.
+
+
+7.4. El Prestador puede dejar de prestar o alterar el Servicio sin previo aviso, no generándose responsabilidad alguna para el Prestador con el usuario o con terceras partes por tal motivo, siempre que medie preaviso dirigido a la dirección facilitada por la Entidad usuaria, con una antelación mínima de 3 meses, en los que la Entidad podrá descargar toda la información del Portal concerniente a su Organización.
+
+La modificación del Software y/o Servicio respetará la finalidad y objeto del Servicio que es cumplir con las obligaciones establecidas para Entidades y sus empleados en relación al registro de jornada.
+
+
+7.5. El Prestador declina cualquier responsabilidad respecto del Servicio, y no se hace responsable por los daños y perjuicios de toda naturaleza derivados de la falta de disponibilidad, mal funcionamiento o de continuidad del funcionamiento del Servicio por incidencias técnicas en los sistemas o cualquier otra causa propia o de terceros.
+
+
+7.6 El Prestador no se responsabiliza de las consecuencias derivadas del incumplimiento por parte del usuario de las Condiciones de uso del Servicio y, en consecuencia, el usuario se erige en el único y exclusivo responsable de los daños o perjuicios causados a otros usuarios del Servicio y/o terceros como consecuencia del comportamiento y uso de la información obtenida por los usuarios del Servicio.
+
+
+7.7 El Prestador se exime de cualquier tipo de responsabilidad por modificaciones que se produzcan en el Software y/o Servicio sin consentimiento expreso de el Prestador así como del uso incorrecto que se haga de los mismos, ya sea del original distribuido por el Prestador como de modificaciones o productos derivados del Software (incluidos los derivados del código fuente) autorizadas y no autorizadas por el Prestador.
+
+8.- Legislación aplicable y jurisdicción competente
+Las presentes condiciones del Servicio en lo no previsto se rigen por lo dispuesto en el aviso legal y la ley española. El Prestador y el usuario, con renuncia expresa a cualquier otro fuero, se someten al de los Juzgados y Tribunales de la ciudad de Badajoz para cualquier controversia que pudiera derivarse de la interpretación, aplicación y utilización del Servicio.

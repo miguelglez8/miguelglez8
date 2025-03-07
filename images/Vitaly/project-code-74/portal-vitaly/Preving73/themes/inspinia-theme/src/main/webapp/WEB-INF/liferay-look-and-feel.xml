@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.3.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_3_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.3.0+</version>
+	</compatibility>
+	<theme id="inspinia" name="Inspinia">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<setting configurable="true" key="color_schemes" options="Default,LIGHT_BLUE,YELLOW,ULTRA" type="select"/>
+			<setting configurable="true" key="pages-icon" options="Default,Upload Icon,Custom Field" type="select" value="Default"/>
+			<setting configurable="true" key="custom-profile-left-header-menu" type="checkbox" value="false"/>
+			<setting configurable="true" key="profile-left-header-menu" type="text" value="NAV_HEADER"/>
+			<setting configurable="true" key="white-top-header" type="checkbox" value="false"/>
+			<setting configurable="true" key="no-left-menu" type="checkbox" value="false"/>
+			<setting configurable="true" key="use-navbar-closed" type="checkbox" value="false"/>
+			<setting configurable="true" key="locked-page" type="checkbox" value="false"/>
+			<setting configurable="true" key="login-page" type="text" value="login2"/>
+			<setting configurable="true" key="show-language-choice" type="checkbox" value="true"/>
+			<setting configurable="true" key="show-welcome-message" type="checkbox" value="true"/>
+			<setting configurable="true" key="display-right-sidebar-toggle" type="checkbox" value="true"/>
+			<setting configurable="true" key="right_sidebar" type="text" value="RIGHT_SIDEBAR_TOGGLE"/>
+			<setting configurable="true" key="collapse-menu" type="checkbox" value="false"/>
+			<setting configurable="true" key="fixed-sidebar" type="checkbox" value="false"/>
+			<setting configurable="true" key="boxed-layout" type="checkbox" value="false"/>
+			<setting configurable="true" key="show-breadcrumbs" type="checkbox" value="true"/>
+			<setting configurable="true" key="display-footer" type="checkbox" value="true"/>
+			<setting configurable="true" key="footer" type="text" value="FOOTER"/>
+			<setting configurable="true" key="fixed-footer" type="checkbox" value="false"/>
+			<setting configurable="true" key="use-global-footer" type="checkbox" value="true"/>
+		</settings>
+		<layout-templates>
+			<custom>
+				<layout-template id="full_height" name="full_height">
+					<template-path>/layouttpl/custom/full_height/full_height.tpl</template-path>
+					<thumbnail-path>/layouttpl/custom/full_height/full_height.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>
+</look-and-feel>

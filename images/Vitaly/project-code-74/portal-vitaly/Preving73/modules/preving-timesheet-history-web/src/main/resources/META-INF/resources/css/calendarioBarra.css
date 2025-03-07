@@ -1,0 +1,77 @@
+
+#capaDetalles{
+	/*font-size: 0.8em;*/
+	border: 1px solid  #808b96 ;
+	background-color:    #fef9e7    ;
+}
+#ccCalendario{
+	/*#font-size: 0.7em;*/
+}
+.festivo{
+	background-color:#EBEDEF;
+}
+.col-calendario{
+	ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	min-width: 0;
+	max-width: 100%;
+	padding: 0px;
+	border-left: 1px solid #000;
+	text-align:center;
+	grid-template-columns: repeat(60,1.67%);
+	display: grid;
+}
+.col-calendario-hora{
+	ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	min-width: 0;
+	max-width: 100%;
+	padding: 0px;
+	border-left: 1px solid #000;
+	text-align:center;
+}
+.row-calendario {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.minutos{
+	font-size:5px;
+}
+.miniCuadro{
+	width:15px;
+	height:15px;
+	display:inline-table;
+	float: left;
+	margin-right: 5px;
+}
+.miniCuadroLeyenda{
+	width:20px;
+	height:8px;
+	display:inline-table;
+	float: left;
+	margin-right: 5px;
+}
+.leyend-field{
+	padding: 5px 0;
+}
+.col-date {
+	width: 15%;
+}.col-total {
+	 width: 9%;
+	 border-left: 1px solid #000;
+ }
+input#inpFechaDesde, input#inpFechaHasta {
+	width: 80%;
+}
+
+/*Mostrar idioma correcto*/
+name {
+	display: none;
+	float: left;
+}

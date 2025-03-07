@@ -1,0 +1,65 @@
+<%@ page import="com.canal.etico.liferay.portlet.canal.manager.model.Observacion" %>
+<%@ page import="com.liferay.portal.kernel.service.UserLocalServiceUtil" %>
+<%@ page import="com.liferay.portal.kernel.model.User" %>
+
+<div class="row mt-3">
+    <div class="col">
+        <h5><liferay-ui:message key="denuncia.edit.observaciones"/></h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <table id="table_observaciones" class="display dataTable no-footer dtr-inline" style="width:100%" >
+            <thead>
+            <tr>
+                <th><liferay-ui:message key="denuncia.edit.fecha"/></th>
+                <th><liferay-ui:message key="denuncia.edit.autor"/></th>
+                <th><liferay-ui:message key="denuncia.edit.observacion"/></th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="observacion" items="<%=observaciones%>">
+                <%
+                    Observacion observacionObj = (Observacion) pageContext.getAttribute("observacion");
+                    String userName = "";
+                    User userObs = UserLocalServiceUtil.fetchUser(observacionObj.getUserId());
+                    if(Validator.isNotNull(userObs)){
+                        userName = userObs.getFullName() +" (" + userObs.getEmailAddress()+ ")";
+                    }
+                %>
+                <tr>
+                    <td><%=dateFormat.format(observacionObj.getCreateDate())%></td>
+                    <td><%=userName%></td>
+                    <td>${observacion.descripcion}</td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-sm-12">
+        <h6><liferay-ui:message key="denuncia.edit.observaciones.new"/></h6>
+    </div>
+</div>
+
+<liferay-portlet:actionURL name="/observacion/save" var="saveObservacionURL" />
+<aui:form  name="comunicacion_form" action="<%=saveObservacionURL.toString()%>" method="post">
+    <aui:input type="hidden" name="<%=AdminDenunciaPortletKeys.DENUNCIA_ID%>" value="<%=denuncia.getDenunciaId()%>"></aui:input>
+    <div class="row">
+        <div class="col-sm-12">
+            <aui:input type="textarea" name="<%=AdminDenunciaPortletKeys.OBSERVACION%>" label="denuncia.edit.observacion" ignoreRequestValue="true" >
+                <aui:validator name="required"/>
+                <aui:validator name="maxLength">3000</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="button-holder d-flex justify-content-center my-4">
+            <aui:button-row>
+                <aui:button type="submit" cssClass="btn btn-primary mt-3" />
+            </aui:button-row>
+
+    </div>
+</aui:form>

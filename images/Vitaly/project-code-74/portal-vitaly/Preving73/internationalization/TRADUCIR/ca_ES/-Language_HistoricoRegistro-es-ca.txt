@@ -1,0 +1,23 @@
+
+
+MES
+Cercar
+Des de
+Fins a
+TOTAL HORES
+
+Minuts
+Entrada
+Sortida
+Temps
+Data
+TOTAL HORES
+Observacions
+Observacions empresa
+-obert-
+-sense tancar-
+Activitat desconeguda
+Ha d'indicar una data d'inici.
+Ha d'indicar una data d'inici inferior a la de finalització
+
+

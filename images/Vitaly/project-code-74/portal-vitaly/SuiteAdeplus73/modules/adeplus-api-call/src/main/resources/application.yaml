@@ -1,0 +1,11 @@
+cloud:
+  gcp:
+    project-id: erp-microservicios
+    credentials:
+      location: file:json_permisos_acceso_adeplus.json
+pubsub:
+  topic:
+    telemedicina: app-externas
+  subscription:
+    telemedicina: app-externas-sub
+

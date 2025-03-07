@@ -1,0 +1,4 @@
+Bundle-Name: plan-igualdad-evaluacion
+Bundle-SymbolicName: plan.igualdad.evaluacion
+Bundle-Version: 1.0.0
+Export-Package: plan.igualdad.evaluacion.constants

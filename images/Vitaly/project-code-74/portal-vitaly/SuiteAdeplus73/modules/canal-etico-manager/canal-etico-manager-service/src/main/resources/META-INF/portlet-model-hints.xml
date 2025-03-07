@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Accion">
+		<field name="accionId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="nombre" type="String" />
+		<field name="estado" type="long" />
+		<field name="activo" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Categoria">
+		<field name="categoriaId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="nombre" type="String" />
+		<field name="tipo" type="String" />
+		<field name="codigo" type="String" />
+		<field name="activo" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Comp">
+		<field name="compId" type="long" />
+		<field name="suiteCompId" type="long" />
+		<field name="cif" type="String" />
+		<field name="name" type="String" />
+		<field localized="true" name="description" type="String" />
+		<field localized="true" name="observations" type="String" />
+		<field localized="true" name="agreement" type="String" />
+		<field name="friendlyURL" type="String" />
+		<field name="logo" type="long" />
+		<field name="active" type="boolean" />
+		<field name="startDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Comunicacion">
+		<field name="comunicacionId" type="long" />
+		<field name="denunciaId" type="long" />
+		<field name="userId" type="long" />
+		<field name="descripcion" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="adjunto" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Denuncia">
+		<field name="denunciaId" type="long" />
+		<field name="codigo" type="String" />
+		<field name="cif" type="String" />
+		<field name="compId" type="long" />
+		<field name="vinculacion" type="String" />
+		<field name="email" type="String" />
+		<field name="nombre" type="String" />
+		<field name="apellidos" type="String" />
+		<field name="nif" type="String" />
+		<field name="telefono" type="String" />
+		<field name="anonimo" type="boolean" />
+		<field name="tipo" type="long" />
+		<field name="categoria" type="long" />
+		<field name="asunto" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+		<field name="descripcion" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="estado" type="long" />
+		<field name="motivoId" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="endDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.DenunciaAccion">
+		<field name="denunciaAccionId" type="long" />
+		<field name="denunciaId" type="long" />
+		<field name="accionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Motivo">
+		<field name="motivoId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="nombre" type="String" />
+		<field localized="true" name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="activo" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Observacion">
+		<field name="observacionId" type="long" />
+		<field name="denunciaId" type="long" />
+		<field name="userId" type="long" />
+		<field name="descripcion" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.UserCompany">
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+	</model>
+	<model name="com.canal.etico.liferay.portlet.canal.manager.model.Vinculacion">
+		<field name="vinculacionId" type="long" />
+		<field name="compId" type="long" />
+		<field localized="true" name="nombre" type="String" />
+		<field name="activo" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

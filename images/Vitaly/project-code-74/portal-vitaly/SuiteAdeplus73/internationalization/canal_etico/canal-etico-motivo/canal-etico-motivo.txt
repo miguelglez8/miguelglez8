@@ -1,0 +1,45 @@
+Motivo
+
+Canal Ético
+
+# View
+Motivos de finalización
+Nombre
+Activo
+Observaciones
+Acción
+Nuevo
+Si
+No
+Todas
+
+
+# Edit
+Nombre
+Activo
+Observaciones
+Motivo de finalización
+Cancelar
+
+
+# Datatable
+Procesando...
+Mostrar _MENU_ motivos
+No se encontraron motivos
+No se han creado motivos
+Mostrando motivos del _START_ al _END_ de un total de _TOTAL_ motivos
+Mostrando motivos del 0 al 0 de un total de 0 motivos
+(filtrado de un total de _MAX_ motivos)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

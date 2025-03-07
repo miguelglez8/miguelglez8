@@ -1,0 +1,4 @@
+Bundle-Name: preving-timesheet-history-web
+Bundle-SymbolicName: com.preving.liferay.portlet.timesheet.history.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.timesheet.history.web.constants

@@ -1,0 +1,47 @@
+
+<aui:input name="<%=DenunciaPortletKeys.COMPANY_ID%>" type="hidden" value="<%=Validator.isNotNull(comp)?comp.getCompId():0%>"></aui:input>
+<aui:input name="<%=DenunciaPortletKeys.COMPANY_IDENTIFICATION%>" type="hidden" value="<%=compIdentification%>"></aui:input>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <c:if test="<%=Validator.isNotNull(comp)%>">
+                <aui:input type="text" name="cif_" value="<%=comp.getCif()%>" label="denuncia.view.empresa.cif" disabled="true" />
+                <aui:input type="hidden" name="<%=DenunciaPortletKeys.CIF%>" value="<%=comp.getCif()%>"/>
+            </c:if>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <c:if test="<%=Validator.isNotNull(comp)%>">
+                <aui:input type="text" name="comp_" value="<%=comp.getName()%>" label="denuncia.view.empresa.nombre" disabled="true" />
+                <aui:input type="hidden" name="<%=DenunciaPortletKeys.COMPANY_NAME%>" value="<%=comp.getName()%>" />
+            </c:if>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:select name="<%=DenunciaPortletKeys.VINCULACION%>" label="denuncia.view.empresa.vinculacion" onChange="enableEmpresa()">
+                <aui:option value="-1" ><liferay-ui:message key="denuncia.view.empresa.selecionar.opcion"/></aui:option>
+                <c:forEach var="vin" items="<%=vinculaciones%>">
+                    <aui:option value="${vin.vinculacionId}" >
+                        ${vin.nombre}
+                    </aui:option>
+                </c:forEach>
+            </aui:select>
+        </div>
+    </div>
+</div>
+
+<script>
+    function enableEmpresa(){
+        var vinculacion = document.getElementById("_com_canal_etico_liferay_portlet_denuncia_web_DenunciaPortlet_vinculacion");
+
+        if(vinculacion.value == -1){
+            document.getElementById("<portlet:namespace />button-next-empresa").disabled=true;
+        }else{
+            document.getElementById("<portlet:namespace />button-next-empresa").disabled=false;
+            document.getElementById("<portlet:namespace />button-next-empresa").classList.remove("disabled");
+        }
+    }
+</script>

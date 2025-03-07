@@ -1,0 +1,10 @@
+Bundle-Name: reCAPTCHA Taglib
+Bundle-SymbolicName: com.plan.igualdad.liferay.taglib
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.taglib
+Provide-Capability:\
+	osgi.extender;\
+		osgi.extender="jsp.taglib";\
+		uri="https://adeplusconsultores.com/tld/adeplus";\
+		version:Version="${Bundle-Version}"
+Web-ContextPath: /adeplus-taglib

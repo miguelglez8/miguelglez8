@@ -1,0 +1,118 @@
+
+
+Crear nova empresa
+Editar empresa
+Importar empreses des de CSV
+Llista d'empreses
+Crear empresa
+Importar empreses
+Empreses
+
+Empresa
+Dades administrador
+Configuració
+
+Nom de l'empresa
+CIF
+Nom
+Cognoms
+NIF
+Correu electrònic
+Data d'inici
+Data d'implantació
+Data de baixa
+Procedència
+
+Empresa
+Dades administrador
+Nom de l'empresa
+CIF
+Nom
+Cognoms
+NIF
+Correu electrònic
+Data d'inici
+Data de baixa
+L'empresa té {0} usuaris.
+Actualitzar permisos de {0} usuaris.
+S'actualitzen els permisos de l'usuari en cas que no pugui visualitzar les eines de registre horari.
+Actualitzar permisos de tots els usuaris de totes les empreses.
+
+Configuració
+Plantilla per crear llocs web de companyies
+Plantilla
+Seleccioni la plantilla que s'utilitzarà per crear les empreses. La plantilla ha de tenir tota la configuració del lloc.
+Text d'ajuda per a la importació
+Text
+Plantilla correu electrònic per a dates de baixa passades.
+Assumpte
+El període d'ús de l'aplicació ja ha finalitzat
+Contingut del correu
+<p>Estimada {0}:</p><p>El període d'ús de l'aplicació ha finalitzat el {1}. Des d'aquest moment ha deixat de tenir disponible l'eina de control horari.</p><p>Gràcies per la seva col·laboració.</p>
+
+Empresa creada correctament
+Procés d'importació d'empreses
+Edició d'empreses
+<p>L'empresa <strong>{0}</strong> s'ha creat correctament.</p><p>S'ha enviat un correu a <strong>{1}</strong> amb la seva contrasenya d'administrador.</p>
+S'ha iniciat el procés de creació d'empreses. Quan finalitzi podrà veure totes les empreses que s'han afegit. En cas que es produeixi algun error, rebrà una notificació per indicar-lo. Passats uns minuts, podrà veure les empreses creades recarregant aquesta pàgina.
+L'empresa s'ha actualitzat correctament.
+
+
+
+
+Fitxer CSV
+
+No s'ha creat cap empresa.
+Nom de l'empresa
+CIF
+Nom de l'administrador
+Correu electrònic
+URL del lloc web
+Actiu
+Data de creació
+Data de modificació
+Data de baixa
+Accions
+
+Cercar
+
+El procés d'importació s'ha executat correctament. Quan el procés finalitzi podrà veure totes les empreses creades refrescant aquesta pàgina. També li notificarem totes les operacions realitzades i els possibles errors ocorreguts.
+El procés d'importació no s'ha executat. Revisi les seves notificacions per obtenir més informació sobre els errors.
+
+No s'ha realitzat la importació.
+El fitxer CSV conté errors i no s'ha iniciat la importació. Revisi que el CSV és correcte sense duplicats per iniciar una nova importació.
+
+
+
+Benvingut al seu Registre horari. https://www.miregistrodehoras.com
+Nova empresa creada a Registre horari. https://www.miregistrodehoras.com
+Baixa a Registre horari. https://www.miregistrodehoras.com
+Supressió d'empreses a Registre horari. https://www.miregistrodehoras.com
+Noves empreses des de fitxer CSV a Registre horari. https://www.miregistrodehoras.com
+Error de format en importar empresa des de fitxer CSV a Registre horari. https://www.miregistrodehoras.com
+Error en importar empresa des de fitxer CSV a Registre horari. https://www.miregistrodehoras.com
+Error a Registre horari. https://www.miregistrodehoras.com
+Error en la supressió d'empreses a Registre horari. https://www.miregistrodehoras.com
+El seu compte d'usuari ha estat modificat a Registre horari. https://www.miregistrodehoras.com
+
+
+
+Hi ha errors a les dades al fitxer CSV a la fila:
+<p>A continuació es descriuen els errors que s'han trobat a la fila del csv: </p>
+<p>El nom de l'empresa està en blanc. Cal indicar el nom al primer camp del cvs.</p>
+<p>El nom de l'empresa ja existeix. No es poden crear dos empreses amb el mateix nom.</p>
+<p>El CIF de l'empresa està en blanc. Cal indicar el CIF al camp 2 del csv.</p>
+<p>El CIF de l'empresa ja existeix. No es poden crear dos empreses amb el mateix CIF.</p>
+<p>No s'ha indicat nom de l'administrador. Cal indicar el nom al camp 3 del csv.</p>
+<p>No s'han indicat cognoms de l'administrador. Cal indicar els cognoms al camp 4 del csv.</p>
+<p>No s'ha indicat NIF de l'administrador. Cal indicar el NIF al camp 5 del csv.</p>
+<p>No s'ha indicat correu electrònic de l'administrador. Cal indicar el correu electrònic al camp 6 del csv.</p>
+<p>El correu de l'administrador no és correcte. Cal indicar un correu electrònic amb el format nom@domini.com</p>
+<p>El correu electrònic de l'administrador ja existeix al sistema. És possible que aquest correu electrònic ja s'utilitzi com a usuari o administrador en una altra empresa.</p>
+
+Hi ha valors repetits al fitxer CSV. No s'han pogut crear les empreses.
+<p>Per evitar errors en la creació d'empreses i usuaris administradors, no es permeten CIF, nom d'empresa, NIF o correus electrònics duplicats. Ha de corregir el CSV per realitzar la importació.</p>
+<p>El CSV conté CIF d'empresa repetits.</p>
+<p>El CSV conté noms d'empresa repetits.</p>
+<p>El CSV conté NIF d'administrador repetits.</p>
+<p>El CSV conté correus electrònics d'administrador repetits.</p>

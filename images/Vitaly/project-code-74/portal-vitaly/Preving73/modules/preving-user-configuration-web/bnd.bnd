@@ -1,0 +1,12 @@
+Bundle-Name: preving-user-configuration-web
+Bundle-SymbolicName: com.preving.liferay.portlet.user.configuration.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.user.configuration.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.opencsv.*,\
+    org.apache.commons.lang3.*,\
+    com.preving.liferay.portlet.mailing.web.*,\
+    templates.*,\
+    content.*

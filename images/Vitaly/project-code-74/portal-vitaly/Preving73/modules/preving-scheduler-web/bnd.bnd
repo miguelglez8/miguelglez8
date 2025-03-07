@@ -1,0 +1,10 @@
+Bundle-Name: preving-scheduler-web
+Bundle-SymbolicName: com.preving.liferay.portlet.scheduler.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.scheduler.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+Private-Package: \
+    com.preving.liferay.portlet.mailing.web.*,\
+    templates.*,\
+    content.*

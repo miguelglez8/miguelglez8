@@ -1,0 +1,35 @@
+
+
+Registro horario
+
+Fichajes
+Nuevo fichaje
+
+Comienzo
+Hora
+Minuto
+Fin
+Hora
+Minuto
+
+Registro horario
+Entrada
+Salida
+Observaciones
+Debe seleccionar el d&iacute;a que desea en el calendario
+Guardar
+Cancelar
+
+
+Actividad
+Observaciones
+
+Fecha
+
+No se ha añadido ningún fichaje por el momento.
+Comienzo del fichaje
+Final del fichaje
+Tiempo
+Tipo de actividad
+Tiempo de trabajo
+Observaciones

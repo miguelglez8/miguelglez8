@@ -1,0 +1,50 @@
+<c:if test="<%=CanalEticoEstadoUtil.esEstadoActivo(denuncia.getEstado())%>">
+    <liferay-portlet:actionURL name="/accion/finalizar" var="finalizarAccionURL" />
+    <aui:form  name="finalizar_form" action="<%=finalizarAccionURL.toString()%>" method="post">
+        <aui:input type="hidden" name="<%=AdminDenunciaPortletKeys.DENUNCIA_ID%>" value="<%=denunciaId%>"></aui:input>
+
+        <div class="row mt-5">
+            <div class="col-sm-12 text-center">
+                <h4><liferay-ui:message key="denuncia.edit.finalizar"/></h4>
+                <p class="mt-3"><liferay-ui:message key="denuncia.edit.finalizar.advise"/></p>
+                <p><liferay-ui:message key="denuncia.edit.finalizar.advise.confirm"/></p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <aui:select name="<%=AdminDenunciaPortletKeys.MOTIVO%>" label="denuncia.view.denuncia.motivo">
+                    <c:forEach var="motivo" items="<%=motivos%>">
+                        <aui:option value="${motivo.motivoId}" >
+                            ${motivo.nombre} - ${motivo.observaciones}
+                        </aui:option>
+                    </c:forEach>
+                </aui:select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <aui:input type="textarea" name="<%=AdminDenunciaPortletKeys.OBSERVACIONES_FINALIZACION%>" label="denuncia.view.denuncia.observaciones" ignoreRequestValue="true" >
+                    <aui:validator name="maxLength">3000</aui:validator>
+                </aui:input>
+            </div>
+        </div>
+        <div class="button-holder d-flex justify-content-center my-4">
+            <aui:button-row>
+                <aui:button type="submit" value="denuncia.edit.finalizar.submit" />
+            </aui:button-row>
+        </div>
+    </aui:form>
+</c:if>
+<c:if test="<%=!CanalEticoEstadoUtil.esEstadoActivo(denuncia.getEstado())%>">
+    <div class="row mt-5">
+        <div class="col-sm-12 text-center">
+            <h4><liferay-ui:message key="denuncia.edit.finalizar"/></h4>
+            <p><liferay-ui:message key="denuncia.edit.finalizar.message"/></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <aui:input type="textarea" name="<%=AdminDenunciaPortletKeys.OBSERVACIONES_FINALIZACION%>" label="denuncia.view.denuncia.observaciones" ignoreRequestValue="true" disabled="true" value="<%=denuncia.getObservaciones()%>" />
+        </div>
+    </div>
+</c:if>

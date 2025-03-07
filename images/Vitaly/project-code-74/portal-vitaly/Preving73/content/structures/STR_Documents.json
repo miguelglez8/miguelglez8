@@ -1,0 +1,148 @@
+{
+  "availableLanguageIds": [
+    "es_ES"
+  ],
+  "defaultLanguageId": "es_ES",
+  "fields": [
+    {
+      "label": {
+        "es_ES": "Título documento"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "TítuloDocumento",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "es_ES": "Documento"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "document-library",
+      "fieldNamespace": "ddm",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Documento",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-documentlibrary"
+    },
+    {
+      "label": {
+        "es_ES": "Descripción"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Descripcion",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "es_ES": "Vista previa"
+      },
+      "predefinedValue": {
+        "es_ES": ""
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "image",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "VistaPrevia",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-image"
+    },
+    {
+      "label": {
+        "es_ES": "Mostrar al administrador"
+      },
+      "predefinedValue": {
+        "es_ES": false
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "boolean",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "MostrarAlAdministrador",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "checkbox"
+    },
+    {
+      "label": {
+        "es_ES": "Mostrar al usuario"
+      },
+      "predefinedValue": {
+        "es_ES": false
+      },
+      "style": {
+        "es_ES": ""
+      },
+      "tip": {
+        "es_ES": ""
+      },
+      "dataType": "boolean",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "MostrarAlUsuario",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "checkbox"
+    }
+  ]
+}

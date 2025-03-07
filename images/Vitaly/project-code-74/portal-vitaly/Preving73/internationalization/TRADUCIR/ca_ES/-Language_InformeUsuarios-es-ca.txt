@@ -1,0 +1,34 @@
+
+
+ Informe d'usuaris 
+ Nom i cognoms 
+ Correu electrònic 
+ Gènere 
+ NIF 
+ Lloc de treball 
+ Centre de treball 
+ Salari anual (€) 
+ Data de baixa 
+
+ Processant... 
+ Mostrar _MENU_ usuaris 
+ No s'han trobat usuaris 
+ Cap activitat disponible en aquesta taula 
+ Mostrant usuaris del _START_ al _END_ d'un total de _TOTAL_ usuaris 
+ Mostrant usuaris del 0 al 0 d'un total de 0 usuaris 
+ (filtrat d'un total de _MAX_ usuaris) 
+ 
+ Cercar: 
+ 
+ 
+ Carregant... 
+ Primer 
+ Últim 
+ Següent 
+ Anterior 
+ : Activar per ordenar la columna de manera ascendent 
+ : Activar per ordenar la columna de manera descendent 
+ Copiar 
+ Visibilitat 
+
+ Aquest document és CONFIDENCIAL i propietat de l'Organització que figura a l'encapçalament. Accedir-hi al marge del que s'ha disposat legalment serà perseguit i sancionat. Si accedeix al document i no és usuari autoritzat, si us plau, informi'n immediatament l'Organització titular. 

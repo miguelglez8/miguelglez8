@@ -1,0 +1,28 @@
+AdeplusContact
+
+Adeplus
+
+#View
+Contacto
+Motivo de la consulta
+Asunto
+Cuéntenos en qué podemos ayudarle
+Archivo adjunto
+Enviar
+
+#Success
+Consulta enviada correctamente
+Su consulta se ha envíado correctamente. Muy pronto recibirá contestación a través del email que ha indicado. Gracias por confiar en nosotros.
+
+#Email
+Nueva consulta
+Nueva consulta
+
+#Configuration
+Configuración de correos destino
+Direcciones de correo
+Categorías
+Puede introducir varias direcciones de correo separadas por ";". Cada dirección de mail con corresponde con la categoría que ocupa la misma posiciòn.
+Puede introducir varias categorías separadas por ";". Si desea añadir varios emails por categoría, repita el nombre de la categoría para la misma posición del email.
+Comprobación de emails válidos:
+* Los correos que son incorrectos no se usarán.

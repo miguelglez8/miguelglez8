@@ -1,0 +1,477 @@
+############################### CATEGORÍAS ###################################
+Etiquetas
+Nueva etiqueta
+Título
+Descripción
+Acciones
+Etiqueta
+Aceptar
+Eliminar etiqueta
+¿Está seguro de querer eliminar la categoría?
+La categoría se ha guardado correctamente
+La categoría se ha eliminado correctamente
+Editar etiqueta
+Nueva etiqueta
+Listado de etiquetas
+Texto a buscar
+Limpiar filtros
+Buscar
+
+
+############################### CONSULTORES ###################################
+Consultores
+Nuevo consultor
+Nombre
+Email
+Consultor
+Alta consultor
+Listado consultores 
+Nombre
+Email
+Idioma
+Aceptar
+Eliminar consultor
+¿Está seguro de querer eliminar el consultor?
+El consultor se ha guardado correctamente
+El consultor se ha eliminado correctamente
+Texto a buscar
+Limpiar filtros
+Buscar
+Por favor, configure el portlet correctamente
+
+
+############################### EMPRESAS ###################################
+El consultor se ha guardado correctamente
+Empresas
+Fecha de alta
+Empresa
+CIF
+Tipo de contrato
+Familia de legislación
+Consultor
+Asignar consultor
+Fecha de alta desde
+Fecha de alta hasta
+Aceptar
+
+Limpiar filtros
+Buscar
+Búsqueda avanzada
+Texto a buscar
+Pendiente de asignar
+Fecha baja
+Activa
+Si
+No
+Todas
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguiridad Alimentaria
+
+############################### BBDD ###################################
+Legislación
+Los días 1 de cada mes y de manera periódica se emite una comunicación a los clientes donde se reflejan las nuevas normativas que le afectan. Estas son aquellas que han sido dadas de altas entra la última comunicación y la actual.
+Vigente
+Si
+No
+Todos
+Legislación
+Familia de legislación
+Seleccionar todas
+Tipo de legislación
+Seleccionar todas
+Ámbito de aplicación
+Seleccionar todos
+CNAE
+Búsqueda avanzada
+Fecha publicación
+Fecha derogación
+Etiquetas
+Descripción
+Requisitos
+Enlace
+Editar
+Comunidad Autónoma
+Todas
+Municipio
+Todos
+Publicación desde
+Publicación hasta
+Añadir
+Limpiar filtros 
+Buscar 
+Seleccione..
+Debe indicar una CCAA 
+Debe indicar un Ayuntamiento
+Seleccione lipo de legislación...
+Seleccione ambito ...
+Sin requisitos..
+/importar
+Seleccione ámbito CCAA o Ayuntamiento
+Seleccione ámbito Ayuntamiento y CCAA
+Urgente
+Requisito
+Requisito
+Activo
+Nuevo requisito
+Fecha de baja
+Editar
+Añadir
+Editar legislación
+Listado de legislaciones
+Importar
+Texto a buscar
+Número
+Descripción
+CNAE
+Fecha de baja
+Requisito guardado correctamente
+Campo obligatorio.
+Guardar y Continuar
+Legislación
+Se ha guardado correctamente.
+Todos los CNAEs
+Grupo de CNAEs
+Campo obligatorio.
+No es una URL válida.
+Se ha producido un error al guardar la legislación.
+Campo incorrecto.
+Acuerdo
+Aplicación
+Bando
+Correción de errores
+Decisión
+Decreto
+Decreto Foral
+Decreto-Ley
+Decreto Ley Foral
+Dictamen
+Directiva
+Instrucción
+Instrumento de Ratificación
+Ley
+Ley Autonómica
+Ley foral
+Ley Orgánica
+Orden
+Orden Foral
+Ordenanza
+Real Decreto
+Real Decreto-Ley
+Reglamento
+Resolución
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguridad Alimentaria
+Europeo
+Nacional
+Autonómico
+Local
+
+
+############################### AUDITAR ###################################
+Group
+Usuario
+Acción
+Descripción
+Fecha
+
+
+############################### CONTACTO ###################################
+Por favor, configure el módulo
+La solucitud se ha enviado correctamente
+Este campo es obligatorio.
+Fichero de confiruación
+El fichero de confiruación sirve para añadir campos al contacto
+Direcciones de correo
+Enviar correo al usuario
+Id artículo usuario
+Id artículo responsables
+
+
+############################### IMPORTADOR ###################################
+Importar legislación de forma masiva
+El archivo de legislaciones se esta procesando.
+CSV Legislaciones
+Importar requisitos de forma masiva
+El archivo de requisitos se esta procesando.
+CSV Requisitos
+Examinar...
+Legislación
+/bbdd
+Identificador vacío en la línea {0}
+Nombre vacío en la línea {0}
+Tipo vacío o incorrecto en la línea {0}
+Familia vacío o incorrecta en la línea {0}
+Ambito vacío o incorrecto en la línea {0}
+Fecha de publicación vacía o incorrecta en la línea {0}
+CNAE vacío o incorrecto en la línea {0}
+Enlace vacío en la línea {0}
+Descripció vacío en la línea {0}
+Etiqueta vacía o incorrecta en la línea {0}
+CCAA vacía o incorrecta en la línea {0}
+Ayuntamiento vacía o incorrecta en la línea {0}
+Fecha baja vacía o incorrecta en la línea {0}
+dd/MM/yyyy
+Error importador
+
+############################### MAILING ###################################
+Test de envío de emails.
+El mail se enviará a 
+Nueva consulta
+Nueva consulta
+Legislaciones
+Legalplus - Nueva entrada en legislaciones
+Legalplus - Resumen mensual
+Legal+ aviso. Nueva legislacion de interes para {0}.
+Legalplus - Nuevas legislaciones importadas
+Legalplus - Nuevos requisitos importados
+Durante el proceso se han producido los siguientes errores:
+Legalplus - Alta consultor
+Legal+ aviso. Asignacion de consultor para {0}.
+Legalplus - Nuvo cumplimiento (Legislaciones)
+Legalplus - Nuvo cumplimiento (Requisitos)
+Legal+ aviso. Evaluacion de requisitos legales de {0}.
+Legal+ aviso. Evaluacion de requisitos legales de {0}.
+Legal+ aviso. Evaluacion de requisitos fuera de plazo de {0}.
+Legal+ aviso. Cambios en la configuracion de {0}.
+
+
+############################### SCHEDULER ###################################
+Le recordamos que los siguientes requisitos han alcanzado HOY el plazo de cumplimiento y por tanto tiene que volver a evaluar:
+Le recordamos que los siguientes requisitos alcanzan en 1 SEMANA {0} el plazo de cumplimiento y por tanto tiene que volver a evaluar:
+
+
+############################### CALENDARIO ###################################
+Buscar
+Vigente
+Si
+No
+No procede
+Todos
+Busqueda avanzada
+Cumplimiento
+Familia de legislación
+ámbito de aplicación
+Comunidad Autónoma
+Municipio
+Evaluación desde
+Evaluación hasta
+Próxima eval. desde
+Próxima eval. hasta
+Fecha evaluación
+Fecha próxima evaluación
+Legislación
+Usuario
+Observaciones
+/evaluacion
+No exite ninguna empresa para el usuario actual.
+Revisión
+Requisito
+Limpiar filtros
+Ver todas
+A evaluar
+Legislaciones a evaluar
+Requisitos a evaluar
+Contrato
+Legislación
+Evaluación cumplimiento
+Lista empresas
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguiridad Alimentaria
+Europeo
+Nacional
+Autonómico
+Local
+
+
+############################### CONTRATO ###################################
+Contrato
+Tipo de contrato
+Familia de legislación
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguiridad Alimentaria
+Visibilidad legislación
+Europea
+Nacional
+Comunidad Autónoma
+Municipio
+CCAA para obtener Ayuntamientos
+Afecta a
+Grupo CNAEs
+CNAEs
+Consultores
+CNAEs
+No exite ninguna empresa para el usuario actual.
+El contrato se ha editado correctamente
+¿Qu&eacute; incluye mi contrato?
+Solicitar cambio de plan
+Ampliacion familia de legislación
+Ampliación%20familia%20de%20legislación
+Solicitar%20cambio%20de%20plan
+Contrato
+Legislación
+Evaluación cumplimiento
+Lista empresas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguridad Alimentaria
+
+
+############################### EVALUACION ###################################
+Evalución de cumplimiento
+Nueva evaluación del cumplimiento
+Si
+No
+No procede
+Todos
+Fecha evaluación
+Fecha próxima evaluación
+Cumplimiento
+Usuario
+Resultado
+Observaciones
+Adjunto
+Examinar...
+Estado evaluación
+ Ver todos
+ Ver todas
+A evaluar
+Requisito
+Revisión
+Error, vuelva a intentarlo más tarde
+Evaluaciones
+Legislaciones
+La evaluación se ha guardado correctamente
+Campo obligatorio.
+Evalución de requisitos
+Nueva evaluación de requisito
+La fecha evaluación no puede ser superior a la de hoy
+Evaluar
+Datos Generales
+Descargar
+Legislación
+Familia de legislación
+Tipo de legislación
+Ámbito de aplicación
+Etiquetas
+Fecha publicación
+Fecha derogación
+Descripción
+dd/MM/yyyy
+Requisitos
+Acuerdo
+Aplicación
+Bando
+Correción de errores
+Decisión
+Decreto
+Decreto Foral
+Decreto-Ley
+Decreto Ley Foral
+Dictamen
+Directiva
+Instrucción
+Instrumento de Ratificación
+Ley
+Ley Autonómica
+Ley foral
+Ley Orgánica
+Orden
+Orden Foral
+Ordenanza
+Real Decreto
+Real Decreto-Ley
+Reglamento
+Resolución
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguridad Alimentaria
+Europeo
+Nacional
+Autonómico
+Local
+
+
+############################### LEGISLACIONES ###################################
+Seleccione...
+Legislaciones
+Vigente
+Familia de legislación
+Tipo de legislación
+Ámbito de aplicación
+Publicación desde
+Publicación hasta
+Comunidad Autónoma
+Municipio
+Legislación
+Requisitos
+Descripción
+Fecha publicación
+Fecha derogación
+Cumplimiento
+Buscar
+Busqueda avanzada
+No exite ninguna empresa para el usuario actual.
+Etiquetas
+/evaluacion
+Si
+No
+No procede
+Todos
+Limpiar filtros
+Todas
+PRL
+Medio Ambiente
+Seguridad Industrial
+Seguridad Alimentaria
+Acuerdo
+Aplicación
+Bando
+Correción de errores
+Decisión
+Decreto
+Decreto Foral
+Decreto-Ley
+Decreto Ley Foral
+Dictamen
+Directiva
+Instrucción
+Instrumento de Ratificación
+Ley
+Ley Autonómica
+Ley foral
+Ley Orgánica
+Orden
+Orden Foral
+Ordenanza
+Real Decreto
+Real Decreto-Ley
+Reglamento
+Resolución
+Contrato
+Legislación
+Evaluación cumplimiento
+Lista empresas
+Todas
+Prevención de Riesgos Laborales
+Medio Ambiente
+Seguridad Industrial
+Seguiridad Alimentaria
+Europeo
+Nacional
+Autonómico
+Local

@@ -1,0 +1,34 @@
+<liferay-portlet:actionURL name="/date/save" var="addURL" />
+<div class="modal hide" id="addDate">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content">
+            <aui:form  name="add_form" action="<%= addURL %>" method="post">
+                <aui:input name="<%= PlanIgualdadFechasWebPortletKeys.COMPID_PARAM %>" value="<%= compId %>" type="hidden" />
+                <aui:input name="<%= PlanIgualdadFechasWebPortletKeys.VERSIONID_PARAM %>" value="<%= versionId %>" type="hidden" />
+                <aui:input name="<%= PlanIgualdadFechasWebPortletKeys.HITOID_PARAM %>" value="" type="hidden" />
+                <div class="modal-header">
+                    <h5 class="modal-title"><liferay-ui:message key="hitos.view.fecha"/></h5>
+                    <button type="button" class="close hide-modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <liferay-ui:input-date name="<%= PlanIgualdadFechasWebPortletKeys.FECHA_PARAM %>" required="true"
+                               yearValue="<%= fecha.get(Calendar.YEAR) %>"
+                               monthValue="<%= fecha.get(Calendar.MONTH) %>"
+                               dayValue="<%= fecha.get(Calendar.DAY_OF_MONTH) %>">
+                            </liferay-ui:input-date>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <aui:button value="cancel" cssClass="btn btn-outline-primary mr-4 hide-modal" primary="true"></aui:button>
+                    <aui:button type="submit" cssClass="btn btn-primary"/>
+                </div>
+            </aui:form>
+        </div>
+    </div>
+</div>

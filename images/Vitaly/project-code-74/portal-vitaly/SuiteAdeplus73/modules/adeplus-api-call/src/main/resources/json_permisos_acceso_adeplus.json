@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "erp-microservicios-preprod",
+  "private_key_id": "c4137192170ec722a47974213fcdcd4ee32ac68a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7he7v9b67WvdF\nIdfnU0WKtTz3Qy7ZBxUXxo1sfMD0MaoLQw95BzFbFDq5/8KlABGFo09fWgx+U6xN\niLfhlfYVbBW7nlxkvb2wUUQ68LWEm8a4F56oYMFTC57hU5ngdmYXaPzYw0bLPglI\nFflWYiZSvIpqkMKnR/WzIyk9h79RxrlXX9TR6Ra9PueSTcwgxKs1bt6NcKM+/x27\n+d02WjjPQlvalvJX3AtBqE+Tu/csDmkEHQd8DlxZUCn/mXOUzKHD5WJoh8W/b8BL\nuNTmW/GpYOSYn7h1D2BlrXHe6EfyTgF7Opu+1h76r7KQRsUAMNAfoWK8ctqBRHsc\nkuRKuOe5AgMBAAECggEAAOgFD15X8WZfZxNijIDrx1+YX5aQyaY93RtN0C4rLZL2\n4C6PCtX00Fyg6wi4K118eDGhntOb11l2rfpA70NvCMv4r+s0RZ1gJxPBeWpz6iPp\nmjatAuHS1WCrQCoMBphz5l2QyUhqVW2jlFhc1+TKDCDSp3CzLCVOI/NBzgUTsOS7\nmxp+WE97uzRWUkG49XUUQbuEqPzwlTonZuG7gsXinyus9ufBWsUZ84DpLoRFr7Wm\n1o7HFibVAa1enHSIgi3U8UrVBgLpAVYUtHIf/rBGuawJBw+p3i7tqgoE0zZvmKSi\nknlR1mJGbR9n4K4ag9WRU4BdEudAyx5ziueqNDzEfQKBgQD2me7v70NYitQ3kehu\n+jmgRAQJ8HN7PEYzrvu1FcDg0FGbI3UWksPz6WOlnEs8Jdoyt0EhEebh+vlCKi3o\nuVNKNE0f4WOmnTDqNJKuK00lgQjBfBxH3So/+4nxveZt55bHZjZ+sUuGnYtZwh14\nwbeS/+y09bIOxQWH5vbEGG887QKBgQDCq5R/NaCobPTezT3KHQQZ2Fe47VMsUiOy\nDbFC/vC3HgSlkzEBIRA8CJGytp5uqcuCtW2qQp4oIDUhwx5jSR2DGpYvqVdt791p\n+JMa9dZ+nIQF8BwL5KMtxruNrm9Q/JZSCcnfduvvh+klNm90TPRcYtX04pL5GTGv\no1vI/SvIfQKBgGbrZ+WLnjfd+SQYKUHn/RT+ThE34XqVdVcsuLCjG5S4XNa6vatm\nJZIu3f/Icz3vLlnsUapTpmC6Nj1/DRoL/s8BdQ7RKp3nDPsyZeV6/P+iEt1txv/X\nNkLt4GycLQfBmBQwfJ3zsOnF5trXQSWc89jOJyR/RokTgXNu2Z6N9B8hAoGBAJy5\n/N0JtOXEisSR4sxE3hdcuQtWbp8BJmHkajExBWW4Ei+nuE1bbDGZCIwkQJuBsiny\nnW71IVXW0E/1QhLXO55gmkeXA5+r/MujZ/PNtrnKkvQg4sOkeMeS907TACXopbE4\n1kFGAh+fgVIHaGXuytFSdUUp4QARi5IHaA8B3O0VAoGAU0/NDgFrqreLCjpTGwiA\nBBbpetixaRaJKesD2nwHlei20ma7R2STjmAwGAsBF/HEatCE+Py8SKwVoDYGZg1C\n/v5y+2+gNR7YyfVwA22UFM6eg5UR/f0lfKh0ZRbYhBYBl4jiCfUt5bybYiMXeJBZ\nFDOffmV6brGlEM/AAywQtIU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "telemedicina@erp-microservicios.iam.gserviceaccount.com",
+  "client_id": "106483108043094053073",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/telemedicina%40erp-microservicios.iam.gserviceaccount.com"
+}

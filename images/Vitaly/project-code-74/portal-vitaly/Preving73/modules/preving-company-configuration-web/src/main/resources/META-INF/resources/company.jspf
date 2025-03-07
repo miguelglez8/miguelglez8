@@ -1,0 +1,64 @@
+<aui:fieldset label="company.configuration.configuration.company">
+    <div class="row">
+        <div class="col">
+
+            <aui:fieldset label="company.configuration.company.logo">
+                <p><liferay-ui:message key="company.configuration.company.logo.help"/></p>
+                <div><img src="<%=themeDisplay.getCompanyLogo()%>" class="logo-company" /> </div>
+            </aui:fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:input name="logo" label="company.configuration.company.logo.select" type="file">
+                <aui:validator name="acceptFiles">'jpg,png'</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <aui:fieldset label="company.configuration.company.start.date">
+                <c:if test="<%=disabledStartDate%>">
+                    <liferay-ui:input-date name="startDate" nullable="true" disabled="<%=disabledStartDate%>"/>
+                </c:if>
+                <c:if test="<%=!disabledStartDate%>">
+                    <liferay-ui:input-date name="startDate" nullable="true"
+                                               yearValue="<%=startDateCalendar.get(Calendar.YEAR)%>"
+                                               monthValue="<%=startDateCalendar.get(Calendar.MONTH)%>"
+                                               dayValue="<%=startDateCalendar.get(Calendar.DAY_OF_MONTH)%>" />
+                </c:if>
+            </aui:fieldset>
+        </div>
+        <div class="col">
+            <aui:fieldset label="company.configuration.company.implantation.date">
+                <c:if test="<%=disabledImplantationDate%>">
+                    <liferay-ui:input-date name="implantationDate" nullable="true" disabled="<%=disabledStartDate%>"/>
+                </c:if>
+                <c:if test="<%=!disabledImplantationDate%>">
+                    <liferay-ui:input-date name="implantationDate" nullable="true"
+                                               yearValue="<%=startDateCalendar.get(Calendar.YEAR)%>"
+                                               monthValue="<%=startDateCalendar.get(Calendar.MONTH)%>"
+                                               dayValue="<%=startDateCalendar.get(Calendar.DAY_OF_MONTH)%>" />
+                </c:if>
+            </aui:fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label><liferay-ui:message key="company.configuration.company.description"/></label>
+            <liferay-ui:input-localized id="description" name="description" CssClass="col-md-12" xml="<%=companyConf.getDescription()%>" type="editor" maxLength="500"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label><liferay-ui:message key="company.configuration.company.agreement"/></label>
+            <liferay-ui:input-localized id="agreement" name="agreement" CssClass="col-md-12" xml="<%=companyConf.getAgreement()%>" type="editor" maxLength="500"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label><liferay-ui:message key="company.configuration.company.observations"/></label>
+            <liferay-ui:input-localized id="observations" name="observations" CssClass="col-md-12" xml="<%=companyConf.getObservations()%>" type="editor" maxLength="500"/>
+        </div>
+    </div>
+</aui:fieldset>

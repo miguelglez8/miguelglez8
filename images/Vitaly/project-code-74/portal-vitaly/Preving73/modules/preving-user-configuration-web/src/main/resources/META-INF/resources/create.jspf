@@ -1,0 +1,134 @@
+<%@ page import="com.preving.liferay.portlet.calendar.manager.service.UserDataLocalServiceUtil" %>
+<%@ include file="init.jsp" %>
+
+<%
+
+boolean hasWorkCenters = false;
+
+CompanyConf companyConf = CompanyConfLocalServiceUtil.getCompanyConfByCompanyIdAndGroupId(themeDisplay.getCompanyId(), themeDisplay.getScopeGroupId());
+
+
+List<WorkCenters> wcRes = null;
+Calendar hoy = Calendar.getInstance();
+hoy.set(Calendar.HOUR,0);
+hoy.set(Calendar.MINUTE,0);
+if(Validator.isNotNull(companyConf) && companyConf.isIsWorkCenters()){
+    hasWorkCenters = true;
+    wcRes = new ArrayList<WorkCenters>();
+    List<WorkCenters> wc = WorkCentersLocalServiceUtil.getAllWorkCentersByCompanyId(companyConf.getCompanyConfId());
+    for(WorkCenters w : wc){
+        if(Validator.isNull(w.getEndDate()) || w.getEndDate().getTime() >= hoy.getTime().getTime()){
+            wcRes.add(w);
+        }
+    }
+     Collections.sort(wcRes, Comparator.comparing(WorkCenters::getName,String.CASE_INSENSITIVE_ORDER));
+}
+
+
+
+%>
+
+<h2><liferay-ui:message key="user.configuration.view.create.title"/></h2>
+
+<liferay-portlet:actionURL name="create" var="createURL"  />
+<aui:form name="create_form" action="<%= createURL.toString() %>" method="post">
+
+    <aui:fieldset label="user.configuration.view.user">
+        <div class="row">
+            <div class="col inputsCreate">
+                <aui:field-wrapper label="user.configuration.view.genre">&nbsp;&nbsp;&nbsp;
+                    <aui:input name="genre" value="male" type="radio" label="user.configuration.view.genre.male"/>
+                    <aui:input name="genre" value="female" type="radio" label="user.configuration.view.genre.female"/>
+                </aui:field-wrapper>
+            </div>
+        </div>
+        <div class="row" style="padding:0;">
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="nif" type="text" label="user.configuration.view.nif">
+                    <aui:validator name="required" errorMessage="user.configuration.view.validator.required" />
+                </aui:input>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="name" type="text" label="user.configuration.view.name" >
+                    <aui:validator name="required" errorMessage="user.configuration.view.validator.required" />
+                </aui:input>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="surname" type="text" label="user.configuration.view.surname" >
+                    <aui:validator name="required" errorMessage="user.configuration.view.validator.required" />
+                </aui:input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="email" type="text" label="user.configuration.view.email">
+                    <aui:validator name="required" errorMessage="user.configuration.view.email.error.required" />
+                    <aui:validator name="email" errorMessage="user.configuration.view.email.error.format" />
+                </aui:input>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="jobTitle" type="text" label="user.configuration.view.job.title"/>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                 <c:if test="<%= hasWorkCenters %>">
+                    <aui:select name="cmbWorkCenter" label="user.configuration.view.work.center">
+                        <aui:option value="0"></aui:option>
+                        <c:forEach items="<%=wcRes%>" var="w">
+                            <aui:option value="${w.workCenterId}" > ${w.name}</aui:option>
+                        </c:forEach>
+                    </aui:select>
+                </c:if>
+                <c:if test="<%= !hasWorkCenters %>">
+                    <aui:input name="workCenter" type="text" label="user.configuration.view.work.center" />
+                </c:if>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 inputsCreate">
+                <aui:input name="salary" type="text" label="user.configuration.view.salary" >
+                    <aui:validator name="number" errorMessage="user.configuration.view.salary.error.number" />
+                </aui:input>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <aui:select name="language" label="user.configuration.view.language">
+                    <aui:option value="es_ES" selected="<%=themeDisplay.getLocale().toString().equals("es_ES")%>"><liferay-ui:message key="user.configuration.view.language.spanish"/></aui:option>
+                    <aui:option value="ca_ES" selected="<%=themeDisplay.getLocale().toString().equals("ca_ES")%>"><liferay-ui:message key="user.configuration.view.language.cat"/></aui:option>
+                </aui:select>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <label><liferay-ui:message key="user.configuration.view.date.end"/></label>
+                <liferay-ui:input-date name="endDate" nullable="true" disabled="true" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 inputsCreate">
+                <aui:field-wrapper label="user.configuration.view.admin" >
+                    <aui:input name="admin" value="admin" type="radio" label="user.configuration.view.admin.yes" />
+                    <aui:input name="admin" value="noAdmin" type="radio" label="user.configuration.view.admin.no" checked="true"/>
+                </aui:field-wrapper>
+            </div>
+            <div class="col-sm-4 inputsCreate">
+                <aui:field-wrapper label="user.configuration.view.active">&nbsp;&nbsp;
+                    <aui:input name="active" value="active" type="radio" label="user.configuration.view.active.yes" checked="true"/>
+                    <aui:input name="active" value="inactive" type="radio" label="user.configuration.view.active.no"/>
+                </aui:field-wrapper>
+            </div>
+        </div>
+    </aui:fieldset>
+
+    <aui:button-row>
+        <aui:button type="submit" />
+    </aui:button-row>
+</aui:form>
+
+<style>
+    @media only screen and (max-width: 576px) {
+        .inputsCreate{padding:0;width:100%;}
+    }
+    @media only screen and (min-width: 576px) {
+        .inputsCreate{}
+        #center{padding:0;padding-left:2%;}
+        #salary{ padding:0;}
+    }
+</style>

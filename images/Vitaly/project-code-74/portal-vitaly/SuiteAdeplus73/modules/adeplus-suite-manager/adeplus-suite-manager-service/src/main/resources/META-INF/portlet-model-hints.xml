@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.Application">
+		<field name="applicationId" type="long" />
+		<field name="name" type="String" />
+		<field localized="true" name="description" type="String" />
+		<field name="url" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="configuration" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="roles" type="String" />
+		<field name="alias" type="String" />
+		<field name="keycloak_client" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="keycloak_secret" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="logo" type="long" />
+		<field name="order" type="Integer" />
+		<field name="limitAdmins" type="boolean" />
+		<field name="limitUsers" type="boolean" />
+		<field name="limitNumAdmins" type="long" />
+		<field name="limitNumUsers" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.ApplicationLicense">
+		<field name="licenseId" type="long" />
+		<field name="applicationId" type="long" />
+		<field name="name" type="String" />
+		<field name="permissionRoleKey" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.Audit">
+		<field name="auditId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="action" type="String" />
+		<field name="description" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="date" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.AuditadoDataApi">
+		<field name="idDataTemporal" type="long" />
+		<field name="mensaje" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="procesadoDate" type="Date" />
+		<field name="procesado" type="Integer" />
+		<field name="evento" type="String" />
+		<field name="cif" type="String" />
+		<field name="idClient" type="long" />
+		<field name="idContract" type="long" />
+		<field name="app" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="changeStateDate" type="Date" />
+		<field name="state" type="boolean" />
+		<field name="userIdChangeState" type="long" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.Comp">
+		<field name="compId" type="long" />
+		<field name="cif" type="String" />
+		<field name="name" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field localized="true" name="description" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field localized="true" name="observations" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field localized="true" name="agreement" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="idCrm" type="String" />
+		<field name="idContrato" type="String" />
+		<field name="idEstado" type="String" />
+		<field name="logo" type="long" />
+		<field name="startDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.CompApplication">
+		<field name="compId" type="long" />
+		<field name="applicationId" type="long" />
+		<field name="licenseId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.CompClientApplication">
+		<field name="empresaId" type="long" />
+		<field name="cif" type="String" />
+		<field name="compId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="contractId" type="long" />
+		<field name="applicationId" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="name" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="description" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field localized="true" name="observations" type="String" />
+		<field name="idEstado" type="String" />
+		<field name="logo" type="long" />
+		<field name="startDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.Role">
+		<field name="roleId" type="long" />
+		<field name="applicationId" type="long" />
+		<field name="name" type="String" />
+		<field name="alias" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.TemporalDataApi">
+		<field name="idDataTemporal" type="long" />
+		<field name="typeEvent" type="String" />
+		<field name="dataApiEmpresa" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="dataApiApplicaciones" type="String">
+			<hint name="max-length">50000000</hint>
+		</field>
+		<field name="dataApiUsuarios" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="procesado" type="Integer" />
+		<field name="createDate" type="Date" />
+		<field name="procesadoDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.UserApplication">
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="applicationId" type="long" />
+		<field name="admin" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.UserApplicationClient">
+		<field name="empresaId" type="long" />
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="contractId" type="long" />
+		<field name="applicationId" type="String">
+			<hint name="max-length">3300</hint>
+		</field>
+		<field name="admin" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="deleteDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.UserCompany">
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="name" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="lastName" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="nif" type="String" />
+		<field name="email" type="String" />
+		<field name="phone" type="String" />
+		<field name="admin" type="boolean" />
+		<field name="defaultUserComp" type="boolean" />
+		<field name="defaultClientId" type="long" />
+		<field name="defaultContractId" type="long" />
+		<field name="defaultEmpresaId" type="long" />
+		<field name="userEndDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.UserCompanyClient">
+		<field name="userId" type="long" />
+		<field name="empresaId" type="long" />
+		<field name="compId" type="long" />
+		<field name="name" type="String" />
+		<field name="lastName" type="String" />
+		<field name="nif" type="String" />
+		<field name="email" type="String" />
+		<field name="phone" type="String" />
+		<field name="admin" type="boolean" />
+		<field name="defaultUserComp" type="boolean" />
+		<field name="defaultClientId" type="long" />
+		<field name="defaultContractId" type="long" />
+		<field name="defaultEmpresaId" type="long" />
+		<field name="userEndDate" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.adeplus.liferay.portlet.suite.manager.model.UserRole">
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="roleId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

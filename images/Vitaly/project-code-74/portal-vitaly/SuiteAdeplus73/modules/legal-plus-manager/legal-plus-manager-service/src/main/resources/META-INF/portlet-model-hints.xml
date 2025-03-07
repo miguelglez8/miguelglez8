@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.Ayuntamiento">
+		<field name="ccaaId" type="long" />
+		<field name="provinciaId" type="long" />
+		<field name="ayuntamientoId" type="long" />
+		<field name="nombre" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.CCAA">
+		<field name="ccaaId" type="long" />
+		<field name="nombre" type="String" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.CNAES">
+		<field name="cnae" type="String" />
+		<field name="nombre" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.ConsultorCompany">
+		<field name="appId" type="long" />
+		<field name="userId" type="long" />
+		<field name="compId" type="long" />
+		<field name="name" type="String" />
+		<field name="lastName" type="String" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.ContratoCompany">
+		<field name="contractId" type="long" />
+		<field name="compId" type="long" />
+		<field name="familia" type="String" />
+		<field name="ccaa" type="String" />
+		<field name="ayuntamiento" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="cnaes" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.EvalLegislacion">
+		<field name="version" type="long" />
+		<field name="compId" type="long" />
+		<field name="legislacionId" type="String" />
+		<field name="fecha" type="Date" />
+		<field name="proxima" type="Date" />
+		<field name="cumplimiento" type="int" />
+		<field name="usuario" type="long" />
+		<field name="adjunto" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.EvalRequisito">
+		<field name="version" type="long" />
+		<field name="compId" type="long" />
+		<field name="legislacionId" type="String" />
+		<field name="requisitoId" type="String" />
+		<field name="fecha" type="Date" />
+		<field name="proxima" type="Date" />
+		<field name="cumplimiento" type="int" />
+		<field name="usuario" type="long" />
+		<field name="adjunto" type="long" />
+		<field name="observaciones" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.HiddenLegis">
+		<field name="legislacionId" type="String" />
+		<field name="empresaId" type="long" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.Legislacion">
+		<field name="legislacionId" type="String" />
+		<field name="nombre" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="familia" type="String" />
+		<field name="tipo" type="long" />
+		<field name="ambito" type="long" />
+		<field name="publicacion" type="Date" />
+		<field name="derogacion" type="Date" />
+		<field name="descripcion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="etiquetas" type="String" />
+		<field name="enlace" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ccaa" type="long" />
+		<field name="ayuntamiento" type="long" />
+		<field name="urgente" type="Date" />
+		<field name="empresas" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.LegislacionCNAES">
+		<field name="legislacionId" type="String" />
+		<field name="cnae" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.Provincia">
+		<field name="ccaaId" type="long" />
+		<field name="provinciaId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="capitalId" type="long" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.Requisito">
+		<field name="legislacionId" type="String" />
+		<field name="requisitoId" type="String" />
+		<field name="descripcion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="baja" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.legalplus.liferay.portlet.legalplus.manager.model.RequisitoCNAES">
+		<field name="legislacionId" type="String" />
+		<field name="requisitoId" type="String" />
+		<field name="cnae" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

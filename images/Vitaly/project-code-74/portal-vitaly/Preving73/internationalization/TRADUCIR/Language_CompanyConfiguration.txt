@@ -1,0 +1,45 @@
+
+
+Configuración de empresas
+
+Avisos y comunicaciones
+Configuración
+Características
+
+Notificaciones
+Enviar email cuando no se cierre un registro horario abierto el mismo día.
+Enviar email cuando no se realice un registro horario un día laborable.
+Enviar email cuando no se cierre un registro horario.
+Enviar email resumen al usuario administrador
+Diaria
+Semanal
+Mensual
+No enviar
+
+Configuración del registro horario
+Número máximo de horas al día
+Número de horas máximas a la semana
+Posible realizar registros en días pasados
+Datos de la empresa
+Logotipo
+Logotipo de la empresa
+La altura máxima con el que se mostrará el logo es de 80px.
+Fecha inicio del registro horario
+Fecha de implantación del registro horario
+Número de horas
+Número de horas
+Número de días
+Permitir editar y borrar registros
+Minutos
+Descripción de la actividad de la empresa
+Convenio de aplicación
+Observaciones
+
+Si
+No
+
+Usuario
+Fecha
+Entrada
+Salida
+Actividad

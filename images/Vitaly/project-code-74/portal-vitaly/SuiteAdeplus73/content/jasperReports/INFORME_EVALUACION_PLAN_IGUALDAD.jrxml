@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="INFORME_EVALUACION_PLAN_IGUALDAD" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="163aac62-8579-4ad3-8b59-a7de58557c4e">
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
+	<style name="HEADER_TABLE" mode="Opaque" forecolor="#FFFFFF" backcolor="#1F497D" hTextAlign="Justified" vTextAlign="Middle" fontName="Corbel" fontSize="11" isBold="true">
+		<box leftPadding="5">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="CONTENT_TABLE" mode="Opaque" backcolor="#FFFFFF" hTextAlign="Justified" vTextAlign="Middle" markup="html" isBlankWhenNull="true" fontName="Corbel" fontSize="11">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="ROW_STATIC" mode="Opaque" forecolor="#1F497D" backcolor="#C8C8C8" scaleImage="RealSize" vTextAlign="Justified" fontName="Corbel" fontSize="10">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+			<pen lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#1F497D"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#1F497D"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#1F497D"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#1F497D"/>
+		</box>
+	</style>
+	<style name="ROW_DINAMIC" mode="Opaque" forecolor="#1F497D" scaleImage="FillFrame" vTextAlign="Justified" fontName="Corbel" fontSize="10">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+			<pen lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="ROW_HEADER" mode="Opaque" forecolor="#FFFFFF" backcolor="#1F497D" scaleImage="RealSize" hTextAlign="Left" vTextAlign="Middle">
+		<box>
+			<pen lineColor="#000000"/>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="ROW_SUBHEADER" mode="Opaque" forecolor="#000000" backcolor="#E0E0E0" hTextAlign="Left" vTextAlign="Middle" fontName="Corbel" fontSize="10" isBold="true">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="ROW_SUBFOOTER" mode="Opaque" forecolor="#000000" backcolor="#EE9531" hTextAlign="Left" vTextAlign="Middle" fontName="Corbel" fontSize="10" isBold="true" isItalic="false"/>
+	<style name="ROW_DINAMIC_WITHOUR_BORDERS" forecolor="#000000" hTextAlign="Left" vTextAlign="Middle" fontName="Corbel" fontSize="10">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5"/>
+	</style>
+	<style name="borderTablaAnalisis">
+		<box>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="displayNone" mode="Transparent" forecolor="#FFFFFF" backcolor="#FFFFFF" fontName="Corbel" fontSize="10"/>
+	<style name="borderTablaBasica">
+		<box>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="medidas" uuid="2fdea833-27b0-4d9f-9e82-20aeed161e73">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="materia" class="java.lang.String"/>
+		<field name="nombreMedida" class="java.lang.String"/>
+		<field name="prioridad" class="java.lang.String"/>
+		<field name="otrosMotivos" class="java.lang.String"/>
+		<field name="objetivos" class="java.lang.String"/>
+		<field name="descripcion" class="java.lang.String"/>
+		<field name="recursos" class="java.lang.String"/>
+		<field name="indicadores" class="java.lang.String"/>
+		<field name="noMedida" class="java.lang.Boolean"/>
+		<field name="textNoMedida" class="java.lang.String"/>
+		<field name="responsable" class="java.lang.String"/>
+		<field name="recurrente" class="java.lang.String"/>
+		<field name="fechaImplantacion" class="java.lang.String"/>
+		<field name="fechaSeguimiento" class="java.lang.String"/>
+		<field name="nivelEjecucion" class="java.lang.String"/>
+		<field name="motivo" class="java.lang.String"/>
+		<field name="recursosAsociados" class="java.lang.String"/>
+		<field name="dificultadesEncontradas" class="java.lang.String"/>
+		<field name="solucionesAdoptadas" class="java.lang.String"/>
+		<field name="reduccionDesigualdades" class="java.lang.String"/>
+		<field name="mejorasProducidas" class="java.lang.String"/>
+		<field name="propuestasFuturo" class="java.lang.String"/>
+		<field name="documentacionAcreditativa" class="java.lang.String"/>
+		<field name="fechaPrevista" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="evidenciasSeguimiento" uuid="27bfffd3-ad13-4599-b90b-6bc8ff6c278b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="nombreMedida" class="java.lang.String"/>
+		<field name="documentacionAcreditativa" class="java.lang.String"/>
+		<field name="fechaSubidaDocumento" class="java.lang.String"/>
+		<field name="materia" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="logoAdeplus" class="java.awt.image.BufferedImage"/>
+	<parameter name="razonSocial" class="java.lang.String"/>
+	<parameter name="isODT" class="java.lang.Boolean"/>
+	<parameter name="generalDataTextarea" class="java.lang.String"/>
+	<parameter name="generalDataDateFrom" class="java.lang.String"/>
+	<parameter name="generalDataDateUntil" class="java.lang.String"/>
+	<parameter name="medidaListTotal" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="evaluationResultRadio1" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio2" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio3" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio4" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio5" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio6" class="java.lang.String"/>
+	<parameter name="evaluationResultRadio7" class="java.lang.String"/>
+	<parameter name="nMedidasPlan" class="java.lang.Integer"/>
+	<parameter name="nMedidasInformadoSeguimiento" class="java.lang.Integer"/>
+	<parameter name="nMedidasPendientes" class="java.lang.Integer"/>
+	<parameter name="nMedidasEjecucion" class="java.lang.Integer"/>
+	<parameter name="nMedidasFinalizadas" class="java.lang.Integer"/>
+	<parameter name="nMedidasPrioritariasFinalizadas" class="java.lang.Integer"/>
+	<parameter name="evaluationResultTextarea" class="java.lang.String"/>
+	<parameter name="evaluationImplantationRadio1" class="java.lang.String"/>
+	<parameter name="evaluationImplantationRadio2" class="java.lang.String"/>
+	<parameter name="evaluationImplantationRadio3" class="java.lang.String"/>
+	<parameter name="evaluationImplantationRadio4" class="java.lang.String"/>
+	<parameter name="evaluationImplantationTextarea" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio1" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio2" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio3" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio4" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio5" class="java.lang.String"/>
+	<parameter name="evaluationImpactRadio6" class="java.lang.String"/>
+	<parameter name="evaluationImpactTextarea" class="java.lang.String"/>
+	<parameter name="medidaListConDocumento" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="conclusionPropuesta" class="java.lang.String"/>
+	<parameter name="fechaGeneracionInforme" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<variable name="INDEX_INTRODUCCION" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_DATOS_GENERALES" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_INFO_RESULTADOS" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_INFO_IMPLANTACION" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_INFO_IMPACTO" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_EVIDENCIAS" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<variable name="INDEX_CONCLUSIONES" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<title>
+		<band height="802" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image onErrorType="Blank">
+				<reportElement x="449" y="0" width="102" height="50" uuid="6e51f053-fd23-4267-9c8c-9cb680f3fe05"/>
+				<imageExpression><![CDATA[$P{logoAdeplus}]]></imageExpression>
+			</image>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="20" y="80" width="508" height="340" forecolor="#1F497D" uuid="5a1d0c3d-b048-4a5a-985a-30f8c6f176fb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Corbel" size="25" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["INFORME DE EVALUACIÓN DEL PLAN DE IGUALDAD DE"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="20" y="420" width="508" height="140" forecolor="#EE9531" uuid="8a9cc40f-3133-4516-b83d-2b1c4bd50122">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Corbel" size="25" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{razonSocial}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="dd/MM/yyyy">
+				<reportElement x="41" y="680" width="472" height="30" forecolor="#1F497D" uuid="9b0e4b10-b75d-43a7-a869-761ce13d8bca"/>
+				<textElement textAlignment="Right">
+					<font fontName="Corbel" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha Informe: " + $P{fechaGeneracionInforme}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image onErrorType="Blank">
+				<reportElement x="449" y="0" width="102" height="50" uuid="5ce616ce-b289-4868-ab97-f08cf1c3cf68">
+					<printWhenExpression><![CDATA[$P{isODT}==false]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{logoAdeplus}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="722" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="160" width="20" height="20" forecolor="#1F497D" uuid="b778d815-403c-437b-a979-ed6d5063afd8">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_INFO_IMPLANTACION}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="186" width="20" height="20" forecolor="#1F497D" uuid="93da008c-6717-4e83-9f73-cc53c4bfef14">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_INFO_IMPACTO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="80" width="450" height="200" forecolor="#0B5394" uuid="5c4c8df7-5a32-49e7-8cf9-ef31c7f2b098"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[<style isBold="true">O. INTRODUCCIÓN</style>
+
+<style isBold="true">I. DATOS GENERALES</style>	
+
+<style isBold="true">II. INFORMACIÓN DE RESULTADOS</style>
+
+<style isBold="true">III. INFORMACIÓN DE LA IMPLANTACIÓN</style>
+	
+<style isBold="true">IV. INFORMACIÓN DEL IMPACTO</style>
+
+<style isBold="true">V. EVIDENCIAS DE LA EVALUACIÓN</style>
+
+<style isBold="true">VI. CONCLUSIONES Y PROPUESTAS</style>
+]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="105" width="20" height="20" forecolor="#1F497D" uuid="da281450-e2be-4b8a-ab0a-bf1cf291c9f6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_DATOS_GENERALES}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="130" width="20" height="20" forecolor="#1F497D" uuid="6bc6eeb9-493b-422b-9418-f7e721c3aef6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_INFO_RESULTADOS}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="241" width="20" height="30" forecolor="#1F497D" uuid="1518c8aa-fc24-4de4-9d8a-8b9191635631">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_CONCLUSIONES}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" hyperlinkType="LocalPage" bookmarkLevel="1">
+				<reportElement x="480" y="80" width="20" height="20" forecolor="#1F497D" uuid="2d5bfa84-523a-480a-b3ac-b75737d70854"/>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_INTRODUCCION}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="480" y="212" width="20" height="20" forecolor="#1F497D" uuid="a7f4babb-c344-4178-a078-5e190ffb4ac3">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{INDEX_EVIDENCIAS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="30" width="100" height="30" forecolor="#EE9531" uuid="97ec337d-7d66-4c7d-87d8-2d934bb3d5c3"/>
+				<textElement>
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ÍNDICE.]]></text>
+			</staticText>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="f34792ef-fe02-4bf3-9a69-b9d0d33856d1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[O. INTRODUCCIÓN]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="30" y="30" width="496" height="130" forecolor="#1F497D" uuid="fbb9cfea-4397-4707-a96c-b818d637407b"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Corbel" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<p>Tal y como establece la LO 3/2007 para la igualdad efectiva de mujeres y hombres, <i>“Los planes de igualdad fijarán los concretos objetivos de igualdad a alcanzar, las estrategias y prácticas a adoptar para su consecución, así como el establecimiento de sistemas eficaces de seguimiento y evaluación de los objetivos fijados”</i>. En este sentido, como establece el artículo 9 del Real Decreto 901/2020 por el que se regulan los planes de igualdad y su registro, <i>“(...) El seguimiento y evaluación de las medidas previstas en el plan de igualdad deberá realizarse de forma periódica conforme se estipule en el calendario de actuaciones del plan de igualdad o en el reglamento que regule la composición y funciones de la comisión encargada del seguimiento del plan de igualdad (...)”</i>.</p> "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="50" y="340" width="476" height="50" forecolor="#1F497D" uuid="8128d819-9d3e-4f27-8b7c-345cb27c7c1d"/>
+				<textElement textAlignment="Justified" markup="styled">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[· <style isUnderline="true" > Real Decreto 902/2020, de 13 de octubre, de igualdad retributiva entre mujeres y hombres. </style> Desarrolla varios contenidos del plan de igualdad: auditorías salariales, y los sistemas de seguimiento y evaluación sobre esta materia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="50" y="270" width="476" height="60" forecolor="#1F497D" uuid="1172ef02-4a89-4b92-b67b-46cc73085a9e"/>
+				<textElement textAlignment="Justified" markup="styled">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[· <style isUnderline="true" > Real Decreto 901/2020, de 13 de octubre, por el que se regulan los planes de igualdad y su registro. </style> Conjuntamente con el proceso negociador y de elaboración del Diagnóstico, configura entre otros aspectos el seguimiento de los planes de Igualdad.]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="50" y="220" width="474" height="40" forecolor="#1F497D" uuid="02113062-0462-4153-8519-a1800fa25979"/>
+				<textElement textAlignment="Justified" markup="styled">
+					<font fontName="Corbel" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["· <style isUnderline='true' > Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres.</style> Esta norma establece las empresas obligadas y los aspectos capitales de los planes de igualdad."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="30" y="160" width="496" height="60" forecolor="#1F497D" uuid="cf2ebca9-d7e1-468d-8f10-c9a858df66b5"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Corbel" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<p>Como puede apreciarse, dada la especial trascendencia y significación de la materia la Igualdad efectiva entre hombres y mujeres, ésta tiene ya una amplia base legislativa de la que merece la pena destacar las siguientes:  </p>"]]></textFieldExpression>
+			</textField>
+			<returnValue toVariable="INDEX_INTRODUCCION">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="91cbe890-cc5c-4b0e-b9b4-1e599dcd892f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[I. DATOS GENERALES]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="30" y="30" width="496" height="100" forecolor="#1F497D" uuid="1e8293a8-5b55-445a-aabe-d5aed3226122"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Corbel" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Por lo comentado, siguiendo las directrices marcadas en la normativa antedicha, la " +($P{generalDataTextarea}!=null && $P{generalDataTextarea}.equals("") ? $P{generalDataTextarea} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")+ ", ha realizado el seguimiento de las medidas del Plan de Igualdad de  " + $P{razonSocial}+", para el período de análisis  " +($P{generalDataDateFrom}!=null && $P{generalDataDateFrom}.equals("") ? $P{generalDataDateFrom} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas") + " - " + ($P{generalDataDateUntil}!=null && $P{generalDataDateUntil}.equals("") ? $P{generalDataDateUntil} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")+ " siendo asesorado para este fin con Adeplus Consultores. A continuación se relacionan las medidas incluidas en el Plan de Igualdad sobre el que trata el presente Informe de Evaluación:"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" x="30" y="130" width="495" height="60" uuid="19c6f850-d1ad-47f6-a053-df2477680405">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="HEADER_TABLE"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="CONTENT_TABLE"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="medidas" uuid="a7dcd5b4-9c31-4bc0-a2a6-4256f195b9b6">
+						<dataSourceExpression><![CDATA[$P{medidaListTotal}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="151" uuid="b2444afe-7a0d-4e0f-9cc5-b1f7b82033a1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableHeader style="HEADER_TABLE" height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="146" height="30" forecolor="#FFFFFF" uuid="0c8c9ccd-f022-4dc4-9019-7cb86f285da8"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[MATERIA]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="CONTENT_TABLE" height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="141" height="20" forecolor="#1F497D" uuid="643bff00-9205-4b52-9fef-d4df289ff822"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{materia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="229" uuid="80e44efa-e406-44a5-a275-13188f28400c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableHeader style="HEADER_TABLE" height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="224" height="30" forecolor="#FFFFFF" uuid="ae7de07c-4cc2-4bae-9169-1e04da379999"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[MEDIDA]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="CONTENT_TABLE" height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="219" height="20" forecolor="#1F497D" uuid="747cea63-bf20-4502-b5b7-14198d1c7eca"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{nombreMedida}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="115" uuid="9a1a5933-22bd-45d6-bc3f-f1a8c507da55">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableHeader style="HEADER_TABLE" height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="110" height="30" forecolor="#FFFFFF" uuid="62255053-71b6-4d39-9b74-a51e9963675f"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FECHA PREVISTA]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="CONTENT_TABLE" height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="105" height="20" forecolor="#1F497D" uuid="f4eaa4ac-d9d0-4b0b-bb9b-2958c574ea05"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{fechaPrevista}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:detail>
+						<printWhenExpression><![CDATA[$F{recurrente}.equals("Si")]]></printWhenExpression>
+					</jr:detail>
+				</jr:table>
+			</componentElement>
+			<returnValue toVariable="INDEX_DATOS_GENERALES">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="0a7f5f5a-235c-4e79-922d-2c41afd225f6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[II. INFORMACIÓN DE RESULTADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="5dfc68c1-496f-4531-93ee-5d683afd1ab4"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="40" width="350" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="7e48675a-0084-4cf4-9db6-fe814648466f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="10">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="430" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="ff518613-3c13-4cd9-9490-b0e75a8ab838"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEDIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="6d2eebd0-bd8b-46c2-8b2c-cca75b1a15fb">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAJO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="70" width="350" height="30" forecolor="#1F497D" uuid="302b49cf-17f9-4ae8-aa75-1261296dcc69">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Grado de cumplimiento de objetivos definidos en el Plan de Igualdad"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="70" width="50" height="30" forecolor="#1F497D" uuid="5a4b2300-bc46-4b1f-b57b-96a6a7ab08fa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio1}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="70" width="50" height="30" forecolor="#1F497D" uuid="9a2bbbc3-3195-4ab6-99d7-81218882bfe0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio1}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="70" width="50" height="30" forecolor="#1F497D" uuid="0844703e-65bb-4c0c-86c4-944cc898bc2c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio1}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="100" width="50" height="30" forecolor="#1F497D" uuid="4a8d044e-5d59-40ae-9d8a-120b8c261a6c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio2}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="100" width="50" height="30" forecolor="#1F497D" uuid="16ee2e16-2c33-4512-abab-eaa9bafc85e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio2}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="100" width="350" height="30" forecolor="#1F497D" uuid="13c285fa-64a3-4c5a-a08a-a5bf7bce0438">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nivel de realización de las acciones previstas en el Plan de Igualdad"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="100" width="50" height="30" forecolor="#1F497D" uuid="6f9ee672-87be-4a3e-bff3-0af1d8c1b810">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio2}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="130" width="50" height="30" forecolor="#1F497D" uuid="ceb0db0b-5665-4be4-ab6d-e519dda1085e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio3}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="130" width="50" height="30" forecolor="#1F497D" uuid="359a67da-29b4-4827-b0a0-08708664fd42">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio3}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="130" width="350" height="30" forecolor="#1F497D" uuid="6cefec17-9649-4801-bede-80fadc3518dd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nivel de obtención de resultados esperados"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="130" width="50" height="30" forecolor="#1F497D" uuid="e56f9f12-30b0-41b4-90a1-843808f62e81">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio3}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="160" width="50" height="40" forecolor="#1F497D" uuid="d7ee0ba6-5d43-44de-b2b9-7f7369b24d9d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio4}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="160" width="50" height="40" forecolor="#1F497D" uuid="eb707bc4-f091-4f94-b342-b726b47a9cdc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio4}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="160" width="350" height="40" forecolor="#1F497D" uuid="e032425e-c078-4db4-88cd-2f7943413e84">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Grado de cumplimiento de objetivos de cada acción según indicadores marcados en el Plan de Igualdad"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="160" width="50" height="40" forecolor="#1F497D" uuid="154f2486-bd41-4aa7-a86f-c21cd8e832fd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio4}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="200" width="50" height="30" forecolor="#1F497D" uuid="b3d588ee-24fd-417b-863f-6eb253b5faa5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio5}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="200" width="50" height="30" forecolor="#1F497D" uuid="a747fe96-7903-4b81-8d06-4777a4276935">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio5}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="200" width="350" height="30" forecolor="#1F497D" uuid="fe61b0a9-156d-44ce-b936-47870979b121">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Grado de acciones de nuevas necesidades detectadas"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="200" width="50" height="30" forecolor="#1F497D" uuid="352abbd5-85a2-44a7-a6a1-4296ee3f78c4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio5}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="230" width="50" height="30" forecolor="#1F497D" uuid="c613e2f8-9a3f-41ee-9da6-6b6e332c562d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio6}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="230" width="50" height="30" forecolor="#1F497D" uuid="de582287-9b0d-4b76-ab04-3af75a4760b6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio6}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="230" width="350" height="30" forecolor="#1F497D" uuid="50383a0a-ece5-47b9-8c65-e7a30ba0fa15">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nivel de corrección de las desigualdades detectadas en el diagnóstico"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="230" width="50" height="30" forecolor="#1F497D" uuid="5d09c1a2-a9b8-4d54-b98c-1962dd18b6b5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio6}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="260" width="50" height="30" forecolor="#1F497D" uuid="ff700209-21fb-4ec7-998c-8201bc656628">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio7}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="260" width="50" height="30" forecolor="#1F497D" uuid="591fd112-6e05-4e9d-99e2-ece795dc2af4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio7}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="260" width="350" height="30" forecolor="#1F497D" uuid="b982bd28-42cc-48f7-8468-2ac4b8ec2eb9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Situación del nivel de compromiso de la empresa con la igualdad"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="260" width="50" height="30" forecolor="#1F497D" uuid="ac7c3ed2-dd29-4655-8bae-e2fc26d5682f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationResultRadio7}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="300" width="498" height="30" forecolor="#EE9531" uuid="bc3cd0a0-53e3-4175-ac7a-95922061d68a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Información sobre la implementación de medidas a partir de los datos de las fichas de seguimiento de medidas. ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="340" width="250" height="40" forecolor="#1F497D" uuid="94597787-6e0c-4996-b987-9cdc1719aa70">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de medidas del Plan:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="340" width="246" height="40" forecolor="#1F497D" uuid="52137f98-5fc8-48e4-96fd-a9eeefbc7a26">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasPlan}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="380" width="250" height="40" forecolor="#1F497D" uuid="d3c69c94-581b-40d2-ab2e-9750b9224569">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de medidas sobre las que se ha informado seguimiento:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="380" width="246" height="40" forecolor="#1F497D" uuid="aecd8f1a-97fd-4de2-b8cb-9a2e7745a734">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasInformadoSeguimiento}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="420" width="250" height="40" forecolor="#1F497D" uuid="50670838-c74d-45e3-9361-6dab16704402">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de medidas pendientes:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="420" width="246" height="40" forecolor="#1F497D" uuid="6cfa6a18-63c3-49f2-8d4b-0e6c763b30b7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasPendientes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="460" width="250" height="40" forecolor="#1F497D" uuid="1896412c-612f-415d-a4c2-91e1fccb28df">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de medidas en ejecución:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="460" width="246" height="40" forecolor="#1F497D" uuid="50511afa-fb78-42d7-8242-4409b6037698">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasEjecucion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="500" width="250" height="40" forecolor="#1F497D" uuid="45beee63-a4b1-4783-ac2f-1a3b9f8d8ada">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de medidas finalizadas:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="500" width="246" height="40" forecolor="#1F497D" uuid="1b244832-02c3-43e0-8ea7-7c0600ca960f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasFinalizadas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="540" width="250" height="40" forecolor="#1F497D" uuid="145ea573-378e-4a46-9328-56322cbf097c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº de Medidas prioritarias finalizadas:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="280" y="540" width="246" height="40" forecolor="#1F497D" uuid="c51335b2-e7f8-4798-a71a-434f1ad0c344">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nMedidasPrioritariasFinalizadas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="590" width="498" height="20" forecolor="#EE9531" uuid="88d6249e-c9a7-4a31-88ce-116fa24bea3a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valoración general del período de referencia.
+]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="30" y="620" width="495" height="30" forecolor="#1F497D" uuid="21672684-4f15-4d25-98f7-e59fa7a6b488">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{evaluationResultTextarea}!=null && !$P{evaluationResultTextarea}.equals("") ? $P{evaluationResultTextarea} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")]]></textFieldExpression>
+			</textField>
+			<returnValue toVariable="INDEX_INFO_RESULTADOS">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="60cca266-3370-4282-951b-71ed5e44b99c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[III. INFORMACIÓN DE LA IMPLANTACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="e564f696-890e-4ae3-b865-7075d6c0af96">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAJO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="100" width="350" height="30" forecolor="#1F497D" uuid="61b2a063-93db-4ca3-a091-39103ddb450e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Grado de implicación de la plantilla en el proceso"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="130" width="350" height="30" forecolor="#1F497D" uuid="fe620309-c8c2-4693-8acf-eb7f1d33d352">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["El presupuesto previsto ha sido"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="70" width="50" height="30" forecolor="#1F497D" uuid="5c3adb69-8c8f-49ca-b863-ef4aa9e65f35">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio1}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="be0dd219-7341-4f17-89ab-5676ba664951"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALTO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="160" width="350" height="30" forecolor="#1F497D" uuid="1c62c40c-734c-4b4b-9044-8a9294928103">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["El cumplimiento del calendario previsto ha sido"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="40" width="350" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="1abf671b-18e6-433c-9787-9e1ae0f24804">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="10">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="430" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="67b39345-2ef5-431c-a67a-6be5454e161c"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEDIO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="70" width="50" height="30" forecolor="#1F497D" uuid="b6a6c4e2-2d6e-482a-b966-b89420e7f139">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio1}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="70" width="350" height="30" forecolor="#1F497D" uuid="efd73f4f-e295-4615-b62e-5f6f3856aace">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nivel de desarrollo de las acciones"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="70" width="50" height="30" forecolor="#1F497D" uuid="047515f4-7e05-402c-ba09-caf6d9a99cb5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio1}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="100" width="50" height="30" forecolor="#1F497D" uuid="73bc7fbc-d0d1-41c1-a0c7-df0f83d6c5f2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio2}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="100" width="50" height="30" forecolor="#1F497D" uuid="6cfa4e98-58f1-4028-a994-95e617d8d92a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio2}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="100" width="50" height="30" forecolor="#1F497D" uuid="7dc714b6-8ed4-4dd9-8183-b37804f4d05a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio2}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="130" width="50" height="30" forecolor="#1F497D" uuid="bf5db304-7a0b-4ecd-b38d-4e22b3aa34e1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio3}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="130" width="50" height="30" forecolor="#1F497D" uuid="0407d73c-3579-4cd5-9a09-89cb32e4ceff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio3}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="130" width="50" height="30" forecolor="#1F497D" uuid="796fdbb8-bbaa-4a67-8cc6-b54d1b7aa123">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio3}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="160" width="50" height="30" forecolor="#1F497D" uuid="c5d17242-7869-4623-af6d-131faa36a320">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio4}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="160" width="50" height="30" forecolor="#1F497D" uuid="ae9afbec-7858-4509-90d8-f921197f66f1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio4}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="160" width="50" height="30" forecolor="#1F497D" uuid="de8bf1c7-fc10-4fa9-8e35-fef991e0051d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImplantationRadio4}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="200" width="498" height="20" forecolor="#EE9531" uuid="c957a629-63b4-4b7e-855e-5d59d7b131cc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Principales problemas y dificultades detectadas.]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="30" y="230" width="495" height="30" forecolor="#1F497D" uuid="faf77cfe-b197-4e32-a813-53c4a8e92a66">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{evaluationImplantationTextarea}!=null && !$P{evaluationImplantationTextarea}.equals("") ? $P{evaluationImplantationTextarea} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")]]></textFieldExpression>
+			</textField>
+			<returnValue toVariable="INDEX_INFO_IMPLANTACION">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="243695d2-2289-4f7d-8f22-8c38544fd196">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IV. INFORMACIÓN SOBRE IMPACTO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="70" width="50" height="30" forecolor="#1F497D" uuid="2cdff8a3-07e5-4649-9f0b-e816b1ab58d1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio1}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="70" width="50" height="30" forecolor="#1F497D" uuid="78a620d8-24a1-4618-b17b-e14e25250d7b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio1}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="ac9fa99a-e6fb-4d4b-a6f7-5e4430dd072c"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALTO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="70" width="350" height="30" forecolor="#1F497D" uuid="12ef6e90-edeb-40f3-96c6-dd68298bcee7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Se han producido cambios en la cultura de la empresa?"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="430" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="1b8a5e37-d708-4f0a-beb0-f958ce1bcf4b"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEDIO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="100" width="350" height="30" forecolor="#1F497D" uuid="da36ae2d-03fd-4f66-8400-632969019646">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Se han reducido los desequilibrios de presencia de las mujeres?"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="130" width="350" height="30" forecolor="#1F497D" uuid="adab00d0-3f54-4a07-a4a0-e4ea5f39658e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Se han reducido los desequilibrios de presencia de los hombres?"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="160" width="350" height="40" forecolor="#1F497D" uuid="bb660e9f-b6aa-40ed-814d-060f786598fc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Ha habido cambios en las actitudes y opiniones del equipo directivo?"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="70" width="50" height="30" forecolor="#1F497D" uuid="98b0a49c-41a3-469c-90ac-e3312d81906e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio1}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="40" width="50" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="bcc52f7f-64e7-4fc8-adfc-b9367338e458">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="40" width="350" height="30" forecolor="#FFFFFF" backcolor="#1F497D" uuid="5cddb1b0-26bf-49d3-bd79-020abce05a30">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="10">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="230" width="350" height="40" forecolor="#1F497D" uuid="e3ddb60b-7001-4a88-a415-65406f870c7d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Se han detectado cambios en relación con la imagen externa de la empresa?"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="200" width="350" height="30" forecolor="#1F497D" uuid="0959bfac-24f1-40ea-8ec4-a64e1457ecc2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["¿Ha habido cambios en las actitudes y opiniones de la plantilla?"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="100" width="50" height="30" forecolor="#1F497D" uuid="d6aee1f6-24bc-43ac-8311-70a10d41d5c6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio2}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="100" width="50" height="30" forecolor="#1F497D" uuid="d9880b15-20b1-465b-9e82-648dcd987a37">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio2}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="100" width="50" height="30" forecolor="#1F497D" uuid="f8480dd5-fe05-4f52-9129-02da9ee3624a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio2}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="130" width="50" height="30" forecolor="#1F497D" uuid="e336b265-53a0-428b-a87d-1e22281fcfa0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio3}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="130" width="50" height="30" forecolor="#1F497D" uuid="23a4bb96-73e7-4bb8-8b50-257434c9bee2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio3}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="130" width="50" height="30" forecolor="#1F497D" uuid="8494fc99-b81a-42ef-8a8b-37ba45ad2b83">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio3}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="160" width="50" height="40" forecolor="#1F497D" uuid="c57d2153-b5e8-46ec-bf64-694cd9cb44c0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio4}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="160" width="50" height="40" forecolor="#1F497D" uuid="76127db7-e7dc-4752-8018-9ada53fc34a8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio4}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="160" width="50" height="40" forecolor="#1F497D" uuid="7622272e-052c-4c31-8c9c-18b3a50e35f5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio4}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="200" width="50" height="30" forecolor="#1F497D" uuid="e8b93a19-b359-4036-882d-0ecc2f6459b4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio5}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="200" width="50" height="30" forecolor="#1F497D" uuid="b17d1385-f910-4bb6-b4b4-5add4e1c8a97">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio5}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="200" width="50" height="30" forecolor="#1F497D" uuid="f6d93318-8e27-4e66-9c6c-d38bb659267a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio5}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="230" width="50" height="40" forecolor="#1F497D" uuid="927c1ba9-5eb2-4bcd-b46a-59f003abea18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio6}.equals("2") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="230" width="50" height="40" forecolor="#1F497D" uuid="0e25ea15-9e1e-4792-8c07-f914227f7567">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio6}.equals("1") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="380" y="230" width="50" height="40" forecolor="#1F497D" uuid="f85385c5-0e0e-4d0e-89ef-423e8086ac0d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font fontName="Corbel" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{evaluationImpactRadio6}.equals("0") ? "&#10004;" : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="290" width="498" height="20" forecolor="#EE9531" uuid="278397bf-a0b4-4bfb-bb18-29fc2f01dd34">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cambios tanto en relación con las personas como en la gestión y clima empresarial. ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="30" y="320" width="495" height="30" forecolor="#1F497D" uuid="48e30d11-3d9a-456e-97f8-91b3d688a0af">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{evaluationImpactTextarea}!=null && !$P{evaluationImpactTextarea}.equals("") ? $P{evaluationImpactTextarea} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")]]></textFieldExpression>
+			</textField>
+			<returnValue toVariable="INDEX_INFO_IMPACTO">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="0470fb6a-7573-48fa-989e-21bab7b4387c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[V. EVIDENCIAS DEL PLAN]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="30" y="40" width="498" height="60" uuid="5377bd90-c2f6-43bd-9dea-6177b44f84e1">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="evidenciasSeguimiento" uuid="88944ee8-8ab7-47e0-b1a2-7e526990d201">
+						<dataSourceExpression><![CDATA[$P{medidaListConDocumento}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="140" uuid="26fac1cd-c77c-43f0-93c5-b17aebc8c2bb">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="ROW_HEADER" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="30" forecolor="#FFFFFF" uuid="d1268d0f-8ee6-4b63-ac0b-739c39fdc459"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[MATERIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="ROW_DINAMIC" height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="130" height="20" forecolor="#1F497D" uuid="15c5811c-fdcc-4438-9bf1-a678927f2878"/>
+								<textElement verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{materia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="120" uuid="0853b2a3-8388-48ad-8c05-3548564711ad">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<property name="net.sf.jasperreports.legacy.element.stretch.enabled" value="true"/>
+						<jr:columnHeader style="ROW_HEADER" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="120" height="30" forecolor="#FFFFFF" uuid="2a6f1271-b607-4de0-abca-189d3193ea06"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[MEDIDA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="ROW_DINAMIC" height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="110" height="20" forecolor="#1F497D" uuid="cace3f4a-59d4-4a87-9d55-d37901ba7c1b"/>
+								<textElement verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{nombreMedida}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="132" uuid="20b91661-244c-4b20-9d50-2fe9133441e4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<property name="net.sf.jasperreports.legacy.element.stretch.enabled" value="true"/>
+						<jr:columnHeader style="ROW_HEADER" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="132" height="30" forecolor="#FFFFFF" uuid="c41fc1cd-0c6a-4cb1-94e7-12edc66cfdf8"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[EVIDENCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="ROW_DINAMIC" height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="122" height="20" forecolor="#1F497D" uuid="034c076b-1c87-44c7-abb9-0a3be9ac2ebc"/>
+								<textElement verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{documentacionAcreditativa}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="105" uuid="375736f6-d352-4d3d-aad8-52e8ba633d1c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<property name="net.sf.jasperreports.legacy.element.stretch.enabled" value="true"/>
+						<jr:columnHeader style="ROW_HEADER" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="105" height="30" forecolor="#FFFFFF" uuid="0adc8ce5-ce9e-4db0-9591-40531e06d6b6"/>
+								<box leftPadding="5"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Corbel" size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[FECHA EVIDENCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="ROW_DINAMIC" height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="95" height="20" forecolor="#1F497D" uuid="63307fbe-b8db-43ea-9ff9-34220469023d"/>
+								<textElement verticalAlignment="Middle" markup="html">
+									<font fontName="Corbel" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{fechaSubidaDocumento}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="50">
+						<staticText>
+							<reportElement x="0" y="0" width="496" height="50" forecolor="#1F497D" uuid="b7a7680e-8748-43d2-b1df-f8209bbbee0d"/>
+							<textElement textAlignment="Justified" verticalAlignment="Middle">
+								<font fontName="Corbel" size="11"/>
+							</textElement>
+							<text><![CDATA[Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<returnValue toVariable="INDEX_EVIDENCIAS">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+		<band height="722">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="10" width="446" height="20" forecolor="#EE9531" uuid="9915512c-ae1c-41ab-8935-0e9601efe835">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VI. CONCLUSIONES Y PROPUESTAS]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="30" y="40" width="495" height="30" forecolor="#1F497D" uuid="dc0896c9-3e8e-4602-9d73-055b3e5311b1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Corbel" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{conclusionPropuesta}!=null && !$P{conclusionPropuesta}.equals("") ? $P{conclusionPropuesta} : "Información no disponible. Valorar incidencia en el apartado del informe Conclusiones: Principales Problemas y Dificultades detectadas")]]></textFieldExpression>
+			</textField>
+			<returnValue toVariable="INDEX_CONCLUSIONES">
+				<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+			</returnValue>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="10" y="10" width="414" height="20" forecolor="#90A5BF" uuid="e6a63bca-bca3-40ee-b3ba-e1bb210c92cf">
+					<property name="net.sf.jasperreports.export.docx.hidden.text" value="true"/>
+					<printWhenExpression><![CDATA[$P{isODT}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Corbel" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["INFORME DE EVALUACIÓN DEL PLAN DE IGUALDAD DE " + $P{razonSocial} + " - Información Confidencial"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="424" y="10" width="61" height="20" forecolor="#90A5BF" uuid="5fe355be-ca21-401c-b91b-b5cc1e825f2d">
+					<property name="net.sf.jasperreports.export.docx.hidden.text" value="true"/>
+					<printWhenExpression><![CDATA[$P{isODT}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Corbel" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página " +$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto">
+				<reportElement positionType="FixRelativeToBottom" x="486" y="10" width="66" height="20" forecolor="#90A5BF" uuid="b8922871-7f49-4999-b0a8-f6918b515ac5">
+					<property name="net.sf.jasperreports.export.docx.hidden.text" value="true"/>
+					<printWhenExpression><![CDATA[$P{isODT}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Corbel" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " +$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,36 @@
+Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Diciembre
+
+No esta permitido el registro este día festivo 
+Debe introducir una hora de fin superior a la de inicio 
+No esta permitido realizar registros de días superiores a hoy 
+No se permite el registro con fecha a inferior a hoy 
+No se permite el registro inferior a #DIAS# días laborables con respecto a la fecha actual 
+No se permite introducir mas de #LIMITE# semanales 
+Debe seleccionar una actividad 
+Debe seleccionar el día que desea en el calendario 
+Debe introducir la hora de inicio del registro 
+La hora de inicio y de fin no pueden ser la misma 
+No se pueden introducir registros superiores a hoy 
+El registro introducido coincide con otro registro  
+Los registros superan el maximo de horas por día 
+Los registros superan el maximo de horas por semana 
+Actividad desconocida 
+Entrada 
+Salida 
+Tiempo 
+Tipo 
+observaciones: "Observaciones 
+Observaciones empresa 
+minutos en el día. 
+minutos en la semana. 
+Eliminar 
+-Sin salida- 
+-Abierto- 
+Editando fichaje  
+cerrado, solo puede modificar las observaciones 
+abierto, puede indicar la hora de finalización y las observaciones 
+Tiene fichajes sin cerrar, debe finalizarlos antes de introducir uno nuevo. 
+Solo puede introducir registros horarios abiertos en el día en curso. 
+¿Desea eliminar el fichaje? 
+Día 
+Semana

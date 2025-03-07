@@ -1,0 +1,29 @@
+<liferay-portlet:actionURL name="/category/delete" var="deleteURL" />
+<div class="modal hide" id="deleteCategory">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content alert-modal warning" style="border-radius: 15px; width: 650px;">
+            <aui:form  name="delete_form" action="<%=deleteURL.toString()%>" method="post">
+                <aui:input name="<%=AdminCategoriasPortletKeys.DELETE_ID%>" value="" type="hidden" />
+                <div class="headerModal">
+                    <p id="addEntidad"><span><liferay-ui:message key="categories.delete.title"/></p>
+                </div>
+                 <div class="container">
+                    <div class="col-12 text-center">
+                        <p><liferay-ui:message key="categories.delete.description" /></p>
+                    </div>
+                 </div>
+                <div class="footerModal">
+
+                    <button type="submit" class="buttonModal btn-primary" type="submit" id="btnCancelComFin"  data-dismiss="modal" aria-label="Close">
+                            <liferay-ui:message key="label.button.eliminar"/>
+                    </button>
+                    <button type="button" class="buttonModal hide-modal" id="btnCancelComFin"  data-dismiss="modal" aria-label="Close">
+                           <liferay-ui:message key="label.button.cerrar"/>
+                    </button>
+
+                </div>
+            </aui:form>
+        </div>
+    </div>
+</div>

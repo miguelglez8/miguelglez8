@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "themes\\adeplus-theme",
+            "themes\\inspinia-theme",
+            "themes\\registro-horas-theme"
+        ]
+    }
+}

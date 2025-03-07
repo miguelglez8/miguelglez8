@@ -1,0 +1,178 @@
+body{   line-height: 1.6;  background: #f6f6f6;   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;   font-size: 14px;}
+.container{width:100%}
+.content {
+  max-width: 560px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+}
+.img-responsive{width:100%}
+.main {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+}
+h3 { font-size: 18px;  color: #000;  margin: 40px 0 0;  line-height: 1.2;  font-weight: 400;}
+.content-wrap {
+  padding: 20px;
+}
+
+.content-block {
+  padding: 0 0 20px;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+p, ul, ol {
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+p li, ul li, ol li {
+	margin-left: 5px;
+	list-style-position: inside;
+}
+
+/* -------------------------------------
+	LINKS & BUTTONS
+------------------------------------- */
+a {
+	color: #1ab394;
+	text-decoration: underline;
+}
+
+.btn-primary:hover,.btn-primary:focus, .btn-primary {
+	text-decoration: none;
+	color: #FFF;
+	background: #1ab394;
+	border: solid #1ab394;
+	border-width: 5px 10px;
+	line-height: 2;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 5px;
+	text-transform: capitalize;
+	text-decoration: none !important;
+}
+
+/* -------------------------------------
+	OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+	margin-bottom: 0;
+}
+
+.first {
+	margin-top: 0;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.clear {
+	clear: both;
+}
+
+/* -------------------------------------
+	ALERTS
+	Change the class depending on warning email, good email or bad email
+------------------------------------- */
+.alert {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	padding: 20px;
+	text-align: center;
+	border-radius: 3px 3px 0 0;border:none;
+}
+.alert a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+}
+.alert.alert-warning {
+	background: #f8ac59;border:none;
+}
+.alert.alert-bad {
+	background: #ed5565;border:none;
+}
+.alert.alert-good {
+	background: #1ab394;
+	border:none;
+}
+
+/* -------------------------------------
+	INVOICE
+	Styles for the billing table
+------------------------------------- */
+.invoice {
+	margin: 40px auto;
+	text-align: left;
+	width: 80%;
+}
+.invoice td {
+	padding: 5px 0;
+}
+.invoice .invoice-items {
+	width: 100%;
+}
+.invoice .invoice-items td {
+	border-top: #eee 1px solid;
+}
+.invoice .invoice-items .total td {
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+	font-weight: 700;
+}
+
+/* -------------------------------------
+	RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 640px) {
+	    h1, h2, h3, h4 {
+	        font-weight: 600 !important;
+	        margin: 20px 0 5px !important;
+	    }
+	
+	    h1 {
+	        font-size: 22px !important;
+	    }
+	
+	    h2 {
+	        font-size: 18px !important;
+	    }
+	
+	    h3 {
+	        font-size: 16px !important;
+	    }
+	
+	    .container {
+	        width: 100% !important;
+	    }
+	
+	    .content, .content-wrap {
+	        padding: 10px !important;
+	    }
+	
+	    .invoice {
+	        width: 100% !important;
+	    }
+	}
+	.footer a {
+  color: #999 !important;
+}
+

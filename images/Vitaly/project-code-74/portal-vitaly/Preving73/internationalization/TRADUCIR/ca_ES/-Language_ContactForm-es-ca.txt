@@ -1,0 +1,27 @@
+
+
+
+Motiu de la consulta
+Assumpte
+Descripció
+Arxiu adjunt
+Enviar
+En cas de dubte consulti amb la persona de contacte de la seva empresa al registre horari: 
+
+
+Consulta enviada correctament
+<p>La seva consulta s'ha enviat correctament.</p><p> Aviat rebrà una contestació a través del correu electrònic que ha indicat.</p><p> Gràcies per confiar en nosaltres.</p>
+
+
+Configuració de correus destinació
+Adreces de correu
+Categories
+Pot introduir diverses adreces de correu separades per ";". Cada adreça de correu electrònica correspon amb la categoria que ocupa la mateixa posició.
+Pot introduir diverses categories separades per ";". Si desitja afegir diversos correus electrònics per categoria, repeteixi el nom de la categoria per a la mateixa posició del correu electrònic.
+Comprovació de correus electrònics vàlids: 
+* Els correus que són incorrectes no s'utilitzaran.
+
+
+Consulta "Registre horari"
+Consulta "Registre horari"
+

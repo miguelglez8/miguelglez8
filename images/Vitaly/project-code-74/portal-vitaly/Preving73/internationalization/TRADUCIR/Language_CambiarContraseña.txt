@@ -1,0 +1,16 @@
+
+ Cambiar Contraseña 
+ Contraseña actual 
+ Nueva contraseña 
+ Confirmar contraseña 
+ Nombre 
+ Email 
+
+ Se ha actualizado correctamente la contraseña. Recibirá un correo avisando del cambio. 
+ La contraseña del usuario no es correcta. No se ha podido cambiar. 
+ La contraseña y la confirmación de contraseña no son iguales. 
+
+ Revise que la contraseña elegida cumpla las condiciones indicadas: Debe tener al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números. 
+ No se ha actualizado la contraseña. Revise que cumple las condiciones: Debe tener al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números. 
+
+ La contraseña debe tener al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números.  

@@ -1,0 +1,17 @@
+AdeplusCompanyConfiguration
+
+Adeplus
+
+# View
+Configuración
+Seleccionar logo
+Nombre
+CIF
+Aplicaciones
+Descripción
+Observaciones
+Convenio
+Editar
+No hay ninguna empresa asignada al usuario.
+No eres administrador de esta empresa.
+Borrar

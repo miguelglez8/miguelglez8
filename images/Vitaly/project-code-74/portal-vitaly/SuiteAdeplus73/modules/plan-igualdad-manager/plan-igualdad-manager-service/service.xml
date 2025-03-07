@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.plan.igualdad.liferay.portlet.manager">
+	<namespace>planigualdad</namespace>
+
+	<entity local-service="true" name="Version">
+
+		<!-- PK fields -->
+		<column name="versionId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="inicioPeriodoDatos" type="Date" />
+		<column name="finPeriodoDatos" type="Date" />
+		<column name="inicioPeriodoPlan" type="Date" />
+		<column name="finPeriodoPlan" type="Date" />
+		<column name="baja" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="versionId" />
+			<order-column name="compId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Version" return-type="Version" unique="true">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Hito">
+
+		<!-- PK fields -->
+		<column name="hitoId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="peso" type="String" />
+
+	</entity>
+
+	<entity local-service="true" name="FechaHito">
+
+		<!-- PK fields -->
+		<column name="hitoId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="fecha" type="Date" />
+
+		<!-- Finder methods -->
+		<finder name="FechaHito" return-type="Collection">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Area">
+
+		<!-- PK fields -->
+		<column name="areaId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="baja" type="Date" />
+
+		<!-- Finder methods -->
+		<finder name="Area" return-type="Collection">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="PuestoTrabajo">
+
+		<!-- PK fields -->
+		<column name="puestoId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="areaId" type="long" />
+		<column name="responsabilidad" type="long" />
+		<column name="nHombres" type="long" />
+		<column name="nMujeres" type="long" />
+		<column name="baja" type="Date" />
+
+		<!-- Finder methods -->
+		<finder name="PuestoTrabajo" return-type="Collection">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="PuestoArea" return-type="Collection">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+			<finder-column name="areaId" />
+		</finder>
+		<finder name="PuestoResponsabilidad" return-type="Collection">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+			<finder-column name="responsabilidad" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Organizacion">
+
+		<!-- PK fields -->
+		<column name="organizacionId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="annoConstitucion" type="String" />
+		<column name="paginaWeb" type="String" />
+		<column name="domicilioSocial" type="String" />
+		<column name="facturacionAnual" type="String" />
+		<column name="formaJuridica" type="String" />
+		<column name="nombreResponsableEntidad" type="String" />
+		<column name="telefonoResponsableEntidad" type="String" />
+		<column name="cargoResponsableEntidad" type="String" />
+		<column name="emailResponsableEntidad" type="String" />
+		<column name="nombreResponsableIgualdad" type="String" />
+		<column name="telefonoResponsableIgualdad" type="String" />
+		<column name="cargoResponsableIgualdad" type="String" />
+		<column name="emailResponsableIgualdad" type="String" />
+		<column name="cnaes" type="String" />
+		<column name="nCentros" type="long" />
+		<column name="descripcionActividad" type="String" />
+		<column name="convenio" type="String" />
+		<column name="ambito" type="String" />
+		<column name="comentarioAmbito" type="String" />
+		<column name="nHombresPlantilla" type="long" />
+		<column name="nMujeresPlantilla" type="long" />
+		<column name="representacionLegal" type="String" />
+		<column name="nRepresentacionLegalHombres" type="long" />
+		<column name="nRepresentacionLegalMujeres" type="long" />
+		<column name="representaTotalidad" type="String" />
+		<column name="nNoRepresentados" type="long" />
+		<column name="comentarioRepresentacion" type="String" />
+		<column name="departamentoPersonal" type="String" />
+		<column name="sindicatos" type="String" />
+		<column name="reprComisionOrganizacion" type="String" />
+		<column name="reprComisionSocial" type="String" />
+		<column name="reprPlanOrganizacion" type="String" />
+		<column name="reprPlanSociales" type="String" />
+
+		<!-- Finder methods -->
+		<finder name="Organizacion" return-type="Organizacion" unique="true">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Pregunta">
+
+		<!-- PK fields -->
+		<column name="preguntaId" primary="true" type="long" />
+		<column name="seccionId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="tipo" type="String" />
+		<column name="pregunta" type="String" />
+
+		<!-- Finder methods -->
+		<finder name="Seccion" return-type="Collection">
+			<finder-column name="seccionId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Respuesta">
+
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="seccionId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="respuestas" type="String" />
+		<column name="estado" type="long" />
+
+		<!-- Finder methods -->
+		<finder name="Secciones" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="RespuestasSeccion" return-type="Respuesta" unique="true">
+			<finder-column name="versionId" />
+			<finder-column name="compId" />
+			<finder-column name="seccionId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Estadistica">
+
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="seccionId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="estadistica" type="String" />
+
+		<!-- Finder methods -->
+		<finder name="Secciones" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="EstadisticaSeccion" return-type="Estadistica">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="seccionId" />
+		</finder>
+
+	</entity>
+	
+	<entity local-service="true" name="ImagenCanvasEst">
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="seccionId" primary="true" type="long" />
+		<column name="imgCanvasId" primary="true" type="String" />
+		<column name="parteImg" primary="true" type="long" />
+		
+		<!-- Other fields -->
+		<column name="canvasImage" type="String" />
+		
+		<!-- Finder methods -->
+		<finder name="Secciones" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="ImagenCanvasSeccion" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="seccionId" />
+			<finder-column name="imgCanvasId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="ParametricasFDD">
+		
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+		<column name="versionId" primary="true" type="long" />
+		<column name="idParametrica" primary="true" type="String" />
+		
+		<!-- Other fields -->
+		<column name="tipo" type="String" />
+		<column name="materia" type="Integer" />
+		<column name="contenido" type="String" />
+		<column name="seccionId" type="long" />
+		
+		<!-- Finder methods -->
+		<finder name="Materia" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="tipo" />
+			<finder-column name="materia" />
+		</finder>
+		
+		<finder name="Tipo" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="tipo" />
+		</finder>
+		
+		<finder name="CompIdAndVersion" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="Parametrica" return-type="ParametricasFDD">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="idParametrica" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Informes">
+		<!-- PK fields -->
+		<column name="informeId" primary="true" type="long" />
+		
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="userId" type="long" />
+		<column name="versionId" type="long" />
+		<column name="tipoInforme" type="String" />
+		<column name="versionInforme" type="Integer"/>
+		<column name="parametrosInforme" type="String" />
+		<column name="beansInforme" type="String" />
+		<column name="formato" type="String" />
+		
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		
+		<!-- Finder methods -->
+		<finder name="InformeVersions" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+			<finder-column name="tipoInforme" />
+		</finder>
+		
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Evaluacion">
+
+		<!-- PK fields -->
+		<column name="evaluacionId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="versionId" type="long" />
+		<column name="userId" type="long" />
+		<column name="datosGenerales" type="String" />
+		<column name="informacionResultados" type="String" />
+		<column name="informacionImplantacion" type="String" />
+		<column name="informacionImpacto" type="String" />
+		<column name="conclusion" type="String" />
+		<column name="observaciones" type="String" />
+		<column name="versionEvaluacion" type="Integer"/>
+		
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+
+		<!-- Finder methods -->
+		<finder name="Evaluaciones" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Medida">
+		<!-- PK fields -->
+		<column name="medidaId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="versionId" type="long" />
+		<column name="userId" type="long" />
+		<column name="datosGenerales" type="String" />
+		<column name="cumplimentacion" type="String" />
+		<column name="isMedidaPredefinida" type="Boolean"/>
+        <column name="medidaPredefinidaId" type="String"/>
+        <column name="versionMedida" type="Integer"/>
+		<column name="versionOriginalMedidaId" type="long" />
+		
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		
+		<!-- Finder methods -->
+		<finder name="Medidas" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="versionId" />
+		</finder>
+		
+		<finder name="VersionsMedida" return-type="Collection">
+			<finder-column name="versionOriginalMedidaId" />
+		</finder>
+		
+		<finder name="MedidasPredefinida" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="medidaPredefinidaId" />
+		</finder>
+		
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		
+		<finder name="User" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Cuestionario">
+		<!-- PK fields -->
+		<column name="cuestionarioId" primary="true" type="long" />
+		
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="versionId" type="long" />
+		<column name="userId" type="long" />
+		<column name="respuestasCuestionario" type="String" />
+		<column name="observaciones" type="String" />
+		<column name="versionCuestionario" type="Integer"/>
+		
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		
+		<!-- Finder methods -->
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Valoracion">
+		<!-- PK fields -->
+		<column name="valoracionId" primary="true" type="long" />
+		
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="versionId" type="long" />
+		<column name="userId" type="long" />
+		<column name="respuestasValoracion" type="String" />
+		<column name="observaciones" type="String" />
+		<column name="versionValoracion" type="Integer"/>
+		
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		
+		<!-- Finder methods -->
+		<finder name="Comp" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+	
+	<entity local-service="true" name="Estado">
+		<!-- PK fields -->
+		<column name="estadoId" primary="true" type="long" />
+		
+		<!-- Other fields -->
+		<column name="nombre" type="String" />
+		<column name="activa" type="Boolean"/>
+		<column name="gestionParametrizaciones" type="Boolean"/>
+		
+		<!-- Finder methods -->
+		<finder name="Activa" return-type="Collection">
+			<finder-column name="activa" />
+		</finder>
+	</entity>
+</service-builder>

@@ -1,0 +1,142 @@
+<%@ page import="com.liferay.portal.kernel.language.LanguageUtil" %>
+<%@ page import="java.util.ResourceBundle" %>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+<script>
+    Liferay.Loader.define._amd = Liferay.Loader.define.amd;
+    Liferay.Loader.define.amd = false;
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"></script>
+
+<script>
+    Liferay.Loader.define.amd = Liferay.Loader.define._amd;
+</script>
+
+<%
+    List<Activity> activityList = ActivityLocalServiceUtil.getActivitiesFromGroup(themeDisplay.getCompanyId(),themeDisplay.getScopeGroupId());
+
+    ResourceBundle bundle = ResourceBundle.getBundle("content/Language", themeDisplay.getUser().getLocale());
+
+    String yes = LanguageUtil.get(bundle, "activity.configuration.view.active.yes");
+    String no  = LanguageUtil.get(bundle, "activity.configuration.view.active.no");
+    String extra= LanguageUtil.get(bundle, "activity.configuration.view.extra");
+    String working  = LanguageUtil.get(bundle, "activity.configuration.view.working");
+    String absence  = LanguageUtil.get(bundle, "activity.configuration.view.absence");
+    String active  = LanguageUtil.get(bundle, "activity.configuration.view.search.active");
+    String all  = LanguageUtil.get(bundle, "activity.configuration.view.all");
+%>
+
+<table id="activityTable" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th><liferay-ui:message key="activity.configuration.view.search.name"/></th>
+            <th><liferay-ui:message key="activity.configuration.view.search.workTime"/></th>
+            <th><liferay-ui:message key="activity.configuration.view.search.type"/></th>
+            <th><liferay-ui:message key="activity.configuration.view.search.color"/></th>
+            <th><liferay-ui:message key="activity.configuration.view.search.active"/></th>
+            <th><liferay-ui:message key="activity.configuration.view.search.actions"/></th>
+        </tr>
+    </thead>
+    <tbody>
+        <c:forEach items="<%=activityList%>" var="activityReport">
+                <%
+                    Activity activity = (Activity) pageContext.getAttribute("activityReport");
+                %>
+                <liferay-portlet:renderURL varImpl="editURL">
+                    <portlet:param name="activityId" value="<%=String.valueOf(activity.getActivityId())%>" />
+                    <portlet:param name="mvcPath" value="/edit.jsp" />
+                </liferay-portlet:renderURL>
+                <tr>
+                    <td><%=activity.getName(themeDisplay.getUser().getLocale())%></td>
+                    <td><%=activity.isWorkTime()? yes : no%></td>
+                    <td>
+                        <c:choose>
+                            <c:when test="<%=activity.getType()==1%>">
+                                <%=working%>
+                            </c:when>
+
+                            <c:when test="<%=activity.getType()==2%>">
+                                <%=absence%>
+                            </c:when>
+
+                            <c:otherwise>
+                                <%=extra%>
+                            </c:otherwise>
+                        </c:choose>
+                    </td>
+                    <td><div style="background-color:${activityReport.color}; height: 25px;"></div></td>
+                    <td><%=activity.isActive()? yes : no%></td>
+                    <td><a href="<%=editURL.toString()%>"><liferay-ui:message key="activity.configuration.view.edit.title"/></a></td>
+                </tr>
+        </c:forEach>
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function() {
+        $('#activityTable').DataTable( {
+            dom: 'Bfrtip',
+            responsive: true,
+            buttons: [
+                'csv', 'excel', 'print', 'pdf'
+            ],
+            "language": {
+                "sProcessing":     "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sProcessing")%>",
+                "sLengthMenu":     "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sLengthMenu")%>",
+                "sZeroRecords":    "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sZeroRecords")%>",
+                "sEmptyTable":     "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sEmptyTable")%>",
+                "sInfo":           "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sInfo")%>",
+                "sInfoEmpty":      "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sInfoEmpty")%>",
+                "sInfoFiltered":   "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sInfoFiltered")%>",
+                "sInfoPostFix":    "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sInfoPostFix")%>",
+                "sSearch":         "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sSearch")%>",
+                "sUrl":            "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sUrl")%>",
+                "sInfoThousands":  "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sInfoThousands")%>,",
+                "sLoadingRecords": "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sLoadingRecords")%>",
+                "oPaginate": {
+                    "sFirst":    "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sFirst")%>",
+                    "sLast":     "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sLast")%>",
+                    "sNext":     "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sNext")%>",
+                    "sPrevious": "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sPrevious")%>"
+                },
+                "oAria": {
+                    "sSortAscending":  "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sSortAscending")%>",
+                    "sSortDescending": "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.sSortDescending")%>"
+                },
+                "buttons": {
+                    "copy": "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.copy")%>",
+                    "colvis": "<%=LanguageUtil.get(bundle, "activity.configuration.view.datatable.colvis")%>"
+                }
+            },
+            initComplete: function () {
+            $('#activityTable_filter').before( $('<div id="search_active"><%=active%>: &nbsp;</div>')),
+                this.api().columns(4).every( function () {
+                    var column = this;
+                    var select = $('<select><option value=""><%=all%></option></select>')
+                        .appendTo( $('#search_active') )
+                        .on('change', function () {
+                            var val = $.fn.dataTable.util.escapeRegex(
+                                $(this).val()
+                            );
+                            column
+                                .search( val ? '^'+val+'$' : '', true, false )
+                                .draw();
+                        } );
+
+                    column.data().unique().sort().each( function ( d, j ) {
+                        select.append( '<option value="'+d+'">'+d+'</option>' )
+                    } );
+                } );
+            }
+        } );
+    } );
+</script>

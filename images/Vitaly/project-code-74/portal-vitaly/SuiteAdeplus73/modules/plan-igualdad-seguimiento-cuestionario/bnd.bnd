@@ -1,0 +1,6 @@
+Bundle-Name: plan-igualdad-seguimiento-cuestionario
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.seguimiento.cuestionario
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.seguimiento.cuestionario.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional	

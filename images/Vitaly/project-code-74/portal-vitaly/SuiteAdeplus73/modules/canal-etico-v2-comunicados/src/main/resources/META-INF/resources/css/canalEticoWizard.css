@@ -1,0 +1,87 @@
+.dtik-proceso>ul{
+    display:table;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    width:100%
+}
+.dtik-proceso>ul>li{
+    display:table-cell;
+    text-align:center;
+    width:1%
+}
+.dtik-proceso__paso:before{
+    border-top:6px solid #ccc;
+    content:"";
+    display:block;
+    font-size:0;
+    height:1px;
+    overflow:hidden;
+    position:relative;
+    top:21px;
+    width:100%;
+    z-index:1
+}
+.dtik-proceso>ul>li:first-child .dtik-proceso__paso:before{
+    left:50%;
+    max-width:51%
+}
+.dtik-proceso>ul>li:last-child .dtik-proceso__paso:before{
+    max-width:50%;
+    width:50%
+}
+.dtik-proceso__paso:hover{
+    text-decoration:none
+}
+.dtik-proceso__paso__num{
+    background-color:#fff;
+    border:5px solid #ccc;
+    border-radius:100%;
+    display:inline-block;
+    font-size:15px;
+    font-weight:bold;
+    height:40px;
+    line-height:30px;
+    position:relative;
+    text-align:center;
+    width:40px;
+    z-index:2
+}
+.dtik-proceso__paso__desc{
+    display:block;
+    font-size:.75rem;
+    margin-top:1.2rem;
+    max-width:100%;
+    table-layout:fixed;
+    text-align:center;
+    word-wrap:break-word;
+    z-index:104
+}
+
+.dtik-proceso__paso--seleccionado:before,.dtik-proceso__paso--hecho:before{
+    border-color:#003baa
+}
+.dtik-proceso__paso--seleccionado .dtik-proceso__paso__num,.dtik-proceso__paso--hecho .dtik-proceso__paso__num{
+    border-color:#003baa
+}
+.dtik-proceso__paso--hecho .dtik-proceso__paso__num{
+    background-color:#003baa;
+    color:#fff;
+    text-indent:-9999px
+}
+.dtik-proceso__paso--hecho .dtik-proceso__paso__num:before{
+    /*content:"\eb36";*/
+    content:"\2713";
+    display:inline;
+    float:right;
+    /*font-family:DonostiaTIK;*/
+    font-weight:300;
+    height:auto;
+    text-shadow:none;
+    margin-right:7px;
+    text-indent:0
+}
+.dtik-proceso__paso--disabled{
+    cursor:default
+}

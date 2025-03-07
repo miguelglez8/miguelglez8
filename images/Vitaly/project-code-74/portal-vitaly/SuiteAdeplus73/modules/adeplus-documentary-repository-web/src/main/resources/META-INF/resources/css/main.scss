@@ -1,0 +1,29 @@
+.adeplus-documentary-repository-web {
+}
+
+/*#adeplus .btn{
+    text-transform: inherit!important;
+}*/
+
+.input-group-item {
+    width: 100%;
+}
+
+.label-margin {
+	margin-top: 25px !important;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.display-none, .dataTables_length, #table_documents_repository_filter{
+	display: none;
+}

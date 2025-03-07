@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Area">
+		<field name="areaId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="baja" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Cuestionario">
+		<field name="cuestionarioId" type="long" />
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="respuestasCuestionario" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="observaciones" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="versionCuestionario" type="Integer" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Estadistica">
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="seccionId" type="long" />
+		<field name="estadistica" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Estado">
+		<field name="estadoId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="activa" type="Boolean" />
+		<field name="gestionParametrizaciones" type="Boolean" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Evaluacion">
+		<field name="evaluacionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="datosGenerales" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="informacionResultados" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="informacionImplantacion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="informacionImpacto" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="conclusion" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="observaciones" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="versionEvaluacion" type="Integer" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.FechaHito">
+		<field name="hitoId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="fecha" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Hito">
+		<field name="hitoId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="peso" type="String" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.ImagenCanvasEst">
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="seccionId" type="long" />
+		<field name="imgCanvasId" type="String" />
+		<field name="parteImg" type="long" />
+		<field name="canvasImage" type="String">
+			<hint name="max-length">50000</hint>
+		</field>
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Informes">
+		<field name="informeId" type="long" />
+		<field name="compId" type="long" />
+		<field name="userId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="tipoInforme" type="String" />
+		<field name="versionInforme" type="Integer" />
+		<field name="parametrosInforme" type="String">
+			<hint name="max-length">50000000</hint>
+		</field>
+		<field name="beansInforme" type="String">
+			<hint name="max-length">50000000</hint>
+		</field>
+		<field name="formato" type="String" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Medida">
+		<field name="medidaId" type="long" />
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="datosGenerales" type="String">
+			<hint name="max-length">10000</hint>
+		</field>
+		<field name="cumplimentacion" type="String">
+			<hint name="max-length">25000</hint>
+		</field>
+		<field name="isMedidaPredefinida" type="Boolean" />
+		<field name="medidaPredefinidaId" type="String" />
+		<field name="versionMedida" type="Integer" />
+		<field name="versionOriginalMedidaId" type="long" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Organizacion">
+		<field name="organizacionId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="annoConstitucion" type="String" />
+		<field name="paginaWeb" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="domicilioSocial" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="facturacionAnual" type="String" />
+		<field name="formaJuridica" type="String" />
+		<field name="nombreResponsableEntidad" type="String" />
+		<field name="telefonoResponsableEntidad" type="String" />
+		<field name="cargoResponsableEntidad" type="String" />
+		<field name="emailResponsableEntidad" type="String" />
+		<field name="nombreResponsableIgualdad" type="String" />
+		<field name="telefonoResponsableIgualdad" type="String" />
+		<field name="cargoResponsableIgualdad" type="String" />
+		<field name="emailResponsableIgualdad" type="String" />
+		<field name="cnaes" type="String" />
+		<field name="nCentros" type="long" />
+		<field name="descripcionActividad" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="convenio" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="ambito" type="String" />
+		<field name="comentarioAmbito" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="nHombresPlantilla" type="long" />
+		<field name="nMujeresPlantilla" type="long" />
+		<field name="representacionLegal" type="String" />
+		<field name="nRepresentacionLegalHombres" type="long" />
+		<field name="nRepresentacionLegalMujeres" type="long" />
+		<field name="representaTotalidad" type="String" />
+		<field name="nNoRepresentados" type="long" />
+		<field name="comentarioRepresentacion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="departamentoPersonal" type="String" />
+		<field name="sindicatos" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="reprComisionOrganizacion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="reprComisionSocial" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="reprPlanOrganizacion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="reprPlanSociales" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.ParametricasFDD">
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="idParametrica" type="String" />
+		<field name="tipo" type="String" />
+		<field name="materia" type="Integer" />
+		<field name="contenido" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="seccionId" type="long" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Pregunta">
+		<field name="preguntaId" type="long" />
+		<field name="seccionId" type="long" />
+		<field name="tipo" type="String" />
+		<field name="pregunta" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.PuestoTrabajo">
+		<field name="puestoId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="areaId" type="long" />
+		<field name="responsabilidad" type="long" />
+		<field name="nHombres" type="long" />
+		<field name="nMujeres" type="long" />
+		<field name="baja" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Respuesta">
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="seccionId" type="long" />
+		<field name="respuestas" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="estado" type="long" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Valoracion">
+		<field name="valoracionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="versionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="respuestasValoracion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="observaciones" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="versionValoracion" type="Integer" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plan.igualdad.liferay.portlet.manager.model.Version">
+		<field name="versionId" type="long" />
+		<field name="compId" type="long" />
+		<field name="nombre" type="String" />
+		<field name="inicioPeriodoDatos" type="Date" />
+		<field name="finPeriodoDatos" type="Date" />
+		<field name="inicioPeriodoPlan" type="Date" />
+		<field name="finPeriodoPlan" type="Date" />
+		<field name="baja" type="Date" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

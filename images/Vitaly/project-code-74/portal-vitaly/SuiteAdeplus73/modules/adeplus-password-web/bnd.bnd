@@ -1,0 +1,5 @@
+Bundle-Name: adeplus-password-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.password.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.password.web.constants
+Import-Package:*;version="0";resolution:=optional

@@ -1,0 +1,4 @@
+Bundle-Name: plan-igualdad-mailing-web
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.mailing.web
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.mailing.web.constants, com.plan.igualdad.liferay.portlet.mailing.web.mail, templates, content

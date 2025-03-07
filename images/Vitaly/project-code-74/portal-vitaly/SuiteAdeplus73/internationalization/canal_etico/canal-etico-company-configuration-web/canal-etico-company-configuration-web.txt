@@ -1,0 +1,20 @@
+CompanyConfiguration
+
+Canal Ético
+
+# View
+Configuración de empresa
+Seleccionar logo
+Nombre
+CIF
+Enlace Canal Ético
+Indica el valor que se indica como parÃ¡metro para la url del Canal Ético de la empresa. Debe ser carácteres y numeros, sin espacios ni símbolos.
+Descripción
+Observaciones
+Convenio
+Editar
+Enlace:
+
+# Errors
+Campo requerido
+Debe ser un valor que sólo contenga letras y números, sin espacios en blanco.

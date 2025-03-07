@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.canal.etico.liferay.portlet.canal.manager">
+
+	<namespace>canal_etico</namespace>
+
+	<entity local-service="true" name="Denuncia" >
+		<!-- PK fields -->
+		<column name="denunciaId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="codigo" type="String" />
+		<column name="cif" type="String" />
+		<column name="compId" type="long" />
+		<column name="vinculacion" type="String" />
+		<column name="email" type="String" />
+		<column name="nombre" type="String" />
+		<column name="apellidos" type="String" />
+		<column name="nif" type="String" />
+		<column name="telefono" type="String" />
+		<column name="anonimo" type="boolean" />
+		<column name="tipo" type="long" />
+		<column name="categoria" type="long" />
+		<column name="asunto" type="String" />
+		<column name="descripcion" type="String" />
+		<column name="estado" type="long" />
+		<column name="motivoId" type="long" />
+		<column name="observaciones" type="String"/>
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="endDate" type="Date" />
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+		<finder name="codigo" return-type="Collection">
+			<finder-column name="codigo" />
+		</finder>
+		<finder name="estado" return-type="Collection">
+			<finder-column name="estado" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Comp">
+
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="suiteCompId" type="long" />
+		<column name="cif" type="String" />
+		<column name="name" type="String" />
+		<column name="description" type="String" localized="true" />
+		<column name="observations" type="String" localized="true" />
+		<column name="agreement" type="String" localized="true" />
+		<column name="friendlyURL" type="String" />
+		<column name="logo" type="long" />
+		<column name="active" type="boolean" />
+		<column name="startDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="cif" return-type="Collection">
+			<finder-column name="cif" />
+		</finder>
+		<finder name="suiteCompId" return-type="Comp" unique="true">
+			<finder-column name="suiteCompId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+		<finder name="friendlyURL" return-type="Collection">
+			<finder-column name="friendlyURL" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="UserCompany">
+
+		<!-- PK fields -->
+		<column name="userId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_comp" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="DenunciaAccion">
+
+		<!-- PK fields -->
+		<column name="denunciaAccionId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="denunciaId" type="long" />
+		<column name="accionId" type="long" />
+		<column name="userId" type="long" />
+		<column name="observaciones" type="String"/>
+
+		<!-- Audit fields -->
+
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="denunciaId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="denunciaId" return-type="Collection">
+			<finder-column name="denunciaId" />
+		</finder>
+		<finder name="denuncia_accion" return-type="Collection">
+			<finder-column name="denunciaId" />
+			<finder-column name="accionId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Accion" >
+		<!-- PK fields -->
+		<column name="accionId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="nombre" type="String" localized="true"/>
+		<column name="estado" type="long" />
+		<column name="activo" type="boolean" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="nombre" return-type="Collection">
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Categoria" >
+		<!-- PK fields -->
+		<column name="categoriaId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="nombre" type="String" localized="true"/>
+		<column name="tipo" type="String" />
+		<column name="codigo" type="String" />
+		<column name="activo" type="boolean" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="nombre" return-type="Collection">
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Vinculacion" >
+		<!-- PK fields -->
+		<column name="vinculacionId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="nombre" type="String" localized="true"/>
+		<column name="activo" type="boolean" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="nombre" return-type="Collection">
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Motivo" >
+		<!-- PK fields -->
+		<column name="motivoId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="compId" type="long" />
+		<column name="nombre" type="String" localized="true"/>
+		<column name="observaciones" type="String" localized="true"/>
+		<column name="activo" type="boolean" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="nombre" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="nombre" return-type="Collection">
+			<finder-column name="nombre" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Comunicacion" >
+		<!-- PK fields -->
+		<column name="comunicacionId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="denunciaId" type="long" />
+		<column name="userId" type="long" />
+		<column name="descripcion" type="String" />
+		<column name="adjunto" type="long" />
+		<column name="observaciones" type="String"/>
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="denunciaId" return-type="Collection">
+			<finder-column name="denunciaId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="Observacion" >
+		<!-- PK fields -->
+		<column name="observacionId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="denunciaId" type="long" />
+		<column name="userId" type="long" />
+		<column name="descripcion" type="String" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="createDate" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="denunciaId" return-type="Collection">
+			<finder-column name="denunciaId" />
+		</finder>
+	</entity>
+
+</service-builder>

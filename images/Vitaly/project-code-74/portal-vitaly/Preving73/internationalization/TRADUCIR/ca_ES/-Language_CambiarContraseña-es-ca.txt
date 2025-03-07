@@ -1,0 +1,16 @@
+
+ Canviar contrasenya 
+ Contrasenya actual 
+ Nova contrasenya 
+ Confirmar contrasenya 
+ Nom 
+ Correu electrònic 
+
+ La contrasenya s'ha actualitzat correctament. Rebrà un correu per informar-li del canvi. 
+ La contrasenya de l'usuari no és correcta. No s'ha pogut canviar. 
+ La contrasenya i la confirmació de contrasenya no són iguals. 
+
+ Revisi que la contrasenya escollida compleixi les condicions indicades: Ha de tenir com a mínim 8 caràcters, incloent-hi majúscules, minúscules i nombres. 
+ No s'ha actualitzat la contrasenya. Revisi que compleix les condicions: Ha de tenir com a mínim 8 caràcters, incloent-hi majúscules, minúscules i nombres. 
+
+ La contrasenya ha de tenir com a mínim 8 caràcters, incloent-hi majúscules, minúscules i nombres.  

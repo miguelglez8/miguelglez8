@@ -1,0 +1,23 @@
+
+
+MES
+Buscar
+Desde
+Hasta
+TOTAL HORAS
+
+Minutos
+Entrada
+Salida
+Tiempo
+Fecha
+TOTAL HORAS
+Observaciones
+Observaciones empresa
+-abierto-
+-sin cerrar-
+Actividad desconocida
+Debe indicar una fecha de inicio
+Debe indicar una fecha de inico inferior a la de fin
+
+

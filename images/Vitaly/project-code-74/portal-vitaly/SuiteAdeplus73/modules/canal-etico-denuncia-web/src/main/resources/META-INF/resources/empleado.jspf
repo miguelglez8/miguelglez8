@@ -1,0 +1,112 @@
+<%@ page import="com.canal.etico.liferay.portlet.denuncia.web.constants.DenunciaPortletKeys" %>
+<%@ page import="com.liferay.portal.kernel.util.Validator" %>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <fieldset class="input-group">
+                <legend for="admin" class="control-label"><liferay-ui:message key="denuncia.view.empleado.anonima"/></legend>
+                <div class="custom-control custom-radio d-inline-block mr-3 mt-2">
+                    <div class="custom-control custom-radio d-inline-block mr-3 mt-2">
+                        <input class="custom-control-input" type="radio" id="anonima1" name="<portlet:namespace/><%=DenunciaPortletKeys.ANONIMA%>" value="anonima" onclick="setAnomim()">
+                        <label class="custom-control-label" for="anonima1"><liferay-ui:message key="denuncia.view.yes"/></label>
+                    </div>
+                    <div class="custom-control custom-radio d-inline-block mt-2">
+                        <input class="custom-control-input" type="radio" id="anonima2" name="<portlet:namespace/><%=DenunciaPortletKeys.ANONIMA%>" value="noAnonima" checked onclick="setNoAnomim()">
+                        <label class="custom-control-label" for="anonima2"><liferay-ui:message key="denuncia.view.no"/></label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group required">
+            <aui:input id="email-empleado" name="<%=DenunciaPortletKeys.EMAIL%>" type="text" label="denuncia.view.empleado.email" >
+                <aui:validator name="email"/>
+                <aui:validator name="required" errorMessage="denuncia.view.validator.mail.required">
+                    function() {
+
+                        var mail = document.getElementById("<portlet:namespace />email-empleado").value;
+
+                        var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                        var valid = regex.test(mail);
+
+                        if(mail === "" || !valid){
+                            document.getElementById("<portlet:namespace />button-next-empleado").disabled=true;
+                            return true;
+                        }else{
+                            document.getElementById("<portlet:namespace />button-next-empleado").disabled=false;
+                            document.getElementById("<portlet:namespace />button-next-empleado").classList.remove("disabled");
+                            return false;
+                        }
+
+                    }
+                </aui:validator>
+            </aui:input>
+        </div>
+    </div>
+
+    <div class="col-md-6 noAnominaInputs">
+        <div class="form-group ">
+            <aui:input id="<%=DenunciaPortletKeys.NAME%>" name="<%=DenunciaPortletKeys.NAME%>" type="text" label="denuncia.view.empleado.name" >
+<%--                <aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                    function() {
+                        var anonima = document.getElementById("anonima2").checked;
+                        console.log(anonima);
+                        return anonima;
+                    }
+                </aui:validator>--%>
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-6 noAnominaInputs">
+        <div class="form-group ">
+            <aui:input id="<%=DenunciaPortletKeys.LAST_NAME%>" name="<%=DenunciaPortletKeys.LAST_NAME%>" type="text" label="denuncia.view.empleado.lastname" >
+<%--                <aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                    function() {
+                        var anonima = document.getElementById("anonima2").checked;
+                        console.log(anonima);
+                        return anonima;
+                    }
+                </aui:validator>--%>
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-6 noAnominaInputs">
+        <div class="form-group ">
+            <aui:input id="<%=DenunciaPortletKeys.NIF%>" name="<%=DenunciaPortletKeys.NIF%>" type="text" label="denuncia.view.empleado.nif" >
+<%--                <aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                    function() {
+                        var anonima = document.getElementById("anonima2").checked;
+                        console.log(anonima);
+                        return anonima;
+                    }
+                </aui:validator>--%>
+            </aui:input>
+        </div>
+    </div>
+    <div class="col-md-6 noAnominaInputs">
+        <div class="form-group ">
+            <aui:input id="<%=DenunciaPortletKeys.PHONE%>" name="<%=DenunciaPortletKeys.PHONE%>" type="text" label="denuncia.view.empleado.phone" >
+                <%--<aui:validator name="required" errorMessage="denuncia.view.validator.required">
+                    function() {
+                        var anonima = document.getElementById("anonima2").checked;
+                        console.log(anonima);
+                        return anonima;
+                    }
+                </aui:validator>--%>
+            </aui:input>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function setNoAnomim(){
+        $(".noAnominaInputs").removeClass("d-none");
+    }
+    function setAnomim(){
+        $(".noAnominaInputs").addClass("d-none");
+    }
+</script>

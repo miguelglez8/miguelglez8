@@ -1,0 +1,884 @@
+############################### EMPRESAS ###################################
+El consultor se ha guardado correctamente
+Empresas
+Fecha de alta
+Empresa
+CIF
+Tipo de contrato
+Familia de normas
+Consultor/a
+Asignar consultor
+Fecha contrato desde
+Fecha contrato hasta
+Aceptar
+
+Estado
+Interlocutor/a
+Email interlocutor/a
+Fecha contrato
+Limpiar filtros
+Buscar
+Búsqueda avanzada
+Texto a buscar
+Todas
+PRL
+Medio Ambiente
+Seguridad Industrial
+Seguridad Alimentaria
+
+
+############################### AREA ###################################
+Área
+Añadir
+Texto a buscar
+Activa
+Si
+No
+Todas
+Área
+Nº Hombres
+Nº Mujeres
+Total
+Fecha de baja
+Áreas
+Campo requerido.
+Guardar
+Información
+Al dar de baja el área se darán de baja todos los puestos de trabajo asociados ¿desea continuar?
+Aceptar
+Atrás
+Cree una versión para el Plan de igualdad de esta empresa
+
+
+############################### CUESTIONARIO ###################################
+0. Personas que participan en el cuestionario
+I. Información corporativa
+II. Selección y contratación
+III. Clasificación profesional
+IV. Formación
+V. Promoción profesional
+VI. Condiciones de trabajo
+VII. Ejercicio corresponsable de los derechos de la vida personal, familiar y laboral
+VIII. Infrarrepresentación femenina
+IX. Prevención del acoso sexual y/o por razón de sexo
+X. Víctimas de violencia de género y personas en situación de riesgo o exclusión social
+XI. Lenguaje y comunicación no sexista
+Comentarios de la organización
+Participantes
+Personas que participan en el cuestionario
+Personas que participan en el cuestionario
+Personas que participan en el cuestionario
+¿Desea eliminar el participante?
+Puesto de trabajo
+Nombre
+Apellidos
+Mail
+Organización
+Cancelar
+Guardar
+Cree una versión para el Plan de igualdad de esta empresa
+Configuración del Cuestionario
+ID Lista dinamica Debilidad
+ID Lista dinamica Diagnostico
+ID Lista dinamica Fortaleza
+ID Lista dinamica Medida
+ID Lista dinamica Parametrizacion
+No hay datos para mostrar
+Cuestionario finalizado correctamente
+Recuerde que la elaboración del Diagnóstico de situación relativo a su Plan de igualdad requerirá la cumplimentación del apartado "Estadísticas plantilla".
+Aceptar
+"Si",
+"No",
+"No, viene determinado en el Convenio de aplicación de ámbito superior a la Empresa",
+"No aplica",
+"1. Describa brevemente la trayectoria de su Organización.",
+"2. Indique, en su caso, peculiaridades de la actividad desarrollada y de cada centro de trabajo.",
+"3. Indique si su Organización dispone de un Canal ético o canal de denuncias.",
+"4. Indique los medios empleados para comunicar a las personas trabajadoras de la Organización los procesos de selección y contratación, formación, promoción profesional, la existencia de medidas de conciliación, y las medidas existentes contra la prevención del acoso. (respuesta múltiple)",
+"Canal de comunicación",
+"Selección y contratación",
+"Formación",
+"Promoción profesional",
+"Medidas de conciliación",
+"Medidas de acoso",
+"Reuniones",
+"Presentaciones a la plantilla",
+"Correo electrónico",
+"Tablón de anuncios",
+"Mensajes en nómina mensual",
+"Periódico o revista interna",
+"Intranet",
+"Apps de mensajería instantánea u otras apliaciones online",
+"No comunico este proceso",
+"5. ¿Su Organización ya tiene realizada una descripción de perfiles profesionales y puestos de trabajo?",
+"5.1. Si respondió afirmativamente a la pregunta 5, indique si la descripción se ha realizado de todos los puestos de trabajo de la Organización.",
+Departamento, puesto superior inmediato, misión, funciones principales... ",
+"5.3. Si respondió afirmativamente a la pregunta 5, indique si la descripción se ha realizado mediante la colaboración de los distintos departamentos de su Organización, con el de Recursos humanos.",
+"5.4. Si respondió afirmativamente a la pregunta 5, indique si la descripción es revisada periódicamente.",
+"5.5. Si respondió afirmativamente a la pregunta 5, indique si el lenguaje de la descripción de puestos de trabajo ha sido revisado a fin de garantizar el lenguaje inclusivo.",
+"6. La Organización realiza la selección y contratación de acuerdo a:",
+"Política y criterios de contratación corporativos",
+"Criterios establecidos de manera indivdidualizada para cada contratación",
+"Cada persona responsable establece su propio criterio",
+"Depende del perfil del puesto: directivo, mando intermedio u otros puestos de no responsabilidad",
+"7. ¿La Organización gestiona con medios propios todo el proceso de selección?",
+"No, cuenta con empresas externas",
+"8. Internamente, en el proceso de selección del candidato/a intervienen: (seleccione tantas opciones como corresponda)",
+"Personal del departamento de Recursos humanos",
+"Personal responsable del departamento que solicita la incorporación",
+"Personal directivo",
+"9. Indique los métodos utilizados para la gestión y retención de talento en la Organización: (seleccione tantas opciones como corresponda)",
+"Política de bienestar laboral",
+"Conciliación de la vida personal, familiar y laboral",
+"Plan de promoción interna",
+"Ninguna medida implantada orientada al resultado: gestión y retención del talento",
+"Otros (especifique cuales):",
+"10. La causa mayoritaria de las incorporaciones del último año es:",
+"Rotación de personal",
+"Incremento o necesidades de la producción",
+"11. ¿El sistema de clasificación profesional vigente ha sido acordado en el seno de la Organización?",
+"11.1. Si respondió afirmativamente a la pregunta 11, indique si los criterios del sistema de clasificación son revisados periódicamente.",
+"11.2. Si respondió afirmativamente a la pregunta 11, indique si el lenguaje empleado en la documentación del sistema de clasificación profesional ha sido revisado a fin de garantizar el lenguaje inclusivo.",
+"12. ¿El sistema de clasificación profesional comprende todos los puestos de trabajo de la Organización?",
+"13. ¿La Organización documenta un Plan de formación anual?",
+"13.1. Si respondió afirmativamente a la pregunta 13, indique si el Plan cuenta expresamente entre sus objetivos con la integración de la Igualdad entre Hombres y Mujeres en todos los procesos de la Organización.",
+"13.2. Si respondió afirmativamente a la pregunta 13, indique si se realiza un seguimiento de la ejecución y el grado de consecución de objetivos del Plan de formación.",
+"14. ¿La Organización aprueba permisos para la concurrencia a exámenes de sus personas trabajadoras?",
+"15. ¿Se han adoptado medidas para la adaptación de la jornada ordinaria de trabajo para la asistencia a cursos de formación profesional?",
+"16. ¿El Plan de formación incluye la formación necesaria para favorecer la adaptación de la persona trabajadora a las modificaciones operadas en el puesto?",
+"17. En relación a los criterios tenidos en cuenta en la promoción profesional, indique porcentualmente cuál es la incidencia de la formación del candidato.",
+"Menos del 25%",
+"Entre un 25% y un 50%",
+"Más de un 50%",
+"18. En relación a los criterios tenidos en cuenta en la promoción profesional, indique porcentualmente cuál es la incidencia de la antigüedad del candidato.",
+"Menos del 25%",
+"Entre un 25% y un 50%",
+"Más de un 50%",
+"19. En relación a los criterios tenidos en cuenta en la promoción profesional, indique porcentualmente cuál es la incidencia de los méritos del candidato (nivel de contribución, responsabilidades y exigencias).",
+"Menos del 25%",
+"Entre un 25% y un 50%",
+"Más de un 50%",
+"20. En relación a los criterios tenidos en cuenta en la promoción profesional, indique porcentualmente cuál es la incidencia de las facultades organizativas del empresario.",
+"Menos del 25%",
+"Entre un 25% y un 50%",
+"Más de un 50%",
+"21. Indique si las promociones se vinculan mayoritariamente a:",
+"Movilidad geográfica",
+"Dedicación exclusiva",
+"Disponibilidad para viajar",
+"Ninguna de lsa anteriores",
+"22. Indique si los criterios para ascender han sido acordados en el seno de la Organización.",
+"Sí",
+"No, vienen establecidos en el convenio colectivo de ámbito superior de la organización",
+"No, no están documentados",
+"23. Indique si los criterios para promocionar económicamente a un trabajador han sido acordados en el seno de la Organización.",
+"Sí",
+"No, vienen establecidos en el convenio colectivo de ámbito superior de la empresa",
+"No, no están documentados",
+"24. Indique si existe en la Organización un sistema de primas que retribuya la producción y/o calidad del trabajo.",
+"24.1. Si respondió afirmativamente a la pregunta 24, indique si el pago de primas se establece para todos los puestos.",
+"Si",
+"No aplica",
+"No (especifique cuales): ",
+"24.2. Si respondió afirmativamente a la pregunta 24, indique si el sistema de medición del trabajo:",
+"Se basa en datos objetivos y cuantificables",
+"Se basa directamente en valoración subjetiva del personal con funciones de supervisión",
+"No aplica",
+"25. Indique si existe en la Organización un sistema de incentivos directamente vinculado a la consecución de objetivos económicos.",
+"25.1 Si respondió afirmativamente a la pregunta 25, indique si el pago de incentivos se establece para todos los puestos.",
+"26. La Organización emplea a trabajadores/as en modalidad de teletrabajo.",
+"26.1. Si respondió afirmativamente a la pregunta 26, indique si el teletrabajo se aplica más a:",
+"Mujeres",
+"Hombres",
+"De manera equilibrada",
+"No aplica",
+"26.2. Si respondió afirmativamente a la pregunta 26, indique si los procesos de gestión de Prevención de Riesgos Laborales y medición del trabajo se han adaptado a esta modalidad de trabajo.",
+"27. ¿La Organización ha dispuesto medidas de prevención de riesgos laborales con perspectiva de género (ej. riesgos laborales específicos para mujeres embarazadas, en situación de lactancia, etc.)?",
+"28. ¿La Organización ha establecido e informado a la plantilla de los criterios de utilización de los dispositivos digitales por las personas trabajadoras, respetando en todo caso los estándares mínimos de protección de su intimidad? ",
+"29. ¿La Organización tiene aprobada e implantada una Política de desconexión digital?",
+"30. Indique si el principal motivo de solicitud de excedencia en su Organización ha sido el cuidado de familiares.",
+"31. Indique si las excedencias han sido solicitadas mayoritariamente por:",
+"Hombres",
+"Mujeres",
+"De manera equilibrada",
+"32. Indique si el absentismo repercute mayoritariamente en:",
+"Hombres",
+"Mujeres",
+"De manera equilibrada",
+"33. Indique si el principal motivo de ausencias no justificadas en su Organización ha sido el cuidado de familiares:",
+"34. ¿La Organización aplica medidas que complementan lo dispuesto en el art. 39 ET sobre la movilidad funcional?",
+"35. ¿La Organización aplica medidas que complementan lo dispuesto en el art. 40 ET sobre la movilidad geográfica?",
+"36. ¿En los últimos tres años se han producido modificaciones sustanciales de las condiciones de trabajo (art. 41 ET)?",
+"37. ¿Su Organización cuenta con trabajadores/as cedidos por otra empresa?",
+"37.1. Si respondió afirmativamente a la pregunta 37, indique orientativamente qué porcentaje de personas de su Organización son cedidas y/o provienen de ETT.",
+"0-3%",
+"4-9%",
+">10%",
+"No aplica",
+"37.2. Si respondió afirmativamente a la pregunta 37, indique si a este personal se le aplican las mismas condiciones que a la plantilla de la Organización.",
+"38. ¿Se han producido inaplicaciones del Convenio Colectivo (art. 82.3 ET)? *",
+"39. ¿Su Organización ha implantado un proceso de revisión del sistema de organización y control del trabajo?",
+"39.1. Si respondió afirmativamente a la pregunta 39, ¿en la elaboración del protocolo de revisión del sistema de organización y control del trabajo ha intervenido personal con formación en igualdad? ",
+"39.2. Si respondió afirmativamente a la pregunta 39, ¿el protocolo de revisión del sistema de organización y control del trabajo ha sido revisado para garantizar el lenguaje inclusivo empleado?",
+"40. ¿Su Organización ha implantado un sistema documentado de estudio de tiempos de realización del trabajo?",
+"40.1. Si respondió afirmativamente a la pregunta 40, ¿en la elaboración del estudio de tiempo ha intervenido personal con formación en igualdad?",
+"40.2. Si respondió afirmativamente a la pregunta 40, ¿el estudio de tiempo ha sido revisado para garantizar el lenguaje inclusivo empleado?",
+"41. ¿La Organización tiene implantadas medidas para facilitar la conciliación personal, familiar y laboral y promover el ejercicio corresponsable de dichos derechos?",
+"41.1. Si respondió afirmativamente la pregunta 41, indique las medidas implantadas.",
+"Guardería en la organización",
+"Subvenciones económicas para guardería o ayuda escolar",
+"Flexibilidad de horarios en la entrada, la salida o durante el tiempo de la comida",
+"Jornada coincidente con el horario escolar",
+"Teletrabajo o trabajo a distancia (TAD)",
+"Ampliación el permiso de maternidad o paternidad",
+"Otras (especifique cuáles): ",
+"42. La Organización aplica con carácter preferente a personas trabajadoras con responsabilidades de cuidado medidas que favorezcan la conciliación con: cambios de funciones, distribución irregular de la jornada, cambios de centro sin cambio de residencia, modificaciones sustanciales de las condiciones de trabajo, traslados, desplazamientos…",
+"43. ¿La participación de Mujeres y Hombres en los distintos niveles jerárquicos, grupos y subgrupos profesionales y su evolución en los cuatro años anteriores a la elaboración del diagnóstico ha sido positiva, tendiendo al equilibrio?",
+"44. En los últimos cuatro años, ¿el número de personas del sexo infrarrepresentado que ha comenzado a ocupar puestos de responsabilidad ha sido notablemente superior al del otro sexo?",
+"45. ¿Dispone de un procedimiento para la sensibilización, prevención, detección y actuación contra el acoso sexual y/o por razón de sexo?",
+"45.1. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento dispone de una declaración de principios, de la definición de acoso sexual y por razón de sexo, e identifica las conductas que pudieran ser constitutivas de acoso?",
+"45.2. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento dispone del protocolo de actuación frente al acoso para dar cauce a las quejas o denuncias que pudieran producirse, así como medidas cautelares y/o medidas correctivas aplicables?",
+"45.3. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento identifica las medidas reactivas frente al acoso y, en su caso, el régimen disciplinario?",
+"45.4. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento aplica el principio de prevención y sensibilización del acoso sexual y por razón de sexo: información y accesibilidad de los procedimientos y medidas?",
+"45.5. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento aplica el principio de confidencialidad y respeto a la intimidad y dignidad de las personas afectadas?",
+"45.6. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento respeta el principio de presunción de inocencia de la supuesta persona acosado?",
+"45.7. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento prohíbe represalias en la supuesta víctima o personas que apoyen la denuncia o denuncien supuestos de acoso sexual y por razón de sexo?",
+"45.8. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento se aplica con diligencia y celeridad?",
+"45.9. Si respondió afirmativamente a la pregunta 45, ¿el procedimiento garantiza los derechos laborales y de protección social de las víctimas?",
+"46. ¿La Organización tiene identificadas mujeres víctimas de violencia de género que trabajan en la Organización?",
+"47. ¿Se prevé asesoramiento o apoyo profesional psicológico y/o médico a las víctimas de violencia de género?",
+"48. ¿Se amplían los derechos laborales y/o las medidas legalmente establecidas para las víctimas de violencia de género?",
+"49. ¿La Organización tiene un programa de inserción, permanencia y/o promoción de colectivos especiales (víctimas de violencia de género, personas en situación o riesgo de exclusión social, …)?",
+"50. ¿Las denominaciones de los puestos de trabajo se han adecuado al lenguaje inclusivo?",
+"51. ¿El lenguaje de la comunicación externa de la Organización ha sido revisado para garantizar que sea inclusivo?",
+"52. ¿Los logos e imágenes representativas y/o utilizadas por la Organización han sido revisadas para evitar que resulten sexistas?",
+"Si lo desea, indique a continuación comentarios sobre cualquiera de los aspectos tratados en el cuestionario."
+
+
+############################### CUESTIONARIO ###################################
+Las valoraciones que propone su consultor asociado son las siguientes:
+Información complementaria:
+Guardar
+Cancelar
+Hombres
+Mujeres
+Sí
+No
+Ayuda
+Cree una versión para el Plan de igualdad de esta empresa
+Encuesta INE: ocupación en el sector por sexo
+Tabla 0: Encuesta INE
+CNAE
+Total
+Ocupación en el sector por sexo
+Ocupación en el sector por sexo
+¿Desea eliminar la ocupación?
+El objetivo de la presente tabla es identificar el grado de masculinización/feminización del sector al que pertenece la Organización a partir de las estadísticas oficiales publicadas en el INE: 
+Total plantilla por sexo
+Plantilla por sexo
+Nº Personas
+Tabla 1: Total plantilla por sexo
+El objetivo de la presente tabla es valorar sí la Organización está: masculinizada, feminizada o equilibrada. Para ello, deberemos fijarnos en el porcentaje. En el caso de que el porcentaje de Hombres en plantilla sea superior al 60% se considera que la organización está masculinizada. En caso de que el porcentaje de Mujeres en plantilla sea superior al 60%, la organización se considera feminizada. En caso de que ambos sexos se encuentren entre el 40-60%, consideramos que la organización está equilibrada.
+Análisis por área y puesto
+Tabla 2: Análisis por área y puesto
+Nº personas por área y puesto
+Total general
+Nº Hombres
+% Hombres
+Nº Mujeres
+% Mujeres
+Nº personas
+Análisis
+Por un lado, valoramos cómo influyen los estereotipos de género al asignar funciones, es decir, sí existen indicadores o no de segregación horizontal. Para ello, nos fijaremos en si en algún departamento/área, uno de los sexos está representado en más de un 60%. Nuestra conclusión, reflejará aquel dpto. o área en el que se da dicha segregación horizontal. Además, también nos fijaremos en si algún puesto de trabajo está representado en más de un 60 % y haremos una especial mención sobre éste, aunque se encuentre dentro de un dpto./área donde no exista segregación. \
+                                  <br/>Por otro lado, valoramos cómo se reparten los cargos de responsabilidad entre mujeres y hombres en la organización, es decir, si existen o no indicadores de segregación vertical. Diremos que existe segregación vertical cuando en los puestos altos de responsabilidad (intermedios o superiores), uno de los sexos está representado en más de un 60 %. Además, esta segregación será aún mayor cuando en los puestos con dicho indicador negativo (>60% en un sexo), dicho sexo es el que menos % de representación tiene en la plantilla (tabla 1). Para dar la conclusión, haremos referencia a en qué puesto/s en concreto se refleja la segregación.
+Ánalisis por edad
+Personas por edad
+% Hombres
+% Mujeres
+% Personas por rango de edad
+20 años o menos
+De 20 a 25 años
+De 25 a 30 años
+De 30 a 35 años
+De 35 a 40 años
+De 40 a 45 años
+De 45 a 50 años
+De 50 a 55 años
+De 55 a 60 años
+De 60 en adelante
+Tabla 3.1: Análisis por edad
+El objetivo de la presente tabla es analizar sí la Organización tiene o no en cuenta a personas que se encuentren en una etapa de su vida en las que las responsabilidades de cuidado sean mayores. Para ello, nos fijaremos en la franja de edad en las que suelen darse responsabilidades de cuidado (entre 25 y 45 años) y veremos si concentra un mayor número de Mujeres o de Hombres (>60%). Haremos una especial mención si el sexo infrarrepresentado sean las mujeres en edad de maternidad (por posible discriminación). 
+Ánalisis por puesto y edad
+Puesto
+Nº Hombres
+Nº Mujeres
+Gráfica de análisis por puestos de responsabilidad y edad
+Tabla 3.2: Análisis por puestos de responsabilidad y edad
+El objetivo de la presente tabla es analizar los puestos de trabajo con mayor responsabilidad y ver sí en éstos puede influir que las personas se encuentren en una etapa de su vida en las que las responsabilidades de cuidado sean mayores. Para ello, cogeremos los puestos de mando intermedio y superiores y veremos si en las franjas de edad con mayores responsabilidades de cuidado (entre 25 y 45 a&nacute;os). El indicador será negativo cuando la diferencia de presencia de Hombres y mujeres en dichas franjas sea superior al (40-60%). Hacer una especial mención en caso de que sean las mujeres las menos representadas (por posible discriminación por maternidad).
+Análisis por puesto y antigüedad
+Puesto
+Con R. Familiar
+Con R. Familiar %
+0 a 1 años
+1 a 3 años
+3 a 5 años
+5 a 10 años
+10 a 15 años
+Más de 15
+Total
+Tabla 4: Análisis por puesto y antigüedad
+El objetivo de la presente tabla es observar la antigüedad de Mujeres y Hombres, para valorar el grado de estabilidad laboral y sí las políticas de conciliación facilitan o no la permanencia de mujeres en la empresa. Para ello, nos pronunciaremos sobre dos cuestiones: <br/> 1. Pronunciarnos sobre la permanencia de las mujeres en la empresa. Consideramos que no hay estabilidad laboral cuando más del 40 % de las mujeres se encuentren en el tramo "hasta 5 a&nacute;os". <br/> 2. Pronunciarnos sobre el impacto que las responsabilidades familiares tiene en la antigüedad de la mujer. Para ello compararemos si hay diferencias significativas en la antigüedad según tenga o no personas a cargo. <br/> NOTA: Pese a que el título de la tabla refiera nº de hijos, nosotros nos pronunciaremos sobre personas dependientes. <br/> NOTA: Pronunciarnos sobre las dos cuestiones de forma independiente
+Análisis de puestos por nivel de estudios
+Puesto
+Nº Hombres
+Nº Mujeres
+Total
+Formación predominante mujer
+Formación predominante hombre
+Puesto más habitual en el nivel de estudios moda en Mujeres
+Puesto más habitual en el nivel de estudios moda en Hombres
+Mujeres con formación por encima del nivel de estudios moda del puesto
+Hombres con formación por encima del nivel de estudios moda del puesto
+Mujeres con formación por debajo del nivel de estudios moda del puesto
+Hombres con formación por debajo del nivel de estudios moda del puesto
+Sin estudios
+Estudios primarios
+Educación Secundaria Obligatoria
+Bachillerato-FP
+Grado
+Máster
+Doctorado
+Tabla 5: Análisis de puestos por nivel de estudios
+El objetivo de la presente tabla es analizar sí existen diferencias entre mujeres y hombres. Para valorarlo, nos fijaremos en: <br/> 1. Mirar los puestos con más mujeres, y fijarnos en qué tipo de formación es la predominante en dicho puesto. Pronunciarnos sobre si existe un equilibrio o desequilibrio entre el nivel formativo y las exigencias del puesto, valorando si la formación predominante en mujeres es compatible con otros puestos de trabajo. <br/> 2. Mirar los puestos de responsabilidad y realizar una comparativa entre la formación que tienen los hombres y la que tienen las mujeres. Nos pronunciaremos sobre si hay desequilibrios entre la formación que se le exige a las mujeres y la que se le exige a los hombres. <br/> 3. Mirar el porcentaje de plantilla sin cualificación y con mayor cualificación. Nos pronunciaremos sobre si la sobrecualificación y la infracualificación afecta más a hombres o a mujeres. <br/> NOTA: Pronunciarnos sobre las 3 cuestiones de forma independiente.
+Análisis por puesto y familiares dependientes
+Puesto
+Nº Hombres
+% Hombres
+Nº Mujeres
+% Mujeres
+Nº trabajadores en puestos de responsabilidad con cargas familiares
+Nº de trabajadores con cargas familiares
+Total
+Puesto responsabilidad
+Puesto sin responsabilidad
+Tabla 6: Análisis por puesto con familiares dependientes
+El objetivo de la presente tabla es observar sí existen puestos de trabajo en los que existen diferencias asociadas al hecho de tener responsabilidades familiares. Para nuestra valoración, nos fijaremos en lo siguiente: <br/> 1. Comparar los puestos con 0 hijos vs. los que tienen algún hijo y ver si hay diferencias significativas. Llamaremos la atención sobre los puestos en los que el número de mujeres sin hijos sea mayor al 60% sobre el total de mujeres en ese puesto. <br/> 2. Comparar los puestos de responsabilidad con 0 hijos vs. los que tienen algún hijo y ver si hay diferencias significativas. Llamaremos la atención sobre los puestos de responsabilidad en los que el número de mujeres sin hijos sea mayor al 60 % sobre el total de mujeres en ese puesto. <br/> NOTA: Pese a que el título de la tabla refiera nº de hijos, nosotros nos pronunciaremos sobre personas dependientes. <br/> NOTA: Pronunciarnos sobre las dos cuestiones de forma independiente <br/> NOTA: Para desagregar en la tabla el número de hijos de las personas de cada puesto, hacer doble click en el puesto y darle a "N.º de Hijos/as y fami. Dependientes"
+Análisis de las reducciones de jornada por Nº de familiares dependientes
+Puesto
+Nº Hombres con reducción de jornada por motivos familiares
+Nº Mujeres con reducción de jornada por motivos familiares
+Total
+Mujeres sin reducción por motivos familiares
+Mujeres con reducción por motivos familiares
+Hombres sin reducción por motivos familiares
+Hombres con reducción por motivos familiares
+Tabla 7: Análisis de reducción de jornada por nº de personas a cargo
+Gráfico de reducciones de jornada por motivos familares desagregado por sexo
+Personas sin reducción por motivos familiares
+Personas con reducción por motivos familiares
+El objetivo de la presente tabla es identificar los efectos que la situación personal y familiar de la plantilla puede tener en la presencia de Mujeres y Hombres en la organización. Para ello, compararemos las reducciones totales con las reducciones por motivos familiares (guarda legal de menores, guarda legal de personas con discapacidad, cuidado de familiar que no puede valerse por sí mismo), y nos pronunciaremos sobre sí las reducciones de jornada por efectos de la situación personal y familiar, se dan más en los hombres o en las mujeres. <br/> NOTA: Pese a que el título de la tabla refiera nº de hijos, nosotros nos pronunciaremos sobre personas dependientes. 
+Análisis de la plantilla por tipo de contrato y jornada
+Nº Hombres
+Nº Mujeres
+Indefinido
+Temporal
+Fijo Discontinuo
+Jornada completa
+Jornada parcial
+N.D
+Tabla 8: Análisis por tipo de contrato y jornada
+Gráfico del análisis por tipo de contrato y jornada
+El objetivo de la presente tabla es valorar a qué sexo afecta más la temporalidad y la parcialidad de los contratos. Diremos que hay diferencias (especificar dónde) cuando en uno de los tipos contractuales y jornada está un sexo más representado que otro en más de un 60%.
+Análisis de la plantilla por horario y turnos
+Nº Hombres
+% Hombres
+Nº Mujeres
+% Mujeres
+Total
+% Total
+Con turnos
+Sin turnos
+Continuo
+Partido
+Tabla 9: Análisis por horario y turnos
+El objetivo de la presente tabla es valorar cómo se correlaciona el sexo con las condiciones de horario y tipo de jornada. Para ello, valoraremos lo siguiente: <br/> 1. Pronunciaros sobre a qué sexo afecta más la jornada partida <br/> 2. Pronunciarnos sobre qué sexo se ve más afectado por el trabajo a turnos <br/> 3. Pronunciarnos sobre sí la jornada partida y el trabajo a turnos se da en Mujeres u Hombres que tengan personas dependientes.  <br/> 4. Pronunciarnos sobre si las jornadas partidas y el trabajo a turnos se da en mayor medida en algún dpto. en concreto <br/> 5. Pronunciarnos sobre si algún puesto se ve particularmente afectado por la jornada partida o el trabajo a turnos. <br/> NOTA: Pronunciarnos sobre las cinco cuestiones de forma independiente
+Análisis de los ingresos por sexo
+Último año
+Nº Hombres
+% Hombres
+Nº Mujeres
+% Mujeres
+Total
+% Total
+Nº de contrataciones por tipo de contratación
+Contratación indefinida
+Contratación temporal
+Contratación fijo discontinuo
+Nº de contrataciones por tipo de jornada
+Contratación J. Completa
+Contratación J. Parcial
+N.D
+Indef
+Temp
+F.D
+Completa
+Parcial
+ND
+Tabla 10: Análisis de los ingresos producidos en el último año por sexo
+Gráfica de los ingresos producidos en el \u00faltimo a\u00f1o por sexo, tipo de contrato y jornada
+El objetivo de la presente tabla es analizar sí las contrataciones producidas en el último a&nacute;o est&acute;n equilibradas en cuanto a sexos o si por el contrario se observa un "potencial desequilibrio". Diremos que se aprecia un potencial desequilibrio y diremos al sexo que afecta (infrarrepresentado) cuando el porcentaje de contrataciones de uno de los sexos sea inferior al 40 %. <br/> Por otra parte, nos pronunciaremos sobre si se observa o no una tendencia hacia el equilibrio (esto ocurre cuando el porcentaje de distancia sea inferior en la tabla 11 con respecto a la tabla 1), sobre todo será especialmente importante cuando según los datos de la tabla 1 la empresa está masculinizada o feminizada. 
+Análisis de los ceses por sexo
+Causas
+Nº Mujeres
+% Mujeres
+Nº Hombres
+% Hombres
+Total general
+Nº personas
+% Total
+Despido
+Dimisión
+Finalización del contrato
+Otras causas
+Total
+Tabla 11: Análisis de los ceses producidos en el último año por sexo
+El objetivo de la presente tabla es analizar sí los ceses en la Organización afectan en mayor proporción a Hombres o a Mujeres. Diremos que afectan más a Hombres o a Mujeres cuando en uno de los sexos el % sea superior al 60 % (decir qué sexo se ve perjudicado). Además, pronunciarnos sobre si destaca el desequilibrio en el % hombres-mujeres en algún tipo de causa de cese de la relación contractual. 
+Análisis de días en situación de incapacidad laboral transitoria por sexo
+Accidente y/o enfermedad laboral
+Contingencias comunes
+Nº de mujeres situaciones ILT
+Días ILT mujeres
+% Días ILT mujeres 
+Promedio días ILT mujeres
+Nº de Hombres situacions ILT
+Días ILT Hombres
+% Días ILT Hombres
+Promedio días ILT Hombres
+Total días ILT
+% Total días ILT
+Promedio total días ILT
+Tabla 12: Análisis de días en situación de incapacidad laboral transitoria por sexo
+El objetivo de la presente tabla es analizar sí las situaciones de incapacidad laboral transitoria afectan en mayor medida a Hombres, a Mujeres, o está equilibrado. Diremos que afectan en mayor medida a los hombres o a mujeres cuando el porcentaje en alguno de estos sexos sea superior al 60%. 
+Análisis de la formación por sexo
+Formación impartida en la organización
+Total horas de formación Mujeres
+Total horas de formación Hombres
+Nº de Mujeres formadas
+Nº de Hombres formados
+Promedio horas formación Mujeres
+Promedio horas formación Hombres
+Total horas formación
+Promedio total formación
+Nº de personas formadas con respecto al total de la plantilla desagregados por sexo
+Mujeres formadas
+Mujeres no formadas
+Hombres formados
+Hombres no formados
+Duración promedio de las horas de formación (Horas promedio)
+Total
+Tabla  14 - Análisis de la formación por sexo
+El objetivo de la presente tabla es detectar desigualdades en la formación profesional impartida por la Organización. Analizamos con este fin tanto el número de Mujeres y Hombres formados en el período, como el número de horas promedio por sexo.
+Análisis de las promociones por sexo
+Promociones
+Total promociones
+Promociones Mujeres
+Promociones Hombres
+% Promociones Mujeres
+% Promociones Hombres
+Promociones por sexo con respecto al total de la plantilla
+Promociones por sexo con respecto al total de personas promocionadas
+% Mujeres promocionadas
+% Hombres promocionados
+% Personas no promocionadas
+Tabla 13: Análisis de las promociones por sexo
+El objetivo de la presente tabla es analizar el impacto de las promociones en la segregación vertical. Analizamos con este fin tanto el nº de promociones desagregado por sexo, como el porcentaje sobre el total de Mujeres y Hombres respectivamente para ver específicamente el citado impacto.  Diremos que afectan en mayor medida a hombres, a mujeres, cuando el porcentaje en algunos de los sexos sea superior al 60%. 
+Valoración de puestos de trabajo
+Título del puesto
+Convenio de aplicación
+Área
+Departamento/Zona
+Centro de trabajo
+Categorización
+Agrupación
+Puntos
+Masculinizado
+Feminizado
+Equilibrado
+Nº Hombres
+Nº Mujeres
+Análisis de las agrupaciones por sexo
+Puntuación por puesto y sexo
+Tabla 15: Puestos valorados
+Tabla 16: Distribución de puestos
+Agrupaciones de puestos de trabajo de valor equivalente (trabajos de igual valor)
+Incluir comentario, en el que se puede aprovechar, por ejemplo, para comentar sí se han valorado todos los puestos de trabajo de la organización o cualquier otra cuestión relevante.
+Registro retributivo
+17.1 Conceptos retributivos
+17.2 Promedio de retribuciones efectivamente satisfechas por Grupo Profesional
+17.3 Mediana de retribuciones efectivamente satisfechas por Grupo Profesional
+17.4 Promedio de retribuciones equiparables
+17.5 Mediana de retribuciones equiparables
+17.6 Promedio de retribuciones según valoración de puestos de trabajo
+17.7 Mediana de retribuciones según valoración de puestos de trabajo
+17.8 Promedio de retribuciones equiparadas según valoración de puestos de trabajo
+17.9 Mediana de retribuciones equiparadas seg&uacuteMn valoración de puestos de trabajo
+El registro deberá incluir la justificación a que se refiere el artículo 28.3 del Estatuto de los Trabajadores, cuando la media aritmética o la mediana de las retribuciones totales en la empresa de las personas trabajadoras de un sexo sea superior a las del otro en, al menos, un 25%. Incluir justificación de la brecha salarial o negación de la misma, en su caso.
+Auditoría salarial
+Hombres
+Mujeres
+Diferencia %
+Salario base
+Complementos salariales
+Complementos extrasalariales
+Promedio de retribuciones totales
+Salario base
+Complementos salariales
+Complementos extrasalariales
+Mediana de retribuciones
+Masa salarial
+Promedio de retribuciones satisfechas
+Conceptos salariales con diferencia
+Tabla 18: Diferencias salariales por sexo
+Hacer comentario sobre diferencias salariales entre sexos, en la masa, en el promedio o en la mediana, que permita valorar sí la Organización cumple con la aplicación efectiva del principio de igualdad en materia de retribución  
+Configuración de Estadisticas
+ID Lista dinamica Medida
+ID Lista dinamica Parametrizacion
+
+
+############################### EVALUACIÓN ###################################
+Evaluación del Plan de Igualdad
+Nueva evaluación
+Versión
+Texto a buscar
+Fecha evaluación
+Usuario
+Observaciones
+Seleccionar
+Datos generales
+La evaluación del Plan que va a realizarse es
+Período de análisis desde
+hasta
+Indique el órgano o personas responsables de la Evaluación del Plan
+Consta en acta el acuerdo para la evaluación del Plan
+Fecha inicial superior a la final
+Evaluación
+Información de resultados
+Grado de cumplimiento de objetivos definidos en el Plan de Igualdad
+Nivel de realización de las acciones previstas en el Plan de Igualdad
+Nivel de obtención de resultados esperados
+Grado de cumplimiento de objetivos de cada acción según indicadores marcados en el Plan de Igualdad
+Grado de acciones de nuevas necesidades detectadas
+Nivel de corrección de las desigualdades detectadas en el diagnóstico
+Situación del nivel de compromiso de la empresa con la igualdad
+Valoración general del periodo de referencia (mencionando los resultados más destacados de la ejecución del Plan hasta el momento y explicando los motivos por los que no se han realizado, en su caso, las medidas previstas).
+Información de la implantación
+Nivel de desarrollo de las acciones
+Grado de la implicación de la plantilla en el proceso
+El presupuesto previsto ha sido
+El cumplimiento del calendario previsto ha sido
+Principales problemas y dificultades detectadas
+Información del impacto
+¿Se han producido cambios en la cultura de la empresa?
+¿Se han reducido los desequilibrios de presencia de las Mujeres?
+¿Se han reducido los desequilibrios de presencia de los Hombres?
+¿Ha habido cambios en las actitudes y opiniones del equipo directivo?
+¿Ha habido cambios en las actitudes y opiniones de la plantilla?
+¿Se han detectado cambios en relación con la imagen externa de la empresa?
+Señalar en qué han consistido los cambios tanto en relación con las personas como en la gestión y clima empresarial.
+Observaciones
+Atrás
+Guardar
+Intermedia
+Final
+Sí
+No
+Bajo
+Medio
+Alto
+Se ha guardado correctamente la evaluación.
+Se ha visualizado correctamente la evaluación.
+Error al guardar la evaluación.
+Error al visualizar la evaluación.
+
+
+############################### FECHAS ###################################
+Fechas relevantes
+Ejecutados
+Si
+No
+Todos
+Hitos
+Fecha de ejecución
+La fecha del hito se ha guardado correctamente
+Cree una versión para el Plan de igualdad de esta empresa
+La fecha del hito se ha eliminado correctamente
+Eliminar fecha
+¿Está seguro de querer eliminar la fecha?
+Aceptar
+Cancelar
+
+
+############################### INDICADORES ###################################
+Indicadores de estado del plan de igualdad
+Diseño del plan
+Seguimiento del plan
+Evaluación del plan
+Error, por favor, vuelva a intentarlo más adelante
+
+
+############################### INFORMACIÓN ###################################
+Campo obligatorio.
+Si
+No
+Datos de la organización
+Razón social
+Año constitución
+CIF
+Página Web
+Domicilio social
+Facturación anual (€)
+Forma juridica de la organización
+Responsable de la entidad
+Nombre
+Teléfono
+Cargo
+E-mail
+Responsable de igualdad
+Nombre
+Teléfono
+Cargo
+E-mail
+Organización de la gestión de personas
+Sector actividad (CNAE)
+Nº de centros de trabajo
+Descripción de la actividad
+Convenio colectivo
+Ámbito territorial del Plan de igualdad
+Comentario sobre el ámbito territorial
+Distribución plantilla
+Nº Hombres
+Nº Mujeres
+Tiene representación legal de los trabajadores (RLT)
+¿Cuántas son Mujeres?
+¿Cuántos son Hombres?
+Representa a la totalidad de la plantilla
+Nº de trabajadores no representados por la RLT
+Comentarios sobre la representación de los trabajadores
+¿Existe departamento de personal en la organización?
+Indique los sindicatos más representativos del sector
+Composición de la Comisión negociadora
+Composición de la Comisión de seguimiento del plan
+La información preliminar se ha guardado correctamente
+Cree una versión para el Plan de igualdad de esta empresa
+Nacional
+Autonómico
+Provincial
+Añadir fila
+Puesto de trabajo
+Nombre
+Apellidos
+E-mail
+NIF
+¿Desa eliminar el registro?
+Representantes por parte de la organización
+Representantes por parte social
+Indique los negociadores por parte de la Organización que, en la medida de lo posible, deberán contar con formación/experiencia en materia de igualdad en ámbito laboral
+La composición de la parte social en la C. Negociadora será proporcional a su representatividad, e igual en nº a los representantes por parte de la Organización
+Indique los representantes de la Organización en el órgano que recibirá y analizará la información relativa a la ejecución de acciones del Plan
+Indique los representantes de la parte social en el órgano que recibirá y analizará la información relativa a la ejecución de acciones del Plan
+Cancelar
+Guardar
+
+
+############################### PUESTOS ###################################
+Puestos de trabajo
+Añadir
+Texto a buscar
+Activo
+Si
+No
+Todos
+Puesto de trabajo
+Área
+Puesto de responsabilidad
+Nº Hombres
+Nº Mujeres
+Total
+Fecha de baja
+Se ha guardado correctamente el puesto de trabajo
+Puestos de trabajo
+Campo obligatorio.
+Cree una versión para el Plan de igualdad de esta empresa
+
+
+############################### SEGUIMIENTO ###################################
+Seguimiento de medidas
+Nueva medida
+Aplica
+Sí
+No
+Todas
+Prioridad
+Media
+Alta
+Seleccionar
+Categoría
+Nivel de ejecución
+Pendiente
+En ejecución
+Finalizadas
+Versión
+Fecha prevista desde:
+hasta:
+Fecha implantación desde:
+Ver última versión de mis medidas
+Medida
+Fecha prevista
+Fecha implantación
+Fecha seguimiento
+Responsable
+Selección y contratación
+Auditoría Retributiva
+Formación
+Promoción Profesional
+Condiciones de Trabajo
+Ejercicio Corresponsable de los derechos de la vida personal, familiar y laboral
+Prevención del Acoso Sexual y/o razón de sexo
+Derechos laborales de las víctimas de violencia de géneros y otros colectivos en riesgo de exclusión social
+Lenguaje y comunicación no sexista
+Clasificación Profesional
+Infrarrepresentación Femenina
+Datos generales
+Cumplimentación
+Evaluación de medidas
+Materia
+Nombre medida
+Descripción medida
+Objetivos que persigue
+Recursos asociados
+Indicadores de seguimiento
+Pendiente de planificar
+Finalizada
+Indicar el motivo por el que la medida no se ha iniciado o completado totalmente
+Seleccione motivo
+Falta de recursos humanos
+Falta de recursos materiales
+Falta de tiempo
+Falta de participación
+Descoordinación con otros departamentos
+Desconocimientos del desarrollo
+Otros motivos (especificar)
+Otro motivo
+Indicadores de proceso
+Adecuación de los recursos asignados
+Dificultades y barreras encontradas para la implantación
+Soluciones adoptadas (en su caso)
+Indicadores de impacto
+Reducción de desigualdades
+Mejoras producidas
+Propuesta de futuro
+Documentación acreditativa de la ejecución de la medida
+Seleccionar archivo
+Atrás
+Cancelar
+Guardar
+Aceptar
+Cancelar operación
+¿Está seguro de querer cancelar la operación?
+Datos requeridos
+Falta por rellenar Datos Generales.
+Se ha gestionado correctamente la medida.
+Error al gestionar la medida.
+Error al visualizar la medida.
+Medida visualizada correctamente.
+Configuración del Repositorio de Documentos
+Carpeta
+Debe introducir el nombre de la carpeta existente padre donde se guardarán los documentos que se añadan.
+ID de lista dinamica de Medidas
+
+
+############################### SEGUIMIENTO CUESTIONARIO ###################################
+Cuestionario
+Nº de medidas del plan
+Nº de medidas sobre las que se ha informado seguimiento
+Nº de medidas pendientes
+Nº de medidas en ejecución
+Nº de medidas finalizadas
+Nº de medidas prioritarias finalizadas
+Nuevo cuestionario
+Versión
+Texto a buscar
+Fecha cuestionario
+Usuario
+Observaciones
+Seleccionar
+1. ¿Los datos recogidos están claros? ¿Son coherentes o se contradicen? ¿En qué sentido? ¿Faltan datos?
+2. ¿Las medidas y sus actuaciones se ajustan a lo previsto? En general, ¿el Plan se desarrolla correctamente?
+3. ¿Se han logrado los objetivos perseguidos para cada acción? ¿Hay retrasos importantes? Valorar los desajustes en general
+4. ¿Se han generado nuevas necesidades durante la implementación? ¿Se puede dar respuesta? ¿Se han adoptado medidas correctoras o se han incorporado nuevas medidas para darles respuesta?
+5. En la dimensión externa: ¿Se han producido cambios en la imagen de la empresa? ¿En la relación con el entorno? ¿En las relaciones comerciales?
+6. Propuestas de modificación de medidas incluidas en el Plan o adopción de otras nuevas si se estima necesario
+Guardar
+Cancelar
+Cancelar operación
+¿Está seguro de querer cancelar la operación?
+Atrás
+Aceptar
+Se ha guardado correctamente el cuestionario.
+Error al guardar el cuestionario.
+Error al visualizar el cuestionario.
+Cuestionario visualizado correctamente.
+
+
+############################### CONSULTOR ###################################
+Valoración del consultor
+Medidas ejecutadas sobre el total (%)
+Medidas prioritarias ejecutadas (%)
+Medidas que tienen algún documento asociado en el respositorio documental
+Nueva valoración del consultor
+Versión
+Texto a buscar
+Fecha de valoración
+Usuario
+Observaciones
+Seleccionar
+Nivel de ejecución
+Cumplimiento de planificación
+Consecución de objetivos
+Observaciones
+Cancelar
+Guardar
+Aceptar
+Atrás
+Cancelar operación
+¿Está seguro de querer cancelar la operación?
+Atrás
+Aceptar
+Se ha guardado correctamente la valoración.
+Error al guardar la valoración.
+Error al visualizar la valoración.
+Valoración visualizado correctamente.
+
+
+############################### VERSION ###################################
+Plan de Igualdad
+Versión
+Añadir
+Activa
+Si
+No
+Todas
+Versión del Plan de igualdad
+Periodo de estudios
+Periodo del Plan de igualdad
+Fecha de baja
+Inicio
+Fin
+Versiones
+Inicio periodo de estudios
+Fin periodo de estudios
+Inicio periodo del Plan de igualdad
+Fin periodo del Plan de igualdad
+Campo obligatorio.
+La versión se ha guardado correctamente
+Error, vuelva a intentarlo más adelante

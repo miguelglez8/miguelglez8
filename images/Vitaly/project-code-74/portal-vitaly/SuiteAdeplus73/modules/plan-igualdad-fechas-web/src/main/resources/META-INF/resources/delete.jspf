@@ -1,0 +1,27 @@
+<%@page import="com.plan.igualdad.liferay.portlet.fechas.web.constants.PlanIgualdadFechasWebPortletKeys"%>
+<liferay-portlet:actionURL name="/hito/deteleDate" var="deleteDateURL" />
+
+<div class="modal hide" id="deteleDate">
+    <div class="modal-backdrop show"></div>
+    <div class="modal-dialog center">
+        <div class="modal-content">
+            <aui:form  name="delete_form" action="<%=deleteDateURL.toString()%>" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title"><liferay-ui:message key="hito.view.modal.delete-title" /></h5>
+                    <button type="button" class="close hide-modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                	<aui:input name="<%= PlanIgualdadFechasWebPortletKeys.HITOID_PARAM_DELETE %>" value="" type="hidden" />
+                	<aui:input name="<%= PlanIgualdadFechasWebPortletKeys.COMPID_PARAM %>" value="${compId}" type="hidden" />
+                    <p><liferay-ui:message key="hito.view.modal.delete-description" /></p>
+                </div>
+                <div class="modal-footer">
+                    <aui:button value="hito.view.modal.cancel" cssClass="btn btn-outline-primary mr-4 hide-modal" primary="true"></aui:button>
+                    <aui:button type="submit" value="hito.view.modal.delete-accept" cssClass="btn btn-primary"/>
+                </div>
+            </aui:form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+Estimat/ada usuari/ària,
+
+Un usuari ha registrat una nova consulta a miregistrodehoras.com.
+
+Les dades de l'usuari són les següents:
+Nom: 
+Correu electrònic: 
+Empresa: 
+
+La consulta ha estat la següent:
+Categoria: 
+Assumpte: 
+Consulta: 
+Arxiu adjunt: 
+
+Salutacions.
+
+Aquest correu electrònic ha estat emès per Grup Preving. A partir de la informació facilitada per la seva Empresa per a la implementació del registre en línia de la jornada diària. La informació que conté és CONFIDENCIAL, i els únics destinataris són les persones designades en aquest. Si llegeix aquest missatge i no és un dels destinataris indicats, l'informem que està totalment prohibida qualsevol utilització, divulgació, distribució i/o reproducció d'aquesta comunicació sense autorització expressa en virtut de la legislació vigent. Si ha rebut aquest missatge per error, li agrairem que ens ho notifiqui immediatament mitjançant aquesta mateixa via i procedeixi a la seva eliminació.

@@ -1,0 +1,4 @@
+Bundle-Name: canal-etico-selector-web
+Bundle-SymbolicName: canal.etico.selector.web
+Bundle-Version: 1.0.0
+Export-Package: canal.etico.selector.web.constants

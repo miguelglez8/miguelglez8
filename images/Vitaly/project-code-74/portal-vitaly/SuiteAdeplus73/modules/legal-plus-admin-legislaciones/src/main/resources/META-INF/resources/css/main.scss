@@ -1,0 +1,33 @@
+.legal-plus-admin-legislaciones {
+}
+
+.clsSelector2Width{
+    width : 99%;
+}
+
+.clsRequiredSelect{
+    display: none;
+}
+.clsRequiredSelect_visible{
+    display: inline;
+}
+
+td.details-control {
+    background: url('/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('/examples/resources/details_close.png') no-repeat center center;
+}
+
+table.dataTable tbody td.no-padding {
+    padding: 0;
+}
+.clsSelector2Width{
+	width: 99%;
+}
+
+.hideSpanDate{
+	display : none;
+}

@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.preving.liferay.portlet.calendar.manager">
+
+	<namespace>preving</namespace>
+
+	<entity name="Sign" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+		<column name="signId" primary="true" type="long" />
+
+		<column name="companyId" type="long" json-enabled="false"/>
+		<column name="groupId" type="long" json-enabled="false"/>
+
+		<column name="userId" type="long" />
+		<column name="activityId" type="long" />
+		<column name="startDate" type="Date" />
+		<column name="finishDate" type="Date" />
+
+		<column name="observations" type="String" localized="true" />
+		<column name="observationsAdmin" type="String" localized="true" />
+		<column name="obsAdminUserId" type="long" />
+		<column name="obsAdminDate" type="Date" />
+
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date" json-enabled="false"/>
+
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CompanyIdAndGroupIdAndUserId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userId" />
+		</finder>
+
+		<finder name="CompanyIdAndGroupIdAndUserIdAndDate" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userId" />
+			<finder-column name="startDate" />
+		</finder>
+
+	</entity>
+
+	<!-- Activity -->
+	<entity name="Activity" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+		<column name="activityId" primary="true" type="long" />
+
+		<column name="companyId" type="long" json-enabled="false"/>
+		<column name="groupId" type="long" json-enabled="false"/>
+
+		<column name="type" type="int" />
+		<column name="name" type="String" localized="true" />
+		<column name="workTime" type="boolean" />
+		<column name="color" type="String" />
+		<column name="active" type="boolean" />
+		<column name="observations" type="String"/>
+		<column name="usersToInform" type="String"/>
+		<column name="infoRespo" type="boolean"/>
+		<column name="infoUser" type="boolean"/>
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+	</entity>
+
+	<!-- Holiday -->
+	<entity name="Holiday" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+		<column name="holidayId" primary="true" type="long" />
+
+		<column name="companyId" type="long" json-enabled="false"/>
+		<column name="groupId" type="long" json-enabled="false" />
+
+		<column name="day" type="int" />
+		<column name="month" type="int" />
+		<column name="year" type="int" />
+
+		<column name="name" type="String" localized="true" />
+		<column name="typeHoliday" type="String" />
+		<column name="active" type="boolean" />
+		<column name="allowSign" type="boolean" />
+
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+	</entity>
+
+	<!-- Company Configuration -->
+	<entity name="CompanyConf" local-service="true"  remote-service="true">
+
+		<!-- PK fields -->
+		<column name="companyConfId" primary="true" type="long" />
+
+		<column name="companyId" type="long" json-enabled="false"/>
+		<column name="groupId" type="long" json-enabled="false"/>
+		<column name="userId" type="long" json-enabled="false"/>
+
+		<column name="clientId" type="long" json-enabled="false"/>
+		<column name="contracId" type="long" json-enabled="false"/>
+
+		<column name="cif" type="String" json-enabled="false"/>
+		<column name="source" type="String" json-enabled="false"/>
+
+		<!-- Notifications -->
+		<column name="notificationNotWorkable" type="boolean" />
+		<column name="notificationFinishDateSign" type="boolean" />
+		<column name="notificationAdminPeriodicity" type="String" />
+
+		<!-- Features -->
+		<column name="maxHoursDay" type="boolean" />
+		<column name="maxHoursWeek" type="boolean" />
+		<column name="savePastDays" type="boolean" />
+		<column name="editSigns" type="boolean" />
+		<column name="editDeleteSigns" type="boolean" />
+		<column name="addExtraActivity" type="boolean" />
+		<column name="isWorkCenters" type="boolean" />
+		<!-- Calendarios predefinidos -->
+		<column name="isOwnCalendars" type="boolean" />
+		<column name="maxHoursDayValue" type="float" />
+		<column name="maxHoursWeekValue" type="float" />
+		<column name="savePastDaysValue" type="int" />
+		<column name="editSignsValue" type="int" />
+		<column name="editDeleteSignsValue" type="int" />
+		<column name="startDate" type="Date"  json-enabled="false"/>
+		<column name="description" type="String"  localized="true" json-enabled="false"/>
+		<column name="agreement" type="String"  localized="true" json-enabled="false" />
+		<column name="observations" type="String"  localized="true" json-enabled="false"/>
+
+		<!-- emails de contacto/ soporte -->
+		<column name="soporteEmail" type="String"  localized="false" json-enabled="false"/>
+
+		<!-- Dates -->
+		<column name="createDate" type="Date"  json-enabled="false"/>
+		<column name="implantationDate" type="Date"  json-enabled="false"/>
+		<column name="modifiedDate" type="Date"  json-enabled="false"/>
+		<column name="deleteDate" type="Date"  json-enabled="false"/>
+
+		<!-- Finder methods -->
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="ClientContract" return-type="Collection">
+			<finder-column name="clientId" />
+			<finder-column name="contracId" />
+		</finder>
+
+		<finder name="Cif" return-type="Collection">
+			<finder-column name="cif" />
+		</finder>
+
+	</entity>
+
+	<!-- User Data -->
+	<entity name="UserData" local-service="true">
+
+		<!-- PK fields -->
+		<column name="userDataId" primary="true" type="long" />
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="userId" type="long" />
+		<column name="workCenterId" type="long" /> <!-- nuevo -->
+
+		<column name="nif" type="String" />
+		<column name="name" type="String" />
+		<column name="lastName" type="String" />
+		<column name="email" type="String" />
+		<column name="jobTitle" type="String" localized="true"/>
+		<!-- ya no se usa, sustituido por  workCenterId -->
+		<column name="workCenter" type="String" localized="true"/>
+
+		<column name="salary" type="String" />
+		<column name="genre" type="String" />
+		<column name="notificationEndDate" type="Date"/>
+		<column name="active" type="boolean" />
+
+		<!-- Dates -->
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date"/>
+		<column name="deleteDate" type="Date"/>
+
+		<!-- Finder methods -->
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+		<finder name="GroupIdAndUserId" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="userId" />
+		</finder>
+		<finder name="GroupIdAndEmail" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="email" />
+		</finder>
+		<finder name="UserId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="Nif" return-type="Collection">
+			<finder-column name="nif" />
+		</finder>
+
+	</entity>
+
+	<!-- Work Centers -->
+	<entity local-service="true" name="WorkCenters"  cache-enabled="false">
+		<!-- PK fields -->
+		<column name="workCenterId" primary="true" type="long" />
+		<column name="companyId" type="long" />
+
+		<column name="name" type="String" />
+
+		<!-- Audit fields -->
+		<column name="createdBy" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="endDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="createdBy" />
+			<order-column name="companyId" />
+		</order>
+
+		<finder name="getByCompanyId" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+	</entity>
+
+	<!-- Calendarios de usuario  -->
+	<entity name="UserNameCalendars" local-service="true">
+
+		<!-- PK fields -->
+		<column name="userNameCalendarId" primary="true" type="long" />
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="userId" type="long" />
+
+
+		<column name="name" type="String" />
+		<column name="active" type="boolean" />
+
+		<!-- Dates -->
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date"/>
+		<column name="deleteDate" type="Date"/>
+
+		<!-- Finder methods -->
+		<finder name="CompanyIdAndGroupId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+		<finder name="GroupIdAndUserId" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="userId" />
+		</finder>
+		<finder name="ByComapyGroupUserId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userId" />
+		</finder>
+		<finder name="UserId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+
+	</entity>
+
+	<!-- datos de calendario personalizado -->
+	<entity name="UserDataCalendars" local-service="true">
+
+		<!-- PK fields -->
+		<column name="userDataCalendarId" primary="true" type="long" />
+
+		<column name="userNameCalendarId" type="long" />
+
+		<column name="activityId" type="long" />
+		<column name="startDate" type="String" />
+		<column name="finishDate" type="String" />
+
+		<!-- Dates -->
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date"/>
+		<column name="deleteDate" type="Date"/>
+
+		<!-- Finder methods -->
+		<finder name="UserDataCalendarsById" return-type="Collection">
+			<finder-column name="userDataCalendarId" />
+		</finder>
+		<finder name="UserDataCalendarsByNameId" return-type="Collection">
+			<finder-column name="userNameCalendarId" />
+		</finder>
+
+	</entity>
+
+
+	<!-- Audit changes -->
+	<entity local-service="true" name="Audit" >
+
+		<!-- PK fields -->
+		<column name="auditId" primary="true" type="long" />
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+
+		<column name="userId" type="long" />
+		<column name="date" type="Date" />
+		<column name="action" type="String" />
+		<column name="description" type="String" />
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+
+	</entity>
+</service-builder>

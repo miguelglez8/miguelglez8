@@ -1,0 +1,42 @@
+Bundle-Name: adeplus-documentary-repository-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.documentary.repository.web.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.documentary.repository.web.portlet.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional
+
+Import-Package:\
+    !antlr*,\
+    !com.adobe.xmp*,\
+    !com.github.kklisura*,\
+    !com.google.zxing*,\
+    !com.ibm.icu.lang*,\
+    !com.ibm.icu.util*,\
+	!groovy.lang*,\
+	!groovyjarjarasm.asm*,\
+	!mondrian.*,\
+	!net.sf.jasperreports.annotations.properties*,\
+	!net.sf.jasperreports.metadata.properties*,\
+	!net.sourceforge.barbecue*,\
+	!org.apache.batik*,\
+	!org.apache.commons.javaflow*,\
+	!org.apache.commons.pool2*,\
+	!org.apache.http*,\
+	!org.apache.lucene*,\
+	!org.apache.poi*,\
+	!org.apache.velocity*,\
+	!org.codehaus*,\
+	!org.eclipse.jdt.core.index*,\
+	!org.eclipse.jdt.core.util*,\
+	!netscape.ldap*,\
+	!org.apache.oro*,\
+	!org.hibernate.query*,\
+	!org.kohsuke.groovy.sandbox*,\
+	!org.krysalis.barcode4j*,\
+	!org.mozilla.javascript*,\
+	!org.olap4j*,\
+	!org.springframework*,\
+	!org.w3c.dom.svg*,\
+	!org.bouncycastle*,\
+    *
+Include-Resource: @commons-io-2.5.jar,@jasperreports-6.16.0.jar,@commons-collections4-4.2.jar,@commons-digester-2.1.jar,@ecj-3.21.0.jar,@castor-xml-1.4.1.jar,@commons-lang3-3.9.jar,@castor-core-1.4.1.jar,@jfreechart-1.0.19.jar,@jcommon-1.0.24.jar,@jackson-databind-2.10.0.jar,@jackson-core-2.10.0.jar,@jackson-annotations-2.10.0.jar,@itext-2.1.7.jar

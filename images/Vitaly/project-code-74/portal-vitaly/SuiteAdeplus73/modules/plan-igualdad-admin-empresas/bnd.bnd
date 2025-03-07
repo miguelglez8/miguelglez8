@@ -1,0 +1,6 @@
+Bundle-Name: plan-igualdad-admin-empresas
+Bundle-SymbolicName: com.plan.igualdad.liferay.portlet.admin.empresas.web
+Bundle-Version: 1.0.0
+Export-Package: com.plan.igualdad.liferay.portlet.admin.empresas.web.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

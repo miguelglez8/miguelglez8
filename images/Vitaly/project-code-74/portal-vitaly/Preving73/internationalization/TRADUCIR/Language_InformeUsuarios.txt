@@ -1,0 +1,34 @@
+
+
+ Informe de usuarios 
+ Nombre y apellidos 
+ Correo electrónico 
+ Género 
+ NIF 
+ Puesto de trabajo 
+ Centro de trabajo 
+ Salario anual (€) 
+ Fecha de baja 
+
+ Procesando... 
+ Mostrar _MENU_ usuarios 
+ No se encontraron usuarios 
+ Ninguna actividad disponible en esta tabla 
+ Mostrando usuarios del _START_ al _END_ de un total de _TOTAL_ usuarios 
+ Mostrando usuarios del 0 al 0 de un total de 0 usuarios 
+ (filtrado de un total de _MAX_ usuarios) 
+ 
+ Buscar: 
+ 
+ 
+ Cargando... 
+ Primero 
+ Último 
+ Siguiente 
+ Anterior 
+ : Activar para ordenar la columna de manera ascendente 
+ : Activar para ordenar la columna de manera descendente 
+ Copiar 
+ Visibilidad 
+
+ Este documento es CONFIDENCIAL y propiedad de la Organización que figura en el encabezado. Su acceso al margen de lo dispuesto legalmente, será perseguido y sancionado. Si accede al documento y no es usuario autorizado, por favor póngalo inmediatamente en conocimiento de la Organización titular 

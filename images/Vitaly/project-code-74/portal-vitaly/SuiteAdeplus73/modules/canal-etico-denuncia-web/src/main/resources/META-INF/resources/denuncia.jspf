@@ -1,0 +1,76 @@
+<%@ page import="com.canal.etico.liferay.portlet.canal.manager.model.Categoria" %>
+<%@ page import="com.canal.etico.liferay.portlet.canal.manager.service.CategoriaLocalServiceUtil" %>
+<%@ page import="java.util.ArrayList" %>
+
+<%
+    List<Categoria> consultas = new ArrayList<>();
+    List<Categoria> denuncias = new ArrayList<>();
+
+    if(Validator.isNotNull(comp)){
+        consultas = CategoriaLocalServiceUtil.getAllConsultasActiveFromCompany(comp.getCompId());
+        denuncias = CategoriaLocalServiceUtil.getAllDenunciasActiveFromCompany(comp.getCompId());
+    }
+%>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <aui:select name="<%=DenunciaPortletKeys.TIPO%>" label="denuncia.view.denuncia.tipo">
+                <aui:option value="-1" ><liferay-ui:message key="denuncia.view.empresa.selecionar.opcion"/></aui:option>
+                <aui:option value="1" ><liferay-ui:message key="denuncia.view.denuncia.tipo.consulta"/></aui:option>
+                <aui:option value="0" ><liferay-ui:message key="denuncia.view.denuncia.tipo.denuncia"/></aui:option>
+            </aui:select>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <div id="consultas">
+                <aui:select name="<%=DenunciaPortletKeys.CATEGORIA_CONSULTA%>" label="denuncia.view.denuncia.categoria" onChange="enableDenuncia()">
+                    <aui:option value="-1" ><liferay-ui:message key="denuncia.view.empresa.selecionar.opcion"/></aui:option>
+                    <c:forEach var="categoria" items="<%=consultas%>">
+                        <aui:option value="${categoria.categoriaId}" cssClass="consultasSelect display-none">
+                            ${categoria.nombre}
+                        </aui:option>                       
+                    </c:forEach>
+                    <c:forEach var="categoria" items="<%=denuncias%>">
+                        <aui:option value="${categoria.categoriaId}" cssClass="denunciasSelect display-none">
+                            ${categoria.nombre}
+                        </aui:option>
+                    </c:forEach>
+                </aui:select>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+
+    function enableDenuncia(){
+        var consulta = document.getElementById("_com_canal_etico_liferay_portlet_denuncia_web_DenunciaPortlet_consulta");
+
+        if(consulta.value == -1){
+            document.getElementById("<portlet:namespace />button-next-denuncia").disabled=true;
+
+        }else{
+            document.getElementById("<portlet:namespace />button-next-denuncia").disabled=false;
+            document.getElementById("<portlet:namespace />button-next-denuncia").classList.remove("disabled");
+        }
+    }
+
+    
+    $('#_com_canal_etico_liferay_portlet_denuncia_web_DenunciaPortlet_tipo').change(function() {
+    	var selected = $.trim($("#_com_canal_etico_liferay_portlet_denuncia_web_DenunciaPortlet_tipo option:selected").val());
+    	if(selected == -1){
+            $(".denunciasSelect").addClass("display-none");
+            $(".consultasSelect").addClass("display-none");
+        }else if(selected == 1){
+        	$(".denunciasSelect").addClass("display-none");
+        	$(".consultasSelect").removeClass("display-none");
+        }else if(selected == 0){
+        	$(".denunciasSelect").removeClass("display-none");
+        	$(".consultasSelect").addClass("display-none");
+        }
+        $("#_com_canal_etico_liferay_portlet_denuncia_web_DenunciaPortlet_consulta option[value='-1']" ).prop("selected", true);
+        document.getElementById("<portlet:namespace />button-next-denuncia").disabled=true;
+    });
+</script>

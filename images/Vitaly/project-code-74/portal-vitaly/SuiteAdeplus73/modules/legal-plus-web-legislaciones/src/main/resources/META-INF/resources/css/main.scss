@@ -1,0 +1,92 @@
+.legal-plus-web-legislaciones {
+}
+
+.clsSelector2Width{
+	width: 99%;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /*display: inline-block;*/
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+  padding-left: 0px;
+  padding-left: 20px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  /*white-space: pre-line;*/
+}
+
+.clsaytosSelected .select2-container--default .select2-results__option[aria-disabled=true] {
+    display: none;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+    z-index:-1;
+}
+
+#buttonBaja{
+    padding: 10px 10px !important;
+}
+.panelBaja{
+    display: inline-table;
+}
+
+@media (max-width: 767px) {
+    .panelBaja{
+        width:100%;
+    }
+}
+
+@media (min-width: 768px) {
+    body .dataTables_wrapper .dataTables_paginate{
+        float: none;
+        text-align: center;
+        margin-left: 10%;
+        width: 55% !important;
+    }
+    body .dataTables_wrapper .dataTables_length {
+        display: inline-table;
+        margin-left: 20px
+    }
+}
+
+/* Estilos botonera footer dataTable */
+
+    #table_legislaciones_wrapper .capaPaginador {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        justify-content: right;
+        flex-direction: row;
+    }
+
+    #table_legislaciones_wrapper .capaPaginador > div {
+        flex: none;
+    }
+
+    #table_legislaciones_wrapper div#table_legislaciones_paginate {
+        margin-left: 0;
+        text-align: center;
+        min-width: 65%;
+    }
+
+    #table_legislaciones_wrapper .panelBaja {
+      width: 15.5rem;
+    }
+
+    #table_legislaciones_wrapper div#table_legislaciones_length {
+        width: auto;
+        max-width: 5rem;
+        margin: 0 0 0 1rem;
+        margin-top: 0.35rem;
+    }

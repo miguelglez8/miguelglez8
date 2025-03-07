@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.adeplus.liferay.portlet.suite.manager">
+	<namespace>adeplus</namespace>
+
+
+
+	<entity local-service="true" name="Comp">
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="cif" type="String" />
+		<column name="name" type="String" />
+		<column name="description" type="String" localized="true"/>
+		<column name="observations" type="String" localized="true"/>
+		<column name="agreement" type="String" localized="true"/>
+		<column name="idCrm" type="String" />
+		<column name="idContrato" type="String" />
+		<column name="idEstado" type="String" />
+		<column name="logo" type="long" />
+		<column name="startDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="cif" return-type="Comp" unique="true">
+			<finder-column name="cif" />
+		</finder>
+
+		<finder name="name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+
+		<finder name="nameAndCif" return-type="Comp">
+			<finder-column name="name" />
+			<finder-column name="cif" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Application">
+
+		<!-- PK fields -->
+		<column name="applicationId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="name" type="String" />
+		<column name="description" type="String" localized="true" />
+		<column name="url" type="String" />
+		<column name="configuration" type="String" />
+		<column name="roles" type="String" />
+		<column name="alias" type="String" />
+		<column name="keycloak_client" type="String" />
+		<column name="keycloak_secret" type="String" />
+		<column name="logo" type="long" />
+		<column name="order" type="Integer" />
+
+		<column name="limitAdmins" type="boolean" />
+		<column name="limitUsers" type="boolean" />
+		<column name="limitNumAdmins" type="long" />
+		<column name="limitNumUsers" type="long" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+		<finder name="alias" return-type="Collection">
+			<finder-column name="alias" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="ApplicationLicense">
+
+		<!-- PK fields -->
+		<column name="licenseId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="applicationId" type="long" />
+		<column name="name" type="String" />
+		<column name="permissionRoleKey" type="String" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="applicationId">
+			<order-column name="applicationId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="ApplicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="LicenseId" return-type="ApplicationLicense" unique="true">
+			<finder-column name="licenseId" />
+		</finder>
+		<finder name="AppLicense" return-type="ApplicationLicense" unique="true">
+			<finder-column name="applicationId" />
+			<finder-column name="licenseId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="Role">
+
+		<!-- PK fields -->
+		<column name="roleId" primary="true" type="long" />
+
+		<column name="applicationId" type="long" />
+		<column name="name" type="String" />
+		<column name="alias"  type="String" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="applicationId">
+			<order-column name="applicationId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="roleId" return-type="Collection">
+			<finder-column name="roleId" />
+		</finder>
+		<finder name="applicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="role_application" return-type="Collection">
+			<finder-column name="roleId" />
+			<finder-column name="applicationId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="CompApplication">
+
+		<!-- PK fields -->
+		<column name="compId" primary="true" type="long" />
+		<column name="applicationId" primary="true" type="long" />
+
+		<!-- Other fields -->
+		<column name="licenseId" type="long" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="compId">
+			<order-column name="compId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="applicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="comp_app" return-type="CompApplication">
+			<finder-column name="compId" />
+			<finder-column name="applicationId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="UserApplication">
+
+		<!-- PK fields -->
+		<column name="userId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+		<column name="applicationId" primary="true" type="long" />
+
+		<!-- NO SE USA -->
+		<column name="admin"  type="boolean" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="userId">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="applicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="user_comp" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_app" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="app_comp" return-type="Collection">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_comp_app" return-type="UserApplication">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+			<finder-column name="applicationId" />
+		</finder>
+
+		<finder name="app_comp_admins" return-type="Collection" where="admin=1">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_users" return-type="Collection" where="admin=0">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="UserRole">
+
+		<!-- PK fields -->
+		<column name="userId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+		<column name="roleId" primary="true" type="long" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="userId">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="roleId" return-type="Collection">
+			<finder-column name="roleId" />
+		</finder>
+		<finder name="user_comp_role" return-type="UserComp" unique="true">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+			<finder-column name="roleId" />
+		</finder>
+	</entity>
+
+	<entity local-service="true" name="UserCompany">
+
+		<!-- PK fields -->
+		<column name="userId" primary="true" type="long" />
+		<column name="compId" primary="true" type="long" />
+
+
+		<!-- Fields -->
+		<column name="name" type="String" />
+		<column name="lastName" type="String" />
+		<column name="nif" type="String" />
+		<column name="email" type="String" />
+		<column name="phone" type="String" />
+		<column name="admin" type="boolean" />
+		<column name="defaultUserComp" type="boolean" />
+		<column name="defaultClientId" type="long" />
+		<column name="defaultContractId" type="long" />
+		<column name="defaultEmpresaId" type="long" />
+		<column name="userEndDate" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="userId">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+		<finder name="nif" return-type="Collection">
+			<finder-column name="nif" />
+		</finder>
+		<finder name="user_comp" return-type="UserCompany">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="nif_email" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="email" />
+		</finder>
+		<finder name="nif_comp" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="email_comp" return-type="Collection">
+			<finder-column name="email" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="nif_email_comp" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="email" />
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_admins" return-type="Collection" where="admin=true">
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_users" return-type="Collection" where="admin=false">
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+
+	<!-- Audit changes -->
+	<entity local-service="true" name="Audit" >
+
+		<!-- PK fields -->
+		<column name="auditId" primary="true" type="long" />
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+
+		<column name="userId" type="long" />
+		<column name="action" type="String" />
+		<column name="description" type="String"  />
+		<column name="date" type="Date" />
+
+		<!-- Order -->
+		<order by="desc">
+			<order-column name="date" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+
+	</entity>
+
+
+	<entity local-service="true" name="CompClientApplication">
+
+
+		<!-- PK fields -->
+		<column name="empresaId" primary="true" type="long" />
+
+		<!-- Fields -->
+		<column name="cif" type="String" />
+		<column name="compId"  type="long" />
+		<column name="clientId" type="long" />
+		<column name="contractId"  type="long" />
+
+		<!-- json apps : -->
+		<column name="applicationId" type="String" />
+
+		<column name="name" type="String" />
+		<column name="description" type="String" />
+		<column name="observations" type="String" localized="true"/>
+
+		<column name="idEstado" type="String" />
+		<column name="logo" type="long" />
+
+		<column name="startDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="compId">
+			<order-column name="compId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="empresaId" return-type="CompClientApplication">
+			<finder-column name="empresaId" />
+		</finder>
+		<finder name="empresaIdApplicationId" return-type="CompClientApplication">
+			<finder-column name="empresaId" />
+			<finder-column name="applicationId" />
+		</finder>
+
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="applicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="clientId" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="clientId" />
+		</finder>
+		<finder name="contractId" return-type="Collection">
+			<finder-column name="contractId" />
+		</finder>
+		<finder name="clientId" return-type="Collection">
+			<finder-column name="clientId" />
+		</finder>
+		<finder name="contractClientId" return-type="Collection">
+			<finder-column name="contractId" />
+			<finder-column name="clientId" />
+		</finder>
+		<finder name="clientContract" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="clientId" />
+			<finder-column name="contractId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="UserApplicationClient">
+
+		<!-- PK fields -->
+		<column name="empresaId" primary="true" type="long" />
+		<column name="userId"  primary="true" type="long" />
+		<!-- PK fields -->
+
+
+		<column name="compId"  type="long" />
+		<column name="clientId"  type="long" />
+		<column name="contractId"  type="long" />
+		<column name="applicationId" type="String" />
+
+		<!-- NO SE USA -->
+		<column name="admin"  type="boolean" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="deleteDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="userId">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="empresaId" return-type="Collection">
+			<finder-column name="empresaId" />
+		</finder>
+		<finder name="user_client_app" return-type="UserApplicationClient">
+			<finder-column name="userId" />
+			<finder-column name="empresaId" />
+		</finder>
+
+
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="applicationId" return-type="Collection">
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_comp" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_app" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="applicationId" />
+		</finder>
+		<finder name="app_comp" return-type="Collection">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="user_by_contract" return-type="Collection">
+			<finder-column name="clientId" />
+			<finder-column name="contractId" />
+		</finder>
+		<finder name="user_comp_client" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+			<finder-column name="clientId" />
+		</finder>
+		<finder name="user_comp_app" return-type="UserApplicationClient">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+			<finder-column name="applicationId" />
+			<finder-column name="clientId" />
+			<finder-column name="contractId" />
+		</finder>
+
+		<finder name="app_comp_admins" return-type="Collection" where="admin=1">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_users" return-type="Collection" where="admin=0">
+			<finder-column name="applicationId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="compClientContract" return-type="Collection">
+			<finder-column name="compId" />
+			<finder-column name="clientId" />
+			<finder-column name="contractId" />
+		</finder>
+
+	</entity>
+
+	<!-- NO SE USA -->
+	<entity local-service="true" name="UserCompanyClient">
+
+		<!-- PK fields -->
+		<column name="userId" primary="true" type="long" />
+		<column name="empresaId" primary="true" type="long" />
+
+		<column name="compId"  type="long" />
+
+
+		<!-- Fields -->
+		<column name="name" type="String" />
+		<column name="lastName" type="String" />
+		<column name="nif" type="String" />
+		<column name="email" type="String" />
+		<column name="phone" type="String" />
+		<column name="admin" type="boolean" />
+		<column name="defaultUserComp" type="boolean" />
+		<column name="defaultClientId" type="long" />
+		<column name="defaultContractId" type="long" />
+		<column name="defaultEmpresaId" type="long" />
+		<column name="userEndDate" type="Date" />
+
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+		<order by="userId">
+			<order-column name="userId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="empresaId" return-type="Collection">
+			<finder-column name="empresaId" />
+		</finder>
+		<finder name="user_client" return-type="UserCompanyClient">
+			<finder-column name="userId" />
+			<finder-column name="empresaId" />
+		</finder>
+
+		<finder name="userId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="compId" return-type="Collection">
+			<finder-column name="compId" />
+		</finder>
+		<finder name="email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+		<finder name="nif" return-type="Collection">
+			<finder-column name="nif" />
+		</finder>
+		<finder name="user_comp" return-type="UserCompanyClient">
+			<finder-column name="userId" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="nif_email" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="email" />
+		</finder>
+		<finder name="nif_comp" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="email_comp" return-type="Collection">
+			<finder-column name="email" />
+			<finder-column name="compId" />
+		</finder>
+		<finder name="nif_email_comp" return-type="Collection">
+			<finder-column name="nif" />
+			<finder-column name="email" />
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_admins" return-type="Collection" where="admin=true">
+			<finder-column name="compId" />
+		</finder>
+
+		<finder name="app_comp_users" return-type="Collection" where="admin=false">
+			<finder-column name="compId" />
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="TemporalDataApi">
+		<column name="idDataTemporal" primary="true" type="long"/>
+		<column name="typeEvent" type="String"  />
+		<column name="dataApiEmpresa" type="String"  />
+		<column name="dataApiApplicaciones" type="String"  />
+		<column name="dataApiUsuarios" type="String"  />
+		<column name="procesado" type="Integer" />
+		<!-- procesado estado 0 no procesado 1 procesado -->
+		<column name="createDate" type="Date" />
+		<column name="procesadoDate" type="Date" />
+		<finder name="status_procesado" return-type="Collection">
+			<finder-column name="procesado"></finder-column>
+		</finder>
+
+	</entity>
+
+	<entity local-service="true" name="AuditadoDataApi">
+		<column name="idDataTemporal" primary="true" type="long"  />
+		<column name="mensaje" type="String" />
+		<column name="procesadoDate" type="Date" />
+		<column name="procesado" type="Integer" />
+		<column name="evento" type="String"/>
+		<column name="cif" type="String"/>
+		<column name="idClient" type="long"/>
+		<column name="idContract" type="long"/>
+		<column name="app" type="String"/>
+
+		<!-- Para filtar en el caso de vista de errores -->
+		<column name="changeStateDate" type="Date" /> <!-- fecha del cambio de estado -->
+		<column name="state" type="boolean" /> <!-- false: sin procesar por el usuario admin , true: procesado por usuario admin -->
+		<column name="userIdChangeState" type="long" /> <!-- id del usuario que cambia el estado -->
+
+		<!-- procesado estado 0 || > 11 okay, el resto id de excepciones -->
+	</entity>
+
+</service-builder>

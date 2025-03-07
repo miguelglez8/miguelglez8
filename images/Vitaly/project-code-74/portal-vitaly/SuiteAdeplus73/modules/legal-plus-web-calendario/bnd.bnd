@@ -1,0 +1,6 @@
+Bundle-Name: legal-plus-web-calendario
+Bundle-SymbolicName: com.legalplus.liferay.portlet.web.calendario
+Bundle-Version: 1.0.0
+Export-Package: com.legalplus.liferay.portlet.web.calendario.constants
+-includeresource
+Import-Package:*;version="0";resolution:=optional

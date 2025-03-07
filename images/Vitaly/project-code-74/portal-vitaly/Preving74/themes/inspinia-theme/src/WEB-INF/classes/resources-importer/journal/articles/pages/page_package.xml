@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[ 
+<div class="wrapper wrapper-content animated fadeInRight">
+
+
+	<div class="row">
+	<div class="col-lg-12">
+		<div class="ibox">
+			<div class="ibox-content">
+
+				<div class="row">
+					<div class="">
+						<div class="text-center m-t-lg">
+							<img src="[$FILE=html_logo.png$]" alt="HTML" style="width: 100px">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="">
+
+						<div class="text-center m-t-lg">
+							<h1>Inspinia <span class="text-danger"><br/>Static HTML/JS</span></h1>
+							<small>Static HTML/JS version</small>
+						</div>
+						<div>
+							<div class="hr-line-dashed"></div>
+							<div class="text-center p-lg">
+								<p>
+									<strong>Inspinia <span class="text-danger">HTML/JS</span></strong> is static version of INSPINIA theme.<br/>
+									This version contains all components and plugin created with strict HTML and jQuery.
+									<br/>
+									This version is great if you are a PHP or JAVA programmer.
+									As each page is created separately it allows you to quickly implement it for your project by including needed resources.
+									The code is clean and clear so you should not have any problems with its implementation.
+									Like in all is has also implemented more than 30 plugins which allow you to give your application a great new functionality.
+								</p>
+
+								<p class="text-center m-t-md">
+									<a target="_blank" href="home" class="btn btn-danger">Live HTML/JS version</a>
+								</p>
+							</div>
+							<div>
+								<div class="text-center">
+									<small>If you need any help feel free to write to us on contact@themeray.com or support@webapplayers.com.
+									</small>
+								</div>
+							</div>
+						</div>
+
+					</div>					
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+        
+ ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

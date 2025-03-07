@@ -1,0 +1,5 @@
+MANUAL DE AYUDA USUARIO EMPLEADO
+Manual de autoayuda que permite al cliente poder acceder a toda la información detallada sobre la definición y utilización de las funcionalidades de la aplicación, como pueden ser: Registro horario, Histórico, Mi perfil, Ayuda, Soporte y Salir.
+
+MANUAL DE AYUDA USUARIO ADMINISTRADOR
+Manual de autoayuda que permite al cliente poder acceder a toda la información detallada sobre la definición y utilización de las funcionalidades de la aplicación, como pueden ser: Registro horario, Histórico, Mi perfil, Ayuda, Usuarios, Calendario, Tipos de registro horario, Características, Informes, Soporte y Salir.

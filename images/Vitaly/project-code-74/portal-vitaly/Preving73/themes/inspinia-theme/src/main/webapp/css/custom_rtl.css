@@ -1,0 +1,104 @@
+html.rtl .arrow {
+  float: left; }
+html.rtl .nav-second-level li a {
+  padding: 7px 52px 7px 10px; }
+html.rtl #top-navigation .nav > li.active {
+  border-right: 4px solid;
+  border-left: none; }
+html.rtl .toast-top-right {
+  right: inherit;
+  left: 12px; }
+html.rtl .toast-close-button {
+  right: inherit;
+  left: -.3em;
+  float: left; }
+html.rtl #toast-container > .toast:before {
+  float: right; }
+html.rtl #toast-container > .toast-success:before {
+  content: ''; }
+html.rtl #toast-container > .toast-success:after {
+  content: "\f00C"; }
+html.rtl #toast-container > .toast {
+  position: relative; }
+html.rtl #toast-container > .toast:after {
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFF;
+  left: 40px;
+  top: 60%;
+  margin: 0; }
+html.rtl .navbar .navbar-search .btn.btn-primary {
+  float: right; }
+html.rtl #_145_dockbar .nav > li {
+  float: right; }
+html.rtl #_145_dockbar .nav > li > a {
+  word-break: break-word; }
+html.rtl .navbar .nav.navbar-top-links {
+  float: left !important; }
+html.rtl .dockbar .navbar-inner .site-administration-menu li, html.rtl .dropdown-menu > li > a {
+  text-align: right; }
+html.rtl .dockbar .navbar-inner .site-administration-menu li a {
+  padding: 3px 40px 3px 5px; }
+html.rtl .portlet-topper .portlet-topper-toolbar {
+  left: 3px;
+  right: inherit; }
+html.rtl .dropdown-menu.lfr-menu-list {
+  left: 19px;
+  right: inherit; }
+html.rtl .col-xs-1, html.rtl .col-sm-1, html.rtl .col-md-1, html.rtl .col-lg-1, html.rtl .col-xs-2, html.rtl .col-sm-2, html.rtl .col-md-2, html.rtl .col-lg-2, html.rtl .col-xs-3, html.rtl .col-sm-3, html.rtl .col-md-3, html.rtl .col-lg-3, html.rtl .col-xs-4, html.rtl .col-sm-4, html.rtl .col-md-4, html.rtl .col-lg-4, html.rtl .col-xs-5, html.rtl .col-sm-5, html.rtl .col-md-5, html.rtl .col-lg-5, html.rtl .col-xs-6, html.rtl .col-sm-6, html.rtl .col-md-6, html.rtl .col-lg-6, html.rtl .col-xs-7, html.rtl .col-sm-7, html.rtl .col-md-7, html.rtl .col-lg-7, html.rtl .col-xs-8, html.rtl .col-sm-8, html.rtl .col-md-8, html.rtl .col-lg-8, html.rtl .col-xs-9, html.rtl .col-sm-9, html.rtl .col-md-9, html.rtl .col-lg-9, html.rtl .col-xs-10, html.rtl .col-sm-10, html.rtl .col-md-10, html.rtl .col-lg-10, html.rtl .col-xs-11, html.rtl .col-sm-11, html.rtl .col-md-11, html.rtl .col-lg-11, html.rtl .col-xs-12, html.rtl .col-sm-12, html.rtl .col-md-12, html.rtl .col-lg-12 {
+  float: right; }
+html.rtl .timeline-item .content {
+  border-left: none;
+  border-right: 1px solid #e7eaec; }
+html.rtl .ibox-title h5 {
+  float: right; }
+html.rtl .right {
+  float: left; }
+html.rtl .navbar-form-custom input[type=image] {
+  left: -31px;
+  right: inherit; }
+html.rtl .chat-bar {
+  right: inherit;
+  left: 0; }
+html.rtl .chat-bar .chat-status {
+  float: right; }
+html.rtl .chat-bar .chat-panel {
+  bottom: 22px;
+  left: 0;
+  right: inherit; }
+html.rtl .chat-bar .selected .chat-panel {
+  right: -200px; }
+html.rtl #p_p_id_1_WAR_chatportlet_ .panel-title, html.rtl .chat-panel .panel-profile {
+  text-align: center; }
+html.rtl body.collapsed-menu #p_p_id_145_ .open .dropdown-menu {
+  right: inherit;
+  left: 0; }
+html.rtl body.collapsed-menu #p_p_id_145_ .open .dropdown-menu:before, html.rtl body.collapsed-menu #p_p_id_145_ .open .dropdown-menu:after {
+  left: 9px;
+  right: inherit; }
+html.rtl body.collapsed-menu #p_p_id_145_ .nav-collapse ul.nav-account-controls .admin-links .dropdown-menu li .nav-item-label, html.rtl body.collapsed-menu #p_p_id_145_ .nav-collapse ul.nav-account-controls .user-avatar .nav-item-label, html.rtl body.collapsed-menu #p_p_id_145_ .nav-collapse > ul#_145_navAddControls > li .nav-item-label {
+  display: initial; }
+html.rtl body.mini-navbar #page-wrapper {
+  margin: 0 70px 0 0; }
+html.rtl #_145_layoutsNav.nav li > a {
+  word-break: break-word; }
+html.rtl .radio, html.rtl .checkbox {
+  padding-left: 0;
+  padding-right: 20px; }
+html.rtl .radio input[type="radio"], html.rtl .radio-inline input[type="radio"], html.rtl .checkbox input[type="checkbox"], html.rtl .checkbox-inline input[type="checkbox"] {
+  margin-left: 0;
+  margin-right: -20px; }
+
+@media (min-width: 768px) {
+  html.rtl #page-wrapper {
+    margin-left: 0;
+    margin-right: 220px; }
+
+  html.rtl .navbar-header {
+    float: right; } }
+@media (max-width: 800px) {
+  html.rtl .navbar-form-custom {
+    float: right; } }
+    

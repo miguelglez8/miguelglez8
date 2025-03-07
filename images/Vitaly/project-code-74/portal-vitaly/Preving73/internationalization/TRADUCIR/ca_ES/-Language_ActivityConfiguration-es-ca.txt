@@ -1,0 +1,69 @@
+
+
+No hi ha activitats al lloc web
+Administració de tipus de registre horari
+Nom
+Temps de treball
+Tipus
+Color
+Actiu
+Accions
+
+Tipus de registres horaris
+Nou registre horari
+
+Editar activitat
+Nova activitat
+Dades de l'activitat
+Activitat
+Temps de treball
+Sí
+No
+Tipus de registre horari
+Treball
+Absència
+Color
+Actiu
+Sí
+No
+
+Activitat
+Computa com a temps de treball
+Sí
+No
+Tipus de registre horari
+Treball
+Absència
+Color
+Actiu
+Sí
+No
+
+Cancel·lar
+Desar
+
+Cancel·lar
+Desar
+
+¿Està segur que desitja esborrar la següent activitat?\nDesprés no podrà desfer els canvis.
+
+Processant...
+Mostrar _MENÚ_ activitats
+No s'han trobat activitats
+Cap activitat disponible en aquesta taula
+Mostrant activitats del _START_ al _END_ d'un total de _TOTAL_ activitats
+Mostrant activitats del 0 al 0 d'un total de 0 activitats
+(filtrat d'un total de _MAX_ activitats)
+
+Cercar:
+
+
+Carregant...
+Primer
+Últim
+Següent
+Anterior
+: Activar per ordenar la columna de manera ascendent
+: Activar per ordenar la columna de manera descendent
+Copiar
+Visibilitat

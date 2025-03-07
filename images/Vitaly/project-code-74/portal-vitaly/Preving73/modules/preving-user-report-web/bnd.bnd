@@ -1,0 +1,5 @@
+Bundle-Name: preving-user-report-web
+Bundle-SymbolicName: com.preving.liferay.portlet.user.report.web
+Bundle-Version: 1.0.0
+Export-Package: com.preving.liferay.portlet.user.report.web.constants
+Import-Package:*;version="0";resolution:=optional

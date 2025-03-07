@@ -1,0 +1,4 @@
+Bundle-Name: adeplus-company-selector-web
+Bundle-SymbolicName: com.adeplus.liferay.portlet.company.selector.web
+Bundle-Version: 1.0.0
+Export-Package: com.adeplus.liferay.portlet.company.selector.web.constants

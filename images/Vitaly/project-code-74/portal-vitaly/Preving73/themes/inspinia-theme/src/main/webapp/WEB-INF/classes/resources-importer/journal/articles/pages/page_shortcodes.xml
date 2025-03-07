@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+        <dynamic-element name="content" type="text_area"
+        index-type="keyword" index="0">
+                <dynamic-content language-id="en_US">
+                        <![CDATA[ 	<!-- Syntax shBrushJScript -->
+	<script>
+         window.__define = window.define;
+         window.__require = window.require;
+         window.define = undefined;
+         window.require = undefined;
+    </script>
+	
+	<script type="text/javascript" src="/o/inspinia-theme/js/highlighter/shCore.js"></script>
+	<script type="text/javascript" src="/o/inspinia-theme/js/highlighter/shBrushJScript.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
+	<!-- Flot -->
+    <script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.js"></script>
+    <script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.pie.js"></script>
+	
+	<!-- JSKnob -->
+	<script src="/o/inspinia-theme/js/plugins/jsKnob/jquery.knob.js"></script>
+	<script src="/o/inspinia-theme/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+	<script src="/o/inspinia-theme/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+	<script src="/o/inspinia-theme/js/plugins/switchery/switchery.js"></script>
+	<script>
+         window.define = window.__define;
+         window.require = window.__require;
+         window.__define = undefined;
+         window.__require = undefined;
+     </script>
+	 
+	
+	<div class="short-codes">
+		<div class="row border-bottom white-bg dashboard-header"> 
+			<div class="col-sm-12">
+				<h2  class="font-bold">Liferay theme settings</h2>
+				<p>
+					<small>4 different color schemes, when you choose one of those color a new ccs class will be added to the page body</small><br /><br />	
+					- green:default theme skin <br />
+					- blue theme skin: skin-1 <br />
+					- ultra theme skin: skin-2 <br />
+					- yellow theme skin: skin-3 <br /><br /><br />
+					<img src="[$FILE=liferay_settings.jpg$]" alt="Liferay theme settings" />
+				</p>
+			</div>
+		</div>
+		
+		<div class="clearfix"></div>
+		<h2  class="font-bold">Elements</h2>
+		<small>Inspinia uses the same elements and classes of Bootstrap <a href="http://getbootstrap.com" target="_blank">v3.3.4 <i class="icon-external-link" ></i></a> and it is using the <a href="http://fontawesome.io" target="_blank">font awesome <i class="icon-external-link" ></i></a></small><br /><br />
+		Bellow we are going to give you a hint on how to use any of the theme components:<br />
+		<h2  class="font-bold">1- Graphs and Chart</h2>
+		<small>For more example take a look to <a href="graph_flot" target="_blank">the float section <i class="icon-external-link" ></i></a></small><br /><br /><br />
+		
+		
+		<script>
+			$(function () {
+		    	$('#flot a, #form a, #spinner a, #slider a, #datePicker a, #switcher a').click(function (e) {
+					e.preventDefault();
+					$(this).tab('show');//bootstarp function
+				});
+			});
+		</script>
+		
+		<ul class="nav nav-tabs" id="flot" data-tabs="tabs">
+			<li  ><a data-toggle="tab" href="#tabCode"> Code </a></li>
+			<li class="active"><a data-toggle="tab" href="#tabPreview"> Preview </a></li>
+		</ul>
+			
+		<div class="tab-content">
+			<div class="tab-pane " id="tabCode">
+				<pre class="brush: js;">
+					&lt;!-- Flot --&gt;
+					&lt; script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.js"&gt;&lt; /script&gt;
+					&lt; script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.tooltip.min.js"&gt;&lt; /script&gt;
+					&lt; script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.spline.js"&gt;&lt; /script&gt;
+					&lt; script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.resize.js"&gt;&lt; /script&gt;
+					&lt; script src="/o/inspinia-theme/js/plugins/flot/jquery.flot.pie.js"&gt;&lt; /script&gt;
+					&lt; div class="flot-chart-content" id="flot-dashboard-chart"&gt;&lt; /div&gt;
+					&lt; script&gt;
+					    $(document).ready(function() {
+					    	var data1 = [
+					            [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+					        ];
+					        var data2 = [
+					            [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+					        ];
+					        $("#flot-dashboard-chart").length &amp;&amp; $.plot($("#flot-dashboard-chart"), [
+					            data1, data2
+					        ],
+					                {
+					                    series: {
+					                        lines: {
+					                            show: false,
+					                            fill: true
+					                        },
+					                        splines: {
+					                            show: true,
+					                            tension: 0.4,
+					                            lineWidth: 1,
+					                            fill: 0.4
+					                        },
+					                        points: {
+					                            radius: 0,
+					                            show: true
+					                        },
+					                        shadowSize: 2
+					                    },
+					                    grid: {
+					                        hoverable: true,
+					                        clickable: true,
+					                        tickColor: "#d5d5d5",
+					                        borderWidth: 1,
+					                        color: '#d5d5d5'
+					                    },
+					                    colors: ["#1ab394", "#464f88"],
+					                    xaxis:{
+					                    },
+					                    yaxis: {
+					                        ticks: 4
+					                    },
+					                    tooltip: false
+					                }
+					        );
+					    });
+					&lt; /script&gt;
+					
+				</pre>
+			</div>
+		
+			<div class="tab-pane white-bg active" id="tabPreview" style="height: 300px">
+				<div class="flot-chart-content" id="flot-dashboard-chart"></div>
+				
+			
+		<script>
+		    $(document).ready(function() {
+		    	try{ 
+		        var data1 = [
+		            [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+		        ];
+		        var data2 = [
+		            [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+		        ];
+		        $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+		            data1, data2
+		        ],
+		                {
+		                    series: {
+		                        lines: {
+		                            show: false,
+		                            fill: true
+		                        },
+		                        splines: {
+		                            show: true,
+		                            tension: 0.4,
+		                            lineWidth: 1,
+		                            fill: 0.4
+		                        },
+		                        points: {
+		                            radius: 0,
+		                            show: true
+		                        },
+		                        shadowSize: 2
+		                    },
+		                    grid: {
+		                        hoverable: true,
+		                        clickable: true,
+		                        tickColor: "#d5d5d5",
+		                        borderWidth: 1,
+		                        color: '#d5d5d5'
+		                    },
+		                    colors: ["#1ab394", "#464f88"],
+		                    xaxis:{
+		                    },
+		                    yaxis: {
+		                        ticks: 4
+		                    },
+		                    tooltip: false
+		                }
+		        ); 
+				}catch(exception)
+				{
+					console.log(exception);
+				}
+		    });
+		</script>
+			</div>
+		</div>
+		
+		<div class="clearfix"></div><br /><br />
+		<h2  class="font-bold">2- Forms</h2>
+		<small>For more example take a look to <a href="form_basic" target="_blank">the forms section <i class="icon-external-link" ></i></a></small><br /><br /><br />
+		
+		<ul class="nav nav-tabs" id="form" data-tabs="tabs">
+			<li  class="active"><a data-toggle="tab" href="#tabFormCode"> Code </a></li>
+			<li><a data-toggle="tab" href="#tabFormPreview"> Preview </a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane active" id="tabFormCode">
+				<pre class="brush: js;">
+					<h3 class="m-t-none m-b">Sign in</h3>
+	                <p>Sign in today for more expirience.</p>
+	                <form role="form">
+	                    <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control"></div>
+	                    <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control"></div>
+	                    <div>
+	                        <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+	                        <label> <input type="checkbox" class="i-checks"> Remember me </label>
+	                    </div>
+	                </form>
+				</pre>
+			</div>
+			<div class="tab-pane white-bg" style="padding: 10px;" id="tabFormPreview">
+				<h3 class="m-t-none m-b">Sign in</h3>
+	            <p>Sign in today for more expirience.</p>
+	            <form role="form">
+	                <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control"></div>
+	                <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control"></div>
+	                <div>
+	                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+	                    <label> <input type="checkbox" class="i-checks"> Remember me </label>
+	                </div>
+	            </form>
+			</div>
+		</div>
+	
+		<div class="clearfix"></div><br /><br />
+		<h2  class="font-bold">3- Spinners</h2>
+		<small>For more details visist this<a href="http://anthonyterrien.com/knob/" target="_blank"> link <i class="icon-external-link" ></i></a></small><br /><br />
+		<ul class="nav nav-tabs" id="spinner" data-tabs="tabs">
+			<li><a data-toggle="tab" href="#tabSpinnerCode"> Code </a></li>
+			<li  class="active"><a data-toggle="tab" href="#tabSpinnerPreview"> Preview </a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane " id="tabSpinnerCode">
+				<pre class="brush: js;">
+		   			&lt;script src="/o/inspinia-theme/js/plugins/jsKnob/jquery.knob.js"&gt; &lt;/script&gt;
+					&lt; script&gt;
+				   		$(document).ready(function(){
+				        	$(".dial").knob();
+				   		});
+			   		&lt;/script&gt;
+		   		
+					<input type="text" value="75" class="dial m-r-sm" data-fgColor="#1AB394" data-width="85" data-height="85" />
+					
+					<input type="text" value="75" class="dial m-r-sm" data-fgColor="#ED5565" data-width="85" data-height="85" data-cursor=true data-thickness=.3/>
+				</pre>
+			</div>
+			
+			<div class="tab-pane white-bg text-center active" style="padding: 10px;" id="tabSpinnerPreview">
+				
+		   		<script>
+			   		$(document).ready(function(){
+			        	$(".dial").knob();
+			   		});
+		   		</script>
+		   
+				<div class="m-r-md inline">
+					<input type="text" value="75" class="dial m-r-sm" data-fgColor="#1AB394" data-width="85" data-height="85" />
+		        </div>	        
+		        <div class="m-r-md inline">
+		        	<input type="text" value="75" class="dial m-r-sm" data-fgColor="#ED5565" data-width="85" data-height="85" data-cursor=true data-thickness=.3/>
+		        </div>        
+			</div>
+		</div>
+		
+		<div class="clearfix"></div><br /><br />
+		<h2  class="font-bold">4- Sliders</h2>
+		<small>For more details visist this<a href="https://github.com/IonDen/ion.rangeSlider" target="_blank"> link <i class="icon-external-link" ></i></a></small><br /><br />
+		<ul class="nav nav-tabs" id="slider" data-tabs="tabs">
+			<li  class="active"><a data-toggle="tab" href="#tabSliderCode"> Code </a></li>
+			<li><a data-toggle="tab" href="#tabSliderPreview"> Preview </a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane active" id="tabSliderCode">
+				<pre class="brush: js;">
+					&lt;link href="/o/inspinia-theme/css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet" /&gt;
+	    			&lt;link href="/o/inspinia-theme/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet"/&gt;
+	    			&lt;script src="/o/inspinia-theme/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"&gt;&lt;script&gt;
+	    			
+					&lt;script &gt;
+						$("#ionrange_1").ionRangeSlider();
+		
+				        $("#ionrange_2").ionRangeSlider({
+				        	grid: true,
+				            from: 5,
+				            values: [
+				                "zero", "one",
+				                "two", "three",
+				                "four", "five",
+				                "six", "seven",
+				                "eight", "nine",
+				                "ten"
+				            ]
+				        });
+					&lt;/script&gt;
+					<div id="ionrange_1"> </div>
+	                <div id="ionrange_2"> </div>
+				</pre>
+			</div>
+			
+			<div class="tab-pane white-bg text-center" style="padding: 10px;" id="tabSliderPreview">
+	   			
+				<div id="ionrange_3"> </div>
+               	<div id="ionrange_4"> </div>
+               	
+				<link href="/o/inspinia-theme/css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+	   			<link href="/o/inspinia-theme/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+	   			
+	   			<script>
+						$("#ionrange_3").ionRangeSlider();
+						
+						$("#ionrange_4").ionRangeSlider({
+							grid: true,
+						    from: 5,
+						    values: [
+						        "zero", "one",
+						        "two", "three",
+						        "four", "five",
+						        "six", "seven",
+						        "eight", "nine",
+						        "ten"
+						    ]
+						});
+				</script>
+			</div>
+		</div>     
+		    
+	    <div class="clearfix"></div><br /><br />
+		<h2  class="font-bold">5- Date picker</h2>
+		<small>For more details visist this<a href="https://github.com/eternicode/bootstrap-datepicker" target="_blank"> link <i class="icon-external-link" ></i></a></small><br /><br />
+		<ul class="nav nav-tabs" id="datePicker" data-tabs="tabs">
+			<li><a data-toggle="tab" href="#tabDateCode"> Code </a></li>
+			<li  class="active"><a data-toggle="tab" href="#tabDatePreview"> Preview </a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane " id="tabDateCode">
+				<pre class="brush: js;">
+					<div class="form-group" id="data_1">
+                       <label class="font-noraml">Simple data input format</label>
+                       <div class="input-group date">
+                           <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                       </div>
+                   	</div>
+                            
+					<link href="/o/inspinia-theme/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+					
+					<script>
+        				$(document).ready(function(){
+        					$('#data_1 .input-group.date').datepicker({
+        		                todayBtn: "linked",
+        		                keyboardNavigation: false,
+        		                forceParse: false,
+        		                calendarWeeks: true,
+        		                autoclose: true
+        		            });
+        				});
+       				</script>
+       				
+                </pre>
+            </div>
+            
+			<div class="tab-pane white-bg text-center active" style="padding: 10px;" id="tabDatePreview">
+				<div class="form-group" id="data_2">
+                       <label class="font-noraml">Simple data input format</label>
+                       <div class="input-group date">
+                           <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                       </div>
+                   	</div>
+                   	
+				<link href="/o/inspinia-theme/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+				
+				<script>
+       				$(document).ready(function(){
+       					$('#data_2 .input-group.date').datepicker({
+       		                todayBtn: "linked",
+       		                keyboardNavigation: false,
+       		                forceParse: false,
+       		                calendarWeeks: true,
+       		                autoclose: true
+       		            });
+       				});
+     			</script>
+			</div>
+        </div>
+        
+        
+	    <div class="clearfix"></div><br /><br />
+		<h2  class="font-bold">6- Switcher</h2>
+		<small>For more details visist this<a href="http://abpetkov.github.io/switchery/" target="_blank"> link <i class="icon-external-link" ></i></a></small><br /><br />
+         
+         <ul class="nav nav-tabs" id="switcher" data-tabs="tabs">
+			<li class="active"><a data-toggle="tab" href="#tabSwitcherCode"> Code </a></li>
+			<li ><a data-toggle="tab" href="#tabSwitcherPreview"> Preview </a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane active" id="tabSwitcherCode">
+				<pre class="brush: js;">
+					<input type="checkbox" class="js-switch" checked /><br /><br />
+                    <input type="checkbox" class="js-switch_2" checked /><br /><br />
+                    <input type="checkbox" class="js-switch_3"  />
+                    
+                    
+    				<link href="/o/inspinia-theme/css/plugins/switchery/switchery.css" rel="stylesheet" />
+				   	 <script type="syntaxhighlighter" >
+                    	$(document).ready(function(){
+                    		var elem = document.querySelector('.js-switch');
+                            var switchery = new Switchery(elem, { color: '#1AB394' });
+
+                            var elem_2 = document.querySelector('.js-switch_2');
+                            var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+
+                            var elem_3 = document.querySelector('.js-switch_3');
+                            var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+                    	});
+                    </script>
+				</pre>
+			</div>
+            
+			<div class="tab-pane white-bg text-center " style="padding: 10px;" id="tabSwitcherPreview">
+				<div class="ibox-content">
+                    <input type="checkbox" class="js-switch_" checked /><br /><br />
+                    <input type="checkbox" class="js-switch__2" checked /><br /><br />
+                    <input type="checkbox" class="js-switch__3"  />
+                </div>
+                
+   				<link href="/o/inspinia-theme/css/plugins/switchery/switchery.css" rel="stylesheet" />
+			    <script>
+                  	$(document).ready(function(){
+                  		var elem = document.querySelector('.js-switch_');
+                        var switchery = new Switchery(elem, { color: '#1AB394' });
+
+                        var elem_2 = document.querySelector('.js-switch__2');
+                        var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+
+                        var elem_3 = document.querySelector('.js-switch__3');
+                        var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+                          
+                  	});
+               </script>
+                    
+			</div>
+		</div>
+		<br />
+		For more details about the css style take a look to the UI Elements section and grid section.
+		<br /><br />
+		<div class="row border-bottom white-bg dashboard-header"> 
+			<div class="col-sm-12">
+				<h2  class="font-bold">Plugins</h2>
+				<p>Bootstrap css front-end framework.<a href="http://getbootstrap.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jQuery fast, small, and feature-rich JavaScript library.<a href="http://jquery.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>DataTables advanced interaction controls in any HTML table. <a href="https://datatables.net/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>DropzoneJS library that provides drag'n'drop file uploads with image previews. <a href="http://www.dropzonejs.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>EasyPieChart plugin to render and animate nice pie charts with the HTML5 canvas element <a href="http://rendro.github.io/easy-pie-chart/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Flot simple but powerful chart plugin <a href="http://www.flotcharts.org/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>FullCalendar is a jQuery plugin that provides a full-sized, drag & drop calendar <a href="http://fullcalendar.io/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Gritter Notification plugin <a href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>iCheck Custom radio and checkbox buttons <a href="http://fronteed.com/iCheck/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>IonRangeSlider Easy and light range slider plugin <a href="https://github.com/IonDen/ion.rangeSlider" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Jasny additional components for bootstrap framework. <a href="http://www.jasny.net/bootstrap/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Jeditable Edit In Place Plugin For jQuery <a href="http://www.appelsiini.net/projects/jeditable" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jQueryUI set of user interface interactions, effects, widgets, and themes built on top of the jQuery <a href="http://jqueryui.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>bootstrapdatepicker datepicker <a href="https://github.com/eternicode/bootstrap-datepicker" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Chosen plugin that makes long, unwieldy select boxes much more user-friendly <a href="http://harvesthq.github.io/chosen/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jsKnob Nice, downward compatible, touchable, jQuery dial. <a href="http://anthonyterrien.com/knob/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>metisMenu Easy menu jQuery plugin for Twitter bootstrap <a href="https://github.com/onokumus/metisMenu" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Morris.js good-looking charts library <a href="http://www.oesmith.co.uk/morris.js/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>nouislider Lightweight javascript range slider <a href="http://refreshless.com/nouislider/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Pace Automatic page load progress bar <a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Peity simple jQuery plugin that converts an element's content into a simple svg mini, pie, line or bar chart <a href="http://benpickles.github.io/peity/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Rickshaw toolkit for creating interactive time series graphs <a href="http://code.shutterstock.com/rickshaw/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Sparkline jQuery inline chart library <a href="http://omnipotent.net/jquery.sparkline/#s-about" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Steps smart UI component which allows you to easily create wizard-like interfaces <a href="http://www.jquery-steps.com/GettingStarted" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Summernote Super Simple WYSIWYG Editor on Bootstrap <a href="http://hackerwins.github.io/summernote/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Switchery simple component that turn default HTML checkbox inputs into iOS 7 style switches. <a href="http://abpetkov.github.io/switchery/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Validation jQuery Validation Plugin <a href="http://jqueryvalidation.org/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jvectormap Java Script pluggin for vector maps <a href="http://jvectormap.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Unsplash all images from Unsplash - Free hi-resolution photos <a href="https://unsplash.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>UiFaces all avatar faces from UiFaces <a href="http://jqueryvalidation.org/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>UICalendar Directive for FullCalendar <a href="https://github.com/angular-ui/ui-calendar" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Nestable Nestable list jQuery plugin <a href="https://github.com/dbushell/Nestable" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>codeMirror Code editor jQuery plugin <a href="http://codemirror.net/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>GoogleMapsApi Google maps API <a href="https://developers.google.com/maps/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>EmailTemplate Transactional Email template <a href="https://github.com/mailgun/transactional-email-templates" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jqGrid jqGrid plugin for jQuery <a href="http://www.trirand.com/blog/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>ClassHelper Class helper <a href="https://github.com/ded/bonzo" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>AnimatedHeader Animated header plugin <a href="http://tympanus.net/Blueprints/AnimatedHeader/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Timeline: Vertical timeline inspiration <a href="http://codyhouse.co/gem/vertical-timeline/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>OpenSans Google Open Sans Web Font <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>ImageCrop: Plugin for image crop function <a href="https://github.com/fengyuanchen/cropper" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Toastr: Notification plugin <a href="https://github.com/CodeSeven/toastr" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>BootstrapColorPicker: jQuery color picker plugin <a href="http://mjolnic.com/bootstrap-colorpicker/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>WOW: Animations for scroll down page <a href="https://github.com/matthieua/WOW" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>Meanjs: MEANJS full-stack JavaScript <a href="http://meanjs.org/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>LightboxGallery: touch-enabled, responsive and customizable image & video gallery <a href="https://blueimp.github.io/Gallery/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>jsTree: jsTree is jquery plugin, that provides interactive trees <a href="http://www.jstree.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>RTLbootstrap: Bootstrap RTL provides simple yet robust right-to-left capability for Bootstrap 3 <a href="https://github.com/morteza/bootstrap-rtl" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>googleDiff: The Diff Match and Patch libraries offer robust algorithms to perform the operations required for synchronizing plain text. <a href="https://code.google.com/p/google-diff-match-patch/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>tinycon: A small library for manipulating the favicon <a href="https://github.com/tommoor/tinycon" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>idletimer: jQuery idle timer <a href="https://github.com/thorst/jquery-idletimer" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>spinners: A collection of loading indicators animated with CSS <a href="https://github.com/tobiasahlin/SpinKit" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>meteor: Open-source platform for building top-quality web apps <a href="https://www.meteor.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>meteorDropZone: A Meteor package for the popular file picker <a href="https://github.com/devonbarrett/meteor-dropzone/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>prettyTextDiff: A wrapper around Google's diff_match_patch library <a href="https://github.com/arnab/jQuery.PrettyTextDiff" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>clockPicker: Special clock picker <a href="http://weareoutman.github.io/clockpicker/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>chartist: Javascript chart library <a href="https://gionkunz.github.io/chartist-js/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>dateRangePicker: Date range picker for Bootstra <a href="http://www.daterangepicker.com/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>awesomeBootstrapCheckbox: Custom checkbox and radio controls <a href="https://github.com/flatlogic/awesome-bootstrap-checkbox" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>fooTable: Table jQuery plugin <a href="http://fooplugins.com/footable-demos/" target="_blank" ><i class="icon-external-link" ></i></a></p>
+				<p>sweetAlert: Custom javascript alerts <a href="https://github.com/t4t5/sweetalert" target="_blank" ><i class="icon-external-link" ></i></a></p>
+			</div>
+		</div>
+	</div> ]]>
+  </dynamic-content>
+  </dynamic-element>
+</root>
+            

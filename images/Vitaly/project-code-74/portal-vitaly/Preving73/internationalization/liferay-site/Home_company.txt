@@ -1,0 +1,9 @@
+Mi registro de horas
+
+Registro horario
+
+Accede a la aplicación para introducir los registros horarios de tus jornadas laborales. Podrás indicar el tipo de actividad que has desarrollado y el tiempo dedicado.
+
+Histórico
+
+Podrás ver el histórico de todos tus registros horarios en un gráfico con los detalles de cada uno de ellos que has realizado. También podrás ver los totales que has introducido y filtrar por fechas.

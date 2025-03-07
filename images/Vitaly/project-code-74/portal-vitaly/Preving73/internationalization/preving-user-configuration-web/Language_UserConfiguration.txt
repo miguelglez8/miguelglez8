@@ -1,0 +1,129 @@
+
+
+ Administración de usuarios
+
+ No existen usuarios en el sitio web.
+ Nombre
+ Correo electrónico
+ Fecha de alta
+ Centro de trabajo
+ Fecha de baja
+ NIF
+ Activo
+ Editar
+ Administrador
+ Administrador
+ Si
+ No
+
+ Crear usuario
+ Datos del usuario
+ Nombre
+ Apellidos
+ Correo electrónico
+ NIF
+ Género
+ Hombre
+ Mujer
+ Puesto de trabajo
+ Centro
+ Salario
+ Fecha de baja
+ Para desactivar el usuario establece una fecha igual o inferior a hoy, o bien, establece una fecha futura para que un proceso desactive el usuario cuando llegue la fecha.
+ Activo: 
+ Si
+ No
+ Editar usuario
+ Datos del usuario
+ Reenviar contraseña
+ Desactivar usuario
+ Activar usuario
+ Añadir de administrador
+ Quitar de administrador
+
+ Todos
+
+ Usuarios
+ Crear usuario
+ Importación
+
+ Configuración
+
+ Se ha procesado el fichero CSV
+ Un proceso está añadiendo todos lo usuarios a la empresa. Cuando este proceso finalice se le enviará un mensaje con un resumen de la importación y podrá visualizar los usuarios en la página de usuarios.
+
+ Importar usuarios
+ CSV con los usuarios
+
+ Es obligatorio añadir el mail del usuario.
+ El formato del correo electrónico es incorrecto.
+ El salario debe ser un valor numérico.
+
+ Campo requerido
+
+ Se ha creado con éxito el usuario.
+ No se ha podido crear el usuario. Revise los datos introducidos.
+ Ya existe un usuario con ese correo en el sistema. No se han modificado los datos.
+ Se ha envíado un mail al usuario para que pueda cambiar la contraseña.
+ Se ha procesado el fichero de usuarios correctamente.
+ Se han detectado errores en el fichero CSV. Es posible que no se hayan creado todos los usuarios. Revise sus notificaciones.
+ Hay errores en el fichero CSV. Revise sus notificaciones.
+
+ Procesando...
+ Mostrar _MENU_ usuarios
+ No se encontraron usuarios
+ Ning&#250;n usuario disponible en esta tabla
+ Mostrando usuarios del _START_ al _END_ de un total de _TOTAL_ usuarios
+ Mostrando usuarios del 0 al 0 de un total de 0 usuarios
+ (filtrado de un total de _MAX_ usuarios)
+ 
+ Buscar:
+ 
+ 
+ Cargando...
+ Primero
+ Último
+ Siguiente
+ Anterior
+ : Activar para ordenar la columna de manera ascendente
+ : Activar para ordenar la columna de manera descendente
+ Copiar
+ Visibilidad
+
+
+ Baja en Registro horario. https://www.miregistrodehoras.com
+ Alta en su Registro Horario. https://www.miregistrodehoras.com
+ Cambio de contrase&#241;a en https://www.miregistrodehoras.com
+ Bienvenido a su Registro Horario. https://www.miregistrodehoras.com
+
+
+
+ Hay errores en los datos en el fichero CSV en la fila :
+ <p>A continuaci&#243;n se describen los errores encontrados en la fila del csv : </p>
+
+ <p>No se ha indicado el NIF del usuario. Debe indicarse en el campo 1 del csv.</p>
+ <p>No se ha indicado el nombre del usuario. Debe indicarse en el campo 2 del csv.</p>
+ <p>No se ha indicado los apellidos del usuario. Debe indicarse en el campo 3 del csv.</p>
+ <p>No se ha indicado el mail del usuario. Debe indicarse en el campo 4 del csv.</p>
+ <p>No se ha indicado el puesto del usuario. Debe indicarse en el campo 5 del csv.</p>
+ <p>No se ha indicado el centro de trabajo del usuario. Debe indicarse en el campo 6 del csv.</p>
+ <p>No se ha indicado el salario del usuario. Debe indicarse en el campo 7 del csv.</p>
+
+ <p>El NIF del usuario ya existe. No se pueden crear dos usuarios con el mismo NIF.</p>
+ <p>El mail del usuario no es correcto. Debe indicarse un mail correcto con el formato nombre@dominio.com.</p>
+ <p>El mail del usuario ya existe en el sistema. Es posible que ese mail ya se use como usuario o administrador en otra empresa.</p>
+
+ <p>El CSV contiene NIF de usuario repetidos.</p>
+ <p>El CSV contiene emails de usuario repetidos.</p>
+
+ Error de formato al importar usuarios desde fichero CSV en Registro horario. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>El formato no es correcto, el n&#250;mero de campos del ficheros CSV ha de ser 6, siguiendo el formato: NIF;NOMBRE;APELLIDOS;EMAIL;PUESTO DE TRABAJO;SEDE</p><p>Revise el csv en busca de errores.</p>
+
+ Error al importar empresa desde fichero CSV en Registro horario. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>Revise el fichero CSV y verifique que todos los datos son correctos, sin campos en blanco.</p>
+
+ Hay valores repetidos en el fichero CSV. No se han podido crear los usuarios.
+ <p>Para evitar errores en la creaci&#243;n de usuarios, no se permiten NIF o emails duplicados. Debe corregir el CSV para realizar la importaci&#243;n.</p>
+
+ Nuevos usuarios desde fichero CSV en Registro horario. www.miregistrodehoras.com
+ \"https://www.miregistrodehoras.com\">miregistrodehoras</a>.</p><p>Se le enviar&#225;n avisos con el resultado de la importaci&#243;n de cada usuario de forma individual. Si los datos de un usuario son incorrectos se enviar&#225; una notificaci&#243;n. </p><p>Los datos del csv son los siguientes: </p>

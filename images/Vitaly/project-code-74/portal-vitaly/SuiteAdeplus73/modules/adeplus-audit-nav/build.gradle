@@ -1,0 +1,6 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compileOnly project(":modules:adeplus-suite-manager:adeplus-suite-manager-api")
+	compileOnly group: 'log4j', name: 'log4j', version: '1.2.17'
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
+}

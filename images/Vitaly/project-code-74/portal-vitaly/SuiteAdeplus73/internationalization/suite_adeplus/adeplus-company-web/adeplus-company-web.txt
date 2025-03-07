@@ -1,0 +1,115 @@
+AdeplusCompanies
+
+Adeplus
+
+# View
+Empresas
+Nombre
+CIF
+Aplicaciones
+Activa
+Empleados
+Descripción
+Observaciones
+Convenio
+Editar
+Fecha de baja
+Fecha de alta
+
+Se ha guardado correctamente la empresa.
+Se ha guardado correctamente el usuario.
+Ya existe una empresa con ese CIF.
+Ya existe un usuario registrado con ese NIF en la empresa.
+Ya existe un usuario registrado con ese email.
+Ya existe un usuario en la empresa con ese nif y email.
+
+#Actions
+Nueva empresa
+Cancelar
+Dar de baja
+¿Realmente desea dar de baja esta empresa?
+Recordar contraseña
+
+#Edit
+Empresa
+Aplicaciones
+Usuarios
+Nuevo usuario
+Fecha de baja
+
+# Edit user
+Usuario administrador
+Usuario
+Nombre
+Apellidos
+NIF
+Email
+Teléfono
+Administrador
+Fecha de creación
+Fecha de baja
+Activo
+Idioma
+Español
+Catalán
+Acceso a aplicaciones
+Acciones
+Cancelar
+
+Activo
+Aplicaciones
+
+Si
+No
+Todos
+
+# Validations
+Requerido
+No puede contener espacios en blanco ni carácteres que no sean números y letras.
+Se debe seleccionar al menos una aplicación.
+Requerido
+El email no tiene un formato correcto.
+
+# Datatable
+Procesando...
+Mostrar _MENU_ empresas
+No se encontraron empresas
+Ninguna empresa disponible en esta tabla
+Mostrando empresas del _START_ al _END_ de un total de _TOTAL_ empresas
+Mostrando empresas del 0 al 0 de un total de 0 empresas
+(filtrado de un total de _MAX_ empresas)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad
+
+# Datatable users
+Procesando...
+Mostrar _MENU_ usuarios
+No se encontraron usuarios
+No se han creado usuarios
+Mostrando empresas del _START_ al _END_ de un total de _TOTAL_ usuarios
+Mostrando usuarios del 0 al 0 de un total de 0 usuarios
+(filtrado de un total de _MAX_ usuarios)
+
+Buscar:
+
+
+Cargando...
+Primero
+Último
+Siguiente
+Anterior
+: Activar para ordenar la columna de manera ascendente
+: Activar para ordenar la columna de manera descendente
+Copiar
+Visibilidad

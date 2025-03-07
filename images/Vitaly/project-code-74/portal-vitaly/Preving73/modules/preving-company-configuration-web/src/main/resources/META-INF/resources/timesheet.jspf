@@ -1,0 +1,134 @@
+<aui:fieldset label="company.configuration.configuration" cssClass="configuration">
+    <div class="row">
+        <div class="col col-sm-5">
+            <aui:field-wrapper label="company.configuration.configuration.max.hours.day">
+                <aui:input name="maxHoursDay" value="yes" type="radio" label="company.configuration.notification.yes"
+                           checked="<%=companyConf.getMaxHoursDay()%>" onClick="enableInput('maxHoursDayValue')"/>
+                <aui:input name="maxHoursDay" value="no" type="radio" label="company.configuration.notification.no"
+                           checked="<%=!companyConf.getMaxHoursDay()%>" onClick="disableInput('maxHoursDayValue')"/>
+            </aui:field-wrapper>
+        </div>
+        <div class="col col-sm-5">
+            <aui:input name="maxHoursDayValue" label="company.configuration.company.max.hours.day.value" type="text"
+                       value="<%=companyConf.getMaxHoursDayValue()%>" >
+                <aui:validator name="number"/>
+                <aui:validator name="max">24</aui:validator>
+                <aui:validator name="min">1</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-5">
+            <aui:field-wrapper label="company.configuration.configuration.max.hours.week">
+                <aui:input name="maxHoursWeek" value="yes" type="radio" label="company.configuration.notification.yes"
+                           checked="<%=companyConf.getMaxHoursWeek()%>" onClick="enableInput('maxHoursWeekValue')"/>
+                <aui:input name="maxHoursWeek" value="no" type="radio" label="company.configuration.notification.no"
+                           checked="<%=!companyConf.getMaxHoursWeek()%>" onClick="disableInput('maxHoursWeekValue')"/>
+            </aui:field-wrapper>
+        </div>
+        <div class="col col-sm-5">
+            <aui:input name="maxHoursWeekValue" label="company.configuration.company.max.hours.week.value" type="text"
+                       value="<%=companyConf.getMaxHoursWeekValue()%>" disabled="<%=!companyConf.getSavePastDays()%>">
+                <aui:validator name="number"/>
+                <aui:validator name="max">168</aui:validator>
+                <aui:validator name="min">1</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-5">
+            <aui:field-wrapper label="company.configuration.configuration.save.past.days">
+                <aui:input name="savePastDays" value="yes" type="radio" label="company.configuration.notification.yes"
+                           checked="<%=companyConf.getSavePastDays()%>" onClick="enableInput('savePastDaysValue')"/>
+                <aui:input name="savePastDays" value="no" type="radio" label="company.configuration.notification.no"
+                           checked="<%=!companyConf.getSavePastDays()%>" onClick="disableInput('savePastDaysValue')"/>
+            </aui:field-wrapper>
+        </div>
+        <div class="col col-sm-5">
+            <aui:input name="savePastDaysValue" label="company.configuration.company.save.past.days.value" type="text"
+                       value="<%=companyConf.getSavePastDaysValue()%>" disabled="<%=!companyConf.getSavePastDays()%>">
+                <aui:validator name="digits"/>
+                <aui:validator name="max">3650</aui:validator>
+                <aui:validator name="min">1</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-5">
+            <aui:field-wrapper label="company.configuration.configuration.edit.signs" helpMessage="company.configuration.configuration.edit.signs.help">
+                <aui:input name="editSigns" value="yes" type="radio" label="company.configuration.notification.yes"
+                           checked="<%=companyConf.getEditSigns()%>" onClick="enableInput('editSignsValue')"/>
+                <aui:input name="editSigns" value="no" type="radio" label="company.configuration.notification.no"
+                           checked="<%=!companyConf.getEditSigns()%>" onClick="disableInput('editSignsValue')"/>
+            </aui:field-wrapper>
+        </div>
+        <div class="col col-sm-5">
+            <aui:input name="editSignsValue" label="company.configuration.company.edit.signs.value" type="text"
+                       value="<%=companyConf.getEditSignsValue()%>" disabled="<%=!companyConf.getEditSigns()%>" >
+                <aui:validator name="digits"/>
+                <aui:validator name="max">600</aui:validator>
+                <aui:validator name="min">1</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-5">
+            <aui:field-wrapper label="company.configuration.configuration.edit.delete.signs" helpMessage="company.configuration.configuration.edit.delete.signs.help">
+                <aui:input name="editDeleteSigns" value="yes" type="radio" label="company.configuration.notification.yes"
+                           checked="<%=companyConf.getEditDeleteSigns()%>" onClick="enableInput('editDeleteSignsValue')"/>
+                <aui:input name="editDeleteSigns" value="no" type="radio" label="company.configuration.notification.no"
+                           checked="<%=!companyConf.getEditDeleteSigns()%>" onClick="disableInput('editDeleteSignsValue')"/>
+            </aui:field-wrapper>
+        </div>
+        <div class="col col-sm-5">
+            <aui:input name="editDeleteSignsValue" label="company.configuration.company.edit.delete.signs.value" type="text"
+                       value="<%=companyConf.getEditDeleteSignsValue()%>" disabled="<%=!companyConf.getEditDeleteSigns()%>" >
+                <aui:validator name="digits"/>
+                <aui:validator name="max">1440</aui:validator>
+                <aui:validator name="min">1</aui:validator>
+            </aui:input>
+        </div>
+    </div>
+
+    <div class="row">
+                <div class="col col-sm-5">
+                    <aui:field-wrapper label="company.configuration.configuration.isOwnCalendars">
+                        <aui:input name="isOwnCalendars" value="yes" type="radio" label="company.configuration.notification.yes"
+                                   checked="<%=companyConf.isIsOwnCalendars()%>" />
+                        <aui:input name="isOwnCalendars" value="no" type="radio" label="company.configuration.notification.no"
+                                   checked="<%=!companyConf.isIsOwnCalendars()%>" />
+                    </aui:field-wrapper>
+                </div>
+    </div>
+
+    <div class="row">
+            <div class="col col-sm-5">
+                <aui:field-wrapper label="company.configuration.configuration.workCenter">
+                    <aui:input name="isWorkCenters" value="yes" type="radio" label="company.configuration.notification.yes"
+                               checked="<%=companyConf.isIsWorkCenters()%>" onClick="showWorkCenters(true)"/>
+                    <aui:input name="isWorkCenters" value="no" type="radio" label="company.configuration.notification.no"
+                               checked="<%=!companyConf.isIsWorkCenters()%>" onClick="showWorkCenters(false)"/>
+                </aui:field-wrapper>
+            </div>
+    </div>
+
+
+    <%@include file="workCenters.jspf" %>
+
+
+
+</aui:fieldset>
+
+<script>
+    function enableInput(inputName) {
+        document.getElementById('<portlet:namespace/>'+inputName).disabled = false
+    }
+    function disableInput(inputName) {
+        document.getElementById('<portlet:namespace/>'+inputName).disabled = true
+        document.getElementById('<portlet:namespace/>'+inputName).value = ""
+    }
+
+
+
+
+</script>
