@@ -1,6 +1,6 @@
 import {COURSE_CATEGORY, JOB_STATUS} from "./constants.js";
 
-const data = {
+const cv = {
     version: '1.0.0',
     created: '2025-02-26T08:00:00Z',
     updated: '2025-03-04T17:30:00Z',
@@ -38,7 +38,7 @@ const data = {
                 logo: "./images/uniovi.jpg",
                 alt: "Logo Uni",
                 location: "Oviedo",
-                link: "https://catedraindra.uniovi.es"
+                link: "https://catedraindra.uniovi.es/premios/2024.tfg-tfm"
             },
             {
                 id: "edu2",
@@ -185,4 +185,4 @@ const data = {
     ]
 };
 
-export default data;
+export default cv;

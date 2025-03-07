@@ -1,14 +1,14 @@
 import ProfileImage from "../components/init/ProfileImage.jsx";
 import InfoSection from "../components/init/InfoSection.jsx";
 import SocialLinks from "../components/init/SocialLinks.jsx";
-import data from '../data/data.js';
+import cv from '../data/cv.js';
 import { useTranslation } from 'react-i18next';
 import Flag from 'react-world-flags';
 import {skillEmojis} from "../data/constants.js";
 
 const socialLinks = [
-    { url: data.personal.linkedin, icon: "linkedin" },
-    { url: data.personal.github, icon: "github" }
+    { url: cv.personal.linkedin, icon: "linkedin" },
+    { url: cv.personal.github, icon: "github" }
 ];
 
 const Init = () => {
@@ -44,7 +44,7 @@ const Init = () => {
                 padding: "20px",
             }}
         >
-            <ProfileImage src={data.personal.profileImage} alt={t('Init.photo') + data.personal.name} />
+            <ProfileImage src={cv.personal.profileImage} alt={t('Init.photo') + cv.personal.name} />
             <div
                 style={{
                     backgroundColor: "#fff",
@@ -59,13 +59,13 @@ const Init = () => {
                 }}
             >
                 <h1 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "10px" }}>
-                    {data.personal.name}
+                    {cv.personal.name}
                 </h1>
                 <h2 style={{ fontSize: "20px", color: "#555", marginBottom: "15px" }}>
                     {t(`Init.engineer`)}
                 </h2>
                 <p style={{fontSize: "18px", color: "#777", marginBottom: "25px"}}>
-                    📍 {data.personal.location}
+                    📍 {cv.personal.location}
                     <Flag code={t('LanguageSelector.spanish')} style={{ width: "20px", height: "15px", marginLeft: "8px" }} />
                 </p>
                 <SocialLinks links={socialLinks}/>

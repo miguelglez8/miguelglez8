@@ -20,7 +20,14 @@ const EducationItem = ({ logo, alt, title, institution, location, period, detail
                                 <a
                                     href={link}
                                     target="_blank"
-                                    style={{ color: "#2563eb", fontWeight: "bold" }}
+                                    style={{
+                                        color: "#2563eb",
+                                        fontWeight: "bold",
+                                        textDecoration: "none",
+                                        transition: "text-decoration 0.3s ease"
+                                    }}
+                                    onMouseEnter={(e) => e.target.style.textDecoration = "underline"}
+                                    onMouseLeave={(e) => e.target.style.textDecoration = "none"}
                                 >
                                     {text}
                                 </a>

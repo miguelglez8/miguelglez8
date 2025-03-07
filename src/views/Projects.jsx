@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ProjectCard from "../components/projects/ProjectCard.jsx";
-import data from "../data/data.js";
+import cv from "../data/cv.js";
 import { Calendar, CheckCircle, Wrench } from "lucide-react";
 import { statusColors, techColors } from "../data/colors.js";
 import { JOB_STATUS } from "../data/constants.js";
@@ -44,7 +44,7 @@ const Projects = () => {
                     width: "100%",
                 }}
             >
-                {data.projects.map((project, index) => (
+                {cv.projects.map((project, index) => (
                     <ProjectCard
                         key={index}
                         image={project.image}

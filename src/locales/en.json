@@ -33,7 +33,7 @@
     "experiences": {
       "title": "Work Experience",
       "exp1": {
-        "title": "Junior Software Developer",
+        "title": "Software Developer",
         "period": "October 2024 - Present",
         "responsibilities": {
           "resp1": {
@@ -188,10 +188,10 @@
   },
 
   "LanguageSelector": {
-    "spanish": "ES",
-    "english": "EN",
-    "spanishTitle": "Spanish · Spain",
-    "englishTitle": "English · United Kingdom"
+    "es": "ES",
+    "en": "EN",
+    "esTitle": "Spanish · Spain",
+    "enTitle": "English · United Kingdom"
   },
 
   "Footer": {

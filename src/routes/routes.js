@@ -1,6 +1,6 @@
-import data from "../data/data.js";
+import cv from "../data/cv.js";
 
-const BASE_PATH = "/" + data.personal.profile;
+const BASE_PATH = "/" + cv.personal.profile;
 
 const ABOUT_PATH = BASE_PATH + "/about";
 const PROJECTS_PATH = BASE_PATH + "/projects";

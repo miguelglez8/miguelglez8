@@ -4,7 +4,7 @@ import ExperienceItem from "../components/about/ExperienceItem.jsx";
 import EducationItem from "../components/about/EducationItem.jsx";
 import CourseItem from "../components/about/CourseItem.jsx";
 import TechnologyItem from "../components/about/TechnologyItem.jsx";
-import data from '../data/data.js';
+import cv from '../data/cv.js';
 import {COURSE_CATEGORY} from "../data/constants.js";
 
 const About = () => {
@@ -31,7 +31,7 @@ const About = () => {
 
             <SectionItem title={t("About.experiences.title")}>
                 <ul style={{ listStyleType: "none", paddingLeft: "0", marginTop: "20px" }}>
-                    {data.info.experiences.map((experience, index) => {
+                    {cv.info.experiences.map((experience, index) => {
                         const responsibilities = Object.values(
                             t(`About.experiences.${experience.id}.responsibilities`, { returnObjects: true })
                         ).map((resp) => resp.text);
@@ -54,7 +54,7 @@ const About = () => {
 
             <SectionItem title={t("About.education.title")}>
                 <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
-                    {data.info.education.map((edu, index) => {
+                    {cv.info.education.map((edu, index) => {
                         const details = Object.values(
                             t(`About.education.${edu.id}.details`, { returnObjects: true })
                         ).map((resp) => resp.text);
@@ -79,7 +79,7 @@ const About = () => {
 
             <SectionItem title={t("About.courses.title")}>
                 <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
-                    {data.info.courses.map((course, index) => (
+                    {cv.info.courses.map((course, index) => (
                         <CourseItem
                             key={index}
                             logo={course.logo}
@@ -97,7 +97,7 @@ const About = () => {
 
             <SectionItem title={t("About.technologies")}>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", padding: "20px" }}>
-                    {data.info.technologies.map((tech, index) => (
+                    {cv.info.technologies.map((tech, index) => (
                         <TechnologyItem
                             key={index}
                             name={tech.name}

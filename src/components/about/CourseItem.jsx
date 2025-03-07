@@ -14,7 +14,17 @@ const CourseItem = ({ logo, alt, title, organization, date, link, linkText, text
                 </p>
                 {link && (
                     <p style={{ fontSize: "16px", color: "#555" }}>
-                        🔗 <a href={link} target="_blank" style={{ color: "#2563eb" }}>
+                        🔗 <a
+                        href={link}
+                        target="_blank"
+                        style={{
+                            color: "#2563eb",
+                            textDecoration: "none",
+                            transition: "text-decoration 0.3s ease"
+                        }}
+                        onMouseEnter={(e) => e.target.style.textDecoration = "underline"}
+                        onMouseLeave={(e) => e.target.style.textDecoration = "none"}
+                    >
                         {linkText}
                     </a>
                     </p>

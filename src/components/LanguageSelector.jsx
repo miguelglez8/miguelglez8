@@ -31,72 +31,55 @@ const LanguageSelector = () => {
                     justifyContent: 'center',
                 }}
             >
-                <button
-                    onClick={() => handleLanguageChange('es')}
-                    title={t('LanguageSelector.spanishTitle')}
-                    style={{
-                        padding: '10px 20px',
-                        backgroundColor: i18n.language === 'es' ? '#1e90ff' : '#f4f4f9',
-                        color: i18n.language === 'es' ? 'white' : '#333',
-                        border: 'none',
-                        borderRadius: '50px',
-                        fontSize: '16px',
-                        fontWeight: 'bold',
-                        cursor: 'pointer',
-                        position: 'relative',
-                        transition: 'all 0.3s ease',
-                    }}
-                >
-                    {t('LanguageSelector.spanish')}
-                    {i18n.language === 'es' && (
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: '-5px',
-                                right: '-5px',
-                                width: '15px',
-                                height: '15px',
-                                borderRadius: '50%',
-                                backgroundColor: 'white',
-                                border: '2px solid #1e90ff',
-                            }}
-                        />
-                    )}
-                </button>
-
-                <button
-                    onClick={() => handleLanguageChange('en')}
-                    title={t('LanguageSelector.englishTitle')}
-                    style={{
-                        padding: '10px 20px',
-                        backgroundColor: i18n.language === 'en' ? '#1e90ff' : '#f4f4f9',
-                        color: i18n.language === 'en' ? 'white' : '#333',
-                        border: 'none',
-                        borderRadius: '50px',
-                        fontSize: '16px',
-                        fontWeight: 'bold',
-                        cursor: 'pointer',
-                        position: 'relative',
-                        transition: 'all 0.3s ease',
-                    }}
-                >
-                    {t('LanguageSelector.english')}
-                    {i18n.language === 'en' && (
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: '-5px',
-                                right: '-5px',
-                                width: '15px',
-                                height: '15px',
-                                borderRadius: '50%',
-                                backgroundColor: 'white',
-                                border: '2px solid #1e90ff',
-                            }}
-                        />
-                    )}
-                </button>
+                {['es', 'en'].map((lang) => (
+                    <button
+                        key={lang}
+                        onClick={() => handleLanguageChange(lang)}
+                        style={{
+                            padding: '10px 20px',
+                            backgroundColor: i18n.language === lang ? '#1e90ff' : '#f4f4f9',
+                            color: i18n.language === lang ? 'white' : '#333',
+                            border: 'none',
+                            borderRadius: '50px',
+                            fontSize: '16px',
+                            fontWeight: 'bold',
+                            cursor: 'pointer',
+                            position: 'relative',
+                            transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                            if (i18n.language !== lang) {
+                                e.target.style.backgroundColor = '#d0e1ff';
+                            }
+                        }}
+                        onMouseLeave={(e) => {
+                            if (i18n.language !== lang) {
+                                e.target.style.backgroundColor = '#f4f4f9';
+                            }
+                        }}
+                        data-tooltip={t(`LanguageSelector.${lang}Title`)}
+                    >
+                        {t(`LanguageSelector.${lang}`)}
+                    </button>
+                ))}
             </div>
+            <style>
+                {`
+                    button[data-tooltip]:hover::after {
+                        content: attr(data-tooltip);
+                        position: absolute;
+                        bottom: 50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #1e90ff;
+                        color: white;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                    }
+                `}
+            </style>
         </div>
     );
 };

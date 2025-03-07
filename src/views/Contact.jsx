@@ -1,7 +1,7 @@
 import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ContactItem from "../components/contact/ContactItem.jsx";
-import data from "../data/data.js";
+import cv from "../data/cv.js";
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -13,25 +13,25 @@ const Contact = () => {
 
                 <ContactItem
                     icon={Mail}
-                    link={"mailto:" + data.personal.mail}
-                    text={data.personal.mail}
+                    link={"mailto:" + cv.personal.mail}
+                    text={cv.personal.mail}
                     color="#2563eb"
                 />
                 <ContactItem
                     icon={Linkedin}
-                    link={data.personal.linkedin}
-                    text={data.personal.nickname}
+                    link={cv.personal.linkedin}
+                    text={cv.personal.nickname}
                     color="#0077B5"
                 />
                 <ContactItem
                     icon={Github}
-                    link={data.personal.github}
-                    text={data.personal.profile}
+                    link={cv.personal.github}
+                    text={cv.personal.profile}
                     color="#333"
                 />
                 <ContactItem
                     icon={MapPin}
-                    text={data.personal.location}
+                    text={cv.personal.location}
                     color="#dc2626"
                 />
             </div>
