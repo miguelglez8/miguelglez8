@@ -1,5 +1,12 @@
 const ProfileImage = ({ src, alt }) => (
-    <div style={{ flexShrink: 0 }}>
+    <div 
+        style={{ 
+            display: "flex", 
+            justifyContent: "center",
+            alignItems: "center",
+            flexShrink: 0
+        }}
+    >
         <img
             src={src}
             alt={alt}
