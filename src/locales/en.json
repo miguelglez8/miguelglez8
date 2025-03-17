@@ -158,26 +158,31 @@
       "project1": {
         "title": "Personal Web Portfolio",
         "role": "Freelance",
+        "info": "Web portfolio designed to showcase my projects, skills, and experience in an interactive and dynamic way",
         "date": "February 2025 - Present"
       },
       "project2": {
         "title": "Web Platform for Academic Work Coordination",
         "role": "University of Oviedo",
+        "info": "Web application developed to centralize the management of academic projects, optimizing collaboration between professors and students",
         "date": "January 2024 - July 2024"
       },
       "project3": {
         "title": "FootMatch",
         "role": "University of Oviedo",
+        "info": "Soccer application providing extensive information and coverage of the world of football, catering to fans, players, and coaches",
         "date": "September 2023 - January 2024"
       },
       "project4": {
         "title": "Web Application for the company Nemorastur",
         "role": "Freelance",
+        "info": "Personal project to register employees in a real company and manage reports and records of performed tasks",
         "date": "June 2023 - August 2023"
       },
       "project5": {
         "title": "LoMap",
         "role": "University of Oviedo",
+        "info": "Decentralized web application that allows users to share points of interest with friends and acquaintances",
         "date": "February 2023 - May 2023"
       }
     }

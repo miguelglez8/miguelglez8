@@ -158,26 +158,31 @@
       "project1": {
         "title": "Web Portfolio Personal",
         "role": "Trabajo autónomo",
+        "info": "Portfolio web diseñado para mostrar mis proyectos, habilidades y experiencia de una manera interactiva y dinámica",
         "date": "Febrero 2025 - Actualidad"
       },
       "project2": {
         "title": "Plataforma Web para la coordinación de trabajos académicos",
         "role": "Universidad de Oviedo",
+        "info": "Aplicación web desarrollada para centralizar la gestión de proyectos académicos, optimizando la colaboración entre profesores y estudiantes",
         "date": "Enero 2024 - Julio 2024"
       },
       "project3": {
         "title": "FootMatch",
         "role": "Universidad de Oviedo",
+        "info": "Aplicación de fútbol que proporciona información detallada y cobertura del mundo del fútbol, dirigida a aficionados, jugadores y entrenadores",
         "date": "Septiembre 2023 - Enero 2024"
       },
       "project4": {
         "title": "Aplicación web para la empresa Nemorastur",
         "role": "Trabajo autónomo",
+        "info": "Proyecto personal para registrar empleados en una empresa real y gestionar informes y registros de las tareas realizadas",
         "date": "Junio 2023 - Agosto 2023"
       },
       "project5": {
         "title": "LoMap",
         "role": "Universidad de Oviedo",
+        "info": "Aplicación web descentralizada que permite a los usuarios compartir puntos de interés con amigos y conocidos",
         "date": "Febrero 2023 - Mayo 2023"
       }
     }
