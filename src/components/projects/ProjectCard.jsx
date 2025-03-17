@@ -1,7 +1,7 @@
 import ProjectLinks from "./ProjectLinks.jsx";
 import Badge from "./Badge.jsx";
 
-const ProjectCard = ({ image, title, role, date, status, statusColor, technologies, links, statusIcon, isMobile }) => {
+const ProjectCard = ({ image, title, role, info, date, status, statusColor, technologies, links, statusIcon, isMobile }) => {
     return (
         <div
             style={{
@@ -42,24 +42,26 @@ const ProjectCard = ({ image, title, role, date, status, statusColor, technologi
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    height: "45vh"
+                    height: "55vh"
                 }}
             >
-                <h4 style={{ fontSize: "18px", fontWeight: "bold" }}>{role}</h4>
+                <h4 style={{fontSize: "18px", fontWeight: "bold"}}>{role}</h4>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "15px" }}>
-                    <p style={{ fontSize: "18px", color: "#777" }}>{date}</p>
-                    <Badge text={status} color={statusColor} />
+                <p style={{fontSize: "16px", color: "#555", marginBottom: "15px"}}>{info}</p>
+
+                <div style={{display: "flex", alignItems: "center", gap: "10px", marginBottom: "15px"}}>
+                    <p style={{fontSize: "18px", color: "#777"}}>{date}</p>
+                    <Badge text={status} color={statusColor}/>
                     {statusIcon}
                 </div>
 
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "20px" }}>
+                <div style={{display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "20px"}}>
                     {technologies.map((tech, index) => (
-                        <Badge key={index} text={tech.text} color={tech.color} />
+                        <Badge key={index} text={tech.text} color={tech.color}/>
                     ))}
                 </div>
 
-                <ProjectLinks links={links} />
+                <ProjectLinks links={links}/>
             </div>
         </div>
     );
