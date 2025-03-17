@@ -37,16 +37,18 @@ const About = () => {
                         ).map((resp) => resp.text);
 
                         return (
-                            <ExperienceItem
-                                key={index}
-                                logo={experience.logo}
-                                alt={experience.alt}
-                                title={t(`About.experiences.${experience.id}.title`)}
-                                company={experience.company}
-                                location={experience.location}
-                                period={t(`About.experiences.${experience.id}.period`)}
-                                responsibilities={responsibilities}
-                            />
+                            <div key={index}>
+                                <ExperienceItem
+                                    logo={experience.logo}
+                                    alt={experience.alt}
+                                    title={t(`About.experiences.${experience.id}.title`)}
+                                    company={experience.company}
+                                    location={experience.location}
+                                    period={t(`About.experiences.${experience.id}.period`)}
+                                    responsibilities={responsibilities}
+                                />
+                                {index < cv.info.experiences.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
+                            </div>
                         );
                     })}
                 </ul>
@@ -60,18 +62,20 @@ const About = () => {
                         ).map((resp) => resp.text);
 
                         return (
-                            <EducationItem
-                                key={index}
-                                logo={edu.logo}
-                                alt={edu.alt}
-                                title={t(`About.education.${edu.id}.title`)}
-                                institution={t(`About.education.${edu.id}.institution`)}
-                                location={edu.location}
-                                period={t(`About.education.${edu.id}.period`)}
-                                details={details}
-                                link={edu.link}
-                                text={t("About.education.moreInfo")}
-                            />
+                            <div key={index}>
+                                <EducationItem
+                                    logo={edu.logo}
+                                    alt={edu.alt}
+                                    title={t(`About.education.${edu.id}.title`)}
+                                    institution={t(`About.education.${edu.id}.institution`)}
+                                    location={edu.location}
+                                    period={t(`About.education.${edu.id}.period`)}
+                                    details={details}
+                                    link={edu.link}
+                                    text={t("About.education.moreInfo")}
+                                />
+                                {index < cv.info.education.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
+                            </div>
                         );
                     })}
                 </ul>
@@ -80,17 +84,19 @@ const About = () => {
             <SectionItem title={t("About.courses.title")}>
                 <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
                     {cv.info.courses.map((course, index) => (
-                        <CourseItem
-                            key={index}
-                            logo={course.logo}
-                            alt={course.alt}
-                            title={t(`About.courses.${course.id}.title`)}
-                            organization={t(`About.courses.${course.id}.organization`)}
-                            date={t(`About.courses.${course.id}.date`)}
-                            link={course.link}
-                            linkText={getCourseLinkText(course.category)}
-                            text={t("About.courses.issued")}
-                        />
+                        <div key={index}>
+                            <CourseItem
+                                logo={course.logo}
+                                alt={course.alt}
+                                title={t(`About.courses.${course.id}.title`)}
+                                organization={t(`About.courses.${course.id}.organization`)}
+                                date={t(`About.courses.${course.id}.date`)}
+                                link={course.link}
+                                linkText={getCourseLinkText(course.category)}
+                                text={t("About.courses.issued")}
+                            />
+                            {index < cv.info.courses.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
+                        </div>
                     ))}
                 </ul>
             </SectionItem>

@@ -61,6 +61,7 @@ const Projects = () => {
                         image={project.image}
                         title={t(`Projects.projects.${project.id}.title`)}
                         role={t(`Projects.projects.${project.id}.role`)}
+                        info={t(`Projects.projects.${project.id}.info`)}
                         date={t(`Projects.projects.${project.id}.date`)}
                         status={t(`Projects.status.${project.status}`)}
                         statusColor={statusColors[project.status]}
