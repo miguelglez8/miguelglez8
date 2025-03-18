@@ -41,8 +41,7 @@ const ProjectCard = ({ image, title, role, info, date, status, statusColor, tech
                     padding: "20px",
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "space-between",
-                    height: "55vh"
+                    justifyContent: "space-between"
                 }}
             >
                 <h4 style={{fontSize: "18px", fontWeight: "bold"}}>{role}</h4>
