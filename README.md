@@ -7,9 +7,9 @@
 
 ## 🧐 About me
 
-Software Engineer with extensive experience in application development using technologies such as JavaScript, React, Docker, Spring, Java, JSP and HTML. I have a solid background in mathematics, programming, and system design. I have participated in a wide range of projects, from web solutions to distributed applications and microservices. Additionally, I have worked with relational and non-relational databases, and I have experience with cloud platforms like AWS and Firebase, where I have designed and deployed scalable and efficient solutions tailored to project needs.
+Software Engineer with extensive experience in application development using technologies such as JavaScript, React, Docker, Spring, Java, JSP, and HTML. I have a solid background in mathematics, programming, and system design. I have participated in a wide range of projects, from web solutions to distributed applications and microservices. Additionally, I have worked with relational and non-relational databases and have experience with cloud platforms like AWS and Firebase, where I have designed and deployed scalable and efficient solutions tailored to project needs.
 
-Currently, my focus is on web development, with a particular emphasis on backend. I participate in creating custom portals, integrating services, and optimizing user experience in Liferay 7.4.
+Currently, my focus is on web development, with a particular emphasis on the backend. I participate in creating custom portals, integrating services, and optimizing user experience in Liferay.
 
 I am especially interested in designing and developing efficient and scalable systems, which has led me to explore the field of digital architecture and its role in creating sustainable technological solutions.
 
