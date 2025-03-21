@@ -52,12 +52,15 @@
             "text": "Internship in Computer Engineering specializing in backend development with Java and Spring Boot"
           },
           "resp2": {
-            "text": "Development of Restful APIs and microservices with scalable architecture"
+            "text": "Participation in the Lyttec project, focusing on creating Restful APIs and managing relational and NoSQL databases"
           },
           "resp3": {
             "text": "Application of design patterns for efficient code structure"
           },
           "resp4": {
+            "text": "Design and development of microservices using the Lightning framework, emphasizing scalable architectures"
+          },
+          "resp5": {
             "text": "Code optimization and execution of load testing to ensure performance"
           }
         }
