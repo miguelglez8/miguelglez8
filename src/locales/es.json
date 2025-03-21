@@ -52,12 +52,15 @@
             "text": "Prácticas de Ingeniería Informática especializadas en desarrollo backend con Java y Spring Boot"
           },
           "resp2": {
-            "text": "Desarrollo de APIs Restful y microservicios con arquitectura escalable"
+            "text": "Participación en el proyecto Lyttec, enfocada en creación de APIs Restful y manejo de bases de datos relacionales y NoSQL"
           },
           "resp3": {
             "text": "Aplicación de patrones de diseño para una estructura de código eficiente"
           },
           "resp4": {
+            "text": "Diseño y desarrollo de microservicios con el framework Lightning, destacando arquitecturas escalables"
+          },
+          "resp5": {
             "text": "Optimización del código y ejecución de pruebas de carga para asegurar el rendimiento"
           }
         }
