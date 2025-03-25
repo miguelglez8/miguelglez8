@@ -94,6 +94,7 @@ const About = () => {
                                 link={course.link}
                                 linkText={getCourseLinkText(course.category)}
                                 text={t("About.courses.issued")}
+                                skills={t(`About.courses.${course.id}.skills`)}
                             />
                             {index < cv.info.courses.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
                         </div>
