@@ -119,32 +119,38 @@
       "course1": {
         "title": "Liferay DXP 7.4 Frontend & Backend Advanced Developer",
         "organization": "Liferay",
-        "date": "November 2024"
+        "date": "November 2024",
+        "skills": "Liferay DXP · Full Stack Development · Java"
       },
       "course2": {
         "title": "Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot",
         "organization": "Udemy",
-        "date": "May 2024"
+        "date": "May 2024",
+        "skills": "Event-Driven Programming · Microservices · Spring Cloud · Axon Server · Design Patterns"
       },
       "course3": {
         "title": "Fundamentals in DevOps, APIs and Microservices Architecture",
         "organization": "Udemy",
-        "date": "April 2024"
+        "date": "April 2024",
+        "skills": "Microservices · API Development · Spring Boot · Docker · DevOps"
       },
       "course4": {
         "title": "Completion of a Course in Computer Systems Security Degree",
         "organization": "University of Oviedo",
-        "date": "June 2023"
+        "date": "June 2023",
+        "skills": "Ubuntu · Computer Security"
       },
       "course5": {
         "title": "Occupational Risk Prevention for Office Personnel",
         "organization": "MAS Prevención",
-        "date": "November 2024"
+        "date": "November 2024",
+        "skills": "Workplace Safety · Risk Prevention"
       },
       "course6": {
         "title": "Driver's License B",
         "organization": "General Directorate of Traffic",
-        "date": "August 2021"
+        "date": "August 2021",
+        "skills": "Driving Test"
       }
     },
     "technologies": "Technologies"
