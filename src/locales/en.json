@@ -49,22 +49,30 @@
         "period": "March 2024 - July 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Internship in Computer Engineering specializing in backend development with Java and Spring Boot"
+            "text": "Design, development, and maintenance of backend services using Java with Spring Boot."
           },
           "resp2": {
-            "text": "Participation in the Lyttec project, focusing on creating Restful APIs and managing relational and NoSQL databases"
+            "text": "Creation and documentation of RESTful APIs, applying best practices and using Swagger."
           },
           "resp3": {
-            "text": "Application of design patterns for efficient code structure"
+            "text": "Data persistence in relational (SQL) and NoSQL databases."
           },
           "resp4": {
-            "text": "Design and development of microservices using the Lightning framework, emphasizing scalable architectures"
+            "text": "Application of design patterns for a clean, scalable, and maintainable architecture."
           },
           "resp5": {
-            "text": "Code optimization and execution of load testing to ensure performance"
+            "text": "Development of unit and integration tests to ensure code quality and stability."
+          },
+          "resp6": {
+            "text": "Continuous learning in microservices architecture, DevOps, and event-driven systems (Kafka, SAGA, CQRS) through specialized courses."
+          },
+          "resp7": {
+            "text": "Implementation of messaging services with Kafka, push notification integration with Firebase, and API testing with Postman."
+          },
+          "resp8": {
+            "text": "Application monitoring using tools like Prometheus and Grafana, analyzing metrics to ensure performance and availability."
           }
         }
-      }
     },
     "education": {
       "title": "Education",
