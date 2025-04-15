@@ -49,22 +49,30 @@
         "period": "Marzo 2024 - Julio 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Prácticas de Ingeniería Informática especializadas en desarrollo backend con Java y Spring Boot"
+            "text": "Diseño, desarrollo y mantenimiento de servicios backend utilizando Java con Spring Boot."
           },
           "resp2": {
-            "text": "Participación en el proyecto Lyttec, enfocada en creación de APIs Restful y manejo de bases de datos relacionales y NoSQL"
+            "text": "Creación y documentación de APIs RESTful, aplicando buenas prácticas y utilizando Swagger."
           },
           "resp3": {
-            "text": "Aplicación de patrones de diseño para una estructura de código eficiente"
+            "text": "Persistencia de datos en bases de datos relacionales (SQL) y NoSQL."
           },
           "resp4": {
-            "text": "Diseño y desarrollo de microservicios con el framework Lightning, destacando arquitecturas escalables"
+            "text": "Aplicación de patrones de diseño para una arquitectura limpia, escalable y mantenible."
           },
           "resp5": {
-            "text": "Optimización del código y ejecución de pruebas de carga para asegurar el rendimiento"
+            "text": "Desarrollo de tests unitarios y de integración para asegurar la calidad y estabilidad del código."
+          },
+          "resp6": {
+            "text": "Formación continua en arquitectura de microservicios, DevOps y sistemas basados en eventos (Kafka, SAGA, CQRS) mediante cursos especializados."
+          },
+          "resp7": {
+            "text": "Implementación de servicios de mensajería con Kafka, integración de notificaciones push con Firebase, y pruebas de APIs con Postman."
+          },
+          "resp8": {
+            "text": "Monitorización de aplicaciones mediante herramientas como Prometheus y Grafana, analizando métricas para garantizar rendimiento y disponibilidad."
           }
         }
-      }
     },
     "education": {
       "title": "Educación",
