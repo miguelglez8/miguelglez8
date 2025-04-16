@@ -67,13 +67,14 @@
             "text": "Integración de Kafka y Firebase para comunicación entre servicios, y monitorización de aplicaciones con Prometheus y Grafana"
           }
         }
+      }
     },
     "education": {
       "title": "Educación",
       "moreInfo": "Más información",
       "edu1": {
         "title": "Grado en Ingeniería Informática de Software",
-        "institution" : "Universidad de Oviedo",
+        "institution": "Universidad de Oviedo",
         "period": "Septiembre 2020 - Julio 2024",
         "details": {
           "detail1": {
@@ -95,7 +96,7 @@
       },
       "edu2": {
         "title": "Bachillerato Científico-Tecnológico",
-        "institution" : "IES Valle de Aller",
+        "institution": "IES Valle de Aller",
         "period": "Septiembre 2018 - Junio 2020",
         "details": {
           "detail1": {
