@@ -37,10 +37,13 @@
         "period": "October 2024 - Present",
         "responsibilities": {
           "resp1": {
-            "text": "Development of custom portals in Liferay 7.4 for the Vitaly project, integrating services and optimizing user experience"
+            "text": "Development and maintenance of custom portlets in Liferay 7.4, as well as implementation of tailored solutions to improve performance and user experience in Liferay DXP environments"
           },
           "resp2": {
-            "text": "Issue resolution and continuous improvement of portal functionalities"
+            "text": "Active participation in Liferay version migration processes and continuous improvement of portal functionalities through development best practices"
+          },
+          "resp3": {
+            "text": "Use of technologies such as Java, JSP, HTML/CSS, and JavaScript, along with Liferay tools like serviceBuilder, restBuilder, elasticSearch, and indexer"
           }
         }
       },
@@ -49,30 +52,22 @@
         "period": "March 2024 - July 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Design, development, and maintenance of backend services using Java with Spring Boot."
+            "text": "Design, development, and maintenance of backend services using Java with Spring Boot, applying design patterns and architectural best practices"
           },
           "resp2": {
-            "text": "Creation and documentation of RESTful APIs, applying best practices and using Swagger."
+            "text": "Creation and documentation of RESTful APIs using Swagger. Data persistence in both relational (SQL) and NoSQL databases"
           },
           "resp3": {
-            "text": "Data persistence in relational (SQL) and NoSQL databases."
+            "text": "Development of unit and integration tests to ensure code quality and stability"
           },
           "resp4": {
-            "text": "Application of design patterns for a clean, scalable, and maintainable architecture."
+            "text": "Continuous training in microservices architecture, DevOps, and event-driven systems such as Kafka, SAGA, and CQRS"
           },
           "resp5": {
-            "text": "Development of unit and integration tests to ensure code quality and stability."
-          },
-          "resp6": {
-            "text": "Continuous learning in microservices architecture, DevOps, and event-driven systems (Kafka, SAGA, CQRS) through specialized courses."
-          },
-          "resp7": {
-            "text": "Implementation of messaging services with Kafka, push notification integration with Firebase, and API testing with Postman."
-          },
-          "resp8": {
-            "text": "Application monitoring using tools like Prometheus and Grafana, analyzing metrics to ensure performance and availability."
+            "text": "Integration of Kafka and Firebase for service communication, and application monitoring with Prometheus and Grafana"
           }
         }
+      }
     },
     "education": {
       "title": "Education",
