@@ -43,7 +43,7 @@
             "text": "Active participation in Liferay version migration processes and continuous improvement of portal functionalities through development best practices"
           },
           "resp3": {
-            "text": "Use of technologies such as Java, JSP, HTML/CSS, and JavaScript, along with Liferay tools like serviceBuilder, restBuilder, elasticSearch, and indexer"
+            "text": "Use of technologies such as Java, JSP, HTML/CSS, JavaScript, React, ServiceBuilder, RestBuilder, ElasticSearch, indexer, custom fragments and templates, along with the implementation of REST APIs using Swagger/OpenAPI"
           }
         }
       },
