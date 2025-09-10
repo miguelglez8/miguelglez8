@@ -120,36 +120,42 @@
       "course": "View course",
       "certificate": "View certification",
       "course1": {
+        "title": "Building Enterprise Websites with Liferay",
+        "organization": "Liferay",
+        "date": "October 2025",
+        "skills": "Liferay DXP · Enterprise Website Development · Digital Experience Planning and Design"
+      },
+      "course2": {
         "title": "Liferay DXP 7.4 Frontend & Backend Advanced Developer",
         "organization": "Liferay",
         "date": "November 2024",
         "skills": "Liferay DXP · Full Stack Development · Java"
       },
-      "course2": {
+      "course3": {
         "title": "Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot",
         "organization": "Udemy",
         "date": "May 2024",
         "skills": "Event-Driven Programming · Microservices · Spring Cloud · Axon Server · Design Patterns"
       },
-      "course3": {
+      "course4": {
         "title": "Fundamentals in DevOps, APIs and Microservices Architecture",
         "organization": "Udemy",
         "date": "April 2024",
         "skills": "Microservices · API Development · Spring Boot · Docker · DevOps"
       },
-      "course4": {
+      "course5": {
         "title": "Completion of a Course in Computer Systems Security Degree",
         "organization": "University of Oviedo",
         "date": "June 2023",
         "skills": "Ubuntu · Computer Security"
       },
-      "course5": {
+      "course6": {
         "title": "Occupational Risk Prevention for Office Personnel",
         "organization": "MAS Prevención",
         "date": "November 2024",
         "skills": "Workplace Safety · Risk Prevention"
       },
-      "course6": {
+      "course7": {
         "title": "Driver's License B",
         "organization": "General Directorate of Traffic",
         "date": "August 2021",
@@ -215,3 +221,4 @@
     "content": "All rights reserved"
   }
 }
+
