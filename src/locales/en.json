@@ -120,16 +120,16 @@
       "course": "View course",
       "certificate": "View certification",
       "course1": {
-        "title": "Building Enterprise Websites with Liferay",
-        "organization": "Liferay",
-        "date": "October 2025",
-        "skills": "Liferay DXP · Enterprise Website Development · Digital Experience Planning and Design"
-      },
-      "course2": {
         "title": "Liferay DXP 7.4 Frontend & Backend Advanced Developer",
         "organization": "Liferay",
         "date": "November 2024",
         "skills": "Liferay DXP · Full Stack Development · Java"
+      },
+      "course2": {
+        "title": "Building Enterprise Websites with Liferay",
+        "organization": "Liferay",
+        "date": "September 2025",
+        "skills": "Liferay DXP · Enterprise Website Development · Digital Experience Planning and Design"
       },
       "course3": {
         "title": "Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot",
@@ -221,4 +221,5 @@
     "content": "All rights reserved"
   }
 }
+
 
