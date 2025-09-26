@@ -52,15 +52,15 @@ const cv = {
                 id: "course1",
                 logo: "./images/liferay.jpg",
                 alt: "Logo Liferay",
-                link: "https://learn.liferay.com/l/26502895",
+                link: "https://learn.liferay.com/w/reference/liferay-university",
                 category: COURSE_CATEGORY.course
             },
             {
                 id: "course2",
                 logo: "./images/liferay.jpg",
                 alt: "Logo Liferay",
-                link: "https://learn.liferay.com/w/reference/liferay-university",
-                category: COURSE_CATEGORY.course
+                link: "https://learn.liferay.com/l/26502895",
+                category: COURSE_CATEGORY.certificate
             },
             {
                 id: "course3",
@@ -192,4 +192,5 @@ const cv = {
 };
 
 export default cv;
+
 
