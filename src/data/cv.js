@@ -64,33 +64,19 @@ const cv = {
             },
             {
                 id: "course3",
-                logo: "./images/udemy.png",
-                alt: "Logo Udemy",
-                link: "https://nttdatalearn.udemy.com/certificate/UC-8d4bae7c-940d-4cde-af62-9bbf33875be5",
-                category: COURSE_CATEGORY.certificate
-            },
-            {
-                id: "course4",
-                logo: "./images/udemy.png",
-                alt: "Logo Udemy",
-                link: "https://nttdatalearn.udemy.com/certificate/UC-65cf7da0-97d6-4671-a4ef-7d3040236c6b",
-                category: COURSE_CATEGORY.certificate
-            },
-            {
-                id: "course5",
                 logo: "./images/uniovi.jpg",
                 alt: "Logo Uni",
                 link: "https://www.campusvirtual.uniovi.es/badges/badge.php?hash=1449850ff7707c0d5b1a095a0020646ff52f649b",
                 category: COURSE_CATEGORY.certificate
             },
             {
-                id: "course6",
+                id: "course4",
                 logo: "./images/prl.jpg",
                 alt: "Logo PRL",
                 category: COURSE_CATEGORY.none
             },
             {
-                id: "course7",
+                id: "course5",
                 logo: "./images/dgt.jpg",
                 alt: "Logo DGT",
                 category: COURSE_CATEGORY.none
@@ -192,5 +178,6 @@ const cv = {
 };
 
 export default cv;
+
 
 
