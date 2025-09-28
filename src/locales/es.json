@@ -132,30 +132,18 @@
         "skills": "Liferay DXP · Desarrollo de sitios web empresariales · Planificación y diseño de experiencias digitales"
       },
       "course3": {
-        "title": "Event-Driven Microservices, CQRS, SAGA, Axon, Spring Boot",
-        "organization": "Udemy",
-        "date": "Mayo 2024",
-        "skills": "Programación orientada a eventos · Microservicios · Spring Cloud · Axon Server · Patrones de diseño"
-      },
-      "course4": {
-        "title": "Fundamentos en DevOps, APIs y Arquitectura de Microservicios",
-        "organization": "Udemy",
-        "date": "Abril 2024",
-        "skills": "Microservicios · Desarrollo de API · Spring Boot · Docker · DevOps"
-      },
-      "course5": {
         "title": "Curso de Grado en Seguridad de Sistemas Informáticos",
         "organization": "Universidad de Oviedo",
         "date": "Junio 2023",
         "skills": "Ubuntu · Seguridad informática"
       },
-      "course6": {
+      "course4": {
         "title": "Prevención de Riesgos Laborales de Personal de Oficinas",
         "organization": "MAS Prevención",
         "date": "Noviembre 2024",
         "skills": "Seguridad Laboral · Prevención de Riesgos"
       },
-      "course7": {
+      "course5": {
         "title": "Permiso de Conducir B",
         "organization": "Dirección General de Tráfico",
         "date": "Agosto 2021",
@@ -221,5 +209,6 @@
     "content": "Todos los derechos reservados"
   }
 }
+
 
 
