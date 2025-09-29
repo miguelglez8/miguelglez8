@@ -61,7 +61,7 @@
             "text": "Development of unit and integration tests to ensure code quality and stability"
           },
           "resp4": {
-            "text": "Continuous training in microservices architecture, DevOps, and event-driven systems such as Kafka, SAGA, and CQRS"
+            "text": "Continuous training in microservices architecture, DevOps, and event-driven systems such as Kafka"
           },
           "resp5": {
             "text": "Integration of Kafka and Firebase for service communication, and application monitoring with Prometheus and Grafana"
@@ -209,6 +209,7 @@
     "content": "All rights reserved"
   }
 }
+
 
 
 
