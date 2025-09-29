@@ -61,7 +61,7 @@
             "text": "Desarrollo de tests unitarios y de integración para garantizar la calidad y estabilidad del código"
           },
           "resp4": {
-            "text": "Formación continua en microservicios, DevOps y sistemas basados en eventos (Kafka, SAGA, CQRS)"
+            "text": "Formación continua en microservicios, DevOps y sistemas basados en eventos (Kafka)"
           },
           "resp5": {
             "text": "Integración de Kafka y Firebase para comunicación entre servicios, y monitorización de aplicaciones con Prometheus y Grafana"
@@ -209,6 +209,7 @@
     "content": "Todos los derechos reservados"
   }
 }
+
 
 
 
