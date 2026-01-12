@@ -19,9 +19,9 @@ export const technologiesColors = {
 };
 
 export const statusColors = {
-    in_progress: "#16A34A",
-    finished: "#F59E0B",
-    current: "#6366F1"
+    in_progress: "#F59E0B",
+    finished: "#22C55E",
+    current: "#3B82F6"
 };
 
 export const techColors = {
@@ -45,3 +45,4 @@ export const linkColors = {
     doc: "#007BFF",
     demo: "#FF0000"
 };
+
