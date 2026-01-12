@@ -36,7 +36,8 @@ const Contact = () => {
                     padding: isMobile ? "0" : "40px",
                     borderRadius: "10px",
                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                    width: "50vh"
+                    width: "min(50vh, calc(100% - 32px))",
+                    margin: "0 auto",
                 }}
             >
                 <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
@@ -53,3 +54,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
