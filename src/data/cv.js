@@ -27,8 +27,8 @@ const cv = {
             {
                 id: "exp2",
                 logo: "./images/nttdata.png",
-                alt: "Logo NTTDATA",
-                company: "NTTDATA",
+                alt: "Logo NTT DATA",
+                company: "NTT DATA",
                 location: "Oviedo"
             }
         ],
@@ -178,6 +178,7 @@ const cv = {
 };
 
 export default cv;
+
 
 
 
