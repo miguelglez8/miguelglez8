@@ -1,21 +1,20 @@
 export const technologiesColors = {
-    JavaScript: "#F7DF1E",
-    React: "#61DAFB",
-    HTML: "#F59E0B",
-    Java: "#007396",
-    "Spring Boot": "#6DB33F",
-    Liferay: "#22D3EE",
-    Docker: "#0DB7ED",
-    AWS: "#FF9900",
-    Firebase: "#FBBF24",
-    MySQL: "#00758F",
-    MongoDB: "#4DB33D",
-    Git: "#FF0000",
-    GitHub: "#333",
-    Android: "#6DB33F",
-    Kotlin: "#7F52FF",
-    JUnit: "#34D399",
-    JMeter: "#007396"
+  Java: "#007396",
+  Liferay: "#22D3EE",
+  JSP: "#F97316",
+  React: "#61DAFB",
+  JavaScript: "#F7DF1E",
+  HTML: "#F59E0B",
+  CSS: "#2563EB",
+  Docker: "#0DB7ED",
+  Elasticsearch: "#F97316",
+  Git: "#FF0000",
+  GitHub: "#333333",
+  MySQL: "#00758F",
+  MongoDB: "#4DB33D",
+  AWS: "#FF9900",
+  Firebase: "#FBBF24",
+  "Spring Boot": "#6DB33F"
 };
 
 export const statusColors = {
@@ -45,4 +44,5 @@ export const linkColors = {
     doc: "#007BFF",
     demo: "#FF0000"
 };
+
 
