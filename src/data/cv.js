@@ -39,12 +39,6 @@ const cv = {
                 alt: "Logo Uni",
                 location: "Oviedo",
                 link: "https://catedraindra.uniovi.es/premios/2024.tfg-tfm"
-            },
-            {
-                id: "edu2",
-                logo: "./images/iesvalledealler.jpeg",
-                alt: "Logo IES Valle de Aller",
-                location: "Moreda de Aller"
             }
         ],
         courses: [
@@ -178,6 +172,7 @@ const cv = {
 };
 
 export default cv;
+
 
 
 
