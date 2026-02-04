@@ -1,18 +1,15 @@
 import { technologiesColors } from "../../data/colors.js";
 
 import { FaDocker, FaJava, FaAws, FaReact, FaGit, FaGithub, FaRegCheckCircle, FaCogs } from 'react-icons/fa';
-import { SiSpringboot, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiMongodb, SiCss3, SiLiferay, SiApachejsp, SiElasticsearch } from "react-icons/si";
+import { SiSpringboot, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiMongodb, SiCss3 } from "react-icons/si";
 
 const logoMapping = {
   Java: <FaJava />,
-  Liferay: <SiLiferay />,
-  JSP: <SiApachejsp />,
   React: <FaReact />,
   JavaScript: <SiJavascript />,
   HTML: <SiHtml5 />,
   CSS: <SiCss3 />,
   Docker: <FaDocker />,
-  Elasticsearch: <SiElasticsearch />,
   Git: <FaGit />,
   GitHub: <FaGithub />,
   MySQL: <SiMysql />,
@@ -44,4 +41,5 @@ const TechnologyItem = ({ name }) => {
 };
 
 export default TechnologyItem;
+
 
