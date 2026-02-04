@@ -93,25 +93,6 @@
             "text": "Recognition awarded by the Indra Chair and the University of Oviedo for the best Final Degree Thesis in the year 2023/2024"
           }
         }
-      },
-      "edu2": {
-        "title": "Scientific-Technical Baccalaureate",
-        "institution": "IES Valle de Aller",
-        "period": "September 2018 - June 2020",
-        "details": {
-          "detail1": {
-            "text": "Overall grade average: 9.875"
-          },
-          "detail2": {
-            "text": "Graduation with honors"
-          },
-          "detail3": {
-            "text": "Honors in Mathematics and Physics"
-          },
-          "detail4": {
-            "text": "EBAU score: 13.368"
-          }
-        }
       }
     },
     "courses": {
@@ -209,6 +190,7 @@
     "content": "All rights reserved"
   }
 }
+
 
 
 
