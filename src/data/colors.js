@@ -7,7 +7,6 @@ export const technologiesColors = {
   HTML: "#F59E0B",
   CSS: "#2563EB",
   Docker: "#0DB7ED",
-  Elasticsearch: "#F97316",
   Git: "#FF0000",
   GitHub: "#333333",
   MySQL: "#00758F",
@@ -44,5 +43,6 @@ export const linkColors = {
     doc: "#007BFF",
     demo: "#FF0000"
 };
+
 
 
