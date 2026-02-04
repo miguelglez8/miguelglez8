@@ -15,7 +15,7 @@ During my practices, I gained experience with Spring (Spring Boot), building bac
 
 I’m passionate about writing clean, maintainable code, following good engineering practices, design patterns, and API-first principles. I enjoy tackling complex problems, designing efficient and scalable systems, and exploring digital architecture for sustainable technological solutions.
 
-Technologies & tools: Java, Liferay 7.4, JSP, React, HTML/CSS, JavaScript, REST APIs, Elasticsearch, Docker, Git, Service Builder, REST Builder, microservices, relational and non-relational databases, cloud platforms (AWS, Firebase), Spring Boot.
+Technologies & tools: Java, Liferay 7.4, JSP, React, HTML/CSS, JavaScript, REST APIs, Elasticsearch, Docker, Git, Service Builder, REST Builder, microservices, relational and non-relational databases (MySQL, MongoDB), cloud platforms (AWS, Firebase), Spring Boot.
 
 ## 🤝 Contacts
 
