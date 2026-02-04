@@ -93,25 +93,6 @@
             "text": "Reconocimiento otorgado por la Cátedra Indra y la Universidad de Oviedo al mejor Trabajo Fin de Grado en el año 2023/2024"
           }
         }
-      },
-      "edu2": {
-        "title": "Bachillerato Científico-Tecnológico",
-        "institution": "IES Valle de Aller",
-        "period": "Septiembre 2018 - Junio 2020",
-        "details": {
-          "detail1": {
-            "text": "Promedio general de calificaciones: 9,875"
-          },
-          "detail2": {
-            "text": "Graduación con honores"
-          },
-          "detail3": {
-            "text": "Menciones en Matemáticas y Física"
-          },
-          "detail4": {
-            "text": "Nota EBAU: 13,368"
-          }
-        }
       }
     },
     "courses": {
@@ -209,6 +190,7 @@
     "content": "Todos los derechos reservados"
   }
 }
+
 
 
 
