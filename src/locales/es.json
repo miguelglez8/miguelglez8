@@ -29,7 +29,7 @@
 
   "About": {
     "aboutMe": "Sobre Mí",
-    "description": "Ingeniero de Software con 1,5 años de experiencia profesional en Java y Liferay, especializado en el desarrollo de portales web personalizados y servicios backend. Tengo experiencia práctica en diseño, implementación y optimización de portlets, APIs REST y microservicios, trabajando con tecnologías como Java, JSP, React, HTML/CSS, Docker y bases de datos relacionales y no relacionales. También he trabajado con plataformas cloud como AWS y Azure, diseñando y desplegando soluciones escalables y eficientes adaptadas a las necesidades de los proyectos. Durante mis prácticas, adquirí experiencia adicional con Spring (Spring Boot), desarrollando servicios backend y APIs distribuidas. Actualmente, me enfoco en backend web y portales Liferay, integrando servicios y optimizando la experiencia de usuario. Me apasiona diseñar sistemas eficientes y escalables, aplicar buenas prácticas, automatización y calidad de software, y participar en proyectos que supongan retos técnicos complejos.",
+    "description": "Ingeniero de Software con 1 año y 6 meses de experiencia profesional en Java y Liferay, especializado en el desarrollo de portales web personalizados y servicios backend. Tengo experiencia práctica en diseño, implementación y optimización de portlets, APIs REST y microservicios, trabajando con tecnologías como Java, JSP, React, HTML/CSS, Docker y bases de datos relacionales y no relacionales. También he trabajado con plataformas cloud como AWS y Azure, diseñando y desplegando soluciones escalables y eficientes adaptadas a las necesidades de los proyectos. Durante mis prácticas, adquirí experiencia adicional con Spring (Spring Boot), desarrollando servicios backend y APIs distribuidas. Actualmente, me enfoco en backend web y portales Liferay, integrando servicios y optimizando la experiencia de usuario. Me apasiona diseñar sistemas eficientes y escalables, aplicar buenas prácticas, automatización y calidad de software, y participar en proyectos que supongan retos técnicos complejos.",
     "experiences": {
       "title": "Experiencia Laboral",
       "exp1": {
@@ -190,6 +190,7 @@
     "content": "Todos los derechos reservados"
   }
 }
+
 
 
 
