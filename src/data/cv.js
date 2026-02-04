@@ -77,23 +77,22 @@ const cv = {
             }
         ],
         technologies: [
-            { name: "JavaScript" },
-            { name: "React" },
-            { name: "HTML" },
             { name: "Java" },
-            { name: "Spring Boot" },
             { name: "Liferay" },
+            { name: "JSP" },
+            { name: "React" },
+            { name: "JavaScript" },
+            { name: "HTML" },
+            { name: "CSS" },
             { name: "Docker" },
-            { name: "AWS" },
-            { name: "Firebase" },
-            { name: "MySQL" },
-            { name: "MongoDB" },
+            { name: "Elasticsearch" },
             { name: "Git" },
             { name: "GitHub" },
-            { name: "Android" },
-            { name: "Kotlin" },
-            { name: "JUnit" },
-            { name: "JMeter" }
+            { name: "MySQL" },
+            { name: "MongoDB" },
+            { name: "AWS" },
+            { name: "Firebase" },
+            { name: "Spring Boot" }
         ],
     },
     projects: [
@@ -172,6 +171,7 @@ const cv = {
 };
 
 export default cv;
+
 
 
 
