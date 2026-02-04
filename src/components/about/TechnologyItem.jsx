@@ -1,25 +1,25 @@
 import { technologiesColors } from "../../data/colors.js";
 
 import { FaDocker, FaJava, FaAws, FaReact, FaGit, FaGithub, FaRegCheckCircle, FaCogs } from 'react-icons/fa';
-import { SiSpringboot, SiFirebase, SiKotlin, SiAndroid, SiHtml5, SiJavascript, SiMysql, SiMongodb } from 'react-icons/si';
+import { SiSpringboot, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiMongodb, SiCss3, SiLiferay, SiApachejsp, SiElasticsearch } from "react-icons/si";
 
 const logoMapping = {
-    JavaScript: <SiJavascript />,
-    React: <FaReact />,
-    HTML: <SiHtml5 />,
-    Java: <FaJava />,
-    "Spring Boot": <SiSpringboot />,
-    Docker: <FaDocker />,
-    AWS: <FaAws />,
-    Firebase: <SiFirebase />,
-    MySQL: <SiMysql />,
-    MongoDB: <SiMongodb />,
-    Git: <FaGit />,
-    GitHub: <FaGithub />,
-    Android: <SiAndroid />,
-    Kotlin: <SiKotlin />,
-    JUnit: <FaRegCheckCircle />,
-    JMeter: <FaCogs />,
+  Java: <FaJava />,
+  Liferay: <SiLiferay />,
+  JSP: <SiApachejsp />,
+  React: <FaReact />,
+  JavaScript: <SiJavascript />,
+  HTML: <SiHtml5 />,
+  CSS: <SiCss3 />,
+  Docker: <FaDocker />,
+  Elasticsearch: <SiElasticsearch />,
+  Git: <FaGit />,
+  GitHub: <FaGithub />,
+  MySQL: <SiMysql />,
+  MongoDB: <SiMongodb />,
+  AWS: <FaAws />,
+  Firebase: <SiFirebase />,
+  "Spring Boot": <SiSpringboot />
 };
 
 const TechnologyItem = ({ name }) => {
@@ -44,3 +44,4 @@ const TechnologyItem = ({ name }) => {
 };
 
 export default TechnologyItem;
+
