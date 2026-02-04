@@ -85,7 +85,6 @@ const cv = {
             { name: "HTML" },
             { name: "CSS" },
             { name: "Docker" },
-            { name: "Elasticsearch" },
             { name: "Git" },
             { name: "GitHub" },
             { name: "MySQL" },
@@ -171,9 +170,3 @@ const cv = {
 };
 
 export default cv;
-
-
-
-
-
-
