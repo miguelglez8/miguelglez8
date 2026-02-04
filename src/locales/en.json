@@ -29,7 +29,7 @@
 
   "About": {
     "aboutMe": "About Me",
-    "description": "I am a Software Engineering graduate with extensive experience in application development using technologies such as JavaScript, React, Docker, Spring, Java, JSP, and HTML. I have a strong background in mathematics, programming, and system design, having worked on projects ranging from web solutions to distributed applications and microservices. I have experience with both relational and non-relational databases, as well as cloud platforms such as AWS and Firebase, where I have designed and deployed scalable and efficient solutions. Currently, I focus on web development, particularly backend development, and I am involved in the creation of custom portals, service integration, and optimizing user experience in Liferay. I am interested in designing and developing efficient and scalable systems, which leads me to explore the field of digital architecture. Passionate about technological innovation and motivated by solving complex problems, I actively participate in personal and collaborative projects that aim to drive technological progress.",
+    "description": "Software Engineer with 1.5 years of professional experience in Java and Liferay, specialized in developing custom web portals and backend services. I have hands-on experience in designing, implementing, and optimizing portlets, REST APIs, and microservices, working with technologies such as Java, JSP, React, HTML/CSS, Docker, and relational and non-relational databases. I have also worked with cloud platforms like AWS and Azure, designing and deploying scalable and efficient solutions tailored to project needs. During my internships, I gained additional experience with Spring (Spring Boot), developing backend services and distributed APIs. Currently, I focus on backend web development and Liferay portals, integrating services and optimizing user experience. I’m passionate about designing efficient and scalable systems, applying best practices, automation, and software quality principles, and participating in projects that involve complex technical challenges.",
     "experiences": {
       "title": "Work Experience",
       "exp1": {
@@ -209,6 +209,7 @@
     "content": "All rights reserved"
   }
 }
+
 
 
 
