@@ -7,7 +7,7 @@
 
 ## 🧐 About me
 
-Software Engineer with 1.5 years of professional experience in Java and Liferay development, building and maintaining custom web portals and backend services. I have hands-on experience in designing, implementing, and optimizing portlets, APIs, and distributed applications, with a focus on performance and user experience.
+Software Engineer with 2 years of professional experience in Java and Liferay development, building and maintaining custom web portals and backend services. I have hands-on experience in designing, implementing, and optimizing portlets, APIs, and distributed applications, with a focus on performance and user experience.
 
 My daily work includes developing custom Liferay portlets, integrating services via REST APIs, working with Java, JSP, React, HTML/CSS, and relational and non-relational databases. I also have experience in cloud platforms, deploying scalable and efficient solutions tailored to project needs.
 
