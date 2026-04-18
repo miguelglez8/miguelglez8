@@ -7,7 +7,7 @@
 
 ## 🧐 About me
 
-Backend Java Developer with experience in building REST APIs and backend services in enterprise environments. I have worked on the development and evolution of applications, contributing to service design and integration, as well as improving system performance.
+Software Engineer with experience in building REST APIs and backend services in enterprise environments. I have worked on the development and evolution of applications, contributing to service design and integration, as well as improving system performance.
 
 In my daily work, I develop and integrate REST APIs using Java, working with both relational and non-relational databases, and contributing to the implementation of business logic in backend applications. I have also worked in cloud environments, deploying scalable solutions tailored to the needs of each project.
 
