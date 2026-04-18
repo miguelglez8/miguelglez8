@@ -7,15 +7,15 @@
 
 ## 🧐 About me
 
-Software Engineer with 2 years of professional experience in Java and Liferay development, building and maintaining custom web portals and backend services. I have hands-on experience in designing, implementing, and optimizing portlets, APIs, and distributed applications, with a focus on performance and user experience.
+Backend Java Developer with experience in building REST APIs and backend services in enterprise environments. I have worked on the development and evolution of applications, contributing to service design and integration, as well as improving system performance.
 
-My daily work includes developing custom Liferay portlets, integrating services via REST APIs, working with Java, JSP, React, HTML/CSS, and relational and non-relational databases. I also have experience in cloud platforms, deploying scalable and efficient solutions tailored to project needs.
+In my daily work, I develop and integrate REST APIs using Java, working with both relational and non-relational databases, and contributing to the implementation of business logic in backend applications. I have also worked in cloud environments, deploying scalable solutions tailored to the needs of each project.
 
-During my practices, I gained experience with Spring (Spring Boot), building backend services and APIs for distributed applications.
+I have gained experience with Spring Boot in developing backend services and distributed applications, working with microservices-based architectures and system-to-system communication.
 
-I’m passionate about writing clean, maintainable code, following good engineering practices, design patterns, and API-first principles. I enjoy tackling complex problems, designing efficient and scalable systems, and exploring digital architecture for sustainable technological solutions.
+I focus on writing clean, maintainable code, applying best development practices, design patterns, and API-first principles. I enjoy solving complex problems and designing efficient, scalable systems.
 
-Technologies & tools: Java, Liferay, JSP, React, HTML/CSS, JavaScript, REST APIs, Docker, Git, Service Builder, REST Builder, microservices, relational and non-relational databases (MySQL, MongoDB), cloud platforms (AWS, Firebase), Spring Boot.
+Technologies and tools: Java, Spring Boot, REST APIs, microservices, Docker, Git, MySQL, MongoDB, AWS
 
 ## 🤝 Contacts
 
