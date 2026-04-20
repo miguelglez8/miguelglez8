@@ -7,14 +7,14 @@
 
 ## 🧐 About me
 
-Software Engineer with experience in building REST APIs and backend services in enterprise environments. I have worked on the development and evolution of applications, contributing to service design and integration, as well as improving system performance.
-
-In my daily work, I develop and integrate REST APIs using Java, working with both relational and non-relational databases, and contributing to the implementation of business logic in backend applications. I have also worked in cloud environments, deploying scalable solutions tailored to the needs of each project.
-
-I have gained experience with Spring Boot in developing backend services and distributed applications, working with microservices-based architectures and system-to-system communication.
-
-I focus on writing clean, maintainable code, applying best development practices, design patterns, and API-first principles. I enjoy solving complex problems and designing efficient, scalable systems.
-
+Software Engineer with experience in building REST APIs and backend services in enterprise environments. I work on the design and development of backend services, including API development, system integration, and performance improvements in production environments.
+ 
+In my day-to-day work, I develop REST APIs using Java, working with relational databases, and implementing business logic in scalable backend systems. I have also worked in cloud environments, deploying solutions adapted to real project needs.
+ 
+I have experience with Spring Boot and microservices-based architectures, focusing on building maintainable and efficient systems.
+ 
+Currently focused on growing as a backend Java developer in projects involving Spring Boot and microservices.
+ 
 Technologies and tools: Java, Spring Boot, REST APIs, microservices, Docker, Git, MySQL, MongoDB, AWS
 
 ## 🤝 Contacts
