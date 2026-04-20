@@ -1,4 +1,4 @@
-const CourseItem = ({ logo, alt, title, organization, date, link, linkText, text, skills }) => {
+const CourseItem = ({ logo, alt, title, organization, date, link, linkText, text, skills, textSkills }) => {
     return (
         <li style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
             <img
@@ -31,7 +31,7 @@ const CourseItem = ({ logo, alt, title, organization, date, link, linkText, text
                 )}
                 {skills && (
                     <p style={{ fontSize: "14px", color: "#777" }}>
-                        🛠 <strong>Aptitudes:</strong> {skills}
+                        🛠 <strong>{textSkills}:</strong> {skills}
                     </p>
                 )}
             </div>

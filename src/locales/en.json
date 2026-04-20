@@ -29,7 +29,7 @@
 
   "About": {
     "aboutMe": "About Me",
-    "description": "Software Engineer with 2 years of professional experience in Java and Liferay, specialized in developing custom web portals and backend services. I have hands-on experience in designing, implementing, and optimizing portlets, REST APIs, and microservices, working with technologies such as Java, JSP, React, HTML/CSS, Docker, and relational and non-relational databases. I have also worked with cloud platforms like AWS and Azure, designing and deploying scalable and efficient solutions tailored to project needs. During my internships, I gained additional experience with Spring (Spring Boot), developing backend services and distributed APIs. Currently, I focus on backend web development and Liferay portals, integrating services and optimizing user experience. I’m passionate about designing efficient and scalable systems, applying best practices, automation, and software quality principles, and participating in projects that involve complex technical challenges.",
+    "description": "Software Engineer with experience in building REST APIs and backend services in enterprise environments. I work on the design and development of backend services, including API development, system integration, and performance improvements in production environments. In my day-to-day work, I develop REST APIs using Java, working with relational databases, and implementing business logic in scalable backend systems. I have also worked in cloud environments, deploying solutions adapted to real project needs. I have experience with Spring Boot and microservices-based architectures, focusing on building maintainable and efficient systems. Currently focused on growing as a backend Java developer in projects involving Spring Boot and microservices.",
     "experiences": {
       "title": "Work Experience",
       "exp1": {
@@ -37,13 +37,28 @@
         "period": "October 2024 - Present",
         "responsibilities": {
           "resp1": {
-            "text": "Development and maintenance of custom portlets in Liferay 7.4, as well as implementation of tailored solutions to improve performance and user experience in Liferay DXP environments"
+            "text": "Development and implementation of REST APIs in enterprise environments using Java"
           },
           "resp2": {
-            "text": "Active participation in Liferay version migration processes and continuous improvement of portal functionalities through development best practices"
+            "text": "Backend business logic development and integration with internal and external systems"
           },
           "resp3": {
-            "text": "Use of technologies such as Java, JSP, HTML/CSS, JavaScript, React, ServiceBuilder, RestBuilder, ElasticSearch, indexer, custom fragments and templates, along with the implementation of REST APIs using Swagger/OpenAPI"
+            "text": "Contribution to backend service scalability and performance improvements in production environments"
+          },
+          "resp4": {
+            "text": "Participation in system evolution and migrations, ensuring service continuity"
+          },
+          "resp5": {
+            "text": "Performance optimization and incident resolution in production environments"
+          },
+          "resp6": {
+            "text": "Data management and integration with relational databases"
+          },
+          "resp7": {
+            "text": "Collaboration in agile teams, participating in code reviews and continuous improvement"
+          },
+          "resp8": {
+            "text": "Integration of enterprise platforms (Liferay) within backend architectures"
           }
         }
       },
@@ -52,19 +67,22 @@
         "period": "March 2024 - July 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Design, development, and maintenance of backend services using Java with Spring Boot, applying design patterns and architectural best practices"
+            "text": "Backend service development using Java and Spring Boot following clean architecture principles"
           },
           "resp2": {
-            "text": "Creation and documentation of RESTful APIs using Swagger. Data persistence in both relational (SQL) and NoSQL databases"
+            "text": "Design and implementation of REST APIs documented with Swagger/OpenAPI"
           },
           "resp3": {
-            "text": "Development of unit and integration tests to ensure code quality and stability"
+            "text": "Integration of distributed systems using Kafka (event-driven architecture)"
           },
           "resp4": {
-            "text": "Continuous training in microservices architecture, DevOps, and event-driven systems such as Kafka"
+            "text": "Development of unit and integration tests to ensure code quality"
           },
           "resp5": {
-            "text": "Integration of Kafka and Firebase for service communication, and application monitoring with Prometheus and Grafana"
+            "text": "Application monitoring using Prometheus and Grafana for performance analysis"
+          },
+          "resp6": {
+            "text": "Participation in microservices-based architectures and service-to-service communication"
           }
         }
       }
@@ -101,37 +119,36 @@
       "course": "View course",
       "certificate": "View certification",
       "course1": {
-        "title": "Liferay DXP 7.4 Frontend & Backend Advanced Developer",
-        "organization": "Liferay",
-        "date": "November 2024",
-        "skills": "Liferay DXP · Full Stack Development · Java"
-      },
-      "course2": {
-        "title": "Building Enterprise Websites with Liferay",
-        "organization": "Liferay",
-        "date": "September 2025",
-        "skills": "Liferay DXP · Enterprise Website Development · Digital Experience Planning and Design"
-      },
-      "course3": {
         "title": "Completion of a Course in Computer Systems Security Degree",
         "organization": "University of Oviedo",
         "date": "June 2023",
         "skills": "Ubuntu · Computer Security"
       },
-      "course4": {
+      "course2": {
         "title": "Occupational Risk Prevention for Office Personnel",
         "organization": "MAS Prevención",
         "date": "November 2024",
         "skills": "Workplace Safety · Risk Prevention"
       },
-      "course5": {
+      "course3": {
         "title": "Driver's License B",
         "organization": "General Directorate of Traffic",
         "date": "August 2021",
         "skills": "Driving Test"
-      }
+      },
+      "skills": "Skills"
     },
-    "technologies": "Technologies"
+    "technologies": {
+      "title": "Technologies",
+      "java": "Java",
+      "spring_boot": "Spring Boot",
+      "rest_apis": "REST APIs",
+      "microservices": "Microservices",
+      "docker": "Docker",
+      "git": "Git",
+      "sql": "SQL",
+      "aws": "AWS"
+    }
   },
 
   "Projects": {

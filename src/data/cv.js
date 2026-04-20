@@ -44,54 +44,33 @@ const cv = {
         courses: [
             {
                 id: "course1",
-                logo: "./images/liferay.jpg",
-                alt: "Logo Liferay",
-                link: "https://learn.liferay.com/w/reference/liferay-university",
-                category: COURSE_CATEGORY.course
-            },
-            {
-                id: "course2",
-                logo: "./images/liferay.jpg",
-                alt: "Logo Liferay",
-                link: "https://learn.liferay.com/l/26502895",
-                category: COURSE_CATEGORY.certificate
-            },
-            {
-                id: "course3",
                 logo: "./images/uniovi.jpg",
                 alt: "Logo Uni",
                 link: "https://www.campusvirtual.uniovi.es/badges/badge.php?hash=1449850ff7707c0d5b1a095a0020646ff52f649b",
                 category: COURSE_CATEGORY.certificate
             },
             {
-                id: "course4",
+                id: "course2",
                 logo: "./images/prl.jpg",
                 alt: "Logo PRL",
-                category: COURSE_CATEGORY.none
+                category: COURSE_CATEGORY.course
             },
             {
-                id: "course5",
+                id: "course3",
                 logo: "./images/dgt.jpg",
                 alt: "Logo DGT",
-                category: COURSE_CATEGORY.none
+                category: COURSE_CATEGORY.course
             }
         ],
         technologies: [
-            { name: "Java" },
-            { name: "Liferay" },
-            { name: "JSP" },
-            { name: "React" },
-            { name: "JavaScript" },
-            { name: "HTML" },
-            { name: "CSS" },
-            { name: "Docker" },
-            { name: "Git" },
-            { name: "GitHub" },
-            { name: "MySQL" },
-            { name: "MongoDB" },
-            { name: "AWS" },
-            { name: "Firebase" },
-            { name: "Spring Boot" }
+            { id: "java" },
+            { id: "spring_boot" },
+            { id: "rest_apis" },
+            { id: "microservices" },
+            { id: "docker" },
+            { id: "git" },
+            { id: "sql" },
+            { id: "aws" }
         ],
     },
     projects: [

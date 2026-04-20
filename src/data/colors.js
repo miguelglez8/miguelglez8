@@ -1,19 +1,13 @@
 export const technologiesColors = {
-  Java: "#007396",
-  Liferay: "#22D3EE",
-  JSP: "#F97316",
-  React: "#61DAFB",
-  JavaScript: "#F7DF1E",
-  HTML: "#F59E0B",
-  CSS: "#2563EB",
-  Docker: "#0DB7ED",
-  Git: "#FF0000",
-  GitHub: "#333333",
-  MySQL: "#00758F",
-  MongoDB: "#4DB33D",
-  AWS: "#FF9900",
-  Firebase: "#FBBF24",
-  "Spring Boot": "#6DB33F"
+    java: "#007396",
+    spring_boot: "#6DB33F",
+    rest_apis: "#4A90E2",
+    microservices: "#9B59B6",
+    docker: "#0DB7ED",
+    git: "#FF0000",
+    github: "#333333",
+    sql: "#00758F",
+    aws: "#FF9900",
 };
 
 export const statusColors = {

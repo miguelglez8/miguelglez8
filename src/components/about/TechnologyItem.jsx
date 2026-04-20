@@ -1,29 +1,27 @@
 import { technologiesColors } from "../../data/colors.js";
+import { useTranslation } from "react-i18next";
 
-import { FaDocker, FaJava, FaAws, FaReact, FaGit, FaGithub } from 'react-icons/fa';
-import { SiSpringboot, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiMongodb, SiCss } from "react-icons/si";
+import { FaDocker, FaJava, FaAws, FaGit } from "react-icons/fa";
+import { SiSpringboot, SiMysql } from "react-icons/si";
 
 const logoMapping = {
-  Java: <FaJava />,
-  React: <FaReact />,
-  JavaScript: <SiJavascript />,
-  HTML: <SiHtml5 />,
-  CSS: <SiCss />,
-  Docker: <FaDocker />,
-  Git: <FaGit />,
-  GitHub: <FaGithub />,
-  MySQL: <SiMysql />,
-  MongoDB: <SiMongodb />,
-  AWS: <FaAws />,
-  Firebase: <SiFirebase />,
-  "Spring Boot": <SiSpringboot />
+    java: <FaJava />,
+    spring_boot: <SiSpringboot />,
+    rest_apis: "🌐",
+    microservices: "🧩",
+    docker: <FaDocker />,
+    git: <FaGit />,
+    sql: <SiMysql />,
+    aws: <FaAws />,
 };
 
-const TechnologyItem = ({ name }) => {
+const TechnologyItem = ({ id }) => {
+    const { t } = useTranslation();
+
     return (
         <span
             style={{
-                backgroundColor: technologiesColors[name] || "#ccc",
+                backgroundColor: technologiesColors[id] || "#ccc",
                 color: "#fff",
                 padding: "8px 16px",
                 borderRadius: "20px",
@@ -34,12 +32,10 @@ const TechnologyItem = ({ name }) => {
                 gap: "8px",
             }}
         >
-            {logoMapping[name]}
-            <span>{name}</span>
+      {logoMapping[id]}
+            <span>{t(`About.technologies.${id}`)}</span>
     </span>
     );
 };
 
 export default TechnologyItem;
-
-

@@ -95,6 +95,7 @@ const About = () => {
                                 linkText={getCourseLinkText(course.category)}
                                 text={t("About.courses.issued")}
                                 skills={t(`About.courses.${course.id}.skills`)}
+                                textSkills={t("About.courses.skills")}
                             />
                             {index < cv.info.courses.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
                         </div>
@@ -102,12 +103,19 @@ const About = () => {
                 </ul>
             </SectionItem>
 
-            <SectionItem title={t("About.technologies")}>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", padding: "20px" }}>
-                    {cv.info.technologies.map((tech, index) => (
+            <SectionItem title={t("About.technologies.title")}>
+                <div
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                        padding: "20px",
+                    }}
+                >
+                    {cv.info.technologies.map((tech) => (
                         <TechnologyItem
-                            key={index}
-                            name={tech.name}
+                            key={tech.id}
+                            id={tech.id}
                         />
                     ))}
                 </div>
