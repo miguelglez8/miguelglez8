@@ -15,7 +15,7 @@ I have experience with Spring Boot and microservices-based architectures, focusi
  
 Currently focused on growing as a backend Java developer in projects involving Spring Boot and microservices.
  
-Technologies and tools: Java, Spring Boot, REST APIs, microservices, Docker, Git, MySQL, MongoDB, AWS
+Technologies and tools: Java, Spring Boot, REST APIs, microservices, Docker, Git, SQL, AWS
 
 ## 🤝 Contacts
 
