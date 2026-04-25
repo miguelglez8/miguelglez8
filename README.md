@@ -25,7 +25,7 @@ Technologies and tools: Java, Spring Boot, REST APIs, Microservices, Docker, Git
 
 ## 💻 Technologies
 
-![Java](https://img.shields.io/badge/Java-f89820?style=for-the-badge&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-f89820?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=api&logoColor=white)
 ![Microservices](https://img.shields.io/badge/Microservices-ff6f00?style=for-the-badge)
@@ -33,9 +33,9 @@ Technologies and tools: Java, Spring Boot, REST APIs, Microservices, Docker, Git
 ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge)
 ![Kafka](https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-ff9900?style=for-the-badge&logo=AmazonWebServices&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![SOLID](https://img.shields.io/badge/SOLID-9500BB?style=for-the-badge)
+![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
