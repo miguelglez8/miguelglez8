@@ -33,7 +33,7 @@ Technologies and tools: Java, Spring Boot, REST APIs, Microservices, Docker, Git
 ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge)
 ![Kafka](https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-ff9900?style=for-the-badge&logo=AmazonWebServices&logoColor=white)
+![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-ff9900?style=for-the-badge&logo=Amazon&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
