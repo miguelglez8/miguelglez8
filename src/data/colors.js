@@ -9,6 +9,7 @@ export const technologiesColors = {
     sql: "#00758F",
     git: "#E44C30",
     docker: "#2496ED",
+    aws: "#FF9900",
     junit: "#25A162",
     jsp: "#007396",
     liferay:"#0B5FFF"

@@ -35,8 +35,13 @@
       "title": "Work Experience",
       "stack": "Technological Stack",
       "exp1": {
+        "title": "Full Stack Developer",
+        "period": "June 2026 - Present",
+        "stack": "Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · AWS · JUnit"
+      },
+      "exp2": {
         "title": "Software Developer",
-        "period": "October 2024 - Present",
+        "period": "October 2024 - June 2026",
         "responsibilities": {
           "resp1": {
             "text": "Development and implementation of REST APIs in enterprise environments using Java"
@@ -62,9 +67,9 @@
         },
         "stack": "Java · React · Liferay · JavaScript · JSP · REST APIs · SQL · Git"
       },
-      "exp2": {
+      "exp3": {
         "title": "Digital Architecture Student",
-        "period": "March 2024 - July 2024",
+        "period": "March 2024 - June 2026",
         "responsibilities": {
           "resp1": {
             "text": "Backend service development with Java and Spring Boot following clean architecture principles"
@@ -154,6 +159,7 @@
       "sql": "SQL",
       "git": "Git",
       "docker": "Docker",
+      "aws": "AWS",
       "junit": "JUnit",
       "jsp": "JSP",
       "liferay": "Liferay"

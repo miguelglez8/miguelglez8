@@ -36,7 +36,12 @@
       "stack": "Stack Tecnológico",
       "exp1": {
         "title": "Desarrollador Full Stack",
-        "period": "Octubre 2024 - Actualidad",
+        "period": "Junio 2026 - Actualidad",
+        "stack": "Java · Spring Boot · React · JavaScript · APIs REST · Microservicios · Kafka · SQL · Git · Docker · AWS · JUnit"
+      },
+      "exp2": {
+        "title": "Desarrollador Full Stack",
+        "period": "Octubre 2024 - Junio 2026",
         "responsibilities": {
           "resp1": {
             "text": "Desarrollo e implementación de APIs REST en entornos empresariales utilizando Java"
@@ -63,7 +68,7 @@
         "titleStack": "Stack Tecnológico",
         "stack": "Java · React · Liferay · JavaScript · JSP · APIs REST · SQL · Git"
       },
-      "exp2": {
+      "exp3": {
         "title": "Desarrollador Java",
         "period": "Marzo 2024 - Julio 2024",
         "responsibilities": {
@@ -155,6 +160,7 @@
       "sql": "SQL",
       "git": "Git",
       "docker": "Docker",
+      "aws": "AWS",
       "junit": "JUnit",
       "jsp": "JSP",
       "liferay": "Liferay"

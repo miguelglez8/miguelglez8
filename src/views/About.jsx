@@ -5,7 +5,7 @@ import EducationItem from "../components/about/EducationItem.jsx";
 import CourseItem from "../components/about/CourseItem.jsx";
 import TechnologyItem from "../components/about/TechnologyItem.jsx";
 import cv from '../data/cv.js';
-import {COURSE_CATEGORY} from "../data/constants.js";
+import {COURSE_CATEGORY, workModeEmojis} from "../data/constants.js";
 
 const About = () => {
     const { t } = useTranslation();
@@ -32,12 +32,20 @@ const About = () => {
             <SectionItem title={t("About.experiences.title")}>
                 <ul style={{ listStyleType: "none", paddingLeft: "0", marginTop: "20px" }}>
                     {cv.info.experiences.map((experience, index) => {
-                        const responsibilities = Object.values(
-                            t(`About.experiences.${experience.id}.responsibilities`, { returnObjects: true })
-                        ).map((resp) => resp.text);
+                        const rawResponsibilities = t(
+                            `About.experiences.${experience.id}.responsibilities`,
+                            { returnObjects: true }
+                        );
+
+                        const responsibilities = rawResponsibilities
+                        && typeof rawResponsibilities === "object"
+                            ? Object.values(rawResponsibilities)
+                                .map((r) => r?.text)
+                                .filter(Boolean)
+                            : [];
 
                         return (
-                            <div key={index}>
+                            <li key={experience.id || index}>
                                 <ExperienceItem
                                     logo={experience.logo}
                                     alt={experience.alt}
@@ -48,9 +56,14 @@ const About = () => {
                                     responsibilities={responsibilities}
                                     stack={t(`About.experiences.${experience.id}.stack`)}
                                     textStack={t("About.experiences.stack")}
+                                    workMode={experience.workMode}
+                                    emoji={workModeEmojis?.[experience.workMode]}
                                 />
-                                {index < cv.info.experiences.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
-                            </div>
+
+                                {index < cv.info.experiences.length - 1 && (
+                                    <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />
+                                )}
+                            </li>
                         );
                     })}
                 </ul>

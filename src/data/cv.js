@@ -1,4 +1,4 @@
-import {COURSE_CATEGORY, JOB_STATUS} from "./constants.js";
+import {COURSE_CATEGORY, JOB_STATUS, WORK_MODE} from "./constants.js";
 
 const cv = {
     version: '1.0.0',
@@ -19,17 +19,27 @@ const cv = {
         experiences: [
             {
                 id: "exp1",
-                logo: "./images/hiberus.jpg",
-                alt: "Logo Hiberus",
-                company: "Hiberus",
-                location: "Oviedo"
+                logo: "./images/galeo.png",
+                alt: "Logo GALEO",
+                company: "GALEO",
+                location: "Oviedo",
+                workMode: WORK_MODE.remote
             },
             {
                 id: "exp2",
+                logo: "./images/hiberus.jpg",
+                alt: "Logo Hiberus",
+                company: "Hiberus",
+                location: "Oviedo",
+                workMode: WORK_MODE.hybrid
+            },
+            {
+                id: "exp3",
                 logo: "./images/nttdata.png",
                 alt: "Logo NTT DATA",
                 company: "NTT DATA",
-                location: "Oviedo"
+                location: "Oviedo",
+                workMode: WORK_MODE.hybrid
             }
         ],
         education: [
@@ -73,6 +83,7 @@ const cv = {
             { id: "sql" },
             { id: "git" },
             { id: "docker" },
+            { id: "aws" },
             { id: "junit" },
             { id: "jsp" },
             { id: "liferay" }

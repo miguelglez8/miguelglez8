@@ -18,3 +18,15 @@ export const COURSE_CATEGORY = {
     certificate: 'certificate',
     none: 'none',
 }
+
+export const workModeEmojis = {
+    onsite: "🏢",
+    remote: "🏠",
+    hybrid: "🔀",
+};
+
+export const WORK_MODE = {
+    onsite: "onsite",
+    remote: "remote",
+    hybrid: "hybrid",
+};
