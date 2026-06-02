@@ -94,7 +94,9 @@ const cv = {
             status: JOB_STATUS.finished,
             technologies: [
                 { text: "React" },
-                { text: "Spring" },
+                { text: "JavaScript" },
+                { text: "Spring Boot" },
+                { text: "Java" },
                 { text: "Docker" },
                 { text: "AWS" }
             ],
@@ -108,8 +110,8 @@ const cv = {
             image: "./images/footmatch.jpg",
             status: JOB_STATUS.finished,
             technologies: [
-                { text: "Kotlin" },
                 { text: "Java" }
+                { text: "Kotlin" },
             ],
             links: [
                 { href: "https://github.com/miguelglez8/footmatch-sdm", type: "github" }
@@ -121,6 +123,7 @@ const cv = {
             status: JOB_STATUS.current,
             technologies: [
                 { text: "Node" },
+                { text: "JavaScript" },
                 { text: "MongoDB" },
                 { text: "Docker" }
             ],
@@ -135,6 +138,7 @@ const cv = {
             technologies: [
                 { text: "React" },
                 { text: "Node" },
+                { text: "JavaScript" },
                 { text: "SOLID" },
                 { text: "CI/CD" }
             ],
