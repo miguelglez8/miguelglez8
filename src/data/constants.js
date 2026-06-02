@@ -1,7 +1,10 @@
 export const skillEmojis = {
     softwareDevelopment: "💻",
-    teamwork: "🤝",
-    java: "☕",
+    backend: "⚙️",
+    frontend: "🎨",
+    architecture: "🏗️",
+    databases: "🗄️",
+    tools: "🔧"
 };
 
 export const JOB_STATUS = {
