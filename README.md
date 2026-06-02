@@ -7,45 +7,45 @@
 
 ## 🧐 About me
 
-Software Engineer with experience in building REST APIs and backend services in enterprise environments. I work on the design and development of backend services, including API development, system integration, and performance improvements in production environments.
- 
-In my day-to-day work, I develop REST APIs using Java, working with relational databases, and implementing business logic in scalable backend systems. I have also worked in cloud environments, deploying solutions adapted to real project needs.
- 
-I have experience with Spring Boot and microservices-based architectures, focusing on building maintainable and efficient systems.
- 
-Currently focused on growing as a backend Java developer in projects involving Spring Boot and microservices.
- 
-Technologies and tools: Java, Spring Boot, REST APIs, Microservices, Docker, Git, SQL, AWS
+Full Stack Engineer with more than 2 years of professional experience developing web applications using React, Java, Spring Boot, and microservices, contributing to both backend and frontend development in enterprise environments.
+
+I have experience in designing and developing REST APIs, backend services with Java and Spring Boot, and user interfaces with React. I have also worked on system integration and the development of business-oriented features, building scalable and maintainable solutions.
+
+I have participated in projects for public administrations, the social sector, and technology consulting firms, working in multidisciplinary teams under Agile methodologies and contributing throughout the entire software development lifecycle.
+
+I am currently seeking to continue growing as a Full Stack Developer, deepening my expertise in microservices, distributed systems, and scalable software development within technically challenging projects.
+
+Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · JUnit · JSP · Liferay
 
 ## 🤝 Contacts
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/miguelgonzaleznavarro)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/miguel-gonzalez-navarro-full-stack-engineer)
 
 - 📫 How to reach me: miguemoreda@gmail.com
 
 ## 💻 Technologies
 
-![Java](https://img.shields.io/badge/java-f89820?style=for-the-badge&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=api&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-ff6f00?style=for-the-badge)
+![React](https://img.shields.io/badge/React-007ACC?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_APIs-4A90E2?style=for-the-badge&logo=api&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-9B59B6?style=for-the-badge)
+![Kafka](https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge)
-![Kafka](https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-ff9900?style=for-the-badge&logo=aws&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![SOLID](https://img.shields.io/badge/Solid-9500bb.svg?style=for-the-badge&logo=solid&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=white)
-![React](https://img.shields.io/badge/React-007ACC?style=for-the-badge&logo=react&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-FF9900?style=for-the-badge&logo=aws&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Liferay](https://img.shields.io/badge/Liferay-0B5FFF?style=for-the-badge&logo=liferay&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge)
+![SOLID](https://img.shields.io/badge/Solid-9500BB.svg?style=for-the-badge&logo=solid&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Liferay](https://img.shields.io/badge/Liferay-0B5FFF?style=for-the-badge&logo=liferay&logoColor=white)
-![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge)
 
 ## ⚡ Others
 
