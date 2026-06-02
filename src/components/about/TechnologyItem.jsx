@@ -1,18 +1,32 @@
 import { technologiesColors } from "../../data/colors.js";
 import { useTranslation } from "react-i18next";
 
-import { FaDocker, FaJava, FaAws, FaGit } from "react-icons/fa";
-import { SiSpringboot, SiMysql } from "react-icons/si";
+import { FaDocker, FaJava, FaGit } from "react-icons/fa";
+import {
+    SiSpringboot,
+    SiMysql,
+    SiReact,
+    SiJavascript,
+    SiApachekafka,
+    SiJunit5,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { FaFileCode } from "react-icons/fa";
 
 const logoMapping = {
     java: <FaJava />,
     spring_boot: <SiSpringboot />,
-    rest_apis: "🌐",
+    react: <SiReact />,
+    javascript: <SiJavascript />,
+    rest_apis: <TbApi />,
     microservices: "🧩",
-    docker: <FaDocker />,
-    git: <FaGit />,
+    kafka: <SiApachekafka />,
     sql: <SiMysql />,
-    aws: <FaAws />,
+    git: <FaGit />,
+    docker: <FaDocker />,
+    junit: <SiJunit5 />,
+    jsp: <FaFileCode />,
+    liferay: "🏢"
 };
 
 const TechnologyItem = ({ id }) => {
