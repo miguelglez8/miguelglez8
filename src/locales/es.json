@@ -29,60 +29,60 @@
 
   "About": {
     "aboutMe": "Sobre Mí",
-    "description": "Ingeniero de Software con experiencia en la construcción de APIs REST y servicios backend en entornos empresariales. Trabajo en el diseño y desarrollo de servicios backend, incluyendo desarrollo de APIs, integración de sistemas y mejoras de rendimiento en entornos de producción. En mi día a día, desarrollo APIs REST utilizando Java, trabajando con bases de datos relacionales e implementando lógica de negocio en sistemas backend escalables. También he trabajado en entornos cloud, desplegando soluciones adaptadas a las necesidades reales de los proyectos. Tengo experiencia con Spring Boot y arquitecturas basadas en microservicios, enfocándome en construir sistemas mantenibles y eficientes. Actualmente enfocado en crecer como desarrollador backend Java en proyectos que involucren Spring Boot y microservicios.",
+    "description": "Ingeniero Full Stack con más de 2 años de experiencia en el desarrollo de aplicaciones web con React, Java, Spring Boot y microservicios. Experiencia en desarrollo de APIs REST, integración de sistemas y aplicaciones en entornos de producción. Participación en proyectos enterprise trabajando en backend y frontend, con enfoque en la construcción de software escalable y mantenible, aplicando buenas prácticas de desarrollo y trabajando en entornos ágiles",
     "experiences": {
       "title": "Experiencia Laboral",
       "exp1": {
-        "title": "Desarrollador de Software",
+        "title": "Desarrollador Full Stack",
         "period": "Octubre 2024 - Actualidad",
         "responsibilities": {
           "resp1": {
-            "text": "Desarrollo e implementación de APIs REST en entornos empresariales utilizando Java"
+            "text": "Desarrollo e implementación de APIs REST en entornos empresariales utilizando Java."
           },
           "resp2": {
-            "text": "Desarrollo de lógica de negocio backend e integración con sistemas internos y externos"
+            "text": "Desarrollo de lógica de negocio backend e integración con sistemas internos y externos."
           },
           "resp3": {
-            "text": "Contribución a la escalabilidad de servicios backend y mejora del rendimiento en producción"
+            "text": "Desarrollo frontend con React, JavaScript y JSP."
           },
           "resp4": {
-            "text": "Participación en evolución de sistemas y migraciones, garantizando continuidad del servicio"
+            "text": "Integración de plataformas enterprise (Liferay) dentro de arquitecturas backend."
           },
           "resp5": {
-            "text": "Optimización de rendimiento y resolución de incidencias en entornos productivos"
+            "text": "Trabajo con bases de datos relacionales (PostgreSQL y MySQL)."
           },
           "resp6": {
-            "text": "Gestión e integración de datos con bases de datos relacionales"
+            "text": "Participación en evolución de aplicaciones, resolución de incidencias y mejora de rendimiento."
           },
           "resp7": {
-            "text": "Colaboración en equipos ágiles, participando en revisiones de código y mejora continua"
-          },
-          "resp8": {
-            "text": "Integración de plataformas enterprise (Liferay) dentro de arquitecturas backend"
+            "text": "Trabajo en equipos ágiles, revisiones de código y mejora continua."
           }
         }
       },
       "exp2": {
-        "title": "Estudiante de Arquitectura Digital",
+        "title": "Desarrollador Java",
         "period": "Marzo 2024 - Julio 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Desarrollo de servicios backend con Java y Spring Boot bajo principios de arquitectura limpia"
+            "text": "Desarrollo de servicios backend con Java y Spring Boot bajo principios de arquitectura limpia."
           },
           "resp2": {
-            "text": "Diseño e implementación de APIs REST documentadas con Swagger/OpenAPI"
+            "text": "Diseño e implementación de APIs REST documentadas con Swagger/OpenAPI."
           },
           "resp3": {
-            "text": "Integración de sistemas distribuidos mediante Kafka (arquitectura orientada a eventos)"
+            "text": "Participación en arquitecturas basadas en microservicios."
           },
           "resp4": {
-            "text": "Desarrollo de pruebas unitarias e integración para garantizar la calidad del código"
+            "text": "Integración de sistemas distribuidos mediante Kafka (arquitectura orientada a eventos)."
           },
           "resp5": {
-            "text": "Monitorización de aplicaciones con Prometheus y Grafana para análisis de rendimiento"
+            "text": "Desarrollo de pruebas unitarias e integración para garantizar la calidad del código."
           },
           "resp6": {
-            "text": "Participación en arquitecturas basadas en microservicios y comunicación entre servicios"
+            "text": "Aplicación de buenas prácticas de ingeniería de software y clean architecture."
+          },
+          "resp7": {
+            "text": "Trabajo en metodologías ágiles, dailies y seguimiento de tareas."
           }
         }
       }
@@ -162,19 +162,19 @@
       "project1": {
         "title": "Web Portfolio Personal",
         "role": "Trabajo autónomo",
-        "info": "Portfolio web diseñado para mostrar mis proyectos, habilidades y experiencia de una manera interactiva y dinámica",
+        "info": "Portfolio web diseñado para mostrar mis proyectos, habilidades y experiencia de una manera interactiva y dinámica. Desarrollado con React y alojado en GitHub Pages",
         "date": "Febrero 2025 - Actualidad"
       },
       "project2": {
         "title": "Plataforma Web para la coordinación de trabajos académicos",
         "role": "Universidad de Oviedo",
-        "info": "Aplicación web desarrollada para centralizar la gestión de proyectos académicos, optimizando la colaboración entre profesores y estudiantes",
+        "info": "El proyecto tiene como objetivo abordar los problemas de comunicación y la pérdida de información que suelen darse al coordinar trabajos académicos, como los Trabajos de Fin de Grado (TFG), a través del correo electrónico. Para solucionarlo, se desarrolló una aplicación web que centraliza la gestión de proyectos académicos, ofreciendo funciones como asignación de roles, creación y gestión de TFG, asignación de estudiantes, subida de archivos, chat, videollamadas, gestión de tareas y generación de informes. La plataforma está diseñada para mejorar la colaboración entre profesores y estudiantes mediante una interfaz intuitiva y el uso de tecnologías modernas que garantizan eficiencia, escalabilidad y adaptabilidad futura. En última instancia, sirve como una solución integral para centralizar la información y agilizar la coordinación de proyectos académicos",
         "date": "Enero 2024 - Julio 2024"
       },
       "project3": {
         "title": "FootMatch",
         "role": "Universidad de Oviedo",
-        "info": "Aplicación de fútbol que proporciona información detallada y cobertura del mundo del fútbol, dirigida a aficionados, jugadores y entrenadores",
+        "info": "Aplicación de fútbol diseñada para proporcionar a los usuarios información completa y una cobertura integral del mundo del fútbol. La app ofrece una amplia gama de funciones y características adaptadas a los aficionados al fútbol, incluyendo fans, jugadores y entrenadores",
         "date": "Septiembre 2023 - Enero 2024"
       },
       "project4": {
@@ -186,7 +186,7 @@
       "project5": {
         "title": "LoMap",
         "role": "Universidad de Oviedo",
-        "info": "Aplicación web descentralizada que permite a los usuarios compartir puntos de interés con amigos y conocidos",
+        "info": "Aplicación web descentralizada que permite a los usuarios compartir puntos de interés con amigos y conocidos, utilizando tecnologías SOLID y React",
         "date": "Febrero 2023 - Mayo 2023"
       }
     }
