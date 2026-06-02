@@ -65,12 +65,17 @@ const cv = {
         technologies: [
             { id: "java" },
             { id: "spring_boot" },
+            { id: "react" },
+            { id: "javascript" },
             { id: "rest_apis" },
             { id: "microservices" },
-            { id: "docker" },
-            { id: "git" },
+            { id: "kafka" },
             { id: "sql" },
-            { id: "aws" }
+            { id: "git" },
+            { id: "docker" },
+            { id: "junit" },
+            { id: "jsp" },
+            { id: "liferay" }
         ],
     },
     projects: [
@@ -110,7 +115,7 @@ const cv = {
             image: "./images/footmatch.jpg",
             status: JOB_STATUS.finished,
             technologies: [
-                { text: "Java" }
+                { text: "Java" },
                 { text: "Kotlin" },
             ],
             links: [
