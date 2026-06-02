@@ -10,7 +10,7 @@ const cv = {
         profile: "miguelglez8",
         mail: "miguemoreda@gmail.com",
         nickname: "miguelgonzaleznavarro",
-        linkedin: "https://www.linkedin.com/in/miguelgonzaleznavarro",
+        linkedin: "https://www.linkedin.com/in/miguel-gonzalez-navarro-full-stack-engineer",
         github: "https://github.com/miguelglez8",
         repo: "https://github.com/miguelglez8/miguelglez8",
         profileImage: "./images/foto.jpg"
