@@ -46,6 +46,8 @@ const About = () => {
                                     location={experience.location}
                                     period={t(`About.experiences.${experience.id}.period`)}
                                     responsibilities={responsibilities}
+                                    stack={t(`About.experiences.${experience.id}.stack`)}
+                                    textStack={t("About.experiences.stack")}
                                 />
                                 {index < cv.info.experiences.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
                             </div>
