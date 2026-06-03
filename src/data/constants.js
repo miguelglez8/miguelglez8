@@ -10,23 +10,23 @@ export const skillEmojis = {
 export const JOB_STATUS = {
     current: 'current',
     in_progress: 'in_progress',
-    finished: 'finished',
+    finished: 'finished'
 }
 
 export const COURSE_CATEGORY = {
     course: 'course',
     certificate: 'certificate',
-    none: 'none',
+    none: 'none'
 }
 
 export const workModeEmojis = {
     onsite: "🏢",
-    remote: "🏠",
     hybrid: "🔀",
+    remote: "🏠"
 };
 
 export const WORK_MODE = {
     onsite: "onsite",
-    remote: "remote",
     hybrid: "hybrid",
+    remote: "remote"
 };
