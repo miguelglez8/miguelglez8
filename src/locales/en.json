@@ -34,6 +34,8 @@
     "experiences": {
       "title": "Work Experience",
       "stack": "Technological Stack",
+      "hybrid": "Hybrid",
+      "remote": "Remote",
       "exp1": {
         "title": "Full Stack Developer",
         "period": "June 2026 - Present",
@@ -99,6 +101,7 @@
     "education": {
       "title": "Education",
       "moreInfo": "More information",
+      "onsite": "On-site",
       "edu1": {
         "title": "Bachelor Degree in Software Engineering",
         "institution": "University of Oviedo",
