@@ -212,7 +212,10 @@
   },
 
   "Contact": {
-    "title": "¡Contáctame!"
+    "title": "¡Contáctame!",
+    "mail": "Envíame un email",
+    "linkedin": "Conecta conmigo en LinkedIn",
+    "github": "Explora mi GitHub"
   },
 
   "LanguageSelector": {
