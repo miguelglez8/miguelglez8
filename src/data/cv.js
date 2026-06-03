@@ -7,6 +7,7 @@ const cv = {
     personal: {
         name: "Miguel González Navarro",
         location: "Moreda de Aller, Asturias",
+        profile: "miguelglez8",
         mail: "miguemoreda@gmail.com",
         linkedin: "https://www.linkedin.com/in/miguel-gonzalez-navarro-full-stack-engineer",
         github: "https://github.com/miguelglez8",
