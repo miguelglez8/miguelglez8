@@ -39,7 +39,6 @@ yarn-error.log*
 
 # Cachés
 .cache/
-public/
 .DS_Store
 Thumbs.db
 
