@@ -5,7 +5,7 @@ import EducationItem from "../components/about/EducationItem.jsx";
 import CourseItem from "../components/about/CourseItem.jsx";
 import TechnologyItem from "../components/about/TechnologyItem.jsx";
 import cv from '../data/cv.js';
-import {COURSE_CATEGORY, workModeEmojis} from "../data/constants.js";
+import {COURSE_CATEGORY, WORK_MODE, workModeEmojis} from "../data/constants.js";
 
 const About = () => {
     const { t } = useTranslation();
@@ -56,8 +56,8 @@ const About = () => {
                                     responsibilities={responsibilities}
                                     stack={t(`About.experiences.${experience.id}.stack`)}
                                     textStack={t("About.experiences.stack")}
-                                    workMode={experience.workMode}
                                     emoji={workModeEmojis?.[experience.workMode]}
+                                    workMode={experience.workMode === WORK_MODE.remote ? t("About.experiences.remote") : experience.workMode === WORK_MODE.hybrid ? t("About.experiences.hybrid") : experience.workMode}
                                 />
 
                                 {index < cv.info.experiences.length - 1 && (
@@ -88,6 +88,8 @@ const About = () => {
                                     details={details}
                                     link={edu.link}
                                     text={t("About.education.moreInfo")}
+                                    emoji={workModeEmojis.onsite}
+                                    workMode={t("About.education.onsite")}
                                 />
                                 {index < cv.info.education.length - 1 && <hr style={{ margin: "20px 0", border: "1px solid #ddd" }} />}
                             </div>
