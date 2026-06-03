@@ -1,16 +1,44 @@
-const EducationItem = ({ logo, alt, title, institution, location, period, details, link, text }) => (
+const EducationItem = ({ logo, alt, title, institution, location, period, details, link, text, emoji, workMode }) => (
     <li style={{ display: "flex", alignItems: "flex-start", marginBottom: "20px" }}>
         <img
             src={logo}
             alt={alt}
             style={{ width: "80px", height: "80px", borderRadius: "10px", marginRight: "20px" }}
         />
-        <div style={{ flex: 1 }}>
-            <p style={{ fontSize: "18px", fontWeight: "bold" }}>{title}</p>
-            <p style={{ fontSize: "16px", color: "#555", marginBottom: "10px" }}>
-                {institution}, {location}
+        <div style={{flex: 1}}>
+            <p
+                style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    margin: 0
+                }}
+            >
+                {institution}
             </p>
-            <ul style={{ paddingLeft: "20px", fontSize: "16px", color: "#555" }}>
+
+            <p
+                style={{
+                    fontSize: "17px",
+                    fontWeight: "600",
+                    color: "#444",
+                    margin: "4px 0"
+                }}
+            >
+                {title}
+            </p>
+
+            <p
+                style={{
+                    fontSize: "15px",
+                    color: "#666",
+                    margin: "4px 0"
+                }}
+            >
+                📍 {location}
+                {emoji && ` · ${emoji} ${workMode}`}
+            </p>
+
+            <ul style={{paddingLeft: "20px", fontSize: "16px", color: "#555"}}>
                 {details.map((item, index) => (
                     <li key={index}>
                         {item}{" "}
@@ -37,8 +65,8 @@ const EducationItem = ({ logo, alt, title, institution, location, period, detail
                     </li>
                 ))}
             </ul>
-            <div style={{ display: "flex", justifyContent: "space-between", marginTop: "10px" }}>
-                <span style={{ fontSize: "14px", color: "#888" }}>{period}</span>
+            <div style={{display: "flex", justifyContent: "space-between", marginTop: "10px"}}>
+                <span style={{fontSize: "14px", color: "#888"}}>{period}</span>
             </div>
         </div>
     </li>
