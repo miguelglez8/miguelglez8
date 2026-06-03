@@ -44,9 +44,9 @@ const Contact = () => {
                     {t("Contact.title")}
                 </h2>
 
-                <ContactItem icon={Mail} link={"mailto:" + cv.personal.mail} text={cv.personal.mail} color="#2563eb" />
-                <ContactItem icon={Linkedin} link={cv.personal.linkedin} text={cv.personal.nickname} color="#0077B5" />
-                <ContactItem icon={Github} link={cv.personal.github} text={cv.personal.profile} color="#333" />
+                <ContactItem icon={Mail} link={"mailto:" + cv.personal.mail} text={t("Contact.mail")} color="#2563eb" />
+                <ContactItem icon={Linkedin} link={cv.personal.linkedin} text={t("Contact.linkedin")} color="#0077B5" />
+                <ContactItem icon={Github} link={cv.personal.github} text={t("Contact.github")} color="#333" />
                 <ContactItem icon={MapPin} text={cv.personal.location} color="#dc2626" />
             </div>
         </section>
@@ -54,4 +54,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
