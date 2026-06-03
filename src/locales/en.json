@@ -211,8 +211,12 @@
   },
 
   "Contact": {
-    "title": "Contact me!"
+    "title": "Contact me!",
+    "mail": "Send me an email",
+    "linkedin": "Connect with me on LinkedIn",
+    "github": "Check out my GitHub"
   },
+
 
   "LanguageSelector": {
     "es": "ES",
