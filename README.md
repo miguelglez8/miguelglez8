@@ -1,11 +1,9 @@
-### Hi 👋, I am Miguel Gonzalez Navarro 🚀
+### Hi 👋, I'm Miguel González Navarro
+### Full Stack Engineer 🚀
 
-### I am Full Stack Engineer 👨‍💻
+---
 
-![](https://img.shields.io/badge/♡-Math-informational?style=flat&logo=math&color=red)
-![](https://img.shields.io/badge/♡-Physics-informational?style=flat&logo=physics&color=green)
-
-## 🧐 About me
+## 🧠 About me
 
 Full Stack Engineer with more than 2 years of professional experience developing web applications using React, Java, Spring Boot, and microservices, contributing to both backend and frontend development in enterprise environments.
 
@@ -17,11 +15,14 @@ I am currently seeking to continue growing as a Full Stack Developer, deepening 
 
 Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · JUnit · JSP · Liferay
 
-## 🤝 Contacts
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/miguel-gonzalez-navarro-full-stack-engineer)
+## 🤝 Contact
 
-- 📫 How to reach me: miguemoreda@gmail.com
+📫 Email: [miguemoreda@gmail.com](mailto:miguemoreda@gmail.com)  
+🔗 LinkedIn: [miguel-gonzalez-navarro-full-stack-engineer](https://www.linkedin.com/in/miguel-gonzalez-navarro-full-stack-engineer)
+
+---
 
 ## 💻 Technologies
 
@@ -47,11 +48,10 @@ Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-## ⚡ Others
+---
 
-![GitHub Statistics](https://github-readme-stats-eight-theta.vercel.app/api?username=miguelglez8&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
+## ⚡ GitHub Stats
 
-<img src="public/multimedia/scoffield.gif" alt="gif" width="300" height=auto>
+![GitHub Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=miguelglez8&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
 
-![Profile View Counter](https://komarev.com/ghpvc/?username=miguelglez8)
-![Follow me](https://img.shields.io/github/followers/miguelglez8.svg?style=social&label=Follow&maxAge=2592000) 
+![Profile Views](https://komarev.com/ghpvc/?username=miguelglez8)
