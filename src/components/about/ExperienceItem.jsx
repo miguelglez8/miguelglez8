@@ -1,5 +1,4 @@
 const ExperienceItem = ({ logo, alt, title, company, location, period, responsibilities, stack, textStack, emoji, workMode }) => (
-
     <li style={{ display: "flex", alignItems: "flex-start", marginBottom: "20px" }}>
         <img src={logo} alt={alt} style={{ width: "80px", height: "80px", borderRadius: "10px", marginRight: "20px" }} />
         <div style={{flex: 1}}>
