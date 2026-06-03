@@ -30,7 +30,7 @@ const cv = {
                 logo: "./images/hiberus.jpg",
                 alt: "Logo Hiberus",
                 company: "Hiberus",
-                location: "Oviedo",
+                location: "Llanera",
                 workMode: WORK_MODE.hybrid
             },
             {
