@@ -13,7 +13,7 @@ I have participated in projects for public administrations, the social sector, a
 
 I am currently seeking to continue growing as a Full Stack Developer, deepening my expertise in microservices, distributed systems, and scalable software development within technically challenging projects.
 
-Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · JUnit · JSP · Liferay
+Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · AWS · JUnit · JSP · Liferay
 
 ---
 
@@ -40,8 +40,8 @@ Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-FF9900?style=for-the-badge&logo=aws&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Liferay](https://img.shields.io/badge/Liferay-0B5FFF?style=for-the-badge&logo=liferay&logoColor=white)
 ![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge)
+![Liferay](https://img.shields.io/badge/Liferay-0B5FFF?style=for-the-badge&logo=liferay&logoColor=white)
 ![SOLID](https://img.shields.io/badge/Solid-9500BB.svg?style=for-the-badge&logo=solid&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
