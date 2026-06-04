@@ -85,10 +85,11 @@
           },
           "resp7": {
             "text": "Aplicación de buenas prácticas de ingeniería de software y clean architecture en entornos ágiles, con uso de herramientas como Jira, Maven y CI/CD"
-          },
+          }
         },
         "stack": "Java · Spring Boot · APIs REST · Microservicios · Kafka · SQL · Git · Docker · JUnit"
-      },
+      }
+    },
     "education": {
       "title": "Educación",
       "moreInfo": "Más información",
