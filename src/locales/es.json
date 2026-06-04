@@ -42,6 +42,8 @@
         "stack": "Java · Spring Boot · React · JavaScript · APIs REST · Microservicios · Kafka · SQL · Git · Docker · AWS · JUnit"
       },
       "exp2": {
+        "title": "Desarrollador Full Stack",
+        "period": "Octubre 2024 - Junio 2026",
         "responsibilities": {
           "resp1": {
             "text": "Desarrollo de soluciones web empresariales full stack, incluyendo APIs REST en Java y desarrollo frontend con React, JavaScript y JSP"
@@ -87,7 +89,7 @@
             "text": "Aplicación de buenas prácticas de ingeniería de software y clean architecture en entornos ágiles, con uso de herramientas como Jira, Maven y CI/CD"
           }
         },
-        "stack": "Java · Spring Boot · APIs REST · Microservicios · Kafka · SQL · Git · Docker · JUnit"
+        "stack": "Java · Spring Boot · APIs REST · Microservicios · Kafka · SQL · Git · Docker · Testing"
       }
     },
     "education": {

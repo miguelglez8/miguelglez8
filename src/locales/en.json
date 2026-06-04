@@ -42,7 +42,7 @@
         "stack": "Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · AWS · JUnit"
       },
       "exp2": {
-        "title": "Software Developer",
+        "title": "Full Stack Developer",
         "period": "October 2024 - June 2026",
         "responsibilities": {
           "resp1": {
@@ -64,8 +64,8 @@
         "stack": "Java · React · Liferay · JavaScript · JSP · REST APIs · SQL · Git"
       },
       "exp3": {
-        "title": "Digital Architecture Student",
-        "period": "March 2024 - June 2026",
+        "title": "Java Developer",
+        "period": "March 2024 - July 2024",
         "responsibilities": {
           "resp1": {
             "text": "Development and maintenance of backend microservices in Java and Spring Boot under a distributed architecture"
@@ -89,7 +89,7 @@
             "text": "Application of software engineering best practices and clean architecture in agile environments, using tools such as Jira, Maven, and CI/CD"
           }
         },
-        "stack": "Java · Spring Boot · REST APIs · Microservices · Kafka · SQL · Git · Docker · JUnit"
+        "stack": "Java · Spring Boot · REST APIs · Microservices · Kafka · SQL · Git · Docker · Testing"
       }
     },
     "education": {
