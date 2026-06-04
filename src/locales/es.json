@@ -42,32 +42,23 @@
         "stack": "Java · Spring Boot · React · JavaScript · APIs REST · Microservicios · Kafka · SQL · Git · Docker · AWS · JUnit"
       },
       "exp2": {
-        "title": "Desarrollador Full Stack",
-        "period": "Octubre 2024 - Junio 2026",
         "responsibilities": {
           "resp1": {
-            "text": "Desarrollo e implementación de APIs REST en entornos empresariales utilizando Java"
+            "text": "Desarrollo de soluciones web empresariales full stack, incluyendo APIs REST en Java y desarrollo frontend con React, JavaScript y JSP"
           },
           "resp2": {
-            "text": "Desarrollo de lógica de negocio backend e integración con sistemas internos y externos"
+            "text": "Participación en la integración de sistemas y plataformas enterprise (Liferay) dentro de arquitecturas corporativas"
           },
           "resp3": {
-            "text": "Desarrollo frontend con React, JavaScript y JSP"
+            "text": "Diseño e implementación de servicios e integraciones con sistemas internos y externos, junto con trabajo en bases de datos relacionales (SQL)"
           },
           "resp4": {
-            "text": "Integración de plataformas enterprise (Liferay) dentro de arquitecturas backend"
+            "text": "Mantenimiento evolutivo de aplicaciones, resolución de incidencias y optimización de rendimiento"
           },
           "resp5": {
-            "text": "Trabajo con bases de datos relacionales (PostgreSQL y MySQL)"
-          },
-          "resp6": {
-            "text": "Participación en evolución de aplicaciones, resolución de incidencias y mejora de rendimiento"
-          },
-          "resp7": {
-            "text": "Trabajo en equipos ágiles, revisiones de código y mejora continua"
+            "text": "Trabajo en equipos ágiles, revisión de código y colaboración en procesos de mejora continua"
           }
         },
-        "titleStack": "Stack Tecnológico",
         "stack": "Java · React · Liferay · JavaScript · JSP · APIs REST · SQL · Git"
       },
       "exp3": {
@@ -75,30 +66,29 @@
         "period": "Marzo 2024 - Julio 2024",
         "responsibilities": {
           "resp1": {
-            "text": "Desarrollo de servicios backend con Java y Spring Boot bajo principios de arquitectura limpia"
+            "text": "Desarrollo y mantenimiento de microservicios backend en Java y Spring Boot bajo arquitectura distribuida"
           },
           "resp2": {
             "text": "Diseño e implementación de APIs REST documentadas con Swagger/OpenAPI"
           },
           "resp3": {
-            "text": "Participación en arquitecturas basadas en microservicios"
+            "text": "Integración de sistemas mediante arquitectura orientada a eventos con Kafka"
           },
           "resp4": {
-            "text": "Integración de sistemas distribuidos mediante Kafka (arquitectura orientada a eventos)"
+            "text": "Gestión de persistencia de datos con bases de datos relacionales (SQL)"
           },
           "resp5": {
-            "text": "Desarrollo de pruebas unitarias e integración para garantizar la calidad del código"
+            "text": "Contenerización de aplicaciones y servicios con Docker"
           },
           "resp6": {
-            "text": "Aplicación de buenas prácticas de ingeniería de software y clean architecture"
+            "text": "Desarrollo de pruebas unitarias e integración, junto con aplicación de herramientas de calidad de código (PMD, SpotBugs, Quality Gates)"
           },
           "resp7": {
-            "text": "Trabajo en metodologías ágiles, dailies y seguimiento de tareas"
-          }
+            "text": "Aplicación de buenas prácticas de ingeniería de software y clean architecture en entornos ágiles, con uso de herramientas como Jira, Maven y CI/CD"
+          },
         },
         "stack": "Java · Spring Boot · APIs REST · Microservicios · Kafka · SQL · Git · Docker · JUnit"
-      }
-    },
+      },
     "education": {
       "title": "Educación",
       "moreInfo": "Más información",
