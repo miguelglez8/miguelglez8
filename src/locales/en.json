@@ -46,25 +46,19 @@
         "period": "October 2024 - June 2026",
         "responsibilities": {
           "resp1": {
-            "text": "Development and implementation of REST APIs in enterprise environments using Java"
+            "text": "Development of full-stack enterprise web solutions, including REST APIs in Java and frontend development with React, JavaScript, and JSP"
           },
           "resp2": {
-            "text": "Backend business logic development and integration with internal and external systems"
+            "text": "Participation in the integration of enterprise systems and platforms (Liferay) within corporate architectures"
           },
           "resp3": {
-            "text": "Frontend development using React, JavaScript, and JSP"
+            "text": "Design and implementation of services and integrations with internal and external systems, along with work on relational databases (SQL)"
           },
           "resp4": {
-            "text": "Integration of enterprise platforms (Liferay) within backend architectures"
+            "text": "Application maintenance, incident resolution, and performance optimization"
           },
           "resp5": {
-            "text": "Working with relational databases (PostgreSQL and MySQL)"
-          },
-          "resp6": {
-            "text": "Participation in application evolution, incident resolution, and performance improvement"
-          },
-          "resp7": {
-            "text": "Agile teamwork, code reviews, and continuous improvement"
+            "text": "Work in agile teams, code reviews, and collaboration in continuous improvement processes"
           }
         },
         "stack": "Java · React · Liferay · JavaScript · JSP · REST APIs · SQL · Git"
@@ -74,25 +68,25 @@
         "period": "March 2024 - June 2026",
         "responsibilities": {
           "resp1": {
-            "text": "Backend service development with Java and Spring Boot following clean architecture principles"
+            "text": "Development and maintenance of backend microservices in Java and Spring Boot under a distributed architecture"
           },
           "resp2": {
             "text": "Design and implementation of REST APIs documented with Swagger/OpenAPI"
           },
           "resp3": {
-            "text": "Participation in microservices-based architectures"
+            "text": "Integration of systems using event-driven architecture with Kafka"
           },
           "resp4": {
-            "text": "Integration of distributed systems using Kafka (event-driven architecture)"
+            "text": "Management of data persistence with relational databases (SQL)"
           },
           "resp5": {
-            "text": "Development of unit and integration tests to ensure code quality"
+            "text": "Containerization of applications and services using Docker"
           },
           "resp6": {
-            "text": "Application of software engineering best practices and clean architecture"
+            "text": "Development of unit and integration testing, along with the use of code quality tools (PMD, SpotBugs, Quality Gates)"
           },
           "resp7": {
-            "text": "Agile methodologies, daily meetings, and task tracking"
+            "text": "Application of software engineering best practices and clean architecture in agile environments, using tools such as Jira, Maven, and CI/CD"
           }
         },
         "stack": "Java · Spring Boot · REST APIs · Microservices · Kafka · SQL · Git · Docker · JUnit"
