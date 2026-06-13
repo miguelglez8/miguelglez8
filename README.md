@@ -11,7 +11,7 @@ I have experience in designing and developing REST APIs, backend services with J
 
 I have participated in projects for public administrations, the social sector, and technology consulting firms, working in multidisciplinary teams under Agile methodologies and contributing throughout the entire software development lifecycle.
 
-I am currently seeking to continue growing as a Full Stack Developer, deepening my expertise in microservices, distributed systems, and scalable software development within technically challenging projects.
+I am currently seeking to continue growing as a Full Stack, deepening my expertise in microservices, distributed systems, and scalable software development within technically challenging projects.
 
 Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · AWS · JUnit · JSP · Liferay
 
