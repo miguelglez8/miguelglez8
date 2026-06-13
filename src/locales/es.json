@@ -37,16 +37,16 @@
       "hybrid": "Híbrido",
       "remote": "Remoto",
       "exp1": {
-        "title": "Desarrollador Full Stack",
+        "title": "Ingeniero Full Stack",
         "period": "Junio 2026 - Actualidad",
         "stack": "Java · Spring Boot · React · JavaScript · APIs REST · Microservicios · Kafka · SQL · Git · Docker · AWS · Testing"
       },
       "exp2": {
-        "title": "Desarrollador Full Stack",
+        "title": "Desarrollador de Software",
         "period": "Octubre 2024 - Junio 2026",
         "responsibilities": {
           "resp1": {
-            "text": "Desarrollo de soluciones web empresariales full stack, incluyendo APIs REST en Java y desarrollo frontend con React, JavaScript y JSP"
+            "text": "Desarrollo de soluciones web empresariales, incluyendo APIs REST en Java y desarrollo frontend con React, JavaScript y JSP"
           },
           "resp2": {
             "text": "Participación en la integración de sistemas y plataformas enterprise (Liferay) dentro de arquitecturas corporativas"
