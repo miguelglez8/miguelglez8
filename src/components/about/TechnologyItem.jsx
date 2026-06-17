@@ -8,7 +8,8 @@ import {
     SiReact,
     SiJavascript,
     SiApachekafka,
-    SiJunit5
+    SiJunit5,
+    SiKubernetes
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { FaFileCode } from "react-icons/fa";
@@ -24,6 +25,7 @@ const logoMapping = {
     sql: <SiMysql />,
     git: <FaGit />,
     docker: <FaDocker />,
+    kubernetes: <SiKubernetes />,
     aws: "☁️",
     junit: <SiJunit5 />,
     jsp: <FaFileCode />,
