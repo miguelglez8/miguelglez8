@@ -13,7 +13,7 @@ I have participated in projects for public administrations, the social sector, a
 
 I am currently seeking to continue growing as a Full Stack, deepening my expertise in microservices, distributed systems, and scalable software development within technically challenging projects.
 
-Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · AWS · JUnit · JSP · Liferay
+Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · Kubernetes · AWS · JUnit · JSP · Liferay
 
 ---
 
@@ -38,6 +38,7 @@ Technologies and tools: Java · Spring Boot · React · JavaScript · REST APIs 
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Amazon Web Services](https://img.shields.io/badge/Amazon_Web_Services-FF9900?style=for-the-badge&logo=aws&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge)
