@@ -19,14 +19,14 @@ export const COURSE_CATEGORY = {
     none: 'none'
 }
 
-export const workModeEmojis = {
-    onsite: "🏢",
-    hybrid: "🔀",
-    remote: "🏠"
-};
-
 export const WORK_MODE = {
     onsite: "onsite",
     hybrid: "hybrid",
     remote: "remote"
+};
+
+export const workModeEmojis = {
+    onsite: "🏢",
+    hybrid: "🔀",
+    remote: "🏠"
 };
