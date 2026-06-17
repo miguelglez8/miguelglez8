@@ -39,7 +39,7 @@
       "exp1": {
         "title": "Full Stack Engineer",
         "period": "June 2026 - Present",
-        "stack": "Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Docker · Kubernetes · AWS · Testing"
+        "stack": "Java · Spring Boot · React · JavaScript · REST APIs · Microservices · Kafka · SQL · Git · Kubernetes · AWS · Testing"
       },
       "exp2": {
         "title": "Software Developer",
@@ -156,6 +156,7 @@
       "sql": "SQL",
       "git": "Git",
       "docker": "Docker",
+      "kubernetes": "Kubernetes",
       "aws": "AWS",
       "junit": "JUnit",
       "jsp": "JSP",
