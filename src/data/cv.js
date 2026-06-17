@@ -82,6 +82,7 @@ const cv = {
             { id: "sql" },
             { id: "git" },
             { id: "docker" },
+            { id: "kubernetes" },
             { id: "aws" },
             { id: "junit" },
             { id: "jsp" },
