@@ -5,7 +5,7 @@ const cv = {
     created: '2025-02-26T08:00:00Z',
     updated: '2025-03-04T17:30:00Z',
     personal: {
-        name: "Miguel González Navarro",
+        name: "Miguel Gonzalez Navarro",
         location: "Moreda de Aller, Asturias",
         profile: "miguelglez8",
         mail: "miguemoreda@gmail.com",
