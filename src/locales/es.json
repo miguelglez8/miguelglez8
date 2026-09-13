@@ -39,6 +39,29 @@
       "exp1": {
         "title": "Ingeniero Full Stack",
         "period": "Junio 2026 - Actualidad",
+        "responsibilities": {
+          "resp1": {
+            "text": "Desarrollo full stack de aplicaciones web empresariales de extremo a extremo, en un entorno multi-repositorio, orientado a microservicios y cloud-native sobre AWS"
+          },
+          "resp2": {
+            "text": "Desarrollo backend con Java y Spring Boot bajo arquitectura hexagonal, con APIs REST entre servicios"
+          },
+          "resp3": {
+            "text": "Desarrollo frontend con React y JavaScript (Vite y Ant Design), con sistema de diseño corporativo e i18n"
+          },
+          "resp4": {
+            "text": "Persistencia con PostgreSQL (JPA/Hibernate) y comunicación asíncrona con Kafka para eventos de dominio"
+          },
+          "resp5": {
+            "text": "Contenerización con Docker y despliegue en AWS EKS con Kustomize, ALB, RDS, S3 y Secrets Manager"
+          },
+          "resp6": {
+            "text": "Pipelines CI/CD con CodeBuild y CodePipeline, y pruebas unitarias e integración con JUnit y Mockito"
+          },
+          "resp7": {
+            "text": "Resolución de incidencias y mejora continua, en equipos ágiles con Git y Azure DevOps"
+          }
+        },
         "stack": "Java · Spring Boot · React · JavaScript · APIs REST · Microservicios · Kafka · SQL · Git · Docker · Kubernetes · AWS · Testing"
       },
       "exp2": {
